@@ -5,8 +5,8 @@ gitbook电子书项目
 #课程目录
 1. [慕课网-Python入门](imooc/python/python-primer)
 2. [慕课网-Python进阶](imooc/python/python-advance)
-3. [廖雪峰-PYthon2.7教程](liaoxuefeng/Python2.7-Tutorial)
-4. [廖雪峰-PYthon3教程](liaoxuefeng/Python3-Tutorial)
+3. [廖雪峰-Python2.7教程](liaoxuefeng/Python2.7-Tutorial)
+4. [廖雪峰-Python3教程](liaoxuefeng/Python3-Tutorial)
 5. [廖雪峰-JavaScript全栈教程](liaoxuefeng/JavaScript-Tutorial)
 6. [廖雪峰-Git教程](liaoxuefeng/Git-Tutorial)
 
