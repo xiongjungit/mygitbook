@@ -5,10 +5,10 @@ gitbook电子书项目
 #课程目录
 1. [慕课网-Python入门](imooc/python/python-primer)
 2. [慕课网-Python进阶](imooc/python/python-advance)
-3. [廖雪峰-Python2.7教程](liaoxuefeng/Python2.7-Tutorial)
-4. [廖雪峰-Python3教程](liaoxuefeng/Python3-Tutorial)
-5. [廖雪峰-JavaScript全栈教程](liaoxuefeng/JavaScript-Tutorial)
-6. [廖雪峰-Git教程](liaoxuefeng/Git-Tutorial)
+3. [廖雪峰-Git教程](liaoxuefeng/Git-Tutorial)
+4. [廖雪峰-JavaScript全栈教程](liaoxuefeng/JavaScript-Tutorial)
+5. [廖雪峰-Python2.7教程](liaoxuefeng/Python2.7-Tutorial)
+6. [廖雪峰-Python3教程](liaoxuefeng/Python3-Tutorial)
 
 ##慕课网-Python入门目录
 
@@ -39,6 +39,50 @@ gitbook电子书项目
 - 第6章 定制类 
 - 第7章 课程总结
 
+##廖雪峰-Git教程
+
+> 简介:史上最浅显易懂的git教程
+
+> 
+为什么要编写这个教程？因为我在学习Git的过程中，买过书，也在网上Google了一堆Git相关的文章和教程，但令人失望的是，这些教程不是难得令人发指，就是简单得一笔带过，或者，只支离破碎地介绍Git的某几个命令，还有直接从Git手册粘贴帮助文档的，总之，初学者很难找到一个由浅入深，学完后能立刻上手的Git教程。
+
+
+ - 第1章 Git简介
+ - 第2章 安装Git
+ - 第3章 创建版本库
+ - 第4章 时光机穿梭
+ - 第5章 远程仓库
+ - 第6章 分支管理
+ - 第7章 标签管理
+ - 第8章 使用GitHub
+ - 第9章 自定义Git
+ - 第10章 期末总结
+
+ 
+##廖雪峰-JavaScript全栈教程 
+
+> 简介:这是小白的零基础JavaScript全栈教程。
+
+> 
+JavaScript是世界上最流行的脚本语言，因为你在电脑、手机、平板上浏览的所有的网页，以及无数基于HTML5的手机App，交互逻辑都是由JavaScript驱动的。
+>
+简单地说，JavaScript是一种运行在浏览器中的解释型的编程语言。
+
+ - 第1章 JavaScript简介
+ - 第2章 快速入门
+ - 第3章 函数
+ - 第4章 标准对象
+ - 第5章 面向对象编程
+ - 第6章 浏览器
+ - 第7章 jQuery
+ - 第8章 underscore
+ - 第9章 Node.js
+ - 第10章 React
+ - 第11章 期末总结
+
+
+ 
+
 ##廖雪峰-PYthon2.7教程
 > 简介:这是小白的Python新手教程。
 
@@ -66,7 +110,7 @@ Python是一种计算机程序设计语言。你可能已经听说过很多种�
 - 第19章 电子邮件
 - 第20章 访问数据库
 - 第21章 Web开发
-- 第22章 协程
+- 22章 协程
 - 第23章 实战
 - 第24章 期末总结
 - 结束
