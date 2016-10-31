@@ -29,7 +29,7 @@
  - [5-1 创建对象](chapter5/section1.md)
  - [5-2 原型继承](chapter5/section2.md)
  - [5-3 class继承](chapter5/section3.md)
-* [第6章 浏览器](chapter5/README.md)
+* [第6章 浏览器](chapter6/README.md)
  - [6-1 浏览器对象](chapter6/section1.md)
  - [6-2 操作DOm](chapter6/section2.md)
    - [6-2-1 更新DOM](chapter6/section2-1.md)
