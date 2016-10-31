@@ -5,7 +5,7 @@
 
 本节我们演示如何利用Vue快速创建一个在线电子表格：
 
-![mini-excel](http://www.liaoxuefeng.com/files/attachments/0014757973756505ebf80d4c8d44f2fbb31ffaefb27c214000/l)
+![mini-excel](../image/chapter9/9-6-6-5-1.jpg)
 
 首先，我们定义Model的结构，它的主要数据就是一个二维数组，每个单元格用一个JavaScript对象表示：
 

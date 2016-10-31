@@ -20,7 +20,7 @@ JavaScript的Array的sort()方法就是用于排序的，但是排序结果可�
 
 这是因为Array的sort()方法默认把所有元素先转换为String再排序，结果'10'排在了'2'的前面，因为字符'1'比字符'2'的ASCII码小。
 
-![douwo](http://www.liaoxuefeng.com/files/attachments/0014404661280028775b0bde3a649eca7652c9863e5ba1e000/l)
+![douwo](../image/chapter3/3-4-3-1.jpg)
 
 如果不知道sort()方法的默认排序规则，直接对数字排序，绝对栽进坑里！
 

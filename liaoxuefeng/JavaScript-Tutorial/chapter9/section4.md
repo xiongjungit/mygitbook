@@ -255,4 +255,4 @@ load()函数最终返回module.exports：
 
 参考源码
 
-![module](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/module)
+[module](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/module)

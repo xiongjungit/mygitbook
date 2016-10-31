@@ -5,11 +5,11 @@ MVVM就是在前端页面上，应用了扩展的MVC模式，我们关心Model�
 
 例如，我们定义好一个JavaScript对象作为Model，并且把这个Model的两个属性绑定到DOM节点上：
 
-![mvvm-bind](http://www.liaoxuefeng.com/files/attachments/0014757107005865e99f935201e459ba4b1e119422dbd60000/l)
+![mvvm-bind](../image/chapter9/9-6-6-1-1.jpg)
 
 经过MVVM框架的自动转换，浏览器就可以直接显示Model的数据了：
 
-![mvvm-result](http://www.liaoxuefeng.com/files/attachments/001475710686439a7e9a5b4c2c743669f92214ba6e91fbb000/l)
+![mvvm-result](../image/chapter9/9-6-6-1-2.jpg)
 
 现在问题来了：MVVM框架哪家强？
 
@@ -65,7 +65,7 @@ Ember：一个大而全的框架，想写个Hello world都很困难。
 	    "mime": "1.3.4",
 	    "mz": "2.4.0"
 	}
-使用npm install安装好依赖包，然后启动start.js，在index.html文件中随便写点内容，确保浏览器可以通过http://localhost:3000/static/index.html访问到该静态文件。
+使用npm install安装好依赖包，然后启动start.js，在index.html文件中随便写点内容，确保浏览器可以通过`http://localhost:3000/static/index.html`访问到该静态文件。
 
 紧接着，我们在index.html中用Vue实现MVVM的一个简单例子。
 
@@ -147,7 +147,7 @@ Ember：一个大而全的框架，想写个Hello world都很困难。
 
 然后，data属性指定了Model，我们初始化了Model的两个属性name和age，在View内部的<p>节点上，可以直接用{{ name }}引用Model的某个属性。
 
-一切正常的话，我们在浏览器中访问http://localhost:3000/static/index.html，可以看到页面输出为：
+一切正常的话，我们在浏览器中访问`http://localhost:3000/static/index.html`，可以看到页面输出为：
 
 	Hello, Robot!
 	You are 15 years old!
@@ -158,7 +158,7 @@ Ember：一个大而全的框架，想写个Hello world都很困难。
 
 经过CSS修饰后的页面如下：
 
-![hello-vue](http://www.liaoxuefeng.com/files/attachments/0014757219999866ccacefa31d7452d884543f2ec630f6d000/l)
+![hello-vue](../image/chapter9/9-6-6-1-3.jpg)
 
 可以在页面直接输入JavaScript代码改变Model，并观察页面变化。
 
@@ -169,7 +169,7 @@ Ember：一个大而全的框架，想写个Hello world都很困难。
 另一种单向绑定的方法是使用Vue的指令v-text，写法如下：
 
 	<p>Hello, <span v-text="name"></span>!</p>
-这种写法是把指令写在HTML节点的属性上，它会被Vue解析，该节点的文本内容会被绑定为Model的指定属性，注意不能再写双花括号{{ }}。
+这种写法是把指令写在HTML节点的属性上，它会被Vue解析，该节点的文本内容会被绑定为Model的指定属性，注意不能再写双花括号`{{ }}`。
 
 ##参考源码
 

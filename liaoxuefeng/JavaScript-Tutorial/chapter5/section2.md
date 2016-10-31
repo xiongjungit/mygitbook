@@ -16,7 +16,7 @@
 	}
 以及Student的原型链：
 
-![js-proto](http://www.liaoxuefeng.com/files/attachments/001439872136313496e60e07ed143bda40a0200b12d8cc3000/l)
+![js-proto](../image/chapter5/5-2-1.jpg)
 
 现在，我们要基于Student扩展出PrimaryStudent，可以先定义出PrimaryStudent：
 
@@ -81,7 +81,7 @@
 	xiaoming instanceof Student; // true
 用一张图来表示新的原型链：
 
-![js-proto-extend](http://www.liaoxuefeng.com/files/attachments/001439872160923ca15925ec79f4692a98404ddb2ed5503000/l)
+![js-proto-extend](../image/chapter5/5-2-2.jpg)
 
 注意，函数F仅用于桥接，我们仅创建了一个new F()实例，而且，没有改变原有的Student定义的原型链。
 

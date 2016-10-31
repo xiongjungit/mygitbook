@@ -424,7 +424,7 @@ REST API必须使用前缀/api/。
 
 最终的页面效果如下：
 
-![rest-web](http://www.liaoxuefeng.com/files/attachments/001473594486302a8fb11526a3d4e14b05ec0b895de7f46000/l)
+![rest-web](../image/chapter9/9-6-5-2-1.jpg)
 
 右侧可以通过POST /api/products创建新的Product，左侧可以通过GET /api/products列出所有Product，并且还可以通过DELETE /api/products/<id>来删除某个Product。
 

@@ -40,15 +40,15 @@
 
 假设某个XX省YY市ZZ县第一实验小学有3个年级，要表示出这3个年级，可以在Excel中用一个表格画出来：
 
-![grade](http://www.liaoxuefeng.com/files/attachments/001398086641919935cabfda92c4152831892dcea5a4fa0000/0)
+![grade](../image/chapter9/9-6-2-1.jpg)
 
 每个年级又有若干个班级，要把所有班级表示出来，可以在Excel中再画一个表格：
 
-![class](http://www.liaoxuefeng.com/files/attachments/001398086656928fdad4552b9364589b2dfdfaf9f37f5af000/0)
+![class](../image/chapter9/9-6-2-2.jpg)
 
 这两个表格有个映射关系，就是根据Grade_ID可以在班级表中查找到对应的所有班级：
 
-![grade-classes](http://www.liaoxuefeng.com/files/attachments/0013980867129633e8a2b06f258435cbf6b585360fe078b000/0)
+![grade-classes](../image/chapter9/9-6-2-3.jpg)
 
 也就是Grade表的每一行对应Class表的多行，在关系数据库中，这种基于表（Table）的一对多的关系就是关系数据库的基础。
 
@@ -68,7 +68,7 @@
 	---------+----------+----------
 类似的，Class表的一行记录又可以关联到Student表的多行记录：
 
-![class-students](http://www.liaoxuefeng.com/files/attachments/001398086848421dd1e6eefa1284ab3885d219b81da7e13000/0)
+![class-students](../image/chapter9/9-6-2-4.jpg)
 
 由于本教程不涉及到关系数据库的详细内容，如果你想从零学习关系数据库和基本的SQL语句，请自行搜索相关课程。
 

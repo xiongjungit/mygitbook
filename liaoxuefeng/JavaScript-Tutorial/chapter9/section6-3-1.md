@@ -190,7 +190,7 @@ mocha就会自动执行所有测试，然后输出如下：
 	}
 注意第一个配置选项Run是正常执行一个.js文件，第二个配置选项Test我们填入"program": "${workspaceRoot}/node_modules/mocha/bin/mocha"，并设置env为"NODE_ENV": "test"，这样，就可以在VS Code中打开Debug面板，选择Test，运行，即可在Console面板中看到测试结果：
 
-![run-hello-test](http://www.liaoxuefeng.com/files/attachments/001472046216059ef2c3a61b14046fab231a159c0c0c9e2000/l)
+![run-hello-test](../image/chapter9/9-6-3-1-1.jpg)
 
 ##before和after
 

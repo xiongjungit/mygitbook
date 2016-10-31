@@ -44,13 +44,13 @@ Nunjucks是什么东东？其实它是一个模板引擎。
 模板还需要能执行一些简单逻辑，比如，要按条件输出内容，需要if实现如下输出：
 
 	{{ name }}同学，
-	{% if score >= 90 %}
+	{％ if score >= 90 ％}
 	    成绩优秀，应该奖励
-	{% elif score >=60 %}
+	{％ elif score >=60 ％}
 	    成绩良好，继续努力
-	{% else %}
+	{％ else ％}
 	    不及格，建议回家打屁股
-	{% endif %}
+	{％ endif ％}
 所以，我们需要一个功能强大的模板引擎，来完成页面输出的功能。
 
 ##Nunjucks
@@ -154,26 +154,26 @@ Nunjucks是什么东东？其实它是一个模板引擎。
 	<!-- 循环输出名字 -->
 	<body>
 	    <h3>Fruits List</h3>
-	    {% for f in fruits %}
+	    {％ for f in fruits ％}
 	    <p>{{ f }}</p>
-	    {% endfor %}
+	    {％ endfor ％}
 	</body>
 Nunjucks模板引擎最强大的功能在于模板的继承。仔细观察各种网站可以发现，网站的结构实际上是类似的，头部、尾部都是固定格式，只有中间页面部分内容不同。如果每个模板都重复头尾，一旦要修改头部或尾部，那就需要改动所有模板。
 
 更好的方式是使用继承。先定义一个基本的网页框架base.html：
 
 	<html><body>
-	{% block header %} <h3>Unnamed</h3> {% endblock %}
-	{% block body %} <div>No body</div> {% endblock %}
-	{% block footer %} <div>copyright</div> {% endblock %}
+	{％ block header ％} <h3>Unnamed</h3> {％ endblock ％}
+	{％ block body ％} <div>No body</div> {％ endblock ％}
+	{％ block footer ％} <div>copyright</div> {％ endblock ％}
 	</body>
 base.html定义了三个可编辑的块，分别命名为header、body和footer。子模板可以有选择地对块进行重新定义：
 
-	{% extends 'base.html' %}
+	{％ extends 'base.html' ％}
 	
-	{% block header %}<h1>{{ header }}</h1>{% endblock %}
+	{％ block header ％}<h1>{{ header }}</h1>{％ endblock ％}
 	
-	{% block body %}<p>{{ body }}</p>{% endblock %}
+	{％ block body ％}<p>{{ body }}</p>{％ endblock ％}
 然后，我们对子模板进行渲染：
 
 	console.log(env.render('extend.html', {

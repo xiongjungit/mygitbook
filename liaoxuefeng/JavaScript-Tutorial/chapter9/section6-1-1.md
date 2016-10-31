@@ -152,7 +152,7 @@ Babel提供了一个在线转码工具，可以实时预览转码后的代码。
 	app started at port 3000...
 我们打开浏览器，输入`http://localhost:3000`，即可看到效果：
 
-![koa-browser](http://www.liaoxuefeng.com/files/attachments/001471086470867b17c65e7c94444c3888c0841d5646812000/l)
+![koa-browser](../image/chapter9/9-6-1-1-1.jpg)
 
 为什么先加载babel-core/register，再加载app.js，魔法就会生效？原因是第一个require()是Node正常加载babel-core/register的过程，然后，Babel会用自己的require()替换掉Node的require()（还记得我们用自定义的函数替换了浏览器的alert函数吗？），随后用require()加载的所有代码均会被Babel自动转码后再加载。
 

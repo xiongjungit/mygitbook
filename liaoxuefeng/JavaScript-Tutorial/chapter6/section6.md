@@ -138,7 +138,7 @@ Promise对象可以串联起来，所以上述代码可以简化为：
 
 可见Promise最大的好处是在异步执行的流程中，把执行代码和处理结果的代码清晰地分离了：
 
-![promise](http://www.liaoxuefeng.com/files/attachments/001436512391628944d5da9a5654a35b0ace38246f30b9c000/l)
+![promise](../image/chapter6/6-6-1.jpg)
 
 Promise还可以做更多的事情，比如，有若干个异步任务，需要先做任务1，如果成功后再做任务2，任何任务失败则不再继续并执行错误处理函数。
 

@@ -3,7 +3,7 @@
 
 在hello-koa工程中，我们处理http请求一律返回相同的HTML，这样虽然非常简单，但是用浏览器一测，随便输入任何URL都会返回相同的网页。
 
-![buduijin](http://www.liaoxuefeng.com/files/attachments/00147113484058028953e8afc024ecd804d19932fcbb7e4000/l)
+![buduijin](../image/chapter9/9-6-1-2-1.jpg)
 
 正常情况下，我们应该对不同的URL调用不同的处理函数，这样才能返回不同的结果。例如像这样写：
 
@@ -88,11 +88,11 @@
 
 输入首页：http://localhost:3000/
 
-![url-index](http://www.liaoxuefeng.com/files/attachments/00147113595193701793cd467444d4581422a767ffd2f7f000/l)
+![url-index](../image/chapter9/9-6-1-2-2.jpg)
 
 输入：http://localhost:3000/hello/koa
 
-![url-hello](http://www.liaoxuefeng.com/files/attachments/0014711359603600e61e66425134339ade05501019c1f24000/l)
+![url-hello](../image/chapter9/9-6-1-2-3.jpg)
 
 ##处理post请求
 

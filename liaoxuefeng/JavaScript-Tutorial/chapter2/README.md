@@ -57,7 +57,7 @@ JavaScript代码可以直接嵌在网页的任何地方，不过通常我们都�
 
 你也许会想，直接在我的硬盘上创建好HTML和JavaScript文件，然后用浏览器打开，不就可以看到效果了吗？
 
-这种方式运行部分JavaScript代码没有问题，但由于浏览器的安全限制，以file://开头的地址无法执行如联网等JavaScript代码，最终，你还是需要架设一个Web服务器，然后以http://开头的地址来正常执行所有JavaScript代码。
+这种方式运行部分JavaScript代码没有问题，但由于浏览器的安全限制，以`file://`开头的地址无法执行如联网等JavaScript代码，最终，你还是需要架设一个Web服务器，然后以`http://`开头的地址来正常执行所有JavaScript代码。
 
 不过，开始学习阶段，你无须关心如何搭建开发环境的问题，我们提供在页面输入JavaScript代码并直接运行的功能，让你专注于JavaScript的学习。
 
@@ -82,7 +82,7 @@ JavaScript代码可以直接嵌在网页的任何地方，不过通常我们都�
 
 安装后，随便打开一个网页，然后点击菜单“查看(View)”-“开发者(Developer)”-“开发者工具(Developer Tools)”，浏览器窗口就会一分为二，下方就是开发者工具：
 
-![chrome-HOWTO](http://www.liaoxuefeng.com/files/attachments/001435888338188c0b13adb5b2b4a4f985c7a1ccd926cb6000/l)
+![chrome-HOWTO](../image/chapter2/2-1.jpg)
 
 先点击“控制台(Console)“，在这个面板里可以直接输入JavaScript代码，按回车后执行。
 

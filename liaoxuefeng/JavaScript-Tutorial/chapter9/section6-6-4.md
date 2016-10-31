@@ -160,7 +160,7 @@ vmAdd和FORM表单绑定：
 
 使用CSS修饰后的页面效果如下：
 
-![mvvm-todo-2](http://www.liaoxuefeng.com/files/attachments/001475762267472ca7d3821d95e4d45b63d801c67ffd75f000/l)
+![mvvm-todo-2](../image/chapter9/9-6-6-4-1.jpg)
 
 ##参考源码
 

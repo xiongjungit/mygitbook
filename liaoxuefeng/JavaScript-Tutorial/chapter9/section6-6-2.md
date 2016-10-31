@@ -7,11 +7,11 @@
 
 什么情况下用户可以更新View呢？填写表单就是一个最直接的例子。当用户填写表单时，View的状态就被更新了，如果此时MVVM框架可以自动更新Model的状态，那就相当于我们把Model和View做了双向绑定：
 
-![mvvm-2way-binding](http://www.liaoxuefeng.com/files/attachments/001475748807275ad36ec2cf2d6478599682d65813b24f6000/l)
+![mvvm-2way-binding](../image/chapter9/9-6-6-2-1.jpg)
 
 在浏览器中，当用户修改了表单的内容时，我们绑定的Model会自动更新：
 
-![mvvm-form](http://www.liaoxuefeng.com/files/attachments/001475748865651969a9fd845eb444980a67a2937cfbea1000/l)
+![mvvm-form](../image/chapter9/9-6-6-2-2.jpg)
 
 在Vue中，使用双向绑定非常容易，我们仍然先创建一个VM实例：
 
@@ -93,7 +93,7 @@
 
 使用CSS修饰后的页面效果如下：
 
-![mvvm-form](http://www.liaoxuefeng.com/files/attachments/00147575095913688d78198d021489da557adce00f05e76000/l)
+![mvvm-form](../image/chapter9/9-6-6-2-3.jpg)
 
 ##参考源码
 

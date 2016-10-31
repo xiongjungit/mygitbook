@@ -9,7 +9,7 @@
 	ctx.render('home.html', { name: 'Michael' });
 通过Nunjucks把数据用指定的模板渲染成HTML，然后输出给浏览器，用户就可以看到渲染后的页面了：
 
-![mvc](http://www.liaoxuefeng.com/files/attachments/0014714802383905a3e19e0a96d4f0cbd2daba921364bba000/l)
+![mvc](../image/chapter9/9-6-1-4-1.jpg)
 
 这就是传说中的MVC：Model-View-Controller，中文名“模型-视图-控制器”。
 
@@ -284,15 +284,15 @@ Node.js在全局变量process中定义了一个环境变量env.NODE_ENV，为什
 	app.use(controller());
 现在，在VS Code中运行代码，不出意外的话，在浏览器输入localhost:3000/，可以看到首页内容：
 
-![koa-index](http://www.liaoxuefeng.com/files/attachments/001471480271714f8676a8649264a7097fed4858771b9a0000/l)
+![koa-index](../image/chapter9/9-6-1-4-2.jpg)
 
 直接在首页登录，如果输入正确的Email和Password，进入登录成功的页面：
 
-![koa-signin-ok](http://www.liaoxuefeng.com/files/attachments/001471480282012b05c7196bf894559a02377e454ea15ab000/l)
+![koa-signin-ok](../image/chapter9/9-6-1-4-3.jpg)
 
 如果输入的Email和Password不正确，进入登录失败的页面：
 
-![koa-signin-failed](http://www.liaoxuefeng.com/files/attachments/00147148029317402bdce9daf06441da69874319be54ef1000/l)
+![koa-signin-failed](../image/chapter9/9-6-1-4-4.jpg)
 
 怎么判断正确的Email和Password？目前我们在signin.js中是这么判断的：
 

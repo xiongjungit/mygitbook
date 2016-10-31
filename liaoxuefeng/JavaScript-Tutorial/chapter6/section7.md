@@ -1,4 +1,5 @@
-#6-7 [Canvas](http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/00143449990549914b596ac1da54a228a6fa9643e88bc0c000)
+#6-7 Canvas
+
 
 Canvas是HTML5新增的组件，它就像一块幕布，可以用JavaScript在上面绘制各种图表、动画等。
 
@@ -8,24 +9,23 @@ Canvas是HTML5新增的组件，它就像一块幕布，可以用JavaScript在�
 
 	<canvas id="test-canvas" width="300" height="200"></canvas>
 由于浏览器对HTML5标准支持不一致，所以，通常在`<canvas>`内部添加一些说明性HTML代码，如果浏览器支持Canvas，它将忽略`<canvas>`内部的HTML，如果浏览器不支持Canvas，它将显示`<canvas>`内部的HTML：
-	
+
 	<canvas id="test-stock" width="300" height="200">
 	    <p>Current Price: 25.51</p>
 	</canvas>
-在使用Canvas前，用canvas.getContext来测试浏览器是否支持Canvas：
+在使用Canvas前，用`canvas.getContext`来测试浏览器是否支持Canvas：
 
 	<!-- HTML代码 -->
 	<canvas id="test-canvas" width="200" heigth="100">
 	    <p>你的浏览器不支持Canvas</p>
 	</canvas>
 
-
-<canvas id="test-canvas" width="200" heigth="100">
-	    <p>你的浏览器不支持Canvas</p>
+<canvas id="test-canvas" width="200" heigth="100" style="border: 1px solid #ccc;">
+   <p>你的浏览器不支持Canvas</p>
 </canvas>
+ 
 
-
-	 'use strict';
+	'use strict';
 	
 	var canvas = document.getElementById('test-canvas');
 	if (canvas.getContext) {
@@ -34,7 +34,8 @@ Canvas是HTML5新增的组件，它就像一块幕布，可以用JavaScript在�
 	    alert('你的浏览器不支持Canvas!');
 	}
 
-getContext('2d')方法让我们拿到一个CanvasRenderingContext2D对象，所有的绘图操作都需要通过这个对象完成。
+
+`getContext('2d')`方法让我们拿到一个CanvasRenderingContext2D对象，所有的绘图操作都需要通过这个对象完成。
 
 	var ctx = canvas.getContext('2d');
 如果需要绘制3D怎么办？HTML5还有一个WebGL规范，允许在Canvas中绘制3D图形：
@@ -46,37 +47,36 @@ getContext('2d')方法让我们拿到一个CanvasRenderingContext2D对象，所�
 
 我们可以在Canvas上绘制各种形状。在绘制前，我们需要先了解一下Canvas的坐标系统：
 
-![canvas-xy](http://www.liaoxuefeng.com/files/attachments/001436926614788af8f274570d54736bddbbf7b2b03a9eb000/l)
+![canvas-xy](../image/chapter6/6-7-1.jpg)
 
 Canvas的坐标以左上角为原点，水平向右为X轴，垂直向下为Y轴，以像素为单位，所以每个点都是非负整数。
 
-	CanvasRenderingContext2D对象有若干方法来绘制图形：
-	
+CanvasRenderingContext2D对象有若干方法来绘制图形：
+
 	'use strict';
 	
 	var
 	    canvas = document.getElementById('test-shape-canvas'),
 	    ctx = canvas.getContext('2d');
-	
+
 	ctx.clearRect(0, 0, 200, 200); // 擦除(0,0)位置大小为200x200的矩形，擦除的意思是把该区域变为透明
 	ctx.fillStyle = '#dddddd'; // 设置颜色
 	ctx.fillRect(10, 10, 130, 130); // 把(10,10)位置大小为130x130的矩形涂色
 	// 利用Path绘制复杂路径:
-	var Path=new Path2D();
-	Path.arc(75, 75, 50, 0, Math.PI*2, true);
-	Path.moveTo(110,75);
-	Path.arc(75, 75, 35, 0, Math.PI, false);
-	Path.moveTo(65, 65);
-	Path.arc(60, 65, 5, 0, Math.PI*2, true);
-	Path.moveTo(95, 65);
-	Path.arc(90, 65, 5, 0, Math.PI*2, true);
+	var path=new Path2D();
+	path.arc(75, 75, 50, 0, Math.PI*2, true);
+	path.moveTo(110,75);
+	path.arc(75, 75, 35, 0, Math.PI, false);
+	path.moveTo(65, 65);
+	path.arc(60, 65, 5, 0, Math.PI*2, true);
+	path.moveTo(95, 65);
+	path.arc(90, 65, 5, 0, Math.PI*2, true);
 	ctx.strokeStyle = '#0000ff';
-	ctx.stroke(Path);
+	ctx.stroke(path);
 
 
 <canvas id="test-shape-canvas" width="200" height="200" style="border: 1px solid #ccc; margin-top: 15px;">
 </canvas>
-
 
 ##绘制文本
 
@@ -97,6 +97,7 @@ Canvas的坐标以左上角为原点，水平向右为X轴，垂直向下为Y轴
 	ctx.fillStyle = '#333333';
 	ctx.fillText('带阴影的文字', 20, 40);
 
+
 <canvas id="test-text-canvas" width="300" height="100" style="border: 1px solid #ccc; margin-top: 15px;">
 </canvas>
 
@@ -108,7 +109,7 @@ Canvas的坐标以左上角为原点，水平向右为X轴，垂直向下为Y轴
 
 - 可以创建多个重叠的Canvas绘制不同的层，而不是在一个Canvas中绘制非常复杂的图；
 
-- 背景图片如果不变可以直接用<img>标签并放到最底层。
+- 背景图片如果不变可以直接用`<img>`标签并放到最底层。
 
 ##练习
 
@@ -154,8 +155,5 @@ Canvas的坐标以左上角为原点，水平向右为X轴，垂直向下为Y轴
 	var js = document.createElement('script');
 	js.src = 'http://img1.money.126.net/data/hs/kline/day/history/2015/0000001.json?callback=loadStockData&t=' + Date.now();
 	document.getElementsByTagName('head')[0].appendChild(js);
-
-<canvas id="stock-canvas" width="300" height="200" style="border: 1px solid #ccc; margin-top: 15px;"></canvas>
-
-
+ 
  [下载为图片](http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/00143449990549914b596ac1da54a228a6fa9643e88bc0c000#0)

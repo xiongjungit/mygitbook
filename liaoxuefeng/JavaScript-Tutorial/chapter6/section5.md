@@ -113,7 +113,7 @@ XMLHttpRequest对象的open()方法有3个参数，第一个参数指定是GET�
 
 ##安全限制
 
-上面代码的URL使用的是相对路径。如果你把它改为'http://www.sina.com.cn/'，再运行，肯定报错。在Chrome的控制台里，还可以看到错误信息。
+上面代码的URL使用的是相对路径。如果你把它改为`http://www.sina.com.cn/`，再运行，肯定报错。在Chrome的控制台里，还可以看到错误信息。
 
 这是因为浏览器的同源策略导致的。默认情况下，JavaScript在发送AJAX请求时，URL的域名必须和当前页面完全一致。
 
@@ -188,7 +188,7 @@ Origin表示本域，也就是浏览器当前页面的域。当JavaScript向外�
 
 用一个图来表示就是：
 
-![js-cors](http://www.liaoxuefeng.com/files/attachments/00143640805071744d58164a40e42ef92b9973824451595000/l)
+![js-cors](../image/chapter6/6-5-1.jpg)
 
 假设本域是my.com，外域是sina.com，只要响应头Access-Control-Allow-Origin为http://my.com，或者是*，本次请求就可以成功。
 

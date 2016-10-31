@@ -78,7 +78,7 @@ Vue可以监听数组的splice、push、unshift等方法调用，所以，上述
 
 用CSS修饰后的页面效果如下：
 
-![todo-mvvm](http://www.liaoxuefeng.com/files/attachments/00147575487867865285b887b984a08bcd14fa89fe750b1000/l)
+![todo-mvvm](../image/chapter9/9-6-6-3-1.jpg)
 
 ##参考源码
 

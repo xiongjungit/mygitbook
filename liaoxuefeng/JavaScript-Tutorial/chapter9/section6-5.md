@@ -17,6 +17,6 @@ REST就是一种设计API的模式。最常用的数据格式是JSON。由于JSO
 
 当一个Web应用以API的形式对外提供功能时，整个应用的结构就扩展为：
 
-![REST-arch](http://www.liaoxuefeng.com/files/attachments/001473591163887539f974f19544a10a1e89b8cf9f46048000/l)
+![REST-arch](../image/chapter9/9-6-5-1.jpg)
 
 把网页视为一种客户端，是REST架构可扩展的一个关键。

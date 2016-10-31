@@ -61,7 +61,7 @@ Array.prototype定义了indexOf()、shift()等方法，因此你可以在所有�
 	xiaoming instanceof Student; // true
 看晕了吧？用一张图来表示这些乱七八糟的关系就是：
 
-![protos](http://www.liaoxuefeng.com/files/attachments/00143529922671163eebb527bc14547ac11363bf186557d000/l)
+![protos](../image/chapter5/5-1-1.jpg)
 
 红色箭头是原型链。注意，Student.prototype指向的对象就是xiaoming、xiaohong的原型对象，这个原型对象自己还有个属性constructor，指向Student函数本身。
 
@@ -84,7 +84,7 @@ xiaoming和xiaohong各自的hello是一个函数，但它们是两个不同的�
 
 要让创建的对象共享一个hello函数，根据对象的属性查找原则，我们只要把hello函数移动到xiaoming、xiaohong这些对象共同的原型上就可以了，也就是Student.prototype：
 
-![protos2](http://www.liaoxuefeng.com/files/attachments/001435299854512faf32868f60348be878982909b5a5d04000/l)
+![protos2](../image/chapter5/5-1-2.jpg)
 
 修改代码如下：
 

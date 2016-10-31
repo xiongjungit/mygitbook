@@ -21,7 +21,7 @@ Visual Studio Code由微软出品，但它不是那个大块头的Visual Studio�
 
 安装过程中，请务必钩上以下选项：
 
-![install-vsc](http://www.liaoxuefeng.com/files/attachments/001470970449638b5be3b1cf1414a29ad07b9d0e8808e70000/l)
+![install-vsc](../image/chapter9/9-3-1.jpg)
 
  将“通过Code打开”操作添加到Windows资源管理器目录上下文菜单
 
@@ -72,6 +72,11 @@ VS Code以文件夹作为工程目录（Workspace Dir），所有的JavaScript�
 有了配置文件，即可使用VS Code调试JavaScript。
 
 [视频演示](https://github.com/michaelliao/learn-javascript/raw/master/video/vscode-nodejs.mp4)
+
+<video controls="" height="434" width="648">
+<source src="../video/chapter9/vscode-nodejs.mp4">
+<source src="http://github.liaoxuefeng.com/sinaweibopy/video/git-tags.mp4">
+</video>
 
 参考源码
 

@@ -41,9 +41,9 @@ response对象封装了HTTP响应，我们操作response对象的方法，就可
 
 	$ node hello.js 
 	Server is running at http://127.0.0.1:8080/
-不要关闭命令提示符，直接打开浏览器输入http://localhost:8080，即可看到服务器响应的内容：
+不要关闭命令提示符，直接打开浏览器输入`http://localhost:8080`，即可看到服务器响应的内容：
 
-![http-hello-sample](http://www.liaoxuefeng.com/files/attachments/0014507141527539080883467c246e184f45b360d125814000/l)
+![http-hello-sample](../image/chapter9/9-5-3-1.jpg)
 
 同时，在命令提示符窗口，可以看到程序打印的请求信息：
 
@@ -136,9 +136,9 @@ response对象封装了HTTP响应，我们操作response对象的方法，就可
 	console.log('Server is running at http://127.0.0.1:8080/');
 没有必要手动读取文件内容。由于response对象本身是一个Writable Stream，直接用pipe()方法就实现了自动读取文件内容并输出到HTTP响应。
 
-在命令行运行node file_server.js /path/to/dir，把/path/to/dir改成你本地的一个有效的目录，然后在浏览器中输入http://localhost:8080/index.html：
+在命令行运行node file_server.js /path/to/dir，把/path/to/dir改成你本地的一个有效的目录，然后在浏览器中输入`http://localhost:8080/index.html`：
 
-![http-index-page](http://www.liaoxuefeng.com/files/attachments/00145071557176340f646d8f6534e9a8f5afb4144de2ac8000/l)
+![http-index-page](../image/chapter9/9-5-3-2.jpg)
 
 只要当前目录下存在文件index.html，服务器就可以把文件内容发送给浏览器。观察控制台输出：
 
@@ -150,7 +150,7 @@ response对象封装了HTTP响应，我们操作response对象的方法，就可
 
 ##练习
 
-在浏览器输入http://localhost:8080/时，会返回404，原因是程序识别出HTTP请求的不是文件，而是目录。请修改file_server.js，如果遇到请求的路径是目录，则自动在目录下依次搜索index.html、default.html，如果找到了，就返回HTML文件的内容。
+在浏览器输入`http://localhost:8080/`时，会返回404，原因是程序识别出HTTP请求的不是文件，而是目录。请修改file_server.js，如果遇到请求的路径是目录，则自动在目录下依次搜索index.html、default.html，如果找到了，就返回HTML文件的内容。
 
 ##参考源码
 

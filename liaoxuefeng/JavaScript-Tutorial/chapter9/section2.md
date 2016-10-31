@@ -46,13 +46,13 @@
 
 看到类似C:\>是在Windows提供的命令行模式：
 
-![run-node-hello](http://www.liaoxuefeng.com/files/attachments/00143912121754934a42330afe74908a7d305faf0272f21000/l)
+![run-node-hello](../image/chapter9/9-2-1.jpg)
 
 在命令行模式下，可以执行node进入Node交互式环境，也可以执行node hello.js运行一个.js文件。
 
 看到>是在Node交互式环境下：
 
-![node-interactive-env](http://www.liaoxuefeng.com/files/attachments/0014391212294193de526e6aab945c18a48203cd694f6dd000/l)
+![node-interactive-env](../image/chapter9/9-2-2.jpg)
 
 在Node交互式环境下，我们可以输入JavaScript代码并立刻执行。
 
