@@ -20,7 +20,7 @@
 	
 	    def print_score(self):
 	        print '%s: %s' % (self.__name, self.__score)
-改完后，对于外部代码来说，没什么变动，但是已经无法从外部访问实例变量`.__name`和实例变量`.__score`了：
+改完后，对于外部代码来说，没什么变动，但是已经无法从外部访问实例`变量.__name`和实例`变量.__score`了：
 
 	>>> bart = Student('Bart Simpson', 98)
 	>>> bart.__name
