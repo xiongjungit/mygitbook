@@ -164,4 +164,11 @@ vmAdd和FORM表单绑定：
 
 ##参考源码
 
+- 本地
+
+[vue-todo-2](../code/chapter9/9-6-6-4-vue-todo2.7z)
+
+- github
+
+
 [vue-todo-2](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/web/vue/vue-todo-2)

@@ -227,4 +227,10 @@ middleware的顺序很重要，也就是调用app.use()的顺序决定了middlew
 
 参考源码
 
+- 本地
+
+[hello-koa](../code/chapter9/9-6-1-1-hello-koa.7z)
+
+- github
+
 [hello-koa](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/web/koa/hello-koa)

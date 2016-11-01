@@ -123,4 +123,10 @@
 
 ##参考源码
 
+- 本地
+
+[async-test](../code/chapter9/9-6-3-2-async-test.7z)
+
+- github
+
 [async-test](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/web/test/async-test)

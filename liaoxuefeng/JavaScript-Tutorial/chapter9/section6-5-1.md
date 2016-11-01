@@ -141,4 +141,10 @@ REST规范定义了资源的通用访问格式，虽然它不是一个强制要�
 
 ##参考源码
 
+- 本地
+
+[rest-hello](../code/chapter9/9-6-5-1-rest-hello.7z)
+
+- github
+
 [rest-hello](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/web/rest/rest-hello)

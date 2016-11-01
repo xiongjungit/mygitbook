@@ -125,4 +125,10 @@ crypto模块也可以处理数字证书。数字证书通常用在SSL连接，�
 
 ##参考源码
 
+- 本地
+
+[crypto](../code/chapter9/9-5-4-crypto.7z)
+
+- github
+
 [crypto常用算法](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/crypto)

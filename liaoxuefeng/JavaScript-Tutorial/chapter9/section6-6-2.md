@@ -97,4 +97,11 @@
 
 ##参考源码
 
+- 本地
+
+[form-vue](../code/chapter9/9-6-6-2-form-vue.7z)
+
+- github
+
+
 [form-vue](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/web/vue/form-vue)

@@ -430,4 +430,10 @@ REST API必须使用前缀/api/。
 
 ##参考源码
 
+- 本地
+
+[rest-koa](../code/chapter9/9-6-5-2-rest-koa.7z)
+
+- github 
+
 [rest-koa](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/web/rest/rest-koa)

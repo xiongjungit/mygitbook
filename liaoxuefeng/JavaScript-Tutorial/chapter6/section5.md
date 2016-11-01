@@ -190,7 +190,7 @@ Origin表示本域，也就是浏览器当前页面的域。当JavaScript向外�
 
 ![js-cors](../image/chapter6/6-5-1.jpg)
 
-假设本域是my.com，外域是sina.com，只要响应头Access-Control-Allow-Origin为http://my.com，或者是*，本次请求就可以成功。
+假设本域是my.com，外域是sina.com，只要响应头Access-Control-Allow-Origin为`http://my.com`，或者是*，本次请求就可以成功。
 
 可见，跨域能否成功，取决于对方服务器是否愿意给你设置一个正确的Access-Control-Allow-Origin，决定权始终在对方手中。
 

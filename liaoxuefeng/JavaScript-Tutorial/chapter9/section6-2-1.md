@@ -277,4 +277,10 @@ Sequelize的API可以参考[官方文档](http://docs.sequelizejs.com/)。
 
 ##参考源码
 
+- 本地
+
+[hello-sequelize](../code/chapter9/9-6-2-1-hello-sequelize.7z)
+
+- github 
+
 [hello-sequelize](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/web/db/hello-sequelize)

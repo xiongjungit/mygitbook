@@ -164,4 +164,10 @@ stat()也有一个对应的同步函数statSync()，请试着改写上述异步�
 
 ##参考源码
 
+- 本地
+
+[fs](../code/chapter9/9-5-1-fs.7z)
+
+-github
+
 [fs](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/fs)

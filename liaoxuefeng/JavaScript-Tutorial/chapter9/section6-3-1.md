@@ -257,4 +257,10 @@ mocha就会自动执行所有测试，然后输出如下：
 	  4 passing (8ms)
 ##参考源码
 
+- 本地
+
+[hello-test](../code/chapter9/9-6-3-1-hello-test.7z)
+
+- github
+
 [hello-test](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/web/test/hello-test)

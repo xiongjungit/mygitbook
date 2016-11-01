@@ -295,4 +295,10 @@ init-db.js的代码非常简单：
 
 ##参考源码
 
+- 本地
+
+[model-sequelize](../code/chapter9/9-6-2-2-model-sequelize.7z)
+
+- github
+
 [model-sequelize](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/web/db/model-sequelize)

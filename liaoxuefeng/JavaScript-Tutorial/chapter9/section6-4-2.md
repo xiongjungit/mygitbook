@@ -272,4 +272,10 @@ Nginx即可理解该连接将使用WebSocket协议。
 	}
 ##参考源码
 
+- 本地
+
+[ws-with-koa](../code/chapter9/9-6-4-2-ws-with-koa.7z)
+
+- github
+
 [ws-with-koa](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/web/ws/ws-with-koa)

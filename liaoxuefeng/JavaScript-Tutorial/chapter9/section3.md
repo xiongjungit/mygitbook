@@ -80,4 +80,11 @@ VS Code以文件夹作为工程目录（Workspace Dir），所有的JavaScript�
 
 参考源码
 
+- 本地
+
+[hello.js](../code/chapter9/9-3-hello.js)
+
+- github
+
 [hello.js](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/hello)
+

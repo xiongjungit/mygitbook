@@ -204,4 +204,10 @@ Nunjucks也提供了异步读取的方式，但是这样写起来很麻烦，有
 
 ##参考源码
 
+- 本地
+
+[use-nunjucks](../code/chapter9/9-6-1-3-use-nunjucks.7z)
+
+- github
+
 [use-nunjucks](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/web/koa/use-nunjucks)

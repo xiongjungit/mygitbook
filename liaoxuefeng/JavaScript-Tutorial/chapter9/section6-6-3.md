@@ -82,4 +82,11 @@ Vue可以监听数组的splice、push、unshift等方法调用，所以，上述
 
 ##参考源码
 
+- 本地
+
+[vue-todo](../code/chapter9/9-6-6-3-vue-todo.7z)
+
+- github
+
+
 [vue-todo](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/web/vue/vue-todo)

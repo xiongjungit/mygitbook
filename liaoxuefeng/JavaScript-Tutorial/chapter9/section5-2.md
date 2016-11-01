@@ -74,4 +74,10 @@ readable.pipe(writable, { end: false });
 
 ##参考源码
 
+- 本地
+
+[stream](../code/chapter9/9-5-2-stream.7z)
+
+- github
+
 [stream](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/stream)

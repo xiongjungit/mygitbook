@@ -103,4 +103,10 @@ ws的WebSocket就表示客户端，它其实就是WebSocketServer响应connectio
 
 ##参考源码
 
+- 本地
+
+[hello-ws](../code/chapter9/9-6-4-1-hello-ws.7z)
+
+- github
+
 [hello-ws](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/web/ws/hello-ws)

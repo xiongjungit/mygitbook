@@ -131,4 +131,11 @@
 
 ##参考源码
 
+- 本地
+
+[mini-excel](../code/chapter9/9-6-6-5-mini-excel.7z)
+
+- github
+
+
 [mini-excel](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/web/vue/mini-excel)

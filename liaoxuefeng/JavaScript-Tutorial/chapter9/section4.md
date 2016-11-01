@@ -255,4 +255,10 @@ load()函数最终返回module.exports：
 
 参考源码
 
+- 本地
+
+[module](../code/chapter9/9-4-module.7z)
+
+- github
+
 [module](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/module)

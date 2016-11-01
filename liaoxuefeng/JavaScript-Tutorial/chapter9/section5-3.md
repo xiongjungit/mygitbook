@@ -154,4 +154,10 @@ response对象封装了HTTP响应，我们操作response对象的方法，就可
 
 ##参考源码
 
+- 本地
+
+[http](../code/chapter9/9-5-3-http.7z)
+
+- github
+
 [http服务器代码](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/http)（含静态网站）

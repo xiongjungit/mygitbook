@@ -325,4 +325,10 @@ Node.js在全局变量process中定义了一个环境变量env.NODE_ENV，为什
 
 ##参考源码
 
+- 本地
+
+[view-koa](../code/chapter9/9-6-1-4-view-koa.7z)
+
+- github
+
 [view-koa](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/web/koa/view-koa)

@@ -173,4 +173,10 @@ Ember：一个大而全的框架，想写个Hello world都很困难。
 
 ##参考源码
 
+- 本地
+
+[hello-vue](../code/chapter9/9-6-6-1-hello-vue.7z)
+
+- github
+
 [hello-vue](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/web/vue/hello-vue)

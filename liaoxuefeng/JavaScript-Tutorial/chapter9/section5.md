@@ -74,4 +74,10 @@ Node.js进程本身的事件就由process对象来处理。如果我们响应exi
 
 ##参考源码
 
+- 本地
+
+[gl](../code/chapter9/9-5-gl.js)
+
+- github
+
 [gl.js](https://github.com/michaelliao/learn-javascript/blob/master/samples/node/global/gl.js)

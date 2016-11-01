@@ -100,4 +100,5 @@ Node的交互模式和直接运行.js文件有什么区别呢？
 
 ##参考源码
 
-[hello.js和calc.js](https://github.com/michaelliao/learn-javascript/tree/master/samples/node/first)
+[hello.js](../code/chapter9/9-2-hello.js)
+[calc.js](../code/chapter9/9-2-calc.js)

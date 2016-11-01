@@ -29,3 +29,11 @@ JavaScript一度被认为是一种玩具编程语言，它有很多缺陷，所�
 可以在线编写JavaScript代码并直接运行！
 
 不要再犹豫了，立刻从现在开始，零基础迈向全栈开发工程师！
+
+- 本地
+
+[本课程所有源码](../code/learn-javascript.7z)
+
+- github
+
+[本课程所有源码](https://github.com/michaelliao/learn-javascript)
