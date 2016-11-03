@@ -89,6 +89,6 @@ MySQL是Web世界中使用最广泛的数据库服务器。SQLite的特点是轻
 
 ##小结
 
-MySQL的SQL占位符是%s；
+- MySQL的SQL占位符是%s；
 
-通常我们在连接MySQL时传入use_unicode=True，让MySQL的DB-API始终返回Unicode。
+- 通常我们在连接MySQL时传入use_unicode=True，让MySQL的DB-API始终返回Unicode。

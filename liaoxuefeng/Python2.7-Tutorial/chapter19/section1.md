@@ -193,6 +193,6 @@ msg['To']接收的是字符串而不是list，如果有多个邮件地址，用,
 	      +- MIMEImage
 这种嵌套关系就可以构造出任意复杂的邮件。你可以通过email.mime文档查看它们所在的包以及详细的用法。
 
-源码参考：
+##源码参考：
 
 https://github.com/michaelliao/learn-python/tree/master/email

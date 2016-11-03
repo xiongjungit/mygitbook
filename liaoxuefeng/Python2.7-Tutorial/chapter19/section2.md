@@ -135,7 +135,7 @@ decode_header()返回一个list，因为像Cc、Bcc这样的字段可能包含�
 	    return charset
 把上面的代码整理好，我们就可以来试试收取一封邮件。先往自己的邮箱发一封邮件，然后用浏览器登录邮箱，看看邮件收到没，如果收到了，我们就来用Python程序把它收到本地：
 
-![pop3-sample-mail](http://www.liaoxuefeng.com/files/attachments/0014082468380388be2ec29f6be43f5800fd84bd80fa446000)
+![pop3-sample-mail](../image/chapter19/19-2-1.jpg)
 
 运行程序，结果如下：
 
@@ -162,6 +162,6 @@ decode_header()返回一个list，因为像Cc、Bcc这样的字段可能包含�
 
 用Python的poplib模块收取邮件分两步：第一步是用POP3协议把邮件获取到本地，第二步是用email模块把原始邮件解析为Message对象，然后，用适当的形式把邮件内容展示给用户即可。
 
-源码参考：
+##源码参考：
 
 https://github.com/michaelliao/learn-python/tree/master/email
