@@ -1,4 +1,4 @@
-#4-4 Python之list添加新元素
+#4-4 Python之添加新元素
 现在，班里有3名同学：
 
 	>>> L = ['Adam', 'Lisa', 'Bart']
