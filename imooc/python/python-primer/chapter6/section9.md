@@ -1,4 +1,4 @@
-#6-9 Python之 遍历set
+#6-9 Python之遍历set
 由于 set 也是一个集合，所以，遍历 set 和遍历 list 类似，都可以通过 for 循环实现。
 
 直接使用 for 循环可以遍历 set 的元素：

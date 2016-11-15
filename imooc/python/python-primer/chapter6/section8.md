@@ -1,4 +1,4 @@
-#6-8 Python之 set的特点
+#6-8 Python之set的特点
 set的内部结构和dict很像，唯一区别是不存储value，因此，判断一个元素是否在set中速度很快。
 
 set存储的元素和dict的key类似，必须是不变对象，因此，任何可变对象是不能放入set中的。
