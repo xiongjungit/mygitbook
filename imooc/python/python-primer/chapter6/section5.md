@@ -12,7 +12,7 @@
 	Bart
 由于通过 key 可以获取对应的 value，因此，在循环体内，可以获取到value的值。
 
-##s任务
+##任务
 请用 for 循环遍历如下的dict，打印出 name: score 来。
 
 	d = {
