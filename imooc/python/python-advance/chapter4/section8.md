@@ -12,7 +12,7 @@
 	
 	    def get_name(self):
 	        return self.__name
-get_name(self) 就是一个实例方法，它的第一个参数是self。__init__(self, name)其实也可看做是一个特殊的实例方法。
+`get_name(self)` 就是一个实例方法，它的第一个参数是self。`__init__(self, name)`其实也可看做是一个特殊的实例方法。
 
 调用实例方法必须在实例上调用：
 
