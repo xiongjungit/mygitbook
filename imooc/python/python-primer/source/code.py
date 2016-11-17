@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # 慕课网python入门
+print u'慕课网python入门所有代码'
 
 # 第3章 python变量和数据类型
 ## 3-1 python中数据类型
