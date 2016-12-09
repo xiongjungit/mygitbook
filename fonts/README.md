@@ -45,7 +45,7 @@ book.json 例子：
 
 当我们在gitbook.com上建好书籍后，我们可以为书籍进行封面，主题，配置域名等设置。
 
-**封面**：在gitbook在线编辑器设置按钮下添加封面或者直接书籍仓库的根目录下放置一个cover.jpg即可
+**封面**：在gitbook在线编辑器设置按钮下添加封面或者直接书籍仓库的根目录下放置一个cover.jpg即可(最佳尺寸1800×2360)
 
 **主题**：在gitbook.com书籍页面的setting页面有landing page选项用于设置主题
 
@@ -56,3 +56,19 @@ book.json 例子：
 **发布到github pages**：链接：发布到 GitHub Pages
 
 **本地转换为pdf等格式**：
+
+```
+#web:
+
+gitbook serve ./BOOKDIR
+
+#html:
+
+gitbook build ./BOOKDIR
+
+#pdf&epub&mobi
+
+gitbook pdf ./BOOKDIR
+gitbook epub ./BOOKDIR
+gitbook mobi ./BOOKDIR
+```
