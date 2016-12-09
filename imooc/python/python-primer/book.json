@@ -9,7 +9,7 @@
   "pluginsConfig": {
     "fontSettings": {
       "theme": "white",
-      "family": "msyh",
+      "family": "./fonts/dnks.ttf",
       "size": 2
     },
     "plugins": [
