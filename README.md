@@ -9,6 +9,8 @@ gitbook电子书项目
 4. [廖雪峰-JavaScript全栈教程](liaoxuefeng/JavaScript-Tutorial)
 5. [廖雪峰-Python2.7教程](liaoxuefeng/Python2.7-Tutorial)
 6. [廖雪峰-Python3教程](liaoxuefeng/Python3-Tutorial)
+7. [dvwa安全测试](dvwa)
+8. [markdown完全手册](markdown)
 
 ##慕课网-Python入门目录
 
