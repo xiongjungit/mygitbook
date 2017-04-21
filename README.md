@@ -5,14 +5,16 @@ gitbook电子书项目
 #课程目录
 1. [慕课网-Python入门](imooc/python/python-primer)
 2. [慕课网-Python进阶](imooc/python/python-advance)
-3. [廖雪峰-Git教程](liaoxuefeng/Git-Tutorial)
-4. [廖雪峰-JavaScript全栈教程](liaoxuefeng/JavaScript-Tutorial)
-5. [廖雪峰-Python2.7教程](liaoxuefeng/Python2.7-Tutorial)
-6. [廖雪峰-Python3教程](liaoxuefeng/Python3-Tutorial)
-7. [dvwa安全测试](dvwa)
-8. [markdown完全手册](markdown)
+3. [菜鸟教程Python基础教程](runoob/python/python-primer)
+4. [菜鸟教程Python高级教程](runoob/python/python-advance)
+5. [廖雪峰-Git教程](liaoxuefeng/Git-Tutorial)
+6. [廖雪峰-JavaScript全栈教程](liaoxuefeng/JavaScript-Tutorial)
+7. [廖雪峰-Python2.7教程](liaoxuefeng/Python2.7-Tutorial)
+8. [廖雪峰-Python3教程](liaoxuefeng/Python3-Tutorial)
+9. [dvwa安全测试](dvwa)
+10. [markdown完全手册](markdown)
 
-##慕课网-Python入门目录
+##慕课网-Python入门
 
 > 
 简介：Python基础分《Python入门》和《Python进阶》两门课程，本课程是Python第一门课程，是Python开发的入门课程，将介绍Python语言的特点和适用范围，Python基本的数据类型，条件判断和循环，函数，以及Python特有的切片和列表生成式。让您快速入门并编写简单的Python程序。
@@ -28,7 +30,7 @@ gitbook电子书项目
 - 第9章 迭代 
 - 第10章 列表生成式 
 
-##慕课网-Python进阶目录
+##慕课网-Python进阶
 
 > 
 简介：Python基础分《Python入门》和《Python进阶》两门课程，《Python进阶》是第二门课程，学习该课程前，请先学习《Python入门》,效果会更好。《Python进阶》课程详细介绍Python强大的函数式编程和面向对象编程，掌握Python高级程序设计的方法。
@@ -40,6 +42,57 @@ gitbook电子书项目
 - 第5章 类的继承 
 - 第6章 定制类 
 - 第7章 课程总结
+
+##菜鸟教程-Python基础教程
+
+> Python是一种解释型、面向对象、动态数据类型的高级程序设计语言。
+Python由Guido van Rossum于1989年底发明，第一个公开发行版发行于1991年。
+像Perl语言一样, Python 源代码同样遵循 GPL(GNU General Public License)协议。
+
+- Python 基础教程
+- Python 简介
+- Python 环境搭建
+- Python 中文编码
+- Python 基础语法
+- Python 变量类型
+- Python 运算符
+- Python 条件语句
+- Python 循环语句
+- Python While 语句
+- Python for 循环语句
+- Python 循环嵌套
+- Python break 语句
+- Python continue 语句
+- Python pass 语句
+- Python Number 语句
+- Python 字符串
+- Python 列表(List)
+- Python 元组(Tuple)
+- Python 字典(Dictionary)
+- Python 日期和时间
+- Python 函数
+- Python 模块
+- Python 文件I/O
+- Python File方法
+- Python 异常处理
+
+
+##菜鸟教程-Python高级教程
+
+- Python 高级教程
+- Python 面向对象
+- Python 正则表达式
+- Python CGI编程
+- Python MySQL
+- Python 网络编程
+- Python SMTP
+- Python 多线程
+- Python XML解析
+- Python GUI编程(Tkinter)
+- Python 2.x与Python 3.x版本区别
+- Python IDE
+- Python JSON
+- Python 100例
 
 ##廖雪峰-Git教程
 
