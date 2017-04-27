@@ -7,12 +7,13 @@ gitbook电子书项目
 2. [慕课网-Python进阶](imooc/python/python-advance)
 3. [菜鸟教程Python基础教程](runoob/python/python-primer)
 4. [菜鸟教程Python高级教程](runoob/python/python-advance)
-5. [廖雪峰-Git教程](liaoxuefeng/Git-Tutorial)
-6. [廖雪峰-JavaScript全栈教程](liaoxuefeng/JavaScript-Tutorial)
-7. [廖雪峰-Python2.7教程](liaoxuefeng/Python2.7-Tutorial)
-8. [廖雪峰-Python3教程](liaoxuefeng/Python3-Tutorial)
-9. [dvwa安全测试](dvwa)
-10. [markdown完全手册](markdown)
+5. [菜鸟教程Shell编程](runoob/shell)
+6. [廖雪峰-Git教程](liaoxuefeng/Git-Tutorial)
+7. [廖雪峰-JavaScript全栈教程](liaoxuefeng/JavaScript-Tutorial)
+8. [廖雪峰-Python2.7教程](liaoxuefeng/Python2.7-Tutorial)
+9. [廖雪峰-Python3教程](liaoxuefeng/Python3-Tutorial)
+10. [dvwa安全测试](dvwa)
+11. [markdown完全手册](markdown)
 
 ## 慕课网-Python入门
 
@@ -93,6 +94,21 @@ Python由Guido van Rossum于1989年底发明，第一个公开发行版发行于
 - Python IDE
 - Python JSON
 - Python 100例
+
+## 菜鸟教程-Shell教程
+
+- Shell 教程
+- Shell 变量
+- Shell 传递参数
+- Shell 数组
+- Shell 运算符
+- Shell echo命令
+- Shell printf命令
+- Shell test命令
+- Shell 流程控制
+- Shell 函数
+- Shell 输入/输出重定向
+- Shell 文件包含
 
 ## 廖雪峰-Git教程
 
