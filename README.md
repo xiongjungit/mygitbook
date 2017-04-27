@@ -7,7 +7,7 @@ gitbook电子书项目
 2. [慕课网-Python进阶](imooc/python/python-advance)
 3. [菜鸟教程Python基础教程](runoob/python/python-primer)
 4. [菜鸟教程Python高级教程](runoob/python/python-advance)
-5. [菜鸟教程Shell编程](runoob/shell)
+5. [菜鸟教程Shell教程](runoob/shell)
 6. [廖雪峰-Git教程](liaoxuefeng/Git-Tutorial)
 7. [廖雪峰-JavaScript全栈教程](liaoxuefeng/JavaScript-Tutorial)
 8. [廖雪峰-Python2.7教程](liaoxuefeng/Python2.7-Tutorial)
