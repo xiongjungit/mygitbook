@@ -13,7 +13,8 @@ gitbook电子书项目
 8. [廖雪峰-Python2.7教程](liaoxuefeng/Python2.7-Tutorial)
 9. [廖雪峰-Python3教程](liaoxuefeng/Python3-Tutorial)
 10. [dvwa安全测试](dvwa)
-11. [markdown完全手册](markdown)
+11. [静觅Python爬虫学习系列教程](pycrawler)
+12. [markdown完全手册](markdown)
 
 ## 慕课网-Python入门
 
@@ -239,6 +240,13 @@ Python是一种计算机程序设计语言。你可能已经听说过很多种�
 - 第10章 dvwacn之九文件包含
 - 第11章 dvwacn之十文件上传
 - 第12章 dvwacn之十一WebService命令执行
+
+## 静觅Python爬虫学习系列教程
+
+- 一、爬虫入门
+- 二、爬虫实战
+- 三、爬虫利器
+- 四、爬虫进阶
 
 ## markdown语法手册
 
