@@ -5,16 +5,17 @@ gitbook电子书项目
 # 课程目录
 1. [慕课网-Python入门](imooc/python/python-primer)
 2. [慕课网-Python进阶](imooc/python/python-advance)
-3. [菜鸟教程Python基础教程](runoob/python/python-primer)
-4. [菜鸟教程Python高级教程](runoob/python/python-advance)
-5. [菜鸟教程Shell教程](runoob/shell)
-6. [廖雪峰-Git教程](liaoxuefeng/Git-Tutorial)
-7. [廖雪峰-JavaScript全栈教程](liaoxuefeng/JavaScript-Tutorial)
-8. [廖雪峰-Python2.7教程](liaoxuefeng/Python2.7-Tutorial)
-9. [廖雪峰-Python3教程](liaoxuefeng/Python3-Tutorial)
-10. [dvwa安全测试](dvwa)
-11. [静觅Python爬虫学习系列教程](pycrawler)
-12. [markdown完全手册](markdown)
+3. [菜鸟教程-Python基础教程](runoob/python/python-primer)
+4. [菜鸟教程-Python高级教程](runoob/python/python-advance)
+5. [菜鸟教程-XPath教程](runoob/xpath)
+6. [菜鸟教程-Shell教程](runoob/shell)
+7. [廖雪峰-Git教程](liaoxuefeng/Git-Tutorial)
+8. [廖雪峰-JavaScript全栈教程](liaoxuefeng/JavaScript-Tutorial)
+9. [廖雪峰-Python2.7教程](liaoxuefeng/Python2.7-Tutorial)
+10. [廖雪峰-Python3教程](liaoxuefeng/Python3-Tutorial)
+11. [dvwa安全测试](dvwa)
+12. [静觅Python爬虫学习系列教程](pycrawler)
+13. [markdown完全手册](markdown)
 
 ## 慕课网-Python入门
 
@@ -95,6 +96,20 @@ Python由Guido van Rossum于1989年底发明，第一个公开发行版发行于
 - Python IDE
 - Python JSON
 - Python 100例
+
+## 菜鸟教程-XPath教程
+
+- XPath 教程
+- XPath 简介
+- XPath 节点
+- XPath 语法)
+- XPath 轴(Axes)
+- XPath 运算符
+- XPath 实例
+- XPath 总结
+- XPath、XQuery以及XSLT函数
+
+
 
 ## 菜鸟教程-Shell教程
 
