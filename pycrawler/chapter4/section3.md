@@ -18,7 +18,7 @@ D:\python2.7.7;D:\python2.7.7\Scripts
 
 配置好了之后，在命令行中输入 python –version，如果没有提示错误，则安装成功
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150211171953.jpg)
+![](../image/chapter4/section3-1.jpg)
 
 2.安装pywin32
 
@@ -26,7 +26,7 @@ D:\python2.7.7;D:\python2.7.7\Scripts
 
 下载对应版本的pywin32，直接双击安装即可，安装完毕之后验证：
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150211171713.jpg)
+![](../image/chapter4/section3-2.jpg)
 
 在python命令行下输入
 
@@ -54,7 +54,7 @@ pip --version
 
 如果提示如下，说明就安装成功了，如果提示不是内部或外部命令，那么就检查一下环境变量有没有配置好吧，有两个路径。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150211171001.jpg)
+![](../image/chapter4/section3-3.jpg)
 
 4.安装pyOPENSSL
 
@@ -84,7 +84,7 @@ pip install lxml
 pip install Scrapy
 ```
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150211172637.jpg)
+![](../image/chapter4/section3-4.jpg)
 
 pip 会另外下载其他依赖的包，这些就不要我们手动安装啦，等待一会，大功告成！
 
@@ -94,7 +94,7 @@ pip 会另外下载其他依赖的包，这些就不要我们手动安装啦，�
 
 如果提示如下命令，就证明安装成功啦，如果失败了，请检查上述步骤有何疏漏。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150211172456-e1423673746697.jpg)
+![](../image/chapter4/section3-5.jpg)
 
 ## Linux Ubuntu 平台：
 
@@ -165,6 +165,6 @@ Available commands:
 
 截图如下
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/2015-02-12-010022-%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
+![](../image/chapter4/section3-6.jpg)
 
 如有问题，欢迎留言！祝各位小伙伴顺利安装！

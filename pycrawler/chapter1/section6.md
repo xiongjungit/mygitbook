@@ -90,7 +90,7 @@ ignore_expires: save even cookies that have expiredThe file is overwritten if it
 
 由此可见，ignore_discard的意思是即使cookies将被丢弃也将它保存下来，ignore_expires的意思是如果在该文件中cookies已经存在，则覆盖原文件写入，在这里，我们将这两个全部设置为True。运行之后，cookies将被保存到cookie.txt文件中，我们查看一下内容，附图如下
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150215215136.jpg)
+![](../image/chapter1/section6-1.jpg)
 
 ### 3）从文件中获取Cookie并访问
 

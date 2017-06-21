@@ -6,7 +6,7 @@
 
 首先，打开我们的浏览器，调试浏览器F12，我用的是Chrome，打开网络监听，示意如下，比如知乎，点登录之后，我们会发现登陆之后界面都变化了，出现一个新的界面，实质上这个页面包含了许许多多的内容，这些内容也不是一次性就加载完成的，实质上是执行了好多次请求，一般是首先请求HTML文件，然后加载JS，CSS 等等，经过多次请求之后，网页的骨架和肌肉全了，整个网页的效果也就出来了。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/2015-02-13-013155-%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE-e1423762350360-1024x424.png)
+![](../image/chapter1/section4-1.png)
 
 拆分这些请求，我们只看一第一个请求，你可以看到，有个Request URL，还有headers，下面便是response，图片显示得不全，小伙伴们可以亲身实验一下。那么这个头中包含了许许多多是信息，有文件编码啦，压缩方式啦，请求的agent啦等等。
 
@@ -41,11 +41,14 @@ headers = { 'User-Agent' : 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'  ,
 
 另外headers的一些属性，下面的需要特别注意一下：
 
-> User-Agent : 有些服务器或 Proxy 会通过该值来判断是否是浏览器发出的请求
-Content-Type : 在使用 REST 接口时，服务器会检查该值，用来确定 HTTP Body 中的内容该怎样解析。
-application/xml ： 在 XML RPC，如 RESTful/SOAP 调用时使用
-application/json ： 在 JSON RPC 调用时使用
-application/x-www-form-urlencoded ： 浏览器提交 Web 表单时使用
+> 
+- User-Agent : 有些服务器或 Proxy 会通过该值来判断是否是浏览器发出的请求
+- Content-Type : 在使用 REST 接口时，服务器会检查该值，用来确定 HTTP Body 中的内容该怎样解析。
+- application/xml ： 在 XML RPC，如 RESTful/SOAP 调用时使用
+- application/json ： 在 JSON RPC 调用时使用
+- application/x-www-form-urlencoded ： 浏览器提交 Web 表单时使用
+
+> 
 在使用服务器提供的 RESTful 或 SOAP 服务时， Content-Type 设置错误会导致服务器拒绝服务
 
 其他的有必要的可以审查浏览器的headers内容，在构建时写入同样的数据即可。
@@ -89,8 +92,9 @@ response = urllib2.urlopen('http://www.baidu.com',data, 10)
 
 http协议有六种请求方法，get,head,put,delete,post,options，我们有时候需要用到PUT方式或者DELETE方式请求。
 
-> PUT：这个方法比较少见。HTML表单也不支持这个。本质上来讲， PUT和POST极为相似，都是向服务器发送数据，但它们之间有一个重要区别，PUT通常指定了资源的存放位置，而POST则没有，POST的数据存放位置由服务器自己决定。
-DELETE：删除某一个资源。基本上这个也很少见，不过还是有一些地方比如amazon的S3云服务里面就用的这个方法来删除资源。
+> 
+- PUT：这个方法比较少见。HTML表单也不支持这个。本质上来讲， PUT和POST极为相似，都是向服务器发送数据，但它们之间有一个重要区别，PUT通常指定了资源的存放位置，而POST则没有，POST的数据存放位置由服务器自己决定。
+- DELETE：删除某一个资源。基本上这个也很少见，不过还是有一些地方比如amazon的S3云服务里面就用的这个方法来删除资源。
 
 如果要使用 HTTP PUT 和 DELETE ，只能使用比较低层的 httplib 库。虽然如此，我们还是能通过下面的方式，使 urllib2 能够发出 PUT 或DELETE 的请求，不过用的次数的确是少，在这里提一下。
 

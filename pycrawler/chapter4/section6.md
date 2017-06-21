@@ -237,7 +237,7 @@ Main process Ended!
 
 在上面的一些小实例中，你可能会遇到如下的运行结果：
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/11/QQ20161113-0@2x-300x126.png)
+![](../image/chapter4/section6-1.jpg)
 
 什么问题？有的输出错位了。这是由于并行导致的，两个进程同时进行了输出，结果第一个进程的换行没有来得及输出，第二个进程就输出了结果。所以导致这种排版的问题。
 

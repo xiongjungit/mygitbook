@@ -81,7 +81,7 @@ phantomjs pageload.js
 
 发现执行成功，然后目录下多了一张图片，example.png
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/03/example-e1458570294781.png)
+![](../image/chapter3/section4-1.png)
 
 因为这个 render 方法，phantom 经常会用到网页截图的功能。
 
@@ -230,7 +230,7 @@ page.open('http://cuiqingcai.com/', function() {
 
 运行结果
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/03/germy.png)
+![](../image/chapter3/section4-2.png)
 
 就相当于把浏览器窗口拖到了 1024×768 大小，然后从左上角裁切出了 1024×768 的页面。
 
@@ -329,29 +329,29 @@ Command-line Options
 PhantomJS提供的命令行选项有：
 
 > 
-–help or -h lists all possible command-line options. Halts immediately, will not run a script passed as argument. ［帮助列表］
-–version or -v prints out the version of PhantomJS. Halts immediately, will not run a script passed as argument. ［查看版本］
-–cookies-file=/path/to/cookies.txt specifies the file name to store the persistent Cookies. ［指定存放cookies的路径］
-–disk-cache=[true|false] enables disk cache (at desktop services cache storage location, default is false). Also accepted: [yes|no]. ［硬盘缓存开关，默认为关］
-–ignore-ssl-errors=[true|false] ignores SSL errors, such as expired or self-signed certificate errors (default is false). Also accepted: [yes|no]. ［忽略ssl错误，默认不忽略］
-–load-images=[true|false] load all inlined images (default is true). Also accepted: [yes|no]. ［加载图片，默认为加载］
-–local-storage-path=/some/path path to save LocalStorage content and WebSQL content. ［本地存储路径，如本地文件和SQL文件等］
-–local-storage-quota=number maximum size to allow for data. ［本地文件最大大小］
-–local-to-remote-url-access=[true|false] allows local content to access remote URL (default is false). Also accepted: [yes|no]. ［是否允许远程加载文件，默认不允许］
-–max-disk-cache-size=size limits the size of disk cache (in KB). ［最大缓存空间］
-–output-encoding=encoding sets the encoding used for terminal output (default is utf8). ［默认输出编码，默认utf8］
-–remote-debugger-port starts the script in a debug harness and listens on the specified port ［远程调试端口］
-–remote-debugger-autorun runs the script in the debugger immediately: ‘yes’ or ‘no’ (default) ［在调试环境下是否立即执行脚本，默认否］
-–proxy=address:port specifies the proxy server to use (e.g. –proxy=192.168.1.42:8080). ［代理］
-–proxy-type=[http|socks5|none] specifies the type of the proxy server (default is http). ［代理类型，默认http］
-–proxy-auth specifies the authentication information for the proxy, e.g. –proxy-auth=username:password). ［代理认证］
-–script-encoding=encoding sets the encoding used for the starting script (default is utf8). ［脚本编码，默认utf8］
-–ssl-protocol=[sslv3|sslv2|tlsv1|any’] sets the SSL protocol for secure connections (default is SSLv3). ［SSL协议，默认SSLv3］
-–ssl-certificates-path=<val> Sets the location for custom CA certificates (if none set, uses system default). ［SSL证书路径，默认系统默认路径］
-–web-security=[true|false] enables web security and forbids cross-domain XHR (default is true). Also accepted: [yes|no]. ［是否开启安全保护和禁止异站Ajax，默认开启保护］
-–webdriver starts in ‘Remote WebDriver mode’ (embedded GhostDriver): ‘[[:]]’ (default ‘127.0.0.1:8910’) ［以远程WebDriver模式启动］
-–webdriver-selenium-grid-hub URL to the Selenium Grid HUB: ‘URLTOHUB’ (default ‘none’) (NOTE: works only together with ‘–webdriver’) ［Selenium接口］
-–config=/path/to/config.json can utilize a JavaScript Object Notation (JSON) configuration file instead of passing in multiple command-line optionss ［所有的命令行配置从config.json中读取］
+- –help or -h lists all possible command-line options. Halts immediately, will not run a script passed as argument. ［帮助列表］
+- –version or -v prints out the version of PhantomJS. Halts immediately, will not run a script passed as argument. ［查看版本］
+- –cookies-file=/path/to/cookies.txt specifies the file name to store the persistent Cookies. ［指定存放cookies的路径］
+- –disk-cache=[true|false] enables disk cache (at desktop services cache storage location, default is false). Also accepted: [yes|no]. ［硬盘缓存开关，默认为关］
+- –ignore-ssl-errors=[true|false] ignores SSL errors, such as expired or self-signed certificate errors (default is false). Also accepted: [yes|no]. ［忽略ssl错误，默认不忽略］
+- –load-images=[true|false] load all inlined images (default is true). Also accepted: [yes|no]. ［加载图片，默认为加载］
+- –local-storage-path=/some/path path to save LocalStorage content and WebSQL content. ［本地存储路径，如本地文件和SQL文件等］
+- –local-storage-quota=number maximum size to allow for data. ［本地文件最大大小］
+- –local-to-remote-url-access=[true|false] allows local content to access remote URL (default is false). Also accepted: [yes|no]. ［是否允许远程加载文件，默认不允许］
+- –max-disk-cache-size=size limits the size of disk cache (in KB). ［最大缓存空间］
+- –output-encoding=encoding sets the encoding used for terminal output (default is utf8). ［默认输出编码，默认utf8］
+- –remote-debugger-port starts the script in a debug harness and listens on the specified port ［远程调试端口］
+- –remote-debugger-autorun runs the script in the debugger immediately: ‘yes’ or ‘no’ (default) ［在调试环境下是否立即执行脚本，默认否］
+- –proxy=address:port specifies the proxy server to use (e.g. –proxy=192.168.1.42:8080). ［代理］
+- –proxy-type=[http|socks5|none] specifies the type of the proxy server (default is http). ［代理类型，默认http］
+- –proxy-auth specifies the authentication information for the proxy, e.g. –proxy-auth=username:password). ［代理认证］
+- –script-encoding=encoding sets the encoding used for the starting script (default is utf8). ［脚本编码，默认utf8］
+- –ssl-protocol=[sslv3|sslv2|tlsv1|any’] sets the SSL protocol for secure connections (default is SSLv3). ［SSL协议，默认SSLv3］
+- –ssl-certificates-path=<val> Sets the location for custom CA certificates (if none set, uses system default). ［SSL证书路径，默认系统默认路径］
+- –web-security=[true|false] enables web security and forbids cross-domain XHR (default is true). Also accepted: [yes|no]. ［是否开启安全保护和禁止异站Ajax，默认开启保护］
+- –webdriver starts in ‘Remote WebDriver mode’ (embedded GhostDriver): ‘[[:]]’ (default ‘127.0.0.1:8910’) ［以远程WebDriver模式启动］
+- –webdriver-selenium-grid-hub URL to the Selenium Grid HUB: ‘URLTOHUB’ (default ‘none’) (NOTE: works only together with ‘–webdriver’) ［Selenium接口］
+- –config=/path/to/config.json can utilize a JavaScript Object Notation (JSON) configuration file instead of passing in multiple command-line optionss ［所有的命令行配置从config.json中读取］
 
 
 注：JSON文件配置格式

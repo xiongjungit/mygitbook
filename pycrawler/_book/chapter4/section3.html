@@ -1,0 +1,754 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>3. Python爬虫进阶三之爬虫框架Scrapy安装配置 | Python爬虫学习系列教程</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../chapter4/section4.html" />
+    
+    
+    <link rel="prev" href="../chapter4/section2.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4.3"
+        data-chapter-title="3. Python爬虫进阶三之爬虫框架Scrapy安装配置"
+        data-filepath="chapter4/section3.md"
+        data-basepath=".."
+        data-revision="Wed Jun 21 2017 19:16:14 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Python爬虫学习系列教程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1/index.html">
+            
+                
+                    <a href="../chapter1/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        一、爬虫入门
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/section1.html">
+            
+                
+                    <a href="../chapter1/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        1. Python爬虫入门一之综述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/section2.html">
+            
+                
+                    <a href="../chapter1/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        2. Python爬虫入门二之爬虫基础了解
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1/section3.html">
+            
+                
+                    <a href="../chapter1/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        3. Python爬虫入门三之Urllib库的基本使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter1/section4.html">
+            
+                
+                    <a href="../chapter1/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        4. Python爬虫入门四之Urllib库的高级用法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter1/section5.html">
+            
+                
+                    <a href="../chapter1/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        5. Python爬虫入门五之URLError异常处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter1/section6.html">
+            
+                
+                    <a href="../chapter1/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        6. Python爬虫入门六之Cookie的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="chapter1/section7.html">
+            
+                
+                    <a href="../chapter1/section7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        7. Python爬虫入门七之正则表达式
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chapter2/index.html">
+            
+                
+                    <a href="../chapter2/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        二、爬虫实战
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="chapter2/section1.html">
+            
+                
+                    <a href="../chapter2/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        1. Python爬虫实战一之爬取糗事百科段子
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter2/section2.html">
+            
+                
+                    <a href="../chapter2/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        2. Python爬虫实战二之爬取百度贴吧帖子
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter2/section3.html">
+            
+                
+                    <a href="../chapter2/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        3. Python爬虫实战三之实现山东大学无线网络掉线自动重连
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="chapter2/section4.html">
+            
+                
+                    <a href="../chapter2/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        4. Python爬虫实战四之抓取淘宝MM照片
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="chapter2/section5.html">
+            
+                
+                    <a href="../chapter2/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        5. Python爬虫实战五之模拟登录淘宝并获取所有订单
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="chapter2/section6.html">
+            
+                
+                    <a href="../chapter2/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        6. Python爬虫实战六之抓取爱问知识人问题并保存至数据库
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="chapter2/section7.html">
+            
+                
+                    <a href="../chapter2/section7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        7. Python爬虫实战七之计算大学本学期绩点
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="chapter2/section8.html">
+            
+                
+                    <a href="../chapter2/section8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        8. Python爬虫实战八之利用Selenium抓取淘宝匿名旺旺
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="chapter3/index.html">
+            
+                
+                    <a href="../chapter3/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        三、爬虫利器
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="chapter3/section1.html">
+            
+                
+                    <a href="../chapter3/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        1. Python爬虫利器一之Requests库的用法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter3/section2.html">
+            
+                
+                    <a href="../chapter3/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        2. Python爬虫利器二之Beautiful Soup的用法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3/section3.html">
+            
+                
+                    <a href="../chapter3/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        3. Python爬虫利器三之Xpath语法与lxml库的用法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="chapter3/section4.html">
+            
+                
+                    <a href="../chapter3/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        4. Python爬虫利器四之PhantomJS的用法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="chapter3/section5.html">
+            
+                
+                    <a href="../chapter3/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        5. Python爬虫利器五之Selenium的用法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="chapter3/section6.html">
+            
+                
+                    <a href="../chapter3/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        6. Python爬虫利器六之PyQuery的用法
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="chapter4/index.html">
+            
+                
+                    <a href="../chapter4/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        四、爬虫进阶
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="chapter4/section1.html">
+            
+                
+                    <a href="../chapter4/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        1. Python爬虫进阶一之爬虫框架概述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="chapter4/section2.html">
+            
+                
+                    <a href="../chapter4/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        2. Python爬虫进阶二之PySpider框架安装配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.3" data-path="chapter4/section3.html">
+            
+                
+                    <a href="../chapter4/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        3. Python爬虫进阶三之爬虫框架Scrapy安装配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="chapter4/section4.html">
+            
+                
+                    <a href="../chapter4/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        4. Python爬虫进阶四之PySpider的用法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="chapter4/section5.html">
+            
+                
+                    <a href="../chapter4/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        5. Python爬虫进阶五之多线程的用法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="chapter4/section6.html">
+            
+                
+                    <a href="../chapter4/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        6. Python爬虫进阶六之多进程的用法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="chapter4/section7.html">
+            
+                
+                    <a href="../chapter4/section7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        7. Python爬虫进阶七之设置ADSL拨号服务器代理
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Python爬虫学习系列教程</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="python&#x722C;&#x866B;&#x8FDB;&#x9636;&#x4E09;&#x4E4B;scrapy&#x6846;&#x67B6;&#x5B89;&#x88C5;&#x914D;&#x7F6E;">Python&#x722C;&#x866B;&#x8FDB;&#x9636;&#x4E09;&#x4E4B;Scrapy&#x6846;&#x67B6;&#x5B89;&#x88C5;&#x914D;&#x7F6E;</h1>
+<p>&#x521D;&#x7EA7;&#x7684;&#x722C;&#x866B;&#x6211;&#x4EEC;&#x5229;&#x7528;urllib&#x548C;urllib2&#x5E93;&#x4EE5;&#x53CA;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5C31;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#x4E86;&#xFF0C;&#x4E0D;&#x8FC7;&#x8FD8;&#x6709;&#x66F4;&#x52A0;&#x5F3A;&#x5927;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x722C;&#x866B;&#x6846;&#x67B6;Scrapy&#xFF0C;&#x8FD9;&#x5B89;&#x88C5;&#x8FC7;&#x7A0B;&#x4E5F;&#x662F;&#x715E;&#x8D39;&#x82E6;&#x5FC3;&#x54EA;&#xFF0C;&#x5728;&#x6B64;&#x6574;&#x7406;&#x5982;&#x4E0B;&#x3002;</p>
+<h2 id="windows-&#x5E73;&#x53F0;&#xFF1A;">Windows &#x5E73;&#x53F0;&#xFF1A;</h2>
+<p>&#x6211;&#x7684;&#x7CFB;&#x7EDF;&#x662F; Win7&#xFF0C;&#x9996;&#x5148;&#xFF0C;&#x4F60;&#x8981;&#x6709;Python&#xFF0C;&#x6211;&#x7528;&#x7684;&#x662F;2.7.7&#x7248;&#x672C;&#xFF0C;Python3&#x76F8;&#x4EFF;&#xFF0C;&#x53EA;&#x662F;&#x4E00;&#x4E9B;&#x6E90;&#x6587;&#x4EF6;&#x4E0D;&#x540C;&#x3002;</p>
+<p>&#x5B98;&#x7F51;&#x6587;&#x6863;&#xFF1A;<a href="http://doc.scrapy.org/en/latest/intro/install.html&#xFF0C;&#x6700;&#x6743;&#x5A01;&#x54D2;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x6211;&#x7684;&#x4EB2;&#x8EAB;&#x4F53;&#x9A8C;&#x8FC7;&#x7A0B;&#x3002;" target="_blank">http://doc.scrapy.org/en/latest/intro/install.html&#xFF0C;&#x6700;&#x6743;&#x5A01;&#x54D2;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x6211;&#x7684;&#x4EB2;&#x8EAB;&#x4F53;&#x9A8C;&#x8FC7;&#x7A0B;&#x3002;</a></p>
+<p>1.&#x5B89;&#x88C5;Python</p>
+<p>&#x5B89;&#x88C5;&#x8FC7;&#x7A0B;&#x6211;&#x5C31;&#x4E0D;&#x591A;&#x8BF4;&#x5566;&#xFF0C;&#x6211;&#x7684;&#x7535;&#x8111;&#x4E2D;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x4E86; Python 2.7.7 &#x7248;&#x672C;&#x5566;&#xFF0C;&#x5B89;&#x88C5;&#x5B8C;&#x4E4B;&#x540E;&#x8BB0;&#x5F97;&#x914D;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x6BD4;&#x5982;&#x6211;&#x7684;&#x5B89;&#x88C5;&#x5728;D&#x76D8;&#xFF0C;D:\python2.7.7&#xFF0C;&#x5C31;&#x628A;&#x4EE5;&#x4E0B;&#x4E24;&#x4E2A;&#x8DEF;&#x5F84;&#x6DFB;&#x52A0;&#x5230;Path&#x53D8;&#x91CF;&#x4E2D;</p>
+<pre><code>D:\python2.7.7;D:\python2.7.7\Scripts
+</code></pre><p>&#x914D;&#x7F6E;&#x597D;&#x4E86;&#x4E4B;&#x540E;&#xFF0C;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x8F93;&#x5165; python &#x2013;version&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x793A;&#x9519;&#x8BEF;&#xFF0C;&#x5219;&#x5B89;&#x88C5;&#x6210;&#x529F;</p>
+<p><img src="../image/chapter4/section3-1.jpg" alt=""></p>
+<p>2.&#x5B89;&#x88C5;pywin32</p>
+<p>&#x5728;windows&#x4E0B;&#xFF0C;&#x5FC5;&#x987B;&#x5B89;&#x88C5;pywin32&#xFF0C;&#x5B89;&#x88C5;&#x5730;&#x5740;&#xFF1A;<a href="http://sourceforge.net/projects/pywin32/" target="_blank">http://sourceforge.net/projects/pywin32/</a></p>
+<p>&#x4E0B;&#x8F7D;&#x5BF9;&#x5E94;&#x7248;&#x672C;&#x7684;pywin32&#xFF0C;&#x76F4;&#x63A5;&#x53CC;&#x51FB;&#x5B89;&#x88C5;&#x5373;&#x53EF;&#xFF0C;&#x5B89;&#x88C5;&#x5B8C;&#x6BD5;&#x4E4B;&#x540E;&#x9A8C;&#x8BC1;&#xFF1A;</p>
+<p><img src="../image/chapter4/section3-2.jpg" alt=""></p>
+<p>&#x5728;python&#x547D;&#x4EE4;&#x884C;&#x4E0B;&#x8F93;&#x5165;</p>
+<p>import win32com</p>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x793A;&#x9519;&#x8BEF;&#xFF0C;&#x5219;&#x8BC1;&#x660E;&#x5B89;&#x88C5;&#x6210;&#x529F;</p>
+<p>3.&#x5B89;&#x88C5;pip</p>
+<p>pip&#x662F;&#x7528;&#x6765;&#x5B89;&#x88C5;&#x5176;&#x4ED6;&#x5FC5;&#x8981;&#x5305;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x9996;&#x5148;&#x4E0B;&#x8F7D; <a href="https://bootstrap.pypa.io/get-pip.py" target="_blank">get-pip.py</a></p>
+<p>&#x4E0B;&#x8F7D;&#x597D;&#x4E4B;&#x540E;&#xFF0C;&#x9009;&#x4E2D;&#x8BE5;&#x6587;&#x4EF6;&#x6240;&#x5728;&#x8DEF;&#x5F84;&#xFF0C;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;</p>
+<pre><code>python get-pip.py
+</code></pre><p>&#x6267;&#x884C;&#x547D;&#x4EE4;&#x540E;&#x4FBF;&#x4F1A;&#x5B89;&#x88C5;&#x597D;pip&#xFF0C;&#x5E76;&#x4E14;&#x540C;&#x65F6;&#xFF0C;&#x5B83;&#x5E2E;&#x4F60;&#x5B89;&#x88C5;&#x4E86;setuptools</p>
+<p>&#x5B89;&#x88C5;&#x5B8C;&#x4E86;&#x4E4B;&#x540E;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x6267;&#x884C;</p>
+<pre><code>pip --version
+</code></pre><p>&#x5982;&#x679C;&#x63D0;&#x793A;&#x5982;&#x4E0B;&#xFF0C;&#x8BF4;&#x660E;&#x5C31;&#x5B89;&#x88C5;&#x6210;&#x529F;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x63D0;&#x793A;&#x4E0D;&#x662F;&#x5185;&#x90E8;&#x6216;&#x5916;&#x90E8;&#x547D;&#x4EE4;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x68C0;&#x67E5;&#x4E00;&#x4E0B;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x6709;&#x6CA1;&#x6709;&#x914D;&#x7F6E;&#x597D;&#x5427;&#xFF0C;&#x6709;&#x4E24;&#x4E2A;&#x8DEF;&#x5F84;&#x3002;</p>
+<p><img src="../image/chapter4/section3-3.jpg" alt=""></p>
+<p>4.&#x5B89;&#x88C5;pyOPENSSL</p>
+<p>&#x5728;Windows&#x4E0B;&#xFF0C;&#x662F;&#x6CA1;&#x6709;&#x9884;&#x88C5;pyOPENSSL&#x7684;&#xFF0C;&#x800C;&#x5728;Linux&#x4E0B;&#x662F;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x597D;&#x7684;&#x3002;</p>
+<p>&#x5B89;&#x88C5;&#x5730;&#x5740;&#xFF1A;<a href="https://launchpad.net/pyopenssl" target="_blank">https://launchpad.net/pyopenssl</a></p>
+<p>5.&#x5B89;&#x88C5; lxml</p>
+<p>lxml&#x7684;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD; <a href="http://lxml.de/" target="_blank">&#x70B9;&#x6211;</a> &#xFF0C;&#x662F;&#x4E00;&#x79CD;&#x4F7F;&#x7528; Python &#x7F16;&#x5199;&#x7684;&#x5E93;&#xFF0C;&#x53EF;&#x4EE5;&#x8FC5;&#x901F;&#x3001;&#x7075;&#x6D3B;&#x5730;&#x5904;&#x7406; XML</p>
+<p>&#x76F4;&#x63A5;&#x6267;&#x884C;&#x5982;&#x4E0B;&#x547D;&#x4EE4;</p>
+<pre><code>pip install lxml
+</code></pre><p>&#x5C31;&#x53EF;&#x5B8C;&#x6210;&#x5B89;&#x88C5;&#xFF0C;&#x5982;&#x679C;&#x63D0;&#x793A; Microsoft Visual C++&#x5E93;&#x6CA1;&#x5B89;&#x88C5;&#xFF0C;&#x5219; &#x70B9;&#x6211; &#x4E0B;&#x8F7D;&#x652F;&#x6301;&#x7684;&#x5E93;&#x3002;</p>
+<p>6.&#x5B89;&#x88C5;Scrapy</p>
+<p>&#x6700;&#x540E;&#x5C31;&#x662F;&#x6FC0;&#x52A8;&#x4EBA;&#x5FC3;&#x7684;&#x65F6;&#x523B;&#x5566;&#xFF0C;&#x4E0A;&#x9762;&#x7684;&#x94FA;&#x57AB;&#x505A;&#x597D;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x7EC8;&#x4E8E;&#x53EF;&#x4EE5;&#x4EAB;&#x53D7;&#x5230;&#x80DC;&#x5229;&#x7684;&#x679C;&#x5B9E;&#x5566;&#xFF01;</p>
+<p>&#x6267;&#x884C;&#x5982;&#x4E0B;&#x547D;&#x4EE4;</p>
+<pre><code>pip install Scrapy
+</code></pre><p><img src="../image/chapter4/section3-4.jpg" alt=""></p>
+<p>pip &#x4F1A;&#x53E6;&#x5916;&#x4E0B;&#x8F7D;&#x5176;&#x4ED6;&#x4F9D;&#x8D56;&#x7684;&#x5305;&#xFF0C;&#x8FD9;&#x4E9B;&#x5C31;&#x4E0D;&#x8981;&#x6211;&#x4EEC;&#x624B;&#x52A8;&#x5B89;&#x88C5;&#x5566;&#xFF0C;&#x7B49;&#x5F85;&#x4E00;&#x4F1A;&#xFF0C;&#x5927;&#x529F;&#x544A;&#x6210;&#xFF01;</p>
+<p>7.&#x9A8C;&#x8BC1;&#x5B89;&#x88C5;</p>
+<p>&#x8F93;&#x5165; Scrapy</p>
+<p>&#x5982;&#x679C;&#x63D0;&#x793A;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF0C;&#x5C31;&#x8BC1;&#x660E;&#x5B89;&#x88C5;&#x6210;&#x529F;&#x5566;&#xFF0C;&#x5982;&#x679C;&#x5931;&#x8D25;&#x4E86;&#xFF0C;&#x8BF7;&#x68C0;&#x67E5;&#x4E0A;&#x8FF0;&#x6B65;&#x9AA4;&#x6709;&#x4F55;&#x758F;&#x6F0F;&#x3002;</p>
+<p><img src="../image/chapter4/section3-5.jpg" alt=""></p>
+<h2 id="linux-ubuntu-&#x5E73;&#x53F0;&#xFF1A;">Linux Ubuntu &#x5E73;&#x53F0;&#xFF1A;</h2>
+<p>Linux &#x4E0B;&#x5B89;&#x88C5;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x6267;&#x884C;&#x51E0;&#x6761;&#x547D;&#x4EE4;&#x51E0;&#x4E2A;</p>
+<p>1.&#x5B89;&#x88C5;Python</p>
+<pre><code>sudo apt-get install python2.7 python2.7-dev
+</code></pre><p>2.&#x5B89;&#x88C5; pip</p>
+<p>&#x9996;&#x5148;&#x4E0B;&#x8F7D; <a href="https://bootstrap.pypa.io/get-pip.py" target="_blank">get-pip.py</a></p>
+<p>&#x4E0B;&#x8F7D;&#x597D;&#x4E4B;&#x540E;&#xFF0C;&#x9009;&#x4E2D;&#x8BE5;&#x6587;&#x4EF6;&#x6240;&#x5728;&#x8DEF;&#x5F84;&#xFF0C;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;</p>
+<pre><code>sudo python get-pip.py
+</code></pre><p>3.&#x76F4;&#x63A5;&#x5B89;&#x88C5; Scrapy</p>
+<p>&#x7531;&#x4E8E; Linux&#x4E0B;&#x5DF2;&#x7ECF;&#x9884;&#x88C5;&#x4E86; lxml &#x548C; OPENSSL</p>
+<p>&#x5982;&#x679C;&#x60F3;&#x9A8C;&#x8BC1; lxml &#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x522B;&#x8F93;&#x5165;</p>
+<pre><code>sudo pip install lxml
+</code></pre><p>&#x51FA;&#x73B0;&#x4E0B;&#x9762;&#x7684;&#x63D0;&#x793A;&#x8FD9;&#x8BC1;&#x660E;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x6210;&#x529F;</p>
+<pre><code>Requirement already satisfied (use --upgrade to upgrade): lxml in /usr/lib/python2.7/dist-packages
+</code></pre><p>&#x5982;&#x679C;&#x60F3;&#x9A8C;&#x8BC1; openssl&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x8F93;&#x5165;openssl &#x5373;&#x53EF;&#xFF0C;&#x5982;&#x679C;&#x8DF3;&#x8F6C;&#x5230; OPENSSL &#x547D;&#x4EE4;&#x884C;&#xFF0C;&#x5219;&#x5B89;&#x88C5;&#x6210;&#x529F;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x76F4;&#x63A5;&#x5B89;&#x88C5; Scrapy &#x5373;&#x53EF;</p>
+<pre><code>sudo pip install Scrapy
+</code></pre><p>&#x5B89;&#x88C5;&#x5B8C;&#x6BD5;&#x4E4B;&#x540E;&#xFF0C;&#x8F93;&#x5165; scrapy</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x91CC;linux&#x4E0B;&#x4E0D;&#x8981;&#x8F93;&#x5165;Scrapy&#xFF0C;linux&#x4F9D;&#x7136;&#x4E25;&#x683C;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x7684;&#xFF0C;&#x611F;&#x8C22;kamen&#x7AE5;&#x978B;&#x63D0;&#x9192;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x51FA;&#x73B0;&#x5982;&#x4E0B;&#x63D0;&#x793A;&#xFF0C;&#x8FD9;&#x8BC1;&#x660E;&#x5B89;&#x88C5;&#x6210;&#x529F;</p>
+<pre><code>Usage:
+ scrapy &lt;command&gt; [options] [args]
+
+Available commands:
+ bench Run quick benchmark test
+ fetch Fetch a URL using the Scrapy downloader
+ runspider Run a self-contained spider (without creating a project)
+ settings Get settings values
+ shell Interactive scraping console
+ startproject Create new project
+ version Print Scrapy version
+ view Open URL in browser, as seen by Scrapy
+
+ [ more ] More commands available when run from project directory
+</code></pre><p>&#x622A;&#x56FE;&#x5982;&#x4E0B;</p>
+<p><img src="../image/chapter4/section3-6.jpg" alt=""></p>
+<p>&#x5982;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x6B22;&#x8FCE;&#x7559;&#x8A00;&#xFF01;&#x795D;&#x5404;&#x4F4D;&#x5C0F;&#x4F19;&#x4F34;&#x987A;&#x5229;&#x5B89;&#x88C5;&#xFF01;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter4/section2.html" class="navigation navigation-prev " aria-label="Previous page: 2. Python爬虫进阶二之PySpider框架安装配置"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chapter4/section4.html" class="navigation navigation-next " aria-label="Next page: 4. Python爬虫进阶四之PySpider的用法"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

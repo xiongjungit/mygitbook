@@ -15,9 +15,10 @@
 
 ## 本篇目标
 
-> 1.抓取糗事百科热门段子
-2.过滤带有图片的段子
-3.实现每按一次回车显示一个段子的发布时间，发布人，段子内容，点赞数。
+> 
+- 1.抓取糗事百科热门段子
+- 2.过滤带有图片的段子
+- 3.实现每按一次回车显示一个段子的发布时间，发布人，段子内容，点赞数。
 
 糗事百科是不需要登录的，所以也没必要用到Cookie，另外糗事百科有的段子是附图的，我们把图抓下来图片不便于显示，那么我们就尝试过滤掉有图的段子吧。
 
@@ -87,7 +88,7 @@ except urllib2.URLError, e:
 
 首先我们审查元素看一下，按浏览器的F12，截图如下
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/20150802154147-1024x615.jpg)
+![](../image/chapter2/section1-1.jpg)
 
  
 我们可以看到，每一个段子都是<div class=”article block untagged mb15″ id=”…”>…</div>包裹的内容。
@@ -176,7 +177,7 @@ except urllib2.URLError, e:
 
 运行一下看下效果
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/20150802154832.jpg)
+![](../image/chapter2/section1-2.jpg)
 
 恩，带有图片的段子已经被剔除啦。是不是很开森？
 

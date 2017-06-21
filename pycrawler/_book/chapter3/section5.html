@@ -1,0 +1,951 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>5. Python爬虫利器五之Selenium的用法 | Python爬虫学习系列教程</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../chapter3/section6.html" />
+    
+    
+    <link rel="prev" href="../chapter3/section4.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="3.5"
+        data-chapter-title="5. Python爬虫利器五之Selenium的用法"
+        data-filepath="chapter3/section5.md"
+        data-basepath=".."
+        data-revision="Wed Jun 21 2017 19:16:14 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Python爬虫学习系列教程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1/index.html">
+            
+                
+                    <a href="../chapter1/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        一、爬虫入门
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/section1.html">
+            
+                
+                    <a href="../chapter1/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        1. Python爬虫入门一之综述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/section2.html">
+            
+                
+                    <a href="../chapter1/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        2. Python爬虫入门二之爬虫基础了解
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1/section3.html">
+            
+                
+                    <a href="../chapter1/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        3. Python爬虫入门三之Urllib库的基本使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter1/section4.html">
+            
+                
+                    <a href="../chapter1/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        4. Python爬虫入门四之Urllib库的高级用法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter1/section5.html">
+            
+                
+                    <a href="../chapter1/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        5. Python爬虫入门五之URLError异常处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter1/section6.html">
+            
+                
+                    <a href="../chapter1/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        6. Python爬虫入门六之Cookie的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="chapter1/section7.html">
+            
+                
+                    <a href="../chapter1/section7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        7. Python爬虫入门七之正则表达式
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chapter2/index.html">
+            
+                
+                    <a href="../chapter2/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        二、爬虫实战
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="chapter2/section1.html">
+            
+                
+                    <a href="../chapter2/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        1. Python爬虫实战一之爬取糗事百科段子
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter2/section2.html">
+            
+                
+                    <a href="../chapter2/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        2. Python爬虫实战二之爬取百度贴吧帖子
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter2/section3.html">
+            
+                
+                    <a href="../chapter2/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        3. Python爬虫实战三之实现山东大学无线网络掉线自动重连
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="chapter2/section4.html">
+            
+                
+                    <a href="../chapter2/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        4. Python爬虫实战四之抓取淘宝MM照片
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="chapter2/section5.html">
+            
+                
+                    <a href="../chapter2/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        5. Python爬虫实战五之模拟登录淘宝并获取所有订单
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="chapter2/section6.html">
+            
+                
+                    <a href="../chapter2/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        6. Python爬虫实战六之抓取爱问知识人问题并保存至数据库
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="chapter2/section7.html">
+            
+                
+                    <a href="../chapter2/section7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        7. Python爬虫实战七之计算大学本学期绩点
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="chapter2/section8.html">
+            
+                
+                    <a href="../chapter2/section8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        8. Python爬虫实战八之利用Selenium抓取淘宝匿名旺旺
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="chapter3/index.html">
+            
+                
+                    <a href="../chapter3/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        三、爬虫利器
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="chapter3/section1.html">
+            
+                
+                    <a href="../chapter3/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        1. Python爬虫利器一之Requests库的用法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter3/section2.html">
+            
+                
+                    <a href="../chapter3/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        2. Python爬虫利器二之Beautiful Soup的用法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3/section3.html">
+            
+                
+                    <a href="../chapter3/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        3. Python爬虫利器三之Xpath语法与lxml库的用法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="chapter3/section4.html">
+            
+                
+                    <a href="../chapter3/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        4. Python爬虫利器四之PhantomJS的用法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.5" data-path="chapter3/section5.html">
+            
+                
+                    <a href="../chapter3/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        5. Python爬虫利器五之Selenium的用法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="chapter3/section6.html">
+            
+                
+                    <a href="../chapter3/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        6. Python爬虫利器六之PyQuery的用法
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="chapter4/index.html">
+            
+                
+                    <a href="../chapter4/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        四、爬虫进阶
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="chapter4/section1.html">
+            
+                
+                    <a href="../chapter4/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        1. Python爬虫进阶一之爬虫框架概述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="chapter4/section2.html">
+            
+                
+                    <a href="../chapter4/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        2. Python爬虫进阶二之PySpider框架安装配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="chapter4/section3.html">
+            
+                
+                    <a href="../chapter4/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        3. Python爬虫进阶三之爬虫框架Scrapy安装配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="chapter4/section4.html">
+            
+                
+                    <a href="../chapter4/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        4. Python爬虫进阶四之PySpider的用法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="chapter4/section5.html">
+            
+                
+                    <a href="../chapter4/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        5. Python爬虫进阶五之多线程的用法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="chapter4/section6.html">
+            
+                
+                    <a href="../chapter4/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        6. Python爬虫进阶六之多进程的用法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="chapter4/section7.html">
+            
+                
+                    <a href="../chapter4/section7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        7. Python爬虫进阶七之设置ADSL拨号服务器代理
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Python爬虫学习系列教程</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="python&#x722C;&#x866B;&#x5229;&#x5668;&#x4E94;&#x4E4B;selenium&#x7684;&#x7528;&#x6CD5;">Python&#x722C;&#x866B;&#x5229;&#x5668;&#x4E94;&#x4E4B;Selenium&#x7684;&#x7528;&#x6CD5;</h1>
+<h2 id="&#x524D;&#x8A00;">&#x524D;&#x8A00;</h2>
+<p>&#x5728;&#x4E0A;&#x4E00;&#x8282;&#x6211;&#x4EEC;&#x5B66;&#x4E60;&#x4E86; PhantomJS &#x7684;&#x57FA;&#x672C;&#x7528;&#x6CD5;&#xFF0C;&#x5F52;&#x6839;&#x7ED3;&#x5E95;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x6CA1;&#x6709;&#x754C;&#x9762;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x800C;&#x4E14;&#x8FD0;&#x884C;&#x7684;&#x662F; JavaScript &#x811A;&#x672C;&#xFF0C;&#x7136;&#x800C;&#x8FD9;&#x5C31;&#x80FD;&#x5199;&#x722C;&#x866B;&#x4E86;&#x5417;&#xFF1F;&#x8FD9;&#x53C8;&#x548C;Python&#x6709;&#x4EC0;&#x4E48;&#x5173;&#x7CFB;&#xFF1F;&#x8BF4;&#x597D;&#x7684;Python&#x722C;&#x866B;&#x5462;&#xFF1F;&#x5E93;&#x90FD;&#x5B66;&#x5B8C;&#x4E86;&#x4F60;&#x7ED9;&#x6211;&#x770B;&#x8FD9;&#x4E2A;&#xFF1F;&#x5BA2;&#x5B98;&#x522B;&#x6025;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x4ECB;&#x7ECD;&#x7684;&#x8FD9;&#x4E2A;&#x5DE5;&#x5177;&#xFF0C;&#x7EDF;&#x7EDF;&#x89E3;&#x51B3;&#x6389;&#x4F60;&#x7684;&#x7591;&#x60D1;&#x3002;</p>
+<h2 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h2>
+<p>Selenium &#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x4E00;&#x53E5;&#x8BDD;&#xFF0C;&#x81EA;&#x52A8;&#x5316;&#x6D4B;&#x8BD5;&#x5DE5;&#x5177;&#x3002;&#x5B83;&#x652F;&#x6301;&#x5404;&#x79CD;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x5305;&#x62EC; Chrome&#xFF0C;Safari&#xFF0C;Firefox &#x7B49;&#x4E3B;&#x6D41;&#x754C;&#x9762;&#x5F0F;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5728;&#x8FD9;&#x4E9B;&#x6D4F;&#x89C8;&#x5668;&#x91CC;&#x9762;&#x5B89;&#x88C5;&#x4E00;&#x4E2A; Selenium &#x7684;&#x63D2;&#x4EF6;&#xFF0C;&#x90A3;&#x4E48;&#x4FBF;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x5730;&#x5B9E;&#x73B0;Web&#x754C;&#x9762;&#x7684;&#x6D4B;&#x8BD5;&#x3002;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#x53EB; Selenium &#x652F;&#x6301;&#x8FD9;&#x4E9B;&#x6D4F;&#x89C8;&#x5668;&#x9A71;&#x52A8;&#x3002;&#x8BDD;&#x8BF4;&#x56DE;&#x6765;&#xFF0C;PhantomJS&#x4E0D;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x5417;&#xFF0C;&#x90A3;&#x4E48; Selenium &#x652F;&#x6301;&#x4E0D;&#xFF1F;&#x7B54;&#x6848;&#x662F;&#x80AF;&#x5B9A;&#x7684;&#xFF0C;&#x8FD9;&#x6837;&#x4E8C;&#x8005;&#x4FBF;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x65E0;&#x7F1D;&#x5BF9;&#x63A5;&#x4E86;&#x3002;</p>
+<p>&#x7136;&#x540E;&#x53C8;&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x6D88;&#x606F;&#x5462;&#xFF1F;Selenium&#x652F;&#x6301;&#x591A;&#x79CD;&#x8BED;&#x8A00;&#x5F00;&#x53D1;&#xFF0C;&#x6BD4;&#x5982; Java&#xFF0C;C&#xFF0C;Ruby&#x7B49;&#x7B49;&#xFF0C;&#x6709; Python &#x5417;&#xFF1F;&#x90A3;&#x662F;&#x5FC5;&#x987B;&#x7684;&#xFF01;&#x54E6;&#x8FD9;&#x53EF;&#x771F;&#x662F;&#x5929;&#x5927;&#x7684;&#x597D;&#x6D88;&#x606F;&#x554A;&#x3002;</p>
+<p>&#x55EF;&#xFF0C;&#x6240;&#x4EE5;&#x5462;&#xFF1F;&#x5B89;&#x88C5;&#x4E00;&#x4E0B; Python &#x7684; Selenium &#x5E93;&#xFF0C;&#x518D;&#x5B89;&#x88C5;&#x597D; PhantomJS&#xFF0C;&#x4E0D;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0; Python&#xFF0B;Selenium&#xFF0B;PhantomJS &#x7684;&#x65E0;&#x7F1D;&#x5BF9;&#x63A5;&#x4E86;&#x561B;&#xFF01;PhantomJS &#x7528;&#x6765;&#x6E32;&#x67D3;&#x89E3;&#x6790;JS&#xFF0C;Selenium &#x7528;&#x6765;&#x9A71;&#x52A8;&#x4EE5;&#x53CA;&#x4E0E; Python &#x7684;&#x5BF9;&#x63A5;&#xFF0C;Python &#x8FDB;&#x884C;&#x540E;&#x671F;&#x7684;&#x5904;&#x7406;&#xFF0C;&#x5B8C;&#x7F8E;&#x7684;&#x4E09;&#x5251;&#x5BA2;&#xFF01;</p>
+<p>&#x6709;&#x4EBA;&#x95EE;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x76F4;&#x63A5;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x800C;&#x7528;&#x4E00;&#x4E2A;&#x6CA1;&#x754C;&#x9762;&#x7684; PhantomJS &#x5462;&#xFF1F;&#x7B54;&#x6848;&#x662F;&#xFF1A;&#x6548;&#x7387;&#x9AD8;&#xFF01;</p>
+<p>Selenium &#x6709;&#x4E24;&#x4E2A;&#x7248;&#x672C;&#xFF0C;&#x76EE;&#x524D;&#x6700;&#x65B0;&#x7248;&#x672C;&#x662F; 2.53.1&#xFF08;2016/3/22&#xFF09;</p>
+<blockquote>
+<p>Selenium 2&#xFF0C;&#x53C8;&#x540D; WebDriver&#xFF0C;&#x5B83;&#x7684;&#x4E3B;&#x8981;&#x65B0;&#x529F;&#x80FD;&#x662F;&#x96C6;&#x6210;&#x4E86; Selenium 1.0 &#x4EE5;&#x53CA; WebDriver&#xFF08;WebDriver &#x66FE;&#x7ECF;&#x662F; Selenium &#x7684;&#x7ADE;&#x4E89;&#x5BF9;&#x624B;&#xFF09;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4; Selenium 2 &#x662F; Selenium &#x548C; WebDriver &#x4E24;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x5408;&#x5E76;&#xFF0C;&#x5373; Selenium 2 &#x517C;&#x5BB9; Selenium&#xFF0C;&#x5B83;&#x65E2;&#x652F;&#x6301; Selenium API &#x4E5F;&#x652F;&#x6301; WebDriver API&#x3002;</p>
+</blockquote>
+<p>&#x66F4;&#x591A;&#x8BE6;&#x60C5;&#x53EF;&#x4EE5;&#x67E5;&#x770B; <a href="http://www.51testing.com/zhuanti/webdriver.htm" target="_blank">Webdriver</a> &#x7684;&#x7B80;&#x4ECB;&#x3002;</p>
+<p>&#x55EF;&#xFF0C;&#x901A;&#x8FC7;&#x4EE5;&#x4E0A;&#x63CF;&#x8FF0;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x5BF9; Selenium &#x6709;&#x4E86;&#x5927;&#x6982;&#x5BF9;&#x8BA4;&#x8BC6;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x8BA9;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x8FDB;&#x5165;&#x52A8;&#x6001;&#x722C;&#x53D6;&#x7684;&#x65B0;&#x4E16;&#x754C;&#x5427;&#x3002;</p>
+<p>&#x672C;&#x6587;&#x53C2;&#x8003;&#x5185;&#x5BB9;&#x6765;&#x81EA;<a href="http://www.seleniumhq.org/docs/index.jsp" target="_blank">Selenium&#x5B98;&#x7F51;</a>&#x548C;<a href="http://selenium-python.readthedocs.org/index.html" target="_blank">SeleniumPython&#x6587;&#x6863;</a></p>
+<h2 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h2>
+<p>&#x9996;&#x5148;&#x5B89;&#x88C5; Selenium</p>
+<pre><code>pip install selenium
+</code></pre><p>&#x6216;&#x8005;<a href="https://pypi.python.org/pypi/selenium" target="_blank">&#x4E0B;&#x8F7D;&#x6E90;&#x7801;</a></p>
+<p>&#x7136;&#x540E;&#x89E3;&#x538B;&#x540E;&#x8FD0;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x8FDB;&#x884C;&#x5B89;&#x88C5;</p>
+<pre><code>python setup.py install
+</code></pre><p>&#x5B89;&#x88C5;&#x597D;&#x4E86;&#x4E4B;&#x540E;&#x6211;&#x4EEC;&#x4FBF;&#x5F00;&#x59CB;&#x63A2;&#x7D22;&#x6293;&#x53D6;&#x65B9;&#x6CD5;&#x4E86;&#x3002;</p>
+<h2 id="&#x5FEB;&#x901F;&#x5F00;&#x59CB;">&#x5FEB;&#x901F;&#x5F00;&#x59CB;</h2>
+<h3 id="&#x521D;&#x6B65;&#x4F53;&#x9A8C;">&#x521D;&#x6B65;&#x4F53;&#x9A8C;</h3>
+<p>&#x6211;&#x4EEC;&#x5148;&#x6765;&#x4E00;&#x4E2A;&#x5C0F;&#x4F8B;&#x5B50;&#x611F;&#x53D7;&#x4E00;&#x4E0B; Selenium&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x7528; Chrome &#x6D4F;&#x89C8;&#x5668;&#x6765;&#x6D4B;&#x8BD5;&#xFF0C;&#x65B9;&#x4FBF;&#x67E5;&#x770B;&#x6548;&#x679C;&#xFF0C;&#x5230;&#x771F;&#x6B63;&#x722C;&#x53D6;&#x7684;&#x65F6;&#x5019;&#x6362;&#x56DE; PhantomJS &#x5373;&#x53EF;&#x3002;</p>
+<pre><code>from selenium import webdriver
+
+browser = webdriver.Chrome()
+browser.get(&apos;http://www.baidu.com/&apos;)
+</code></pre><p>&#x8FD0;&#x884C;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x6253;&#x5F00;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x7136;&#x540E;&#x8BBF;&#x95EE;&#x767E;&#x5EA6;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x9519;&#x8BEF;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x6CA1;&#x6709;&#x6253;&#x5F00;&#xFF0C;&#x90A3;&#x4E48;&#x5E94;&#x8BE5;&#x662F;&#x6CA1;&#x6709;&#x88C5; Chrome &#x6D4F;&#x89C8;&#x5668;&#x6216;&#x8005; Chrome &#x9A71;&#x52A8;&#x6CA1;&#x6709;&#x914D;&#x7F6E;&#x5728;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x91CC;&#x3002;<a href="https://sites.google.com/a/chromium.org/chromedriver/downloads" target="_blank">&#x4E0B;&#x8F7D;&#x9A71;&#x52A8;</a>&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x9A71;&#x52A8;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x914D;&#x7F6E;&#x5728;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#x6211;&#x7684;&#x662F; Mac OS&#xFF0C;&#x5C31;&#x628A;&#x4E0B;&#x8F7D;&#x597D;&#x7684;&#x6587;&#x4EF6;&#x653E;&#x5728; /usr/bin &#x76EE;&#x5F55;&#x4E0B;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+<h3 id="&#x6A21;&#x62DF;&#x63D0;&#x4EA4;">&#x6A21;&#x62DF;&#x63D0;&#x4EA4;</h3>
+<p>&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x4E86;&#x6A21;&#x62DF;&#x63D0;&#x4EA4;&#x63D0;&#x4EA4;&#x641C;&#x7D22;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x9996;&#x5148;&#x7B49;&#x9875;&#x9762;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#xFF0C;&#x7136;&#x540E;&#x8F93;&#x5165;&#x5230;&#x641C;&#x7D22;&#x6846;&#x6587;&#x672C;&#xFF0C;&#x70B9;&#x51FB;&#x63D0;&#x4EA4;&#x3002;</p>
+<pre><code>from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+driver = webdriver.Chrome()
+driver.get(&quot;http://www.python.org&quot;)
+assert &quot;Python&quot; in driver.title
+elem = driver.find_element_by_name(&quot;q&quot;)
+elem.send_keys(&quot;pycon&quot;)
+elem.send_keys(Keys.RETURN)
+print driver.page_source
+</code></pre><p>&#x540C;&#x6837;&#x662F;&#x5728; Chrome &#x91CC;&#x9762;&#x6D4B;&#x8BD5;&#xFF0C;&#x611F;&#x53D7;&#x4E00;&#x4E0B;&#x3002;</p>
+<blockquote>
+<p>The driver.get method will navigate to a page given by the URL. WebDriver will wait until the page has fully loaded (that is, the &#x201C;onload&#x201D; event has fired) before returning control to your test or script. It&#x2019;s worth noting that if your page uses a lot of AJAX on load then WebDriver may not know when it has completely loaded.</p>
+</blockquote>
+<p>&#x5176;&#x4E2D; driver.get &#x65B9;&#x6CD5;&#x4F1A;&#x6253;&#x5F00;&#x8BF7;&#x6C42;&#x7684;URL&#xFF0C;WebDriver &#x4F1A;&#x7B49;&#x5F85;&#x9875;&#x9762;&#x5B8C;&#x5168;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x624D;&#x4F1A;&#x8FD4;&#x56DE;&#xFF0C;&#x5373;&#x7A0B;&#x5E8F;&#x4F1A;&#x7B49;&#x5F85;&#x9875;&#x9762;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#xFF0C;JS&#x6E32;&#x67D3;&#x5B8C;&#x6BD5;&#x4E4B;&#x540E;&#x624D;&#x7EE7;&#x7EED;&#x5F80;&#x4E0B;&#x6267;&#x884C;&#x3002;&#x6CE8;&#x610F;&#xFF1A;&#x5982;&#x679C;&#x8FD9;&#x91CC;&#x7528;&#x5230;&#x4E86;&#x7279;&#x522B;&#x591A;&#x7684; Ajax &#x7684;&#x8BDD;&#xFF0C;&#x7A0B;&#x5E8F;&#x53EF;&#x80FD;&#x4E0D;&#x77E5;&#x9053;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x5B8C;&#x5168;&#x52A0;&#x8F7D;&#x5B8C;&#x6BD5;&#x3002;</p>
+<blockquote>
+<p>WebDriver offers a number of ways to find elements using one of the find<em>element_by</em>* methods. For example, the input text element can be located by its name attribute using find_element_by_name method</p>
+</blockquote>
+<p>WebDriver &#x63D0;&#x4F9B;&#x4E86;&#x8BB8;&#x591A;&#x5BFB;&#x627E;&#x7F51;&#x9875;&#x5143;&#x7D20;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8B6C;&#x5982; find<em>element_by</em>* &#x7684;&#x65B9;&#x6CD5;&#x3002;&#x4F8B;&#x5982;&#x4E00;&#x4E2A;&#x8F93;&#x5165;&#x6846;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;  find_element_by_name &#x65B9;&#x6CD5;&#x5BFB;&#x627E; name &#x5C5E;&#x6027;&#x6765;&#x786E;&#x5B9A;&#x3002;</p>
+<blockquote>
+<p>Next we are sending keys, this is similar to entering keys using your keyboard. Special keys can be send using Keys class imported from selenium.webdriver.common.keys</p>
+</blockquote>
+<p>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x8F93;&#x5165;&#x6765;&#x6587;&#x672C;&#x7136;&#x540E;&#x6A21;&#x62DF;&#x70B9;&#x51FB;&#x4E86;&#x56DE;&#x8F66;&#xFF0C;&#x5C31;&#x50CF;&#x6211;&#x4EEC;&#x6572;&#x51FB;&#x952E;&#x76D8;&#x4E00;&#x6837;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528; Keys &#x8FD9;&#x4E2A;&#x7C7B;&#x6765;&#x6A21;&#x62DF;&#x952E;&#x76D8;&#x8F93;&#x5165;&#x3002;</p>
+<p>&#x6700;&#x540E;&#x6700;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x70B9;</p>
+<p>&#x83B7;&#x53D6;&#x7F51;&#x9875;&#x6E32;&#x67D3;&#x540E;&#x7684;&#x6E90;&#x4EE3;&#x7801;&#x3002;</p>
+<p>&#x8F93;&#x51FA; page_source &#x5C5E;&#x6027;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x8FD9;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x7F51;&#x9875;&#x7684;&#x52A8;&#x6001;&#x722C;&#x53D6;&#x4E86;&#x3002;</p>
+<h3 id="&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;">&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;</h3>
+<p>&#x6709;&#x4E86;&#x4EE5;&#x4E0A;&#x7279;&#x6027;&#xFF0C;&#x6211;&#x4EEC;&#x5F53;&#x7136;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5199;&#x6D4B;&#x8BD5;&#x6837;&#x4F8B;&#x4E86;&#x3002;</p>
+<pre><code>import unittest
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+class PythonOrgSearch(unittest.TestCase):
+
+    def setUp(self):
+        self.driver = webdriver.Chrome()
+
+    def test_search_in_python_org(self):
+        driver = self.driver
+        driver.get(&quot;http://www.python.org&quot;)
+        self.assertIn(&quot;Python&quot;, driver.title)
+        elem = driver.find_element_by_name(&quot;q&quot;)
+        elem.send_keys(&quot;pycon&quot;)
+        elem.send_keys(Keys.RETURN)
+        assert &quot;No results found.&quot; not in driver.page_source
+
+    def tearDown(self):
+        self.driver.close()
+
+if __name__ == &quot;__main__&quot;:
+    unittest.main()
+</code></pre><p>&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x540C;&#x6837;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5176;&#x5C01;&#x88C5;&#x4E3A;&#x6D4B;&#x8BD5;&#x6807;&#x51C6;&#x7C7B;&#x7684;&#x5F62;&#x5F0F;&#x3002;</p>
+<blockquote>
+<p>The test case class is inherited from unittest.TestCase. Inheriting from TestCase class is the way to tell unittest module that this is a test case. The setUp is part of initialization, this method will get called before every test function which you are going to write in this test case class. The test case method should always start with characters test. The tearDown method will get called after every test method. This is a place to do all cleanup actions. You can also call quit method instead of close. The quit will exit the entire browser, whereas close will close a tab, but if it is the only tab opened, by default most browser will exit entirely.</p>
+</blockquote>
+<p>&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x662F;&#x7EE7;&#x627F;&#x4E86; unittest.TestCase &#x7C7B;&#xFF0C;&#x7EE7;&#x627F;&#x8FD9;&#x4E2A;&#x7C7B;&#x8868;&#x660E;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x7C7B;&#x3002;setUp&#x65B9;&#x6CD5;&#x662F;&#x521D;&#x59CB;&#x5316;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x5728;&#x6BCF;&#x4E2A;&#x6D4B;&#x8BD5;&#x7C7B;&#x4E2D;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x3002;&#x6BCF;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x547D;&#x540D;&#x90FD;&#x6709;&#x89C4;&#x8303;&#xFF0C;&#x5FC5;&#x987B;&#x4EE5; test &#x5F00;&#x5934;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x6267;&#x884C;&#x3002;&#x6700;&#x540E;&#x7684; tearDown &#x65B9;&#x6CD5;&#x4F1A;&#x5728;&#x6BCF;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x7ED3;&#x675F;&#x4E4B;&#x540E;&#x8C03;&#x7528;&#x3002;&#x8FD9;&#x76F8;&#x5F53;&#x4E8E;&#x6700;&#x540E;&#x7684;&#x6790;&#x6784;&#x65B9;&#x6CD5;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x91CC;&#x5199;&#x7684;&#x662F; close &#x65B9;&#x6CD5;&#xFF0C;&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x5199; quit &#x65B9;&#x6CD5;&#x3002;&#x4E0D;&#x8FC7; close &#x65B9;&#x6CD5;&#x76F8;&#x5F53;&#x4E8E;&#x5173;&#x95ED;&#x4E86;&#x8FD9;&#x4E2A; TAB &#x9009;&#x9879;&#x5361;&#xFF0C;&#x7136;&#x800C; quit &#x662F;&#x9000;&#x51FA;&#x4E86;&#x6574;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x3002;&#x5F53;&#x4F60;&#x53EA;&#x5F00;&#x542F;&#x4E86;&#x4E00;&#x4E2A; TAB &#x9009;&#x9879;&#x5361;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5173;&#x95ED;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x4F1A;&#x5C06;&#x6574;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x5173;&#x95ED;&#x3002;</p>
+<h2 id="&#x9875;&#x9762;&#x64CD;&#x4F5C;">&#x9875;&#x9762;&#x64CD;&#x4F5C;</h2>
+<h3 id="&#x9875;&#x9762;&#x4EA4;&#x4E92;">&#x9875;&#x9762;&#x4EA4;&#x4E92;</h3>
+<p>&#x4EC5;&#x4EC5;&#x6293;&#x53D6;&#x9875;&#x9762;&#x6CA1;&#x6709;&#x591A;&#x5927;&#x5375;&#x7528;&#xFF0C;&#x6211;&#x4EEC;&#x771F;&#x6B63;&#x8981;&#x505A;&#x7684;&#x662F;&#x505A;&#x5230;&#x548C;&#x9875;&#x9762;&#x4EA4;&#x4E92;&#xFF0C;&#x6BD4;&#x5982;&#x70B9;&#x51FB;&#xFF0C;&#x8F93;&#x5165;&#x7B49;&#x7B49;&#x3002;&#x90A3;&#x4E48;&#x524D;&#x63D0;&#x5C31;&#x662F;&#x8981;&#x627E;&#x5230;&#x9875;&#x9762;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x3002;WebDriver&#x63D0;&#x4F9B;&#x4E86;&#x5404;&#x79CD;&#x65B9;&#x6CD5;&#x6765;&#x5BFB;&#x627E;&#x5143;&#x7D20;&#x3002;&#x4F8B;&#x5982;&#x4E0B;&#x9762;&#x6709;&#x4E00;&#x4E2A;&#x8868;&#x5355;&#x8F93;&#x5165;&#x6846;&#x3002;</p>
+<pre><code>&lt;input type=&quot;text&quot; name=&quot;passwd&quot; id=&quot;passwd-id&quot; /&gt;
+</code></pre><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x83B7;&#x53D6;&#x5B83;</p>
+<pre><code>element = driver.find_element_by_id(&quot;passwd-id&quot;)
+element = driver.find_element_by_name(&quot;passwd&quot;)
+element = driver.find_elements_by_tag_name(&quot;input&quot;)
+element = driver.find_element_by_xpath(&quot;//input[@id=&apos;passwd-id&apos;]&quot;)
+</code></pre><p>&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B83;&#x7684;&#x6587;&#x672C;&#x94FE;&#x63A5;&#x6765;&#x83B7;&#x53D6;&#xFF0C;&#x4F46;&#x662F;&#x8981;&#x5C0F;&#x5FC3;&#xFF0C;&#x6587;&#x672C;&#x5FC5;&#x987B;&#x5B8C;&#x5168;&#x5339;&#x914D;&#x624D;&#x53EF;&#x4EE5;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x597D;&#x7684;&#x5339;&#x914D;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x800C;&#x4E14;&#x4F60;&#x5728;&#x7528; xpath &#x7684;&#x65F6;&#x5019;&#x8FD8;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;&#x5143;&#x7D20;&#x5339;&#x914D;&#x4E86; xpath&#xFF0C;&#x5B83;&#x53EA;&#x4F1A;&#x8FD4;&#x56DE;&#x7B2C;&#x4E00;&#x4E2A;&#x5339;&#x914D;&#x7684;&#x5143;&#x7D20;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x627E;&#x5230;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x629B;&#x51FA; NoSuchElementException &#x7684;&#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x83B7;&#x53D6;&#x4E86;&#x5143;&#x7D20;&#x4E4B;&#x540E;&#xFF0C;&#x4E0B;&#x4E00;&#x6B65;&#x5F53;&#x7136;&#x5C31;&#x662F;&#x5411;&#x6587;&#x672C;&#x8F93;&#x5165;&#x5185;&#x5BB9;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x6CD5;</p>
+<pre><code>element.send_keys(&quot;some text&quot;)
+</code></pre><p>&#x540C;&#x6837;&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x5229;&#x7528; Keys &#x8FD9;&#x4E2A;&#x7C7B;&#x6765;&#x6A21;&#x62DF;&#x70B9;&#x51FB;&#x67D0;&#x4E2A;&#x6309;&#x952E;&#x3002;</p>
+<pre><code>element.send_keys(&quot;and some&quot;, Keys.ARROW_DOWN)
+</code></pre><p>&#x4F60;&#x53EF;&#x4EE5;&#x5BF9;&#x4EFB;&#x4F55;&#x83B7;&#x53D6;&#x5230;&#x5230;&#x5143;&#x7D20;&#x4F7F;&#x7528; send_keys &#x65B9;&#x6CD5;&#xFF0C;&#x5C31;&#x50CF;&#x4F60;&#x5728; GMail &#x91CC;&#x9762;&#x70B9;&#x51FB;&#x53D1;&#x9001;&#x952E;&#x4E00;&#x6837;&#x3002;&#x4E0D;&#x8FC7;&#x8FD9;&#x6837;&#x4F1A;&#x5BFC;&#x81F4;&#x7684;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#x8F93;&#x5165;&#x7684;&#x6587;&#x672C;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x6E05;&#x9664;&#x3002;&#x6240;&#x4EE5;&#x8F93;&#x5165;&#x7684;&#x6587;&#x672C;&#x90FD;&#x4F1A;&#x5728;&#x539F;&#x6765;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x7EE7;&#x7EED;&#x8F93;&#x5165;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x6E05;&#x9664;&#x8F93;&#x5165;&#x6587;&#x672C;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<pre><code>element.clear()
+</code></pre><p>&#x8FD9;&#x6837;&#x8F93;&#x5165;&#x7684;&#x6587;&#x672C;&#x4F1A;&#x88AB;&#x6E05;&#x9664;&#x3002;</p>
+<h3 id="&#x586B;&#x5145;&#x8868;&#x5355;">&#x586B;&#x5145;&#x8868;&#x5355;</h3>
+<p>&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x4E86;&#x600E;&#x6837;&#x5411;&#x6587;&#x672C;&#x6846;&#x4E2D;&#x8F93;&#x5165;&#x6587;&#x5B57;&#xFF0C;&#x4F46;&#x662F;&#x5176;&#x5B83;&#x7684;&#x8868;&#x5355;&#x5143;&#x7D20;&#x5462;&#xFF1F;&#x4F8B;&#x5982;&#x4E0B;&#x62C9;&#x9009;&#x9879;&#x5361;&#x7684;&#x7684;&#x5904;&#x7406;&#x53EF;&#x4EE5;&#x5982;&#x4E0B;</p>
+<pre><code>element = driver.find_element_by_xpath(&quot;//select[@name=&apos;name&apos;]&quot;)
+all_options = element.find_elements_by_tag_name(&quot;option&quot;)
+for option in all_options:
+    print(&quot;Value is: %s&quot; % option.get_attribute(&quot;value&quot;))
+    option.click()
+</code></pre><p>&#x9996;&#x5148;&#x83B7;&#x53D6;&#x4E86;&#x7B2C;&#x4E00;&#x4E2A; select &#x5143;&#x7D20;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E0B;&#x62C9;&#x9009;&#x9879;&#x5361;&#x3002;&#x7136;&#x540E;&#x8F6E;&#x6D41;&#x8BBE;&#x7F6E;&#x4E86; select &#x9009;&#x9879;&#x5361;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A; option &#x9009;&#x9879;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x8FD9;&#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x6709;&#x6548;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x5176;&#x5B9E; WebDriver &#x4E2D;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x53EB; Select &#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x5B8C;&#x6210;&#x8FD9;&#x4E9B;&#x4E8B;&#x60C5;&#x3002;</p>
+<pre><code>from selenium.webdriver.support.ui import Select
+select = Select(driver.find_element_by_name(&apos;name&apos;))
+select.select_by_index(index)
+select.select_by_visible_text(&quot;text&quot;)
+select.select_by_value(value)
+</code></pre><p>&#x5982;&#x4F60;&#x6240;&#x89C1;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x7D22;&#x5F15;&#x6765;&#x9009;&#x62E9;&#xFF0C;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x503C;&#x6765;&#x9009;&#x62E9;&#xFF0C;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x6587;&#x5B57;&#x6765;&#x9009;&#x62E9;&#x3002;&#x662F;&#x5341;&#x5206;&#x65B9;&#x4FBF;&#x7684;&#x3002;</p>
+<p>&#x5168;&#x90E8;&#x53D6;&#x6D88;&#x9009;&#x62E9;&#x600E;&#x4E48;&#x529E;&#x5462;&#xFF1F;&#x5F88;&#x7B80;&#x5355;</p>
+<pre><code>select = Select(driver.find_element_by_id(&apos;id&apos;))
+select.deselect_all()
+</code></pre><p>&#x8FD9;&#x6837;&#x4FBF;&#x53EF;&#x4EE5;&#x53D6;&#x6D88;&#x6240;&#x6709;&#x7684;&#x9009;&#x62E9;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x6240;&#x6709;&#x7684;&#x5DF2;&#x9009;&#x9009;&#x9879;&#x3002;</p>
+<pre><code>select = Select(driver.find_element_by_xpath(&quot;xpath&quot;))
+all_selected_options = select.all_selected_options
+</code></pre><p>&#x83B7;&#x53D6;&#x6240;&#x6709;&#x53EF;&#x9009;&#x9009;&#x9879;&#x662F;</p>
+<pre><code>options = select.options
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x628A;&#x8868;&#x5355;&#x90FD;&#x586B;&#x597D;&#x4E86;&#xFF0C;&#x6700;&#x540E;&#x80AF;&#x5B9A;&#x8981;&#x63D0;&#x4EA4;&#x8868;&#x5355;&#x5BF9;&#x5427;&#x3002;&#x600E;&#x5417;&#x63D0;&#x4EA4;&#x5462;&#xFF1F;&#x5F88;&#x7B80;&#x5355;</p>
+<pre><code>driver.find_element_by_id(&quot;submit&quot;).click()
+</code></pre><p>&#x8FD9;&#x6837;&#x5C31;&#x76F8;&#x5F53;&#x4E8E;&#x6A21;&#x62DF;&#x70B9;&#x51FB;&#x4E86; submit &#x6309;&#x94AE;&#xFF0C;&#x505A;&#x5230;&#x8868;&#x5355;&#x63D0;&#x4EA4;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x5355;&#x72EC;&#x63D0;&#x4EA4;&#x67D0;&#x4E2A;&#x5143;&#x7D20;</p>
+<pre><code>element.submit()
+</code></pre><p>&#x65B9;&#x6CD5;&#xFF0C;WebDriver &#x4F1A;&#x5728;&#x8868;&#x5355;&#x4E2D;&#x5BFB;&#x627E;&#x5B83;&#x6240;&#x5728;&#x7684;&#x8868;&#x5355;&#xFF0C;&#x5982;&#x679C;&#x53D1;&#x73B0;&#x8FD9;&#x4E2A;&#x5143;&#x7D20;&#x5E76;&#x6CA1;&#x6709;&#x88AB;&#x8868;&#x5355;&#x6240;&#x5305;&#x56F4;&#xFF0C;&#x90A3;&#x4E48;&#x7A0B;&#x5E8F;&#x4F1A;&#x629B;&#x51FA; NoSuchElementException &#x7684;&#x5F02;&#x5E38;&#x3002;</p>
+<h3 id="&#x5143;&#x7D20;&#x62D6;&#x62FD;">&#x5143;&#x7D20;&#x62D6;&#x62FD;</h3>
+<p>&#x8981;&#x5B8C;&#x6210;&#x5143;&#x7D20;&#x7684;&#x62D6;&#x62FD;&#xFF0C;&#x9996;&#x5148;&#x4F60;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x88AB;&#x62D6;&#x52A8;&#x7684;&#x5143;&#x7D20;&#x548C;&#x62D6;&#x52A8;&#x76EE;&#x6807;&#x5143;&#x7D20;&#xFF0C;&#x7136;&#x540E;&#x5229;&#x7528; ActionChains &#x7C7B;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<pre><code>element = driver.find_element_by_name(&quot;source&quot;)
+target = driver.find_element_by_name(&quot;target&quot;)
+
+from selenium.webdriver import ActionChains
+action_chains = ActionChains(driver)
+action_chains.drag_and_drop(element, target).perform()
+</code></pre><p>&#x8FD9;&#x6837;&#x5C31;&#x5B9E;&#x73B0;&#x4E86;&#x5143;&#x7D20;&#x4ECE; source &#x62D6;&#x52A8;&#x5230; target &#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<h3 id="&#x9875;&#x9762;&#x5207;&#x6362;">&#x9875;&#x9762;&#x5207;&#x6362;</h3>
+<p>&#x4E00;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x80AF;&#x5B9A;&#x4F1A;&#x6709;&#x5F88;&#x591A;&#x7A97;&#x53E3;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x80AF;&#x5B9A;&#x8981;&#x6709;&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x7A97;&#x53E3;&#x7684;&#x5207;&#x6362;&#x3002;&#x5207;&#x6362;&#x7A97;&#x53E3;&#x7684;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;</p>
+<pre><code>driver.switch_to_window(&quot;windowName&quot;)
+</code></pre><p>&#x53E6;&#x5916;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; window_handles &#x65B9;&#x6CD5;&#x6765;&#x83B7;&#x53D6;&#x6BCF;&#x4E2A;&#x7A97;&#x53E3;&#x7684;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;&#x3002;&#x4F8B;&#x5982;</p>
+<pre><code>for handle in driver.window_handles:
+    driver.switch_to_window(handle)
+</code></pre><p>&#x53E6;&#x5916;&#x5207;&#x6362; frame &#x7684;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;</p>
+<pre><code>driver.switch_to_frame(&quot;frameName.0.child&quot;)
+</code></pre><p>&#x8FD9;&#x6837;&#x7126;&#x70B9;&#x4F1A;&#x5207;&#x6362;&#x5230;&#x4E00;&#x4E2A; name &#x4E3A; child &#x7684; frame &#x4E0A;&#x3002;</p>
+<h3 id="&#x5F39;&#x7A97;&#x5904;&#x7406;">&#x5F39;&#x7A97;&#x5904;&#x7406;</h3>
+<p>&#x5F53;&#x4F60;&#x51FA;&#x53D1;&#x4E86;&#x67D0;&#x4E2A;&#x4E8B;&#x4EF6;&#x4E4B;&#x540E;&#xFF0C;&#x9875;&#x9762;&#x51FA;&#x73B0;&#x4E86;&#x5F39;&#x7A97;&#x63D0;&#x793A;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x600E;&#x6837;&#x6765;&#x5904;&#x7406;&#x8FD9;&#x4E2A;&#x63D0;&#x793A;&#x6216;&#x8005;&#x83B7;&#x53D6;&#x63D0;&#x793A;&#x4FE1;&#x606F;&#x5462;&#xFF1F;</p>
+<pre><code>alert = driver.switch_to_alert()
+</code></pre><p>&#x901A;&#x8FC7;&#x4E0A;&#x8FF0;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5F39;&#x7A97;&#x5BF9;&#x8C61;&#x3002;</p>
+<h3 id="&#x5386;&#x53F2;&#x8BB0;&#x5F55;">&#x5386;&#x53F2;&#x8BB0;&#x5F55;</h3>
+<p>&#x90A3;&#x4E48;&#x600E;&#x6837;&#x6765;&#x64CD;&#x4F5C;&#x9875;&#x9762;&#x7684;&#x524D;&#x8FDB;&#x548C;&#x540E;&#x9000;&#x529F;&#x80FD;&#x5462;&#xFF1F;</p>
+<pre><code>driver.forward()
+driver.back()
+</code></pre><p>&#x55EF;&#xFF0C;&#x7B80;&#x6D01;&#x660E;&#x4E86;&#x3002;</p>
+<h3 id="cookies&#x5904;&#x7406;">Cookies&#x5904;&#x7406;</h3>
+<p>&#x4E3A;&#x9875;&#x9762;&#x6DFB;&#x52A0; Cookies&#xFF0C;&#x7528;&#x6CD5;&#x5982;&#x4E0B;</p>
+<pre><code># Go to the correct domain
+driver.get(&quot;http://www.example.com&quot;)
+
+# Now set the cookie. This one&apos;s valid for the entire domain
+cookie = {&#x2018;name&#x2019; : &#x2018;foo&#x2019;, &#x2018;value&#x2019; : &#x2018;bar&#x2019;}
+driver.add_cookie(cookie)
+</code></pre><p>&#x83B7;&#x53D6;&#x9875;&#x9762; Cookies&#xFF0C;&#x7528;&#x6CD5;&#x5982;&#x4E0B;</p>
+<pre><code># Go to the correct domain
+driver.get(&quot;http://www.example.com&quot;)
+
+# And now output all the available cookies for the current URL
+driver.get_cookies()
+</code></pre><p>&#x4EE5;&#x4E0A;&#x4FBF;&#x662F; Cookies &#x7684;&#x5904;&#x7406;&#xFF0C;&#x540C;&#x6837;&#x662F;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x3002;</p>
+<h2 id="&#x5143;&#x7D20;&#x9009;&#x53D6;">&#x5143;&#x7D20;&#x9009;&#x53D6;</h2>
+<p>&#x5173;&#x4E8E;&#x5143;&#x7D20;&#x7684;&#x9009;&#x53D6;&#xFF0C;&#x6709;&#x5982;&#x4E0B;&#x7684;API</p>
+<p>&#x5355;&#x4E2A;&#x5143;&#x7D20;&#x9009;&#x53D6;</p>
+<blockquote>
+<p>find_element_by_id
+find_element_by_name
+find_element_by_xpath
+find_element_by_link_text
+find_element_by_partial_link_text
+find_element_by_tag_name
+find_element_by_class_name
+find_element_by_css_selector</p>
+</blockquote>
+<p>&#x591A;&#x4E2A;&#x5143;&#x7D20;&#x9009;&#x53D6;</p>
+<blockquote>
+<p>find_elements_by_name
+find_elements_by_xpath
+find_elements_by_link_text
+find_elements_by_partial_link_text
+find_elements_by_tag_name
+find_elements_by_class_name
+find_elements_by_css_selector</p>
+</blockquote>
+<p>&#x53E6;&#x5916;&#x8FD8;&#x53EF;&#x4EE5;&#x5229;&#x7528; By &#x7C7B;&#x6765;&#x786E;&#x5B9A;&#x54EA;&#x79CD;&#x9009;&#x62E9;&#x65B9;&#x5F0F;</p>
+<pre><code>from selenium.webdriver.common.by import By
+
+driver.find_element(By.XPATH, &apos;//button[text()=&quot;Some text&quot;]&apos;)
+driver.find_elements(By.XPATH, &apos;//button&apos;)
+</code></pre><p>By &#x7C7B;&#x7684;&#x4E00;&#x4E9B;&#x5C5E;&#x6027;&#x5982;&#x4E0B;</p>
+<pre><code>ID = &quot;id&quot;
+XPATH = &quot;xpath&quot;
+LINK_TEXT = &quot;link text&quot;
+PARTIAL_LINK_TEXT = &quot;partial link text&quot;
+NAME = &quot;name&quot;
+TAG_NAME = &quot;tag name&quot;
+CLASS_NAME = &quot;class name&quot;
+CSS_SELECTOR = &quot;css selector&quot;
+</code></pre><p>&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x5143;&#x7D20;&#x9009;&#x62E9;&#x65B9;&#x6CD5;&#x53C2;&#x89C1;<a href="http://selenium-python.readthedocs.org/en/latest/locating-elements.html" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a></p>
+<h2 id="&#x9875;&#x9762;&#x7B49;&#x5F85;">&#x9875;&#x9762;&#x7B49;&#x5F85;</h2>
+<p>&#x8FD9;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x73B0;&#x5728;&#x7684;&#x7F51;&#x9875;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x91C7;&#x7528;&#x4E86; Ajax &#x6280;&#x672F;&#xFF0C;&#x8FD9;&#x6837;&#x7A0B;&#x5E8F;&#x4FBF;&#x4E0D;&#x80FD;&#x786E;&#x5B9A;&#x4F55;&#x65F6;&#x67D0;&#x4E2A;&#x5143;&#x7D20;&#x5B8C;&#x5168;&#x52A0;&#x8F7D;&#x51FA;&#x6765;&#x4E86;&#x3002;&#x8FD9;&#x4F1A;&#x8BA9;&#x5143;&#x7D20;&#x5B9A;&#x4F4D;&#x56F0;&#x96BE;&#x800C;&#x4E14;&#x4F1A;&#x63D0;&#x9AD8;&#x4EA7;&#x751F; ElementNotVisibleException &#x7684;&#x6982;&#x7387;&#x3002;</p>
+<p>&#x6240;&#x4EE5; Selenium &#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x79CD;&#x7B49;&#x5F85;&#x65B9;&#x5F0F;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x9690;&#x5F0F;&#x7B49;&#x5F85;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x663E;&#x5F0F;&#x7B49;&#x5F85;&#x3002;</p>
+<p>&#x9690;&#x5F0F;&#x7B49;&#x5F85;&#x662F;&#x7B49;&#x5F85;&#x7279;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x663E;&#x5F0F;&#x7B49;&#x5F85;&#x662F;&#x6307;&#x5B9A;&#x67D0;&#x4E00;&#x6761;&#x4EF6;&#x76F4;&#x5230;&#x8FD9;&#x4E2A;&#x6761;&#x4EF6;&#x6210;&#x7ACB;&#x65F6;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x3002;</p>
+<h3 id="&#x663E;&#x5F0F;&#x7B49;&#x5F85;">&#x663E;&#x5F0F;&#x7B49;&#x5F85;</h3>
+<p>&#x663E;&#x5F0F;&#x7B49;&#x5F85;&#x6307;&#x5B9A;&#x67D0;&#x4E2A;&#x6761;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x8BBE;&#x7F6E;&#x6700;&#x957F;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x3002;&#x5982;&#x679C;&#x5728;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;&#x8FD8;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x5143;&#x7D20;&#xFF0C;&#x90A3;&#x4E48;&#x4FBF;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x4E86;&#x3002;</p>
+<pre><code>from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+driver = webdriver.Chrome()
+driver.get(&quot;http://somedomain/url_that_delays_loading&quot;)
+try:
+    element = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.ID, &quot;myDynamicElement&quot;))
+    )
+finally:
+    driver.quit()
+</code></pre><p>&#x7A0B;&#x5E8F;&#x9ED8;&#x8BA4;&#x4F1A; 500ms &#x8C03;&#x7528;&#x4E00;&#x6B21;&#x6765;&#x67E5;&#x770B;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x751F;&#x6210;&#xFF0C;&#x5982;&#x679C;&#x672C;&#x6765;&#x5143;&#x7D20;&#x5C31;&#x662F;&#x5B58;&#x5728;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x7ACB;&#x5373;&#x8FD4;&#x56DE;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E9B;&#x5185;&#x7F6E;&#x7684;&#x7B49;&#x5F85;&#x6761;&#x4EF6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x8FD9;&#x4E9B;&#x6761;&#x4EF6;&#xFF0C;&#x800C;&#x4E0D;&#x7528;&#x81EA;&#x5DF1;&#x5199;&#x67D0;&#x4E9B;&#x7B49;&#x5F85;&#x6761;&#x4EF6;&#x4E86;&#x3002;</p>
+<blockquote>
+<p>title_is
+title_contains
+presence_of_element_located
+visibility_of_element_located
+visibility_of
+presence_of_all_elements_located
+text_to_be_present_in_element
+text_to_be_present_in_element_value
+frame_to_be_available_and_switch_to_it
+invisibility_of_element_located
+element_to_be_clickable &#x2013; it is Displayed and Enabled.
+staleness_of
+element_to_be_selected
+element_located_to_be_selected
+element_selection_state_to_be
+element_located_selection_state_to_be
+alert_is_present</p>
+</blockquote>
+<pre><code>from selenium.webdriver.support import expected_conditions as EC
+
+wait = WebDriverWait(driver, 10)
+element = wait.until(EC.element_to_be_clickable((By.ID,&apos;someid&apos;)))
+</code></pre><h3 id="&#x9690;&#x5F0F;&#x7B49;&#x5F85;">&#x9690;&#x5F0F;&#x7B49;&#x5F85;</h3>
+<p>&#x9690;&#x5F0F;&#x7B49;&#x5F85;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#xFF0C;&#x5C31;&#x662F;&#x7B80;&#x5355;&#x5730;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#x79D2;&#x3002;</p>
+<pre><code>from selenium import webdriver
+
+driver = webdriver.Chrome()
+driver.implicitly_wait(10) # seconds
+driver.get(&quot;http://somedomain/url_that_delays_loading&quot;)
+myDynamicElement = driver.find_element_by_id(&quot;myDynamicElement&quot;)
+</code></pre><p>&#x5F53;&#x7136;&#x5982;&#x679C;&#x4E0D;&#x8BBE;&#x7F6E;&#xFF0C;&#x9ED8;&#x8BA4;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x4E3A;0&#x3002;</p>
+<h2 id="&#x7A0B;&#x5E8F;&#x6846;&#x67B6;">&#x7A0B;&#x5E8F;&#x6846;&#x67B6;</h2>
+<p>&#x5BF9;&#x4E8E;&#x9875;&#x9762;&#x6D4B;&#x8BD5;&#x548C;&#x5206;&#x6790;&#xFF0C;&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x6BD4;&#x8F83;&#x660E;&#x6670;&#x7684;&#x4EE3;&#x7801;&#x7ED3;&#x6784;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;<a href="http://selenium-python.readthedocs.org/en/latest/page-objects.html" target="_blank">&#x9875;&#x9762;&#x6D4B;&#x8BD5;&#x67B6;&#x6784;</a></p>
+<h2 id="api">API</h2>
+<p>&#x5230;&#x6700;&#x540E;&#xFF0C;&#x80AF;&#x5B9A;&#x662F;&#x653E;&#x677E;&#x6700;&#x5168;&#x6700;&#x91CD;&#x8981;&#x7684;<a href="http://selenium-python.readthedocs.org/en/latest/api.html" target="_blank">API</a>&#x4E86;&#xFF0C;&#x6BD4;&#x8F83;&#x591A;&#xFF0C;&#x5E0C;&#x671B;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x591A;&#x52A0;&#x7EC3;&#x4E60;&#x3002;</p>
+<h2 id="&#x7ED3;&#x8BED;">&#x7ED3;&#x8BED;</h2>
+<p>&#x4EE5;&#x4E0A;&#x5C31;&#x662F; Selenium &#x7684;&#x57FA;&#x672C;&#x7528;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x8BB2;&#x89E3;&#x4E86;&#x9875;&#x9762;&#x4EA4;&#x4E92;&#xFF0C;&#x9875;&#x9762;&#x6E32;&#x67D3;&#x4E4B;&#x540E;&#x7684;&#x6E90;&#x4EE3;&#x7801;&#x7684;&#x83B7;&#x53D6;&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x5373;&#x4F7F;&#x9875;&#x9762;&#x662F; JS &#x6E32;&#x67D3;&#x800C;&#x6210;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x624B;&#x5230;&#x64D2;&#x6765;&#x4E86;&#x3002;&#x5C31;&#x662F;&#x8FD9;&#x4E48;&#x6E9C;&#xFF01;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter3/section4.html" class="navigation navigation-prev " aria-label="Previous page: 4. Python爬虫利器四之PhantomJS的用法"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chapter3/section6.html" class="navigation navigation-next " aria-label="Next page: 6. Python爬虫利器六之PyQuery的用法"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

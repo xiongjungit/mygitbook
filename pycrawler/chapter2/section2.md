@@ -76,7 +76,7 @@ bdtb.getPage(1)
 
 运行代码，我们可以看到屏幕上打印出了这个帖子第一页楼主发言的所有内容，形式为HTML代码。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/20150219162232-1024x409.jpg)
+![](../image/chapter2/section2-1.jpg)
 
 ## 3.提取相关信息
 
@@ -90,7 +90,7 @@ bdtb.getPage(1)
 <h1 class="core_title_txt  " title="纯原创我心中的NBA2014-2015赛季现役50大" style="width: 396px">纯原创我心中的NBA2014-2015赛季现役50大</h1>
 ```
 
-所以我们想提取<h1>标签中的内容，同时还要指定这个class确定唯一，因为h1标签实在太多啦。
+所以我们想提取`<h1>`标签中的内容，同时还要指定这个class确定唯一，因为h1标签实在太多啦。
 
 正则表达式如下
 
@@ -151,7 +151,7 @@ def getContent(self,page):
 
 好，我们运行一下结果看一下
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/20150219235120.jpg)
+![](../image/chapter2/section2-2.jpg)
 
 真是醉了，还有一大片换行符和图片符，好口怕！既然这样，我们就要对这些文本进行处理，把各种各样复杂的标签给它剔除掉，还原精华内容，把文本处理写成一个方法也可以，不过为了实现更好的代码架构和代码重用，我们可以考虑把标签等的处理写作一个类。
 
@@ -285,7 +285,7 @@ bdtb.getContent(bdtb.getPage(1))
 
 我们尝试一下，重新再看一下效果，这下经过处理之后应该就没问题了，是不是感觉好酸爽！
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/20150220000103-1024x204.jpg)
+![](../image/chapter2/section2-3.jpg)
 
 ### 4）替换楼层
 
@@ -293,8 +293,9 @@ bdtb.getContent(bdtb.getPage(1))
 
 所以可以尝试下面的方法：
 
-> 1.每打印输出一段楼层，写入一行横线来间隔，或者换行符也好。
-2.试着重新编一个楼层，按照顺序，设置一个变量，每打印出一个结果变量加一，打印出这个变量当做楼层。
+> 
+- 1.每打印输出一段楼层，写入一行横线来间隔，或者换行符也好。
+- 2.试着重新编一个楼层，按照顺序，设置一个变量，每打印出一个结果变量加一，打印出这个变量当做楼层。
 
 这里我们尝试一下吧，看看效果怎样
 
@@ -314,7 +315,7 @@ def getContent(self,page):
 
 运行一下看看效果
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/20150220000947-1024x478.jpg)
+![](../image/chapter2/section2-4.jpg)
 
 嘿嘿，效果还不错吧，感觉真酸爽！接下来我们完善一下，然后写入文件
 
@@ -486,7 +487,7 @@ bdtb.start()
 
 现在程序演示如下
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/20150220012351.jpg)
+![](../image/chapter2/section2-5.jpg)
 
 完成之后，可以查看一下当前目录下多了一个以该帖子命名的txt文件，内容便是帖子的所有数据。
 

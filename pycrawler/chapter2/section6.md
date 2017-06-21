@@ -44,10 +44,11 @@ python setup.py install
 
 日志输出，我们要输出时间和爬取的状态，比如像下面这样：
 
-> [2015-08-10 03:05:20] 113011 号问题存在其他答案 我个人认为应该是樱桃沟很美的
-[2015-08-10 03:05:20] 保存到数据库,此问题的ID为 113011
-[2015-08-10 03:05:20] 当前爬取第 2 的内容,发现一个问题 百度有一个地方，花儿带着芳香，水儿流淌奔腾是什么意思 多多帮忙哦 回答数量 1
-[2015-08-10 03:05:19] 保存到数据库,此问题的ID为 113010
+> 
+- [2015-08-10 03:05:20] 113011 号问题存在其他答案 我个人认为应该是樱桃沟很美的
+- [2015-08-10 03:05:20] 保存到数据库,此问题的ID为 113011
+- [2015-08-10 03:05:20] 当前爬取第 2 的内容,发现一个问题 百度有一个地方，花儿带着芳香，水儿流淌奔腾是什么意思 多多帮忙哦 回答数量 1
+- [2015-08-10 03:05:19] 保存到数据库,此问题的ID为 113010
 
 所以，我们需要引入时间函数，然后写一个获取当前时间的函数
 
@@ -81,34 +82,34 @@ sys.stdout=f_handler
 大家可以稍微参考一下函数的实现：
 
 ```
-    #主函数
-    def main(self):
-        f_handler=open('out.log', 'w') 
-        sys.stdout=f_handler
-        page = open('page.txt', 'r')
-        content = page.readline()
-        start_page = int(content.strip()) - 1
-        page.close()     
-        print self.getCurrentTime(),"开始页码",start_page
-        print self.getCurrentTime(),"爬虫正在启动,开始爬取爱问知识人问题"
-        self.total_num = self.getTotalPageNum()
-        print self.getCurrentTime(),"获取到目录页面个数",self.total_num,"个"
-        if not start_page:
-            start_page = self.total_num
-        for x in range(1,start_page):
-            print self.getCurrentTime(),"正在抓取第",start_page-x+1,"个页面"
-            try:
-                self.getQuestions(start_page-x+1)
-            except urllib2.URLError, e:
-                if hasattr(e, "reason"):
-                    print self.getCurrentTime(),"某总页面内抓取或提取失败,错误原因", e.reason
-            except Exception,e:  
-                print self.getCurrentTime(),"某总页面内抓取或提取失败,错误原因:",e
-            if start_page-x+1 < start_page:
-                f=open('page.txt','w')
-                f.write(str(start_page-x+1))
-                print self.getCurrentTime(),"写入新页码",start_page-x+1
-                f.close()
+#主函数
+def main(self):
+	f_handler=open('out.log', 'w') 
+	sys.stdout=f_handler
+	page = open('page.txt', 'r')
+	content = page.readline()
+	start_page = int(content.strip()) - 1
+	page.close()     
+	print self.getCurrentTime(),"开始页码",start_page
+	print self.getCurrentTime(),"爬虫正在启动,开始爬取爱问知识人问题"
+	self.total_num = self.getTotalPageNum()
+	print self.getCurrentTime(),"获取到目录页面个数",self.total_num,"个"
+	if not start_page:
+		start_page = self.total_num
+	for x in range(1,start_page):
+		print self.getCurrentTime(),"正在抓取第",start_page-x+1,"个页面"
+		try:
+			self.getQuestions(start_page-x+1)
+		except urllib2.URLError, e:
+			if hasattr(e, "reason"):
+				print self.getCurrentTime(),"某总页面内抓取或提取失败,错误原因", e.reason
+		except Exception,e:  
+			print self.getCurrentTime(),"某总页面内抓取或提取失败,错误原因:",e
+		if start_page-x+1 < start_page:
+			f=open('page.txt','w')
+			f.write(str(start_page-x+1))
+			print self.getCurrentTime(),"写入新页码",start_page-x+1
+			f.close()
 ```
 
 这样，不管我们爬虫中途遇到什么错误，妈妈也不会担心了
@@ -753,6 +754,6 @@ nohup python spider.py &
 
 我们把PHP文件和log文件放在同一目录下，运行PHP文件，便可以看到如下的内容：
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/09/20150908222744.png)
+![](../image/chapter2/section6-1.png)
 
 小伙伴们赶快试一下吧。

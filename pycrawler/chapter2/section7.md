@@ -18,7 +18,7 @@
 
 算了，就算他是frame又能拿我怎么样？我们点到登录界面，审查一下元素，先看看登录界面的URL是怎样的？
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150220211218.jpg)
+![](../image/chapter2/section7-1.jpg)
 
 恩，看到了右侧的frame名称，src=”xk_login.html”，可以分析出完整的登录界面的网址为 http://jwxt.sdu.edu.cn:7890/zhxt_bks/xk_login.html，点进去看看，真是棒棒哒，他喵的竟然是清华大学选课系统，醉了，你说你抄袭就抄袭吧，改改名字也不错啊~
 
@@ -30,7 +30,7 @@
 
 大家看到的是登录之后出现的信息以及NetWork监听，显示了hearders的详细信息。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150220212025.jpg)
+![](../image/chapter2/section7-2.jpg)
 
 最主要的内容，我们可以发现有一个表单提交的过程，提交方式为POST，两个参数分别为stuid和pwd。
 
@@ -88,7 +88,7 @@ sdu.getPage()
 
 好，我们看一下运行结果
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150220214238.jpg)
+![](../image/chapter2/section7-3.jpg)
 
 酸爽啊，接下来我们只要再获取到本学期成绩界面然后把成绩抓取出来就好了。
 
@@ -96,13 +96,13 @@ sdu.getPage()
 
 让我们先在浏览器中找到本学期成绩界面，点击左边的本学期成绩。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150220220000.jpg)
+![](../image/chapter2/section7-4.jpg)
 
 重新审查元素，你会发现这个frame的src还是没有变，仍然是xk_login.html，引起这个页面变化的原因是在左边的本学期成绩这个超链接设置了一个目标frame，所以，那个页面就显示在右侧了。
 
 所以，让我们再审查一下本学期成绩这个超链接的内容是什么~
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150220220338.jpg)
+![](../image/chapter2/section7-5.jpg)
 
 恩，找到它了，<a href=”/pls/wwwbks/bkscjcx.curscopre” target=”w_right”>本学期成绩</a>
 
@@ -156,7 +156,7 @@ result = self.opener.open(self.gradeUrl)
 
 这句代码，用原来的opener 访问一个本学期成绩的URL即可。运行结果如下
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150220221909.jpg)
+![](../image/chapter2/section7-6.jpg)
 
 恩，本学期成绩的页面已经被我们抓取下来了，接下来用正则表达式提取一下，然后计算学分即可
 

@@ -20,7 +20,7 @@ print response.read()
 python demo.py
 ```
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/2015-02-13-000909-%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
+![](../image/chapter1/section3-1.png)
 
 看，这个网页的源码已经被我们扒下来了，是不是很酸爽？
 

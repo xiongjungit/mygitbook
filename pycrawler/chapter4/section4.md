@@ -31,11 +31,11 @@ https://mm.taobao.com/json/request_top_list.htm?page=10000，第10000页都有�
 
 随机点击一位 MM 的姓名，可以看到她的基本资料。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/03/QQ20160326-4@2x-1024x750.png)
+![](../image/chapter4/section4-1.png)
 
 可以看到图中有一个个性域名，我们复制到浏览器打开。mm.taobao.com/tyy6160
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/03/QQ20160326-5@2x-1024x576.png)
+![](../image/chapter4/section4-2.png)
 
  
 嗯，往下拖，海量的 MM 图片都在这里了，怎么办你懂得，我们要把她们的照片和个人信息都存下来。
@@ -54,7 +54,7 @@ pyspider all
 
 这句命令的意思是，运行 pyspider 并 启动它的所有组件。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/03/E6632A0A-9067-4B97-93A2-5DEF23FB4CD8.jpg)
+![](../image/chapter4/section4-3.png)
 
  
 
@@ -64,11 +64,11 @@ pyspider all
 
 接下来在浏览器中输入 http://localhost:5000，可以看到 PySpider 的主界面，点击右下角的 Create，命名为 taobaomm，当然名称你可以随意取，继续点击 Create。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/03/QQ20160325-0@2x-1024x397.png)
+![](../image/chapter4/section4-4.png)
 
 这样我们会进入到一个爬取操作的页面。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/03/QQ20160325-1@2x-1024x592.png)
+![](../image/chapter4/section4-5.png)
 
 整个页面分为两栏，左边是爬取页面预览区域，右边是代码编写区域。下面对区块进行说明：
 
@@ -133,17 +133,17 @@ class Handler(BaseHandler):
 
 点击 save 保存代码，然后点击左边的 run，运行代码。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/03/QQ20160325-2@2x-1024x597.png)
+![](../image/chapter4/section4-6.png)
 
 运行后我们会发现 follows 出现了 30 这个数字，说明我们接下来有 30 个新请求，点击可查看所有爬取列表。另外控制台也有输出，将所有要爬取的 URL 打印了出来。
 
 然后我们点击左侧任意一个绿色箭头，可以继续爬取这个页面。例如点击第一个 URL，来爬取这个 URL
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/03/QQ20160325-3@2x-1024x347.png)
+![](../image/chapter4/section4-7.png)
 
 点击之后，再查看下方的 web 页面，可以预览实时页面，这个页面被我们爬取了下来，并且回调到 index_page 函数来处理，目前 index_page 函数我们还没有处理，所以是继续构件了所有的链接请求。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/03/QQ20160325-4@2x-949x1024.png)
+![](../image/chapter4/section4-8.png)
 
 好，接下来我们怎么办？当然是进入到 MM 到个人页面去爬取了。
 
@@ -167,11 +167,11 @@ self.crawl(each.attr.href, callback=self.detail_page)
 
 然后回调函数就是 detail_page，爬取的结果会作为 response 变量传过去。detail_page 接到这个变量继续下面的分析。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/03/QQ20160325-7@2x-1024x620.png)
+![](../image/chapter4/section4-9.png)
 
 好，我们继续点击 run 按钮，开始下一个页面的爬取。得到的结果是这样的。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/03/QQ20160325-5@2x-864x1024.png)
+![](../image/chapter4/section4-10.png)
 
 哦，有些页面没有加载出来，这是为什么？
 
@@ -195,7 +195,7 @@ def index_page(self, response):
 
 可以发现，页面已经被我们成功加载出来了，简直不能更帅！
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/03/QQ20160325-9@2x-1004x1024.png)
+![](../image/chapter4/section4-11.png)
 
 看下面的个性域名，所有我们需要的 MM 图片都在那里面了，所以我们需要继续抓取这个页面。
 
@@ -215,7 +215,7 @@ def domain_page(self, response):
 
 好，继续重新 run，预览一下页面，终于，我们看到了 MM 的所有图片。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/03/QQ20160326-0@2x-1024x546.png)
+![](../image/chapter4/section4-12.png)
 
 嗯，你懂得！
 
@@ -421,13 +421,13 @@ class Deal:
 
 其中有一些知识点，我会在后面作详细的用法总结。大家可以先体会一下代码。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/03/QQ20160326-1@2x-1024x418.png)
+![](../image/chapter4/section4-13.png)
 
 保存之后，点击下方的 run，你会发现，海量的 MM 图片已经涌入你的电脑啦～
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/03/QQ20160326-2@2x-1024x831.png)
+![](../image/chapter4/section4-14.png)
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/03/QQ20160326-3@2x-1024x831.png)
+![](../image/chapter4/section4-15.png)
 
 需要解释？需要我也不解释！
 

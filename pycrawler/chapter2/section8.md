@@ -66,14 +66,14 @@ pip install pyquery selenium twisted requests xlrd xlwt xlutils
 
 我们首先观察一下评论，可以发现所有的评论都是匿名的。即使这个用户不是匿名评论的，那也会显示匿名，淘宝这保密做的挺好。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/06/QQ20160630-1@2x-825x1024.png)
+![](../image/chapter2/section8-1.png)
 
 
 心机的淘宝啊，那我们如果想获取一些旺旺号该咋办？
 
 接下来我们返回宝贝详情页面，然后一直下拉下拉，拉到最最后，可以看到有个“看了又看”板块。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/06/QQ20160630-0@2x.png)
+![](../image/chapter2/section8-2.png)
 
  
 有没有！！发现了新大陆，这是什么？这是此宝贝相关宝贝以及它的一些评论。
@@ -104,7 +104,7 @@ pip install pyquery selenium twisted requests xlrd xlwt xlutils
 
 比如
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/06/QQ20160630-2@2x-1024x254.png)
+![](../image/chapter2/section8-3.png)
 
 这一部分是否加载出来。
 
@@ -129,7 +129,7 @@ if is_recommends_appear(driver, max_scroll_time):
 
 浏览器审查元素发现它的选择器是 #J_TjWaterfall li
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/06/QQ20160630-3@2x-1024x771.png)
+![](../image/chapter2/section8-4.png)
 
 那么可以用如下方法来判断是否加载成功
 
@@ -185,7 +185,7 @@ return info
 
 运行结果截图
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/06/QQ20160630-7@2x-1024x644.png)
+![](../image/chapter2/section8-5.png)
 
 可以发现，另外提供了先登陆后爬取的功能，然后保存了爬取进度。
 
@@ -197,7 +197,7 @@ return info
 
 在此 Selenium 模拟了输入文字，点击按钮和翻页的功能。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/06/QQ20160630-4@2x-1024x789.png)
+![](../image/chapter2/section8-6.png)
 
 核心代码如下
 
@@ -266,12 +266,12 @@ def get_more_link():
 
 运行结果截图
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/06/QQ20160630-5@2x.png)
+![](../image/chapter2/section8-7.png)
 
 
 采集到到内容保存到 urls.txt 中
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/06/QQ20160630-6@2x.png)
+![](../image/chapter2/section8-8.png)
 
 嗯，这下采集链接和爬取链接都有了。
 

@@ -52,18 +52,18 @@
 
 在这里我用的是火狐浏览器，首先记得在浏览器中设置一下显示持续日志，要不然页面跳转了你就看不到之前抓取的信息了。在这里截图如下：
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/20150225013600-1024x560.jpg)
+![](../image/chapter2/section5-1.jpg)
 
 
 好，那么接下来我们就从浏览器中获取 ua 和 aes 密码
 
 点击网络选项卡，这时都是空的，什么数据也没有截取。这时你就在网页上登录一下试试吧，输入用户名啊，密码啊，有必要时需要输入验证码，点击登录。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150225014124-1024x392.jpg)
+![](../image/chapter2/section5-2.jpg)
 
 等跳转成功后，你就可以看到好多日志记录了，点击图中的那一行 login.taobo.com，然后查看参数，你就会发现表单数据了，其中就包括 ua 还有下面的 password2，把这俩复制下来，我们之后要用到的。这就是我们需要的 ua 还有 aes 加密后的密码。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150225014019-1024x305.jpg)
+![](../image/chapter2/section5-3.jpg)
 
 恩，读到这里，你应该获取到了属于自己的 ua 和 password2 两个内容。
 
@@ -233,19 +233,19 @@ taobao.main()
 
 运行结果
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150225015508.jpg)
+![](../image/chapter2/section5-4.jpg)
 
 然后会蹦出浏览器，显示了验证码的内容，这个需要你来手动输入。
 
 在这里有小伙伴向我反映有这么个错误
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E5%9B%BE%E7%89%8720150227181617.png)
+![](../image/chapter2/section5-5.jpg)
 
 经过查证，竟然是版本问题，博主本人用的是 2.7.7，而小伙伴用的是 2.7.9。后来换成 2.7.7 就好了…，我也是醉了，希望有相同错误的小伙伴，可以尝试换一下版本…
 
 好啦，运行时会弹出浏览器，如图
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150225015717.jpg)
+![](../image/chapter2/section5-6.jpg)
 
 那么，我们现在需要手动输入验证码，重新向登录界面发出登录请求，之前的post数据内容加入验证码这一项，重新请求一次，如果请求成功，则会返回下一步我们需要的 J_HToken，如果验证码输入错误，则会返回验证码输入错误的选项。好，下面，我已经写到了获取J_HToken的进度，代码如下，现在运行程序，会蹦出浏览器，然后提示你输入验证码，用户手动输入之后，则会返回一个页面，我们提取出 J_Htoken即可。
 
@@ -461,7 +461,7 @@ taobao.main()
 
 现在的运行结果是这样的，我们已经可以得到 J_HToken 了，离成功又迈进了一步。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150225200329.jpg)
+![](../image/chapter2/section5-7.jpg)
 
 好，到现在为止，我们应该可以获取到J_HToken的值啦。
 
@@ -534,7 +534,7 @@ def getGoodsPage(self,pageIndex):
 
 这是我的已买到的宝贝界面，审查元素可以看到，每一个宝贝都是tbody标签包围着。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150225223302.jpg)
+![](../image/chapter2/section5-8.jpg)
 
 我们现在想获取订单时间，订单号，卖家店铺名称，宝贝名称，原价，购买数量，最后付款多少，交易状态这几个量，具体就不再分析啦，正则表达式还不熟悉的同学请参考前面所说的正则表达式的用法，在这里，正则表达式匹配的代码是
 
@@ -556,7 +556,7 @@ for item in result:
 
 先看一下运行结果吧~
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150225234414.jpg)
+![](../image/chapter2/section5-9.jpg)
 
 最终代码如下
 

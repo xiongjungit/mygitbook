@@ -59,7 +59,7 @@ pyspider all
 
 在此附图一张，这是我写了几个爬虫之后的界面。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/02/2016-02-11-20.55.36-1024x355.png)
+![](../image/chapter4/section2-1.png)
 
 好，接下来我会进一步介绍这个框架的使用。
 

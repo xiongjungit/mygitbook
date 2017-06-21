@@ -62,7 +62,7 @@ ADSL （Asymmetric Digital Subscriber Line ，非对称数字用户环路）是�
 
 接下来开始装操作系统，进入后台，有一个自助装系统的页面。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/11/QQ20161121-0.png)
+![](../image/chapter4/section7-1.png)
 
 我装的CentOS的，在后面设置代理啊，定时任务啊，远程SSH管理啊之类的比较方便。如果你想用Windows，能配置好代理那也没问题。
 
@@ -205,7 +205,7 @@ vi /etc/sysconfig/iptables
 
 如图所示
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/11/QQ20161121-0@2x.png)
+![](../image/chapter4/section7-2.png)
 
 保存，然后重启iptables
 
@@ -223,7 +223,7 @@ curl -x IP:8888 www.baidu.com
 
 测试一下，如果能出现结果，那就说明没问题。
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2016/11/QQ20161121-1@2x.png)
+![](../image/chapter4/section7-3.png)
 
 如果怎么配都连不上，那干脆关了你的防火墙吧。虽然不推荐。
 
@@ -398,7 +398,7 @@ print(proxy)
 
 如果你有域名，可以自己解析一个域名，这样就可以直接请求自己的域名，拿到实时好用的代理了，而且定时更新。
 
-![](http://opencdn.cuiqingcai.com/proxy.png)
+![](../image/chapter4/section7-4.png)
 
 ### 代理设置
 

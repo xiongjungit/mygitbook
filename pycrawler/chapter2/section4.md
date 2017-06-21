@@ -67,7 +67,7 @@ spider.getContents(1)
 
 运行结果如下
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150220234132.jpg)
+![](../image/chapter2/section4-1.jpg)
 
 ## 2.文件写入简介
 
@@ -313,14 +313,14 @@ class Tool:
 
 以上两个文件就是所有的代码内容，运行一下试试看，那叫一个酸爽啊
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150221020543.jpg)
+![](../image/chapter2/section4-2.jpg)
 
 看看文件夹里面有什么变化
 
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150221020709.jpg)
+![](../image/chapter2/section4-3.jpg)
 
  
-![](http://qiniu.cuiqingcai.com/wp-content/uploads/2015/02/QQ%E6%88%AA%E5%9B%BE20150221021032.jpg)
+![](../image/chapter2/section4-4.jpg)
 
 不知不觉，海量的MM图片已经进入了你的电脑，还不快快去试试看！！
 

@@ -48,7 +48,7 @@ pyspider的架构主要分为 scheduler（调度器）, fetcher（抓取器）, 
 
 Scrapy 使用了 Twisted 异步网络库来处理网络通讯。整体架构大致如下
 
-![](http://newtonblogimg.qiniudn.com/Scrapy%20Architecture.png)
+![](../image/chapter4/section1-2.png)
 
 Scrapy主要包括了以下组件：
 
