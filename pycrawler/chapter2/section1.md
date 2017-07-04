@@ -91,7 +91,7 @@ except urllib2.URLError, e:
 ![](../image/chapter2/section1-1.jpg)
 
  
-我们可以看到，每一个段子都是<div class=”article block untagged mb15″ id=”…”>…</div>包裹的内容。
+我们可以看到，每一个段子都是`<div class=”article block untagged mb15″ id=”…”>…</div>`包裹的内容。
 
 现在我们想获取发布人，发布日期，段子内容，以及点赞的个数。不过另外注意的是，段子有些是带图片的，如果我们想在控制台显示图片是不现实的，所以我们直接把带有图片的段子给它剔除掉，只保存仅含文本的段子。
 
