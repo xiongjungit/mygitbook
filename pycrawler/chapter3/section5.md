@@ -335,25 +335,25 @@ driver.get_cookies()
 单个元素选取
 
 > 
-find_element_by_id
-find_element_by_name
-find_element_by_xpath
-find_element_by_link_text
-find_element_by_partial_link_text
-find_element_by_tag_name
-find_element_by_class_name
-find_element_by_css_selector
+- find_element_by_id
+- find_element_by_name
+- find_element_by_xpath
+- find_element_by_link_text
+- find_element_by_partial_link_text
+- find_element_by_tag_name
+- find_element_by_class_name
+- find_element_by_css_selector
 
 多个元素选取
 
 > 
-find_elements_by_name
-find_elements_by_xpath
-find_elements_by_link_text
-find_elements_by_partial_link_text
-find_elements_by_tag_name
-find_elements_by_class_name
-find_elements_by_css_selector
+- find_elements_by_name
+- find_elements_by_xpath
+- find_elements_by_link_text
+- find_elements_by_partial_link_text
+- find_elements_by_tag_name
+- find_elements_by_class_name
+- find_elements_by_css_selector
 
 另外还可以利用 By 类来确定哪种选择方式
 
@@ -412,23 +412,23 @@ finally:
 下面是一些内置的等待条件，你可以直接调用这些条件，而不用自己写某些等待条件了。
 
 > 
-title_is
-title_contains
-presence_of_element_located
-visibility_of_element_located
-visibility_of
-presence_of_all_elements_located
-text_to_be_present_in_element
-text_to_be_present_in_element_value
-frame_to_be_available_and_switch_to_it
-invisibility_of_element_located
-element_to_be_clickable – it is Displayed and Enabled.
-staleness_of
-element_to_be_selected
-element_located_to_be_selected
-element_selection_state_to_be
-element_located_selection_state_to_be
-alert_is_present
+- title_is
+- title_contains
+- presence_of_element_located
+- visibility_of_element_located
+- visibility_of
+- presence_of_all_elements_located
+- text_to_be_present_in_element
+- text_to_be_present_in_element_value
+- frame_to_be_available_and_switch_to_it
+- invisibility_of_element_located
+- element_to_be_clickable – it is Displayed and Enabled.
+- staleness_of
+- element_to_be_selected
+- element_located_to_be_selected
+- element_selection_state_to_be
+- element_located_selection_state_to_be
+- alert_is_present
 
 
 ```
