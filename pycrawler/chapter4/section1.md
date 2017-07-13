@@ -33,7 +33,7 @@ pyspider的设计基础是：以python脚本驱动的抓取环模型爬虫
 - 通过web化的脚本编写、调试环境。web展现调度状态
 - 抓取环模型成熟稳定，模块间相互独立，通过消息队列连接，从单进程到多机分布式灵活拓展
 
-![](http://blog.binux.me/assets/image/pyspider-arch.png)
+![](../image/chapter4/section1-1.png)
 
 pyspider的架构主要分为 scheduler（调度器）, fetcher（抓取器）, processor（脚本执行）：
 
