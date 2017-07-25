@@ -19,7 +19,7 @@
 * [第6章 高级特性](chapter6/README.md)
  - [6-1 切片](chapter6/section1.md)
  - [6-2 迭代](chapter6/section2.md)
- - [6-3 类别生产式](chapter6/section3.md)
+ - [6-3 列表生成式](chapter6/section3.md)
  - [6-4 生成器](chapter6/section4.md)
 * [第7章 函数式编程](chapter7/README.md)
  - [7-1 高阶函数](chapter7/section1.md)
