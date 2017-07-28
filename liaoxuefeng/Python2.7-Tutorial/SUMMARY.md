@@ -97,7 +97,7 @@
  - [23-3 Day 3 - 编写ORM](chapter23/section3.md)
  - [23-4 Day 4 - 编写Model](chapter23/section4.md)
  - [23-5 Day 5 - 编写WEB框架](chapter23/section5.md)
- - [23-6Day 6 - 添加配置文件](chapter23/section6.md)
+ - [23-6 Day 6 - 添加配置文件](chapter23/section6.md)
  - [23-7 Day 7 - 编写MVC](chapter23/section7.md)
  - [23-8 Day 8 - 构建前端](chapter23/section8.md)
  - [23-9 Day 9 - 编写API](chapter23/section9.md)
