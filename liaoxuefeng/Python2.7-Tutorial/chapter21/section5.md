@@ -76,9 +76,9 @@ Flask通过render_template()函数来实现模板的渲染。和Web框架类似�
 	  <title>Please Sign In</title>
 	</head>
 	<body>
-	  {% if message %}
+	  \{\% if message \%\}
 	  <p style="color:red">\{\{ message \}\}</p>
-	  {% endif %}
+	  \{\% endif \%\}
 	  <form action="/signin" method="post">
 		<legend>Please sign in:</legend>
 		<p><input name="username" placeholder="Username" value="\{\{ username \}\}"></p>
@@ -130,7 +130,7 @@ Flask通过render_template()函数来实现模板的渲染。和Web框架类似�
 
 - Cheetah：也是用<% ... %>和${xxx}的一个模板；
 
-- Django：Django是一站式框架，内置一个用{％ ... ％}和`{{ xxx }}`的模板。
+- Django：Django是一站式框架，内置一个用{％ ... ％}和`\{\{ xxx \}\}`的模板。
 
 ##小结
 
