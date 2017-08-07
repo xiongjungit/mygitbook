@@ -66,7 +66,8 @@ Flask通过render_template()函数来实现模板的渲染。和Web框架类似�
 	  <h1 style="font-style:italic">Home</h1>
 	</body>
 	</html>
-	form.html
+	
+##form.html
 
 用来显示登录表单的模板：
 
