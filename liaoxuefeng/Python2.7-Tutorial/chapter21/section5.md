@@ -16,7 +16,7 @@ Web框架把我们从WSGI中拯救出来了。现在，我们只需要不断地�
 
 Python处理URL的函数就是C：Controller，Controller负责业务逻辑，比如检查用户名是否存在，取出用户信息等等；
 
-包含变量{{ name }}的模板就是V：View，View负责显示逻辑，通过简单地替换一些变量，View最终输出的就是用户看到的HTML。
+包含变量`{{ name }}`的模板就是V：View，View负责显示逻辑，通过简单地替换一些变量，View最终输出的就是用户看到的HTML。
 
 MVC中的Model在哪？Model是用来传给View的，这样View在替换变量的时候，就可以从Model中取出相应的数据。
 
@@ -77,11 +77,11 @@ Flask通过render_template()函数来实现模板的渲染。和Web框架类似�
 	</head>
 	<body>
 	  {% if message %}
-	  <p style="color:red">{{ message }}</p>
+	  <p style="color:red">\{\{ message \}\}</p>
 	  {% endif %}
 	  <form action="/signin" method="post">
 	    <legend>Please sign in:</legend>
-	    <p><input name="username" placeholder="Username" value="{{ username }}"></p>
+	    <p><input name="username" placeholder="Username" value="\{\{ username \}\}"></p>
 	    <p><input name="password" placeholder="Password" type="password"></p>
 	    <p><button type="submit">Sign In</button></p>
 	  </form>
@@ -94,10 +94,10 @@ Flask通过render_template()函数来实现模板的渲染。和Web框架类似�
 
 	<html>
 	<head>
-	  <title>Welcome, {{ username }}</title>
+	  <title>Welcome, \{\{ username \}\}</title>
 	</head>
 	<body>
-	  <p>Welcome, {{ username }}!</p>
+	  <p>Welcome, \{\{ username \}\}!</p>
 	</body>
 	</html>
 登录失败的模板呢？我们在form.html中加了一点条件判断，把form.html重用为登录失败的模板。
@@ -114,12 +114,12 @@ Flask通过render_template()函数来实现模板的渲染。和Web框架类似�
 
 使用模板的另一大好处是，模板改起来很方便，而且，改完保存后，刷新浏览器就能看到最新的效果，这对于调试HTML、CSS和JavaScript的前端工程师来说实在是太重要了。
 
-在Jinja2模板中，我们用{{ name }}表示一个需要替换的变量。很多时候，还需要循环、条件判断等指令语句，在Jinja2中，用`{% ... %}`表示指令。
+在Jinja2模板中，我们用`{{ name }}`表示一个需要替换的变量。很多时候，还需要循环、条件判断等指令语句，在Jinja2中，用`{% ... %}`表示指令。
 
 比如循环输出页码：
 
 	{% for i in page_list %}
-	    <a href="/page/{{ i }}">{{ i }}</a>
+	    <a href="/page/\{\{ i \}\}">\{\{ i \}\}</a>
 	{% endfor %}
 
 如果page_list是一个list：[1, 2, 3, 4, 5]，上面的模板将输出5个超链接。
@@ -130,7 +130,7 @@ Flask通过render_template()函数来实现模板的渲染。和Web框架类似�
 
 - Cheetah：也是用<% ... %>和${xxx}的一个模板；
 
-- Django：Django是一站式框架，内置一个用{％ ... ％}和{{ xxx }}的模板。
+- Django：Django是一站式框架，内置一个用{％ ... ％}和`{{ xxx }}`的模板。
 
 ##小结
 
