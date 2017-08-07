@@ -36,7 +36,7 @@ WSGI接口定义非常简单，它只要求Web开发者实现一个函数，就�
 
 通常情况下，都应该把Content-Type头发送给浏览器。其他很多常用的HTTP Header也应该发送。
 
-然后，函数的返回值'<h1>Hello, web!</h1>'将作为HTTP响应的Body发送给浏览器。
+然后，函数的返回值`<h1>Hello, web!</h1>`将作为HTTP响应的Body发送给浏览器。
 
 有了WSGI，我们关心的就是如何从environ这个dict对象拿到HTTP请求信息，然后构造HTML，通过start_response()发送Header，最后返回Body。
 
