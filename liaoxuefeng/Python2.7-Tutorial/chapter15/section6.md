@@ -15,7 +15,7 @@ XML虽然比JSON复杂，在Web中应用也不如以前多了，不过仍有很�
 	<a href="/">python</a>
 会产生3个事件：
 
-1. start_element事件，在读取<a href="/">时；
+1. start_element事件，在读取`<a href="/">`时；
 
 2. char_data事件，在读取python时；
 
