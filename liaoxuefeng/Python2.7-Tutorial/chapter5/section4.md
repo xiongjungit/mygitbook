@@ -58,7 +58,7 @@ fact(n) = n! = 1 x 2 x 3 x ... x (n-1) x n = (n-1)! x n = fact(n-1) x n
 	    if num == 1:
 	        return product
 	    return fact_iter(num - 1, num * product)
-可以看到，return fact_iter(num - 1, num * product)仅返回递归函数本身，num - 1和num * product在函数调用前就会被计算，不影响函数调用。
+可以看到，`return fact_iter(num - 1, num * product)`仅返回递归函数本身，num - 1和`num * product`在函数调用前就会被计算，不影响函数调用。
 
 fact(5)对应的fact_iter(5, 1)的调用如下：
 
