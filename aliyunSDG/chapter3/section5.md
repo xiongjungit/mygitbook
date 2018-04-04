@@ -1,93 +1,77 @@
-FileZilla 是一款免费的跨平台 FTP 应用程序，由 FileZilla Client 和 FileZilla Server 组成。本文档依据 FileZilla Server 0.9.59 版本，向您提供一系列简便有效的加固方案，帮助您安全地使用 FileZilla。
+#Hadoop 介绍
 
-注意：本文提到的大部分配置都是通过 FileZilla 服务器的 Edit > Settings > FileZilla Server Options 菜单来实现的。
+Hadoop 是一个由 Apache 基金会所开发的一个开源、高可靠、可扩展的分布式计算框架。
 
-#设置管理密码
+Hadoop 的框架最核心的设计就是 HDFS 和 MapReduce 模块。HDFS 为海量的数据提供了存储，MapReduce 则为海量的数据提供了计算。
 
-服务器的管理密码默认为空，建议您设置一个较复杂的密码。例如，应至少包含大小写字母、数字、特殊符号中的任意两种。
+- HDFS 是 Google File System (GFS) 的开源实现。
+- MapReduce 是一种编程模型，用于大规模数据集(大于1TB)的并行运算。
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49564/cn_zh/1484032262818/Picture1.png)
+#Hadoop 环境安全问题
 
-#修改 Banner 信息
+##1. WebUI 敏感信息泄漏
 
-在访问 FTP 服务器时，默认会在 Banner 中显示服务器的版本信息，通过屏蔽版本信息显示，可以加大恶意攻击的时间成本。操作步骤如下：
+Hadoop 默认开放了很多端口来提供 WebUI 服务。下表列举了相关的端口信息：
 
-1. 前往 General settings > Welcome message。
+<table><tbody><tr><th>模块</th><th>节点</th><th>默认端口</th></tr><tr><td rowspan="4">HDFS</td><td>NameNode</td><td>50070</td></tr><tr><td>SecondNameNode</td><td>50090</td></tr><tr><td>DataNode</td><td>50075</td></tr><tr><td>Backup/Checkpoint node</td><td>50105</td></tr><tr><td rowspan="2">MapReduce</td><td>JobTracker</td><td>50030</td></tr><tr><td>TaskTracker</td><td>50060</td></tr></tbody></table>
 
-2. 从右侧的 Custom welcome message 输入框中删除 %v 变量，或者直接将全部文本替换为自定义的文字。
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49564/cn_zh/1484032295708/Picture1.png)
+通过访问 NameNode WebUI 管理界面的 50070 端口，可以下载任意文件。而且，如果 DataNode 的默认端口 50075 开放，攻击者可以通过 HDSF 提供的 restful API 对 HDFS 存储的数据进行操作。
 
-3. 建议勾选下面的 Hide welcome message in log，以减少日志中的垃圾信息。
+##2. MapReduce 代码执行漏洞
 
-#设置监听地址和端口
+##3. Hadoop 的第三方插件安全漏洞
 
-建议只在一个地址上启用 FTP 服务。例如，若您只需要在内网使用 FTP 服务时，就不必在服务器绑定的公网地址上开启 FTP 服务。操作步骤如下：
+- Cloudera Manager 版本 <= 5.5
 
-1. 前往 General settings > IP Bindings。
+ - [Cloudera Manager CVE-2016-4949 Information Disclosure Vulnerability](http://www.securityfocus.com/bid/93882?spm=5176.7750128.2.3.MSTicp)
+ - [Template rename stored XSS (CVE-2016-4948)](https://cve.mitre.org/cgi-bin/cvename.cgi?spm=5176.7750128.2.4.MSTicp&name=CVE-2016-4948)
+ - [Kerberos wizard stored XSS (CVE-2016-4948)](https://cve.mitre.org/cgi-bin/cvename.cgi?spm=5176.7750128.2.5.MSTicp&name=CVE-2016-4948)
+ - [Host addition reflected XSS (CVE-2016-4948)](https://cve.mitre.org/cgi-bin/cvename.cgi?spm=5176.7750128.2.6.MSTicp&name=CVE-2016-4948)
 
-2. 在右侧窗口中将默认的 * 号修改为指定的地址。
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49564/cn_zh/1484032552656/Snip20170110_53.png)
 
-#使用访问控制
+- Cloudera HUE 版本 <= 3.9.0
 
-设置全局 IP 过滤器，限制允许访问的 IP 地址。操作步骤如下：
+ - [Enumerating users with an unprivileged account (CVE-2016-4947)](https://cve.mitre.org/cgi-bin/cvename.cgi?spm=5176.7750128.2.7.MSTicp&name=CVE-2016-4947)
+ - [Stored XSS (CVE-2016-4946)](https://cve.mitre.org/cgi-bin/cvename.cgi?spm=5176.7750128.2.8.MSTicp&name=CVE-2016-4946)
+ - Open redirect
 
-1. 前往 General settings > IP Filters。
 
-2. 在右侧上部窗口中填入要阻止访问的 IP 范围，在右侧下部窗口中填写允许访问的 IP 范围。<br>
-注意：通常采用阻止所有 IP（填写 *），然后仅允许部分 IP 的方式来进行有效的限制。例如，下图中仅允许 192.168.1.0/24 网段访问 FTP 服务。
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49564/cn_zh/1484032656176/Snip20170110_55.png)
+- Apache Ranger 版本 <= 0.5
 
-另外，FileZilla 服务器也支持用户级和用户组级的 IP 过滤器。前往 Edit > Users/Groups 打开对应设置页，在设置页中找到 IP Filters，然后选择需要设置的用户，设置允许和拒绝的 IP 即可。设置方法与全局 IP 过滤器相同。
+ - Unauthenticated policy download
+ - [Authenticated SQL injection (CVE-2016-2174)]()
 
-#开启 FTP Bounce 攻击防护
+- Apache Group Hadoop 2.6.x
 
-FTP Bounce 攻击是一种利用 FXP 功能的攻击形式，默认情况下服务器未关闭相关功能，建议将相关功能设置为阻止。
+ - [Apache Hadoop MapReduce信息泄露漏洞(CVE-2015-1776)](https://www.cve.mitre.org/cgi-bin/cvename.cgi?spm=5176.7750128.2.10.MSTicp&name=CVE-2015-1776)
 
-如果服务器需要在与某个特定 IP 的服务器之间使用该功能，建议使用 IPs must match exactly 选项，然后通过 IP Filters（见 使用访问控制）来进行限制来访 IP。操作步骤如下：
+##4. Hive 任意命令/代码执行漏洞
 
-1. 前往 General settings > Security settings。
+Hive 是建立在 Hadoop 上的数据仓库基础构架。它提供了一系列的工具，可以用来进行数据的提取转化加载（ETL），是一种可以存储、查询和分析存储在 Hadoop 中的大规模数据的机制。Hive 定义了简单的类 SQL 查询语言，称为 HQL，它允许熟悉 SQL 的用户查询数据。同时，HQL 语言也允许熟悉 MapReduce 开发者的开发自定义的 mapper 和 reducer 来处理内建的 mapper 和 reducer 无法完成的复杂的分析工作。
 
-2. 如下图所示，默认选项已经启用了需要精确匹配连接地址，建议不要修改。
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49564/cn_zh/1484032714732/Picture1.png)
+HQL 语言可以通过 transform 命令自定义 Hive 使用的 Map/Reduce 脚本，从而调用 Shell、Python 等语言，导致攻击者可以通过 Hive 接口等相关操作方式直接获取服务器权限。
 
-#配置用户认证策略
+#安全加固方案
 
-默认情况下，当出现多次用户认证失败后，服务器会断开与客户端的连接，但并没有严格的限制策略。通过下面的设置，可以对连续多次尝试登录失败的客户端 IP 进行阻止，干扰其连续尝试行为。
+根据上述 Hadoop 环境安全问题可以发现，对外暴露服务端口会存在严重的安全风险。建议您按照以下方式为 Hadoop 环境进行安全加固。
 
-1. 前往 General settings > Autoban。
+##1. 网络访问控制
 
-2. 下图中的设置会对一小时内连续 10 次登录失败的 IP 进行阻止，阻止时长为 1 个小时。
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49564/cn_zh/1484032763731/Picture1.png)
+使用 [安全组防火墙](https://help.aliyun.com/document_detail/25475.html?spm=5176.7750128.2.11.MSTicp) 或本地操作系统防火墙对访问源 IP 进行控制。如果您的 Hadoop 环境仅对内网服务器提供服务，建议不要将 Hadoop 服务所有端口发布到互联网。
 
-#提高用户密码复杂度
+##2. 启用认证功能
 
-FileZilla 服务器未提供限制密码复杂度的选项，且服务器用户是由管理员通过管理接口来添加的，用户也无法通过 FTP 命令来修改密码。因此，建议管理员在添加用户时为用户配置复杂的密码。
+启用 Kerberos 认证功能。
 
-#最小化访问授权
+##3. 更新补丁
 
-FileZilla 支持目录级别的访问权限设置，可对某个目录设置文件读 、写、删除、添加、目录创建、删除、列举等权限。建议根据实际应用需要，结合用户权限最小化原则来分配文件夹的权限。
+不定期关注 Hadoop 官方发布的最新版本，并及时更新补丁。
 
-注意：该操作需要提前添加账号和组后才能配置。
+#更多信息
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49564/cn_zh/1484032846157/Picture1.png)
+Hadoop 所有端口信息
 
-#启用 TLS 加密认证
+![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/50128/cn_zh/1484796013767/Picture1.png)
 
-FileZilla 服务器支持 TLS 加密功能，用户如果没有证书可以使用自带功能来创建。
-
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49564/cn_zh/1484032907753/Picture1.png)
-
-也支持针对单个用户强制启用 TLS 加密访问。
-
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49564/cn_zh/1484032956537/Picture1.png)
-
-#启动日志记录
-
-FileZilla 服务器默认未开启日志记录，为了方便对各种事件的追查，建议开启日志记录功能，并将日志设置为每天一个日志文件，避免单文件过大。
-
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49564/cn_zh/1484033035727/Picture1.png)
-
-默认情况下，日志已经设置不记录用户密码；但在加固的时候应检查此选项，确保其已启用，避免密码泄露。
-
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49564/cn_zh/1484033093925/Picture1.png)
+[Hadoop safari : Hunting for vulnerabilities](http://archive.hack.lu/2016/Wavestone%20-%20Hack.lu%202016%20-%20Hadoop%20safari%20-%20Hunting%20for%20vulnerabilities%20-%20v1.0.pdf?spm=5176.7750128.2.12.MSTicp&file=Wavestone%20-%20Hack.lu%202016%20-%20Hadoop%20safari%20-%20Hunting%20for%20vulnerabilities%20-%20v1.0.pdf)
+[Hadoop Default Ports Quick Reference](http://blog.cloudera.com/blog/2009/08/hadoop-default-ports-quick-reference/?spm=5176.7750128.2.13.MSTicp)
