@@ -61,7 +61,7 @@ rancher catalog 命令提供了操作应用商店模版的相关操作。
 |名字	|描述
 |:-|:-|
 |--quiet, -q	|只展示IDs
-|--format value	|json格式或自定义格式: '{{.ID}} {{.Template.Id}}'
+|--format value	|json格式或自定义格式: `'{{.ID}} {{.Template.Id}}'`
 |--system, -s	|展示系统模版
 
 子命令
@@ -80,7 +80,7 @@ rancher catalog ls 命令列出环境下的所有模版。
 |名字	|描述
 |:-|:-|
 |--quiet, -q	|只展示IDs
-|--format value	|json格式或自定义格式: '{{.ID}} {{.Template.Id}}'
+|--format value	|json格式或自定义格式: `'{{.ID}} {{.Template.Id}}'`
 |--system, -s	|展示系统模版
 
 
@@ -165,7 +165,7 @@ rancher environment命令让你可以操作环境。如果你使用账户API key
 |:-|:-|
 |--all, -a	|显示暂停／无效和最近移除的资源
 |--quiet, -q	|只显示IDs
-|--format value	|json 或者自定义格式: '{{.ID}} {{.Environment.Name}}'
+|--format value	|json 或者自定义格式: `'{{.ID}} {{.Environment.Name}}'`
 
 子命令
 
@@ -188,7 +188,7 @@ rancher env ls命令显示Rancher中的所有环境。
 |:-|:-|
 |--all, -a	|显示暂停／无效和最近移除的资源
 |--quiet, -q	|只显示IDs
-|--format value	|json 或者自定义格式: '{{.ID}} {{.Environment.Name}}'
+|--format value	|json 或者自定义格式: `'{{.ID}} {{.Environment.Name}}'`
 
 ```
 $ rancher env ls
@@ -227,7 +227,7 @@ rancher env template 命令用于导出或者导入环境模版。
 |:-|:-|
 |--all, -a	|显示暂停／无效和最近移除的资源
 |--quiet, -q	|只显示IDs
-|--format value	|json 或者自定义格式: '{{.ID}} {{.ProjectTemplate.Name}}'
+|--format value	|json 或者自定义格式: `'{{.ID}} {{.ProjectTemplate.Name}}'`
 
 子命令
 
@@ -254,7 +254,7 @@ rancher events 命令列出Rancher Server中所有出现的事件。
 
 |名字	|描述
 |:-|:-|
-|--format value	|json 或者自定义格式: '{{.Name}} {{.Data.resource.kind}}'
+|--format value	|json 或者自定义格式: `'{{.Name}} {{.Data.resource.kind}}'`
 |--reconnect, |-r	出错时重连接
 
 ###RANCHER EXEC 说明
@@ -305,7 +305,7 @@ rancher hosts命令可用于操作环境中的主机。
 |:-|:-|
 |--all, -a	|显示暂停／无效和最近移除的资源
 |--quiet, -q	|只显示IDs
-|--format value	|json 或者自定义格式: '{{.ID}} {{.Host.Hostname}}'
+|--format value	|json 或者自定义格式: `'{{.ID}} {{.Host.Hostname}}'`
 
 子命令
 
@@ -324,7 +324,7 @@ rancher hosts ls 命令列出所有主机。
 |:-|:-|
 |--all, -a	|显示暂停／无效和最近移除的资源
 |--quiet, -q	|只显示IDs
-|--format value	|json 或者自定义格式: '{{.ID}} {{.Host.Hostname}}'
+|--format value	|json 或者自定义格式: `'{{.ID}} {{.Host.Hostname}}'`
 
 ```
 $ rancher hosts ls
@@ -381,7 +381,7 @@ rancher ps 命令显示Rancher中的所有服务或者容器。如果不附加�
 |--system, -s	|显示系统资源
 |--containers, -c	|显示容器
 |--quiet, -q	|只显示IDs
-|--format value	|json 或者自定义格式: '{{.Service.Id}} {{.Service.Name}} {{.Service.LaunchConfig.ImageUuid}}'
+|--format value	|json 或者自定义格式: `'{{.Service.Id}} {{.Service.Name}} {{.Service.LaunchConfig.ImageUuid}}'`
 
 
 ```
@@ -478,7 +478,7 @@ rancher stacks命令可以操作环境中的应用。
 |:-|:-|
 |--system, -s	|显示系统资源
 |--quiet, -q	|只显示ID
-|--format value	|json 或者自定义格式: '{{.ID}} {{.Stack.Name}}'
+|--format value	|json 或者自定义格式: `'{{.ID}} {{.Stack.Name}}'`
 
 命令
 
@@ -496,7 +496,7 @@ rancher stacks ls 命令列出指定环境中的应用。
 |:-|:-|
 |--system, -s	|显示系统资源
 |--quiet, -q	|只显示IDs
-|--format value	|json 或者自定义格式: '{{.ID}} {{.Stack.Name}}'
+|--format value	|json 或者自定义格式: `'{{.ID}} {{.Stack.Name}}'`
 
 
 ```
@@ -611,7 +611,7 @@ rancher volumes 命令用于操作卷。
 |:-|:-|
 |--all, -a	|显示暂停／无效和最近移除的资源
 |--quiet, -q	|只显示IDs
-|--format value	|json 或者自定义格式: '{{.ID}} {{.Volume.Name}}'
+|--format value	|json 或者自定义格式: `'{{.ID}} {{.Volume.Name}}'`
 
 命令
 
@@ -630,7 +630,7 @@ rancher volume ls命令列出环境中的所有卷。
 |:-|:-|
 |--all, -a	|显示暂停／无效和最近移除的资源
 |--quiet, -q|	只显示IDs
-|--format value	json |或者自定义格式: '{{.ID}} {{.Volume.Name}}'
+|--format value	json |或者自定义格式: `'{{.ID}} {{.Volume.Name}}'`
 
 
 ```
@@ -676,7 +676,7 @@ rancher inspect 用于查看资源的详情。
 |:-|:-|
 |--type value	|查看指定的类型 (服务, 容器, 主机)
 |--links	|在资源详情中包含操作和链接的URL
-|--format value	json |或者自定义格式: '{{.kind}}' (默认: “json”)
+|--format value	json |或者自定义格式: `'{{.kind}}' (默认: “json”)`
 
 ```
 # 用ID来查看详情
