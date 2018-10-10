@@ -16,9 +16,7 @@ Helm包括两个部分，一个叫Tiller的服务端和一个叫Helm的客户端
 ####在RANCHER的UI中使用 HELM
 Rancher提供对一个kubectl实例直接的shell访问，可以用它来管理Kubernetes集群和应用。要想使用这个shell，点击 Kubernetes -> CLI. 这个shell中自动安装好了Helm客户端，可以直接使用Helm的命令。
 
-![Kubectl](https://rancher.com/docs/one-point-x/img/kubernetes/kubectl.png)
-
-![](https://rancher.com/docs/one-point-x/img/kubernetes/kubectl.png)
+![Kubectl](../image/chapter12/12-1.png)
 
 ####在你的工作站使用 HELM
 在Rancher中安装好Kubernetes之后，通过 Kubernetes -> ** CLI** 菜单下生成一个配置文件，你可以在你的工作站配置 kubectl。
