@@ -108,7 +108,7 @@ version: v0.0.1
 ```
 
 ####应用栈名称替换
-从Rancher v1.6.6开始，我们支持在docker-compose.yml文件中替换 {{ .Stack.Name }} 。这样可以在compose文件中使用应用栈名称。
+从Rancher v1.6.6开始，我们支持在docker-compose.yml文件中替换 \{\{ .Stack.Name \}\} 。这样可以在compose文件中使用应用栈名称。
 
 Docker Compose文件可以用于创建新的应用栈，可以通过Rancher命令行或UI来创建。 如下面中的例子，你可以创建一个基于应用栈名称的标签。
 
@@ -129,7 +129,7 @@ services:
 替换只是发生在应用栈创建时，之后对应用名称的修改无法触发替换。
 
 ####双括号使用
-随着Rancher引入了模板系统，双括号 ({{ or }}) 将被视为模板的一部分。如果你不想将这些字符转换为模板，你可以在包含字符的compose文件的顶部添加上＃notemplating。
+随着Rancher引入了模板系统，双括号 (\{\{ or \}\}) 将被视为模板的一部分。如果你不想将这些字符转换为模板，你可以在包含字符的compose文件的顶部添加上＃notemplating。
 
 ```
 # notemplating
