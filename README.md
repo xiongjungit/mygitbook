@@ -16,7 +16,8 @@ gitbook电子书项目
 11. [dvwa安全测试](dvwa)
 12. [静觅Python爬虫学习系列教程](pycrawler)
 13. [markdown完全手册](markdown)
-14. [Runcher文档](Runcher)
+14. [Runcher1.6文档](Runcher/1.6)
+15. [Runcher2.0文档](Runcher/2.0)
 
 ## 慕课网-Python入门
 
@@ -268,7 +269,7 @@ Python是一种计算机程序设计语言。你可能已经听说过很多种�
 
 > 简介: markdown语法完全手册
 
-## Rancher 文档
+## Rancher 1.6 文档
 
 > 简介: Rancher是一个开源的企业级容器管理平台。通过Rancher，企业再也不必自己使用一系列的开源软件去从头搭建容器服务平台。Rancher提供了在生产环境中使用的管理Docker和Kubernetes的全栈化容器部署与管理平台。
 
@@ -294,3 +295,20 @@ Python是一种计算机程序设计语言。你可能已经听说过很多种�
 - 第20章 Rancher社区贡献
 - 第21章 常见问题
 - 第22章 历史文档
+
+## Rancher 2.0 文档
+
+> 简介: Rancher是一套容器管理平台，它可以帮助组织在生产环境中轻松快捷的部署和管理容器。 Rancher可以轻松地管理各种环境的Kubernetes，满足IT需求并为DevOps团队提供支持。
+
+- 第1章 概述
+- 第2章 安装
+- 第3章 升级
+- 第4章 备份和恢复
+- 第5章 用户手册
+- 第6章 Kubernetes云服务
+- 第7章 Rancher Tools
+- 第8章 API
+- 第9章 FAQ(持续更新)
+- 第10章 版本记录
+- 第11章 关于
+- 第12章 v1.6迁移v2.x
