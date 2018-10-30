@@ -1,0 +1,1304 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>11-14 Webhooks · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section15.html" />
+    
+    
+    <link rel="prev" href="section13.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Rancher 1.6 Docs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/section1.html">
+            
+                <a href="../chapter1/section1.html">
+            
+                    
+                    第1章 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter2/section1.html">
+            
+                <a href="../chapter2/section1.html">
+            
+                    
+                    第2章 快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter3/section1.html">
+            
+                <a href="../chapter3/section1.html">
+            
+                    
+                    第3章 安装Rancher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter4/section1.html">
+            
+                <a href="../chapter4/section1.html">
+            
+                    
+                    第4章 升级Rancher Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    第5章 系统设置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter5/section1.html">
+            
+                <a href="../chapter5/section1.html">
+            
+                    
+                    5-1 访问控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter5/section2.html">
+            
+                <a href="../chapter5/section2.html">
+            
+                    
+                    5-2 账户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter5/section3.html">
+            
+                <a href="../chapter5/section3.html">
+            
+                    
+                    5-3 注册主机和应用商店
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter5/section4.html">
+            
+                <a href="../chapter5/section4.html">
+            
+                    
+                    5-4 主机驱动
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter6/section1.html">
+            
+                <a href="../chapter6/section1.html">
+            
+                    
+                    第6章 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter7/section1.html">
+            
+                <a href="../chapter7/section1.html">
+            
+                    
+                    第7章 主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter8/section1.html">
+            
+                <a href="../chapter8/section1.html">
+            
+                    
+                    第8章 镜像仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapter9/section1.html">
+            
+                <a href="../chapter9/section1.html">
+            
+                    
+                    第9章 证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../chapter10/">
+            
+                <a href="../chapter10/">
+            
+                    
+                    第10章 系统服务
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../chapter10/section1.html">
+            
+                <a href="../chapter10/section1.html">
+            
+                    
+                    10-1 基础设施服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../chapter10/section2.html">
+            
+                <a href="../chapter10/section2.html">
+            
+                    
+                    10-2 网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../chapter10/section3.html">
+            
+                <a href="../chapter10/section3.html">
+            
+                    
+                    10-3 网络策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../chapter10/section4.html">
+            
+                <a href="../chapter10/section4.html">
+            
+                    
+                    10-4 负载均衡器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../chapter10/section5.html">
+            
+                <a href="../chapter10/section5.html">
+            
+                    
+                    10-5 DNS服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../chapter10/section6.html">
+            
+                <a href="../chapter10/section6.html">
+            
+                    
+                    10-6 Metadata服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../chapter10/section7.html">
+            
+                <a href="../chapter10/section7.html">
+            
+                    
+                    10-7 存储服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../chapter10/section8.html">
+            
+                <a href="../chapter10/section8.html">
+            
+                    
+                    10-8 调度任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../chapter10/section9.html">
+            
+                <a href="../chapter10/section9.html">
+            
+                    
+                    10-9 审计日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="../chapter10/section10.html">
+            
+                <a href="../chapter10/section10.html">
+            
+                    
+                    10-10 服务账号
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第11章 Cattle
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="section1.html">
+            
+                <a href="section1.html">
+            
+                    
+                    11-1 应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="section2.html">
+            
+                <a href="section2.html">
+            
+                    
+                    11-2 服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="section3.html">
+            
+                <a href="section3.html">
+            
+                    
+                    11-3 卷
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="section4.html">
+            
+                <a href="section4.html">
+            
+                    
+                    11-4 负载均衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="section5.html">
+            
+                <a href="section5.html">
+            
+                    
+                    11-5 外部服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="section6.html">
+            
+                <a href="section6.html">
+            
+                    
+                    11-6 服务别名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="section7.html">
+            
+                <a href="section7.html">
+            
+                    
+                    11-7 健康检查
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="section8.html">
+            
+                <a href="section8.html">
+            
+                    
+                    11-8 调度服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="section9.html">
+            
+                <a href="section9.html">
+            
+                    
+                    11-9 升级服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="section10.html">
+            
+                <a href="section10.html">
+            
+                    
+                    11-10 Cattle环境中的内部DNS服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="section11.html">
+            
+                <a href="section11.html">
+            
+                    
+                    11-11 外部DNS服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.12" data-path="section12.html">
+            
+                <a href="section12.html">
+            
+                    
+                    11-12 Rancher-Compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.13" data-path="section13.html">
+            
+                <a href="section13.html">
+            
+                    
+                    11-13 密文 - 实验性的
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12.14" data-path="section14.html">
+            
+                <a href="section14.html">
+            
+                    
+                    11-14 Webhooks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.15" data-path="section15.html">
+            
+                <a href="section15.html">
+            
+                    
+                    11-15 标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../chapter12/">
+            
+                <a href="../chapter12/">
+            
+                    
+                    第12章 Kubernetes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../chapter12/section1.html">
+            
+                <a href="../chapter12/section1.html">
+            
+                    
+                    12-1 启动Kubernetes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../chapter12/section2.html">
+            
+                <a href="../chapter12/section2.html">
+            
+                    
+                    12-2 弹性平面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../chapter12/section3.html">
+            
+                <a href="../chapter12/section3.html">
+            
+                    
+                    12-3 Cloud Providers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../chapter12/section4.html">
+            
+                <a href="../chapter12/section4.html">
+            
+                    
+                    12-4 私有镜像仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../chapter12/section5.html">
+            
+                <a href="../chapter12/section5.html">
+            
+                    
+                    12-5 RBAC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6" data-path="../chapter12/section6.html">
+            
+                <a href="../chapter12/section6.html">
+            
+                    
+                    12-6 灾难恢复
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.7" data-path="../chapter12/section7.html">
+            
+                <a href="../chapter12/section7.html">
+            
+                    
+                    12-7 备份
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.8" data-path="../chapter12/section8.html">
+            
+                <a href="../chapter12/section8.html">
+            
+                    
+                    12-8 持久化存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.9" data-path="../chapter12/section9.html">
+            
+                <a href="../chapter12/section9.html">
+            
+                    
+                    12-9 插件支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.10" data-path="../chapter12/section10.html">
+            
+                <a href="../chapter12/section10.html">
+            
+                    
+                    12-10 Ingress支持与配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.11" data-path="../chapter12/section11.html">
+            
+                <a href="../chapter12/section11.html">
+            
+                    
+                    12-11 升级Kubernets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.12" data-path="../chapter12/section12.html">
+            
+                <a href="../chapter12/section12.html">
+            
+                    
+                    12-12 删除Kubernets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../chapter13/section1.html">
+            
+                <a href="../chapter13/section1.html">
+            
+                    
+                    第13章 Mesos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../chapter14/section1.html">
+            
+                <a href="../chapter14/section1.html">
+            
+                    
+                    第14章 Swarm - 实验性的
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../chapter15/section1.html">
+            
+                <a href="../chapter15/section1.html">
+            
+                    
+                    第15章 Windows - 实验性的
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../chapter16/section1.html">
+            
+                <a href="../chapter16/section1.html">
+            
+                    
+                    第16章 以原生Docker命令行的形式使用Rancher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../chapter17/">
+            
+                <a href="../chapter17/">
+            
+                    
+                    第17章 应用商店
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../chapter17/section1.html">
+            
+                <a href="../chapter17/section1.html">
+            
+                    
+                    17-1 应用商店
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../chapter17/section2.html">
+            
+                <a href="../chapter17/section2.html">
+            
+                    
+                    17-2 创建私有应用商店
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../chapter18/">
+            
+                <a href="../chapter18/">
+            
+                    
+                    第18章 Rancher命令行
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../chapter18/section1.html">
+            
+                <a href="../chapter18/section1.html">
+            
+                    
+                    18-1 Rancher命令行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../chapter18/section2.html">
+            
+                <a href="../chapter18/section2.html">
+            
+                    
+                    18-2 命令和选项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../chapter18/section3.html">
+            
+                <a href="../chapter18/section3.html">
+            
+                    
+                    18-3 变量替换
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../chapter19/section1.html">
+            
+                <a href="../chapter19/section1.html">
+            
+                    
+                    第19章 API文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../chapter20/section1.html">
+            
+                <a href="../chapter20/section1.html">
+            
+                    
+                    第20章 Rancher社区贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../chapter21/">
+            
+                <a href="../chapter21/">
+            
+                    
+                    第21章 常见问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../chapter21/section1.html">
+            
+                <a href="../chapter21/section1.html">
+            
+                    
+                    21-1 Rancher Server的常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../chapter21/section2.html">
+            
+                <a href="../chapter21/section2.html">
+            
+                    
+                    21-2 Rancher Agent的常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.3" data-path="../chapter21/section3.html">
+            
+                <a href="../chapter21/section3.html">
+            
+                    
+                    21-3 常见的故障排查与修复方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../chapter22/section1.html">
+            
+                <a href="../chapter22/section1.html">
+            
+                    
+                    第22章 历史文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >11-14 Webhooks</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="webhooks">Webhooks</h2>
+<p>&#x5728; Rancher &#x4E2D;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x63A5;&#x6536;&#x5668;&#x94A9;&#x5B50;&#x3002; &#x8FD9;&#x4E9B;&#x94A9;&#x5B50;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x5728;Rancher &#x4E2D;&#x89E6;&#x53D1;&#x4E8B;&#x4EF6;&#x7684; URL&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x63A5;&#x6536;&#x5668;&#x94A9;&#x5B50;&#x53EF;&#x4EE5;&#x548C;&#x76D1;&#x63A7;&#x7CFB;&#x7EDF;&#x6574;&#x5408;&#x6765;&#x589E;&#x52A0;&#x6216;&#x51CF;&#x5C11;&#x670D;&#x52A1;&#x7684;&#x5BB9;&#x5668;&#x6570;&#x91CF;&#x3002; &#x5728; API -&gt; Webhooks &#x9875;&#x9762;&#xFF0C; &#x4F60;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x6216;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x63A5;&#x6536;&#x94A9;&#x5B50;&#x3002;</p>
+<h3 id="&#x6DFB;&#x52A0;&#x63A5;&#x6536;&#x5668;&#x94A9;&#x5B50;">&#x6DFB;&#x52A0;&#x63A5;&#x6536;&#x5668;&#x94A9;&#x5B50;</h3>
+<p>&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x63A5;&#x6536;&#x5668;&#x94A9;&#x5B50;&#xFF0C;&#x5BFC;&#x822A;&#x5230;&#xFF0C;API -&gt; Webhooks&#xFF0C;&#x70B9;&#x51FB; &#x6DFB;&#x52A0;&#x63A5;&#x6536;&#x5668;</p>
+<ul>
+<li>&#x586B;&#x5199;&#x63A5;&#x6536;&#x5668; &#x540D;&#x79F0; &#x4EE5;&#x65B9;&#x4FBF;&#x8BC6;&#x522B;&#x3002;</li>
+<li>&#x9009;&#x62E9;&#x4F60;&#x8981;&#x521B;&#x5EFA;&#x7684;&#x63A5;&#x6536;&#x5668; &#x7C7B;&#x578B;&#x3002;</li>
+<li>&#x57FA;&#x4E8E;&#x63A5;&#x6536;&#x5668;&#x7684;&#x7C7B;&#x578B;&#x786E;&#x5B9A;&#x63A5;&#x6536;&#x5668;&#x4E8B;&#x4EF6;&#x3002;</li>
+</ul>
+<p>&#x70B9;&#x51FB; &#x521B;&#x5EFA;&#x3002;&#x521B;&#x5EFA;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x65B0;&#x521B;&#x5EFA;&#x63A5;&#x6536;&#x5668;&#x94A9;&#x5B50;&#x65C1;&#x8FB9;&#x770B;&#x5230;&#x76F8;&#x5E94;&#x7684;URL&#x3002;</p>
+<h3 id="&#x4F7F;&#x7528;&#x63A5;&#x6536;&#x5668;&#x94A9;&#x5B50;">&#x4F7F;&#x7528;&#x63A5;&#x6536;&#x5668;&#x94A9;&#x5B50;</h3>
+<p>&#x8981;&#x4F7F;&#x7528;&#x89E6;&#x53D1; URL&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5148;&#x53D1;&#x4E00;&#x4E2A; POST &#x8BF7;&#x6C42;&#x5230;&#x8FD9;&#x4E2A; URL&#x3002;
+&#x5411;&#x8FD9;&#x4E2A; URL POST &#x8BF7;&#x6C42;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x9A8C;&#x8BC1;&#x5934;&#x548C; body &#x4FE1;&#x606F;&#x3002;</p>
+<h3 id="&#x63A5;&#x6536;&#x5668;&#x94A9;&#x5B50;&#x7684;&#x7C7B;&#x578B;">&#x63A5;&#x6536;&#x5668;&#x94A9;&#x5B50;&#x7684;&#x7C7B;&#x578B;</h3>
+<ul>
+<li><a href="https://rancher.com/docs/rancher/v1.6/zh/cattle/webhook-service/#%E6%9C%8D%E5%8A%A1%E6%89%A9%E7%BC%A9%E5%AE%B9" target="_blank">&#x670D;&#x52A1;&#x6269;&#x7F29;&#x5BB9;</a></li>
+<li><a href="https://rancher.com/docs/rancher/v1.6/zh/cattle/webhook-service/#%E4%B8%BB%E6%9C%BA%E5%BC%B9%E6%80%A7%E4%BC%B8%E7%BC%A9" target="_blank">&#x4E3B;&#x673A;&#x6570;&#x91CF;&#x589E;&#x51CF;</a></li>
+<li><a href="https://rancher.com/docs/rancher/v1.6/zh/cattle/webhook-service/#%E5%9F%BA%E4%BA%8E-docker-hub-webhooks-%E5%8D%87%E7%BA%A7%E6%9C%8D%E5%8A%A1" target="_blank">&#x57FA;&#x4E8E; DockerHub &#x6807;&#x7B7E;&#x7684;&#x66F4;&#x65B0;&#x6765;&#x66F4;&#x65B0;&#x4E00;&#x4E2A;&#x670D;&#x52A1;</a></li>
+</ul>
+<h4 id="&#x670D;&#x52A1;&#x6269;&#x7F29;&#x5BB9;">&#x670D;&#x52A1;&#x6269;&#x7F29;&#x5BB9;</h4>
+<p>&#x8981;&#x6269;&#x7F29;&#x5BB9;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x5148;&#x914D;&#x7F6E;&#x4F60;&#x7684; webhook&#xFF1A;</p>
+<ul>
+<li>&#x6269;&#x5927;&#xFF0F;&#x7F29;&#x5C0F;&#x4E00;&#x4E2A;&#x670D;&#x52A1;(&#x5373;&#xFF0C;&#x6DFB;&#x52A0;&#x6216;&#x79FB;&#x9664;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x4E2D;&#x7684;&#x5BB9;&#x5668;)</li>
+<li>&#x5728;&#x73AF;&#x5883;&#x4E2D;&#x9009;&#x62E9;&#x670D;&#x52A1;</li>
+<li>&#x4E00;&#x6B21;&#x6295;&#x653E;&#xFF0F;&#x79FB;&#x9664;&#x591A;&#x5C11;&#x5BB9;&#x5668;</li>
+<li>&#x670D;&#x52A1;&#x7684;&#x6700;&#x5927;&#xFF0F;&#x6700;&#x5C0F;&#x5BB9;&#x5668;&#x6570;&#x91CF;</li>
+</ul>
+<h5 id="&#x4E00;&#x4E2A;&#x7528;&#x63A5;&#x6536;&#x5668;&#x94A9;&#x5B50;&#x6765;&#x81EA;&#x52A8;&#x6269;&#x7F29;&#x670D;&#x5BB9;&#x52A1;&#x7684;&#x793A;&#x4F8B;">&#x4E00;&#x4E2A;&#x7528;&#x63A5;&#x6536;&#x5668;&#x94A9;&#x5B50;&#x6765;&#x81EA;&#x52A8;&#x6269;&#x7F29;&#x670D;&#x5BB9;&#x52A1;&#x7684;&#x793A;&#x4F8B;</h5>
+<p>&#x4F7F;&#x7528;&#x63A5;&#x6536;&#x5668;&#x94A9;&#x5B50;&#x6765;&#x6269;&#x7F29;&#x5BB9;&#x670D;&#x52A1;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6574;&#x5408;&#x5916;&#x754C;&#x670D;&#x52A1;&#x6765;&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x6269;&#x7F29;&#x5BB9;&#x3002;
+&#x5728;&#x8FD9;&#x4E2A;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528; Prometheus (&#x666E;&#x7F57;&#x7C73;&#x4FEE;&#x65AF;) &#x6765;&#x76D1;&#x63A7;&#x670D;&#x52A1;&#xFF0C;&#x901A;&#x8FC7;&#x62A5;&#x8B66;&#x7BA1;&#x7406;&#x7A0B;&#x5E8F;&#x6765;&#x53D1;&#x9001; POST &#x8BF7;&#x6C42;&#x5230;&#x89E6;&#x53D1; URL.</p>
+<h5 id="&#x5B89;&#x88C5;-prometheus">&#x5B89;&#x88C5; PROMETHEUS</h5>
+<p>Rancher &#x5E94;&#x7528;&#x5546;&#x5E97; &#x63D0;&#x4F9B;&#x4E86; Prometheus &#x76D1;&#x63A7;&#x670D;&#x52A1;&#xFF0C;&#x5728; &#x5E94;&#x7528;&#x5546;&#x5E97; &#x4E2D;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x8FD9;&#x4E2A;&#x670D;&#x52A1;&#x3002;&#x9009;&#x4E2D;Prometheus &#x7136;&#x540E;&#x542F;&#x52A8;&#x5E94;&#x7528;&#x5546;&#x5E97;&#x5165;&#x53E3;&#x3002; &#x5728; Prometheus &#x5E94;&#x7528;&#x4E2D;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; prometheus &#x7684;&#x670D;&#x52A1;&#xFF0C;&#x8FD9;&#x4E2A;&#x670D;&#x52A1;&#x66B4;&#x9732;&#x4E86; 9090 &#x7AEF;&#x53E3;&#x3002;&#x5728;&#x5BB9;&#x5668;&#x4E2D;&#x627E;&#x5230; /etc/prom-conf&#x3002; Prometheus &#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;prometheus.yml &#x5C31;&#x5728; /etc/prom-conf &#x76EE;&#x5F55;&#x3002;&#x4E3A;&#x4E86;&#x6DFB;&#x52A0;&#x8B66;&#x62A5;&#xFF0C; &#x5355;&#x72EC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8B66;&#x62A5;&#x6587;&#x4EF6;&#xFF0C;&#x5728; prometheus.yml &#x4E2D;&#x63D0;&#x4F9B;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#x3002; &#x6BD4;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; rules.conf &#x7684;&#x8B66;&#x62A5;&#x6587;&#x4EF6;&#xFF0C;&#x628A;&#x5B83;&#x52A0;&#x5165;&#x5230; prometheus.yml&#xFF0C;&#x5728; prometheus.yml &#x672B;&#x5C3E;&#x52A0;&#x5165;&#x5982;&#x4E0B;&#x4E24;&#x884C;:</p>
+<pre><code>rule_files:
+  - rules.conf
+</code></pre><p>rules.conf &#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#x62A5;&#x8B66;&#x914D;&#x7F6E;&#xFF0C;&#x4E0B;&#x9762;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x62A5;&#x8B66;&#x7684;&#x914D;&#x7F6E;</p>
+<pre><code>/ETC/PROM-CONF/RULES.CONF &#x4E2D;&#x7684;&#x8B66;&#x62A5;&#x914D;&#x7F6E;&#x4F8B;&#x5B50;
+ALERT CpuUsageSpike
+IF rate(container_cpu_user_seconds_total{container_label_io_rancher_container_name=&quot;Demo-testTarget-1&quot;}[30s]) * 100 &gt; 70
+LABELS {
+  severity=&quot;critical&quot;,
+  action=&quot;up&quot;
+}
+ANNOTATIONS {
+  summary = &quot;ADDITIONAL CONTAINERS NEEDED&quot;,
+  description = &quot;CPU usage is above 70%&quot;
+}
+</code></pre><p>&#x52A0;&#x5165;&#x62A5;&#x8B66;&#x914D;&#x7F6E;&#x540E;&#xFF0C;&#x91CD;&#x542F;&#x670D;&#x52A1;&#x3002;</p>
+<h5 id="&#x6DFB;&#x52A0;&#x62A5;&#x8B66;&#x7BA1;&#x7406;&#x7A0B;&#x5E8F;">&#x6DFB;&#x52A0;&#x62A5;&#x8B66;&#x7BA1;&#x7406;&#x7A0B;&#x5E8F;</h5>
+<p>&#x8981;&#x8C03;&#x7528;&#x63A5;&#x53D7;&#x5668;&#x94A9;&#x5B50;&#xFF0C; &#x62A5;&#x8B66;&#x7BA1;&#x7406;&#x7A0B;&#x5E8F;&#x9700;&#x8981;&#x5148;&#x542F;&#x7528;&#x3002; &#x4F60;&#x53EF;&#x4EE5;&#x628A;&#x5B83;&#x52A0;&#x5165;&#x5230; Prometheus &#x5E94;&#x7528;. &#x5728; Prometheus &#x5E94;&#x7528;&#x4E2D;&#x70B9;&#x51FB; &#x6DFB;&#x52A0;&#x670D;&#x52A1;&#x3002;&#x7528; prom/alertmanager &#x6DFB;&#x52A0;&#x670D;&#x52A1;&#x3002;&#x6DFB;&#x52A0;&#x670D;&#x52A1;&#x7684;&#x65F6;&#x8BB0;&#x5F97;&#x6620;&#x5C04;&#x7AEF;&#x53E3;9093:9093&#x3002;&#x670D;&#x52A1;&#x542F;&#x52A8;&#x540E;&#xFF0C;&#x5728;&#x5BB9;&#x5668;&#x4E2D;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x66F4;&#x65B0; etc/alertmanager/config.yml&#x3002; &#x5728; etc/alertmanager/config.yml &#x4E2D;&#x6DFB;&#x52A0; webhook &#x7684; URL &#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x5F53;&#x8B66;&#x62A5;&#x88AB;&#x89E6;&#x53D1;&#x65F6;&#x62A5;&#x8B66;&#x7BA1;&#x7406;&#x7A0B;&#x5E8F;&#x5C31;&#x4F1A;&#x5411;&#x8FD9;&#x4E2A; URL &#x53D1;&#x9001; POST &#x8BF7;&#x6C42;&#x3002;&#x5728; etc/alertmanager/config.yml &#x6DFB;&#x52A0; URL &#x4FE1;&#x606F;&#x540E;&#x9700;&#x8981;&#x91CD;&#x542F;&#x670D;&#x52A1;&#x3002;</p>
+<h5 id="&#x793A;&#x4F8B;-etcalertmanagerconfigyml">&#x793A;&#x4F8B; ETC/ALERTMANAGER/CONFIG.YML</h5>
+<pre><code>route:
+  repeat_interval: 5h
+  routes:
+  - match:
+      action: up
+    receiver: &quot;webhook-receiver-up&quot;
+  - match:
+      action: down
+    receiver: &quot;webhook-receiver-down&quot;
+receivers:
+- name: &quot;webhook-receiver-up&quot;
+  webhook_configs:
+  - url: &lt;WEBHOOK_URL&gt;
+    send_resolved: true
+- name: &quot;webhook-receiver-down&quot;
+  webhook_configs:
+  - url: &lt;WEBHOOK_URL&gt;
+    send_resolved: true
+</code></pre><h5 id="&#x81EA;&#x52A8;&#x6269;&#x7F29;&#x5BB9;">&#x81EA;&#x52A8;&#x6269;&#x7F29;&#x5BB9;</h5>
+<p>Prometheus &#x548C;&#x8B66;&#x62A5;&#x7BA1;&#x7406;&#x7A0B;&#x5E8F;&#x968F;&#x8B66;&#x62A5;&#x94A9;&#x5B50;&#x66F4;&#x65B0;&#x540E;&#xFF0C;&#x91CD;&#x542F;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x4EE5;&#x786E;&#x4FDD;&#x914D;&#x7F6E;&#x5904;&#x4E8E;&#x6700;&#x65B0;&#x7684;&#x6FC0;&#x6D3B;&#x72B6;&#x6001;&#x3002;&#x5BF9;&#x4E8E;&#x5DF2;&#x7ECF;&#x6DFB;&#x52A0;&#x4E86;&#x8B66;&#x62A5;&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x670D;&#x52A1;&#x4F1A;&#x81EA;&#x52A8;&#x6839;&#x636E;&#x521B;&#x5EFA;&#x7684;&#x66F4;&#x65B0;&#x5668;&#x94A9;&#x5B50;&#x81EA;&#x52A8;&#x6269;&#x5BB9;&#x6216;&#x7F29;&#x5BB9;&#x3002;</p>
+<h5 id="&#x4E3B;&#x673A;&#x5F39;&#x6027;&#x4F38;&#x7F29;">&#x4E3B;&#x673A;&#x5F39;&#x6027;&#x4F38;&#x7F29;</h5>
+<p>Rancher &#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x514B;&#x9686;&#x7528; Rancherc &#x521B;&#x5EFA;&#x7684;&#xFF0C; &#x5E76;&#x4E14;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x4E3B;&#x673A;&#x6765;&#x589E;&#x52A0;&#x4E3B;&#x673A;&#x7684;&#x6570;&#x91CF;&#x3002;(&#x5373; Docker Machine)&#x3002;&#x8FD9;&#x610F;&#x5473;&#x8FD9;&#x901A;&#x8FC7; &#x81EA;&#x5B9A;&#x4E49;&#x547D;&#x4EE4; &#x6DFB;&#x52A0;&#x7684;&#x4E3B;&#x673A;&#x4E0D;&#x80FD;&#x8FDB;&#x884C;&#x4F38;&#x7F29;&#x3002;</p>
+<p>&#x4F7F;&#x7528; &#x4E3B;&#x673A;&#x4E0A;&#x7684;&#x6807;&#x7B7E;&#xFF0C;
+&#x4E3B;&#x673A;&#x53EF;&#x4EE5;&#x88AB;&#x5206;&#x7EC4;&#x5230;&#x4E00;&#x8D77;&#x7EC4;&#x6210;&#x4E00;&#x4E2A;&#x5F39;&#x6027;&#x4F38;&#x7F29;&#x7EC4;&#x3002;&#x6211;&#x4EEC;&#x63A8;&#x8350;&#x5728;&#x4E3B;&#x673A;&#x4E0A;&#x4F7F;&#x7528;&#x552F;&#x4E00;&#x7684;&#x6807;&#x7B7E;&#x6765;&#x65B9;&#x4FBF;&#x533A;&#x5206;&#x5F39;&#x6027;&#x4F38;&#x7F29;&#x7EC4;&#x3002;&#x4EFB;&#x4F55;&#x6807;&#x7B7E;&#x76F8;&#x540C;&#x7684;&#x4E3B;&#x673A;&#xFF0C;&#x4E0D;&#x7BA1;&#x5B83;&#x662F;&#x5982;&#x4F55;&#x88AB;&#x6DFB;&#x52A0;&#x5230;Rancher&#x7684;&#xFF0C;&#x90FD;&#x4F1A;&#x88AB;&#x5F53;&#x4F5C;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x5F39;&#x6027;&#x4F38;&#x7F29;&#x7EC4;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;&#x521B;&#x5EFA; webhook &#x65F6;, &#x4E3B;&#x673A;&#x4E0A;&#x4E0D;&#x8981;&#x6C42;&#x6709;&#x6807;&#x7B7E;&#xFF0C;&#x4F46;&#x662F;&#x5F53;&#x5728;&#x5F39;&#x6027;&#x4F38;&#x7F29;&#x7EC4;&#x4E2D;&#x4F7F;&#x7528;webhook&#x65F6;&#xFF0C;&#x81F3;&#x5C11;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x4E3B;&#x673A;&#x5E26;&#x6709;&#x6807;&#x7B7E;&#xFF0C;&#x8FD9;&#x6837; webhook &#x624D;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x514B;&#x9686;&#x7684;&#x4E3B;&#x673A;&#x3002;&#x603B;&#x4E4B;&#xFF0C; Rancher &#x4F1A;&#x9009;&#x62E9;&#x4E00;&#x53F0;&#x5728;&#x5F39;&#x6027;&#x4F38;&#x7F29;&#x7EC4;&#x4E2D;&#x7684;&#x53EF;&#x514B;&#x9686;&#x4E3B;&#x673A;</p>
+<p>&#x8981;&#x5F39;&#x6027;&#x4F38;&#x7F29;&#x4E3B;&#x673A;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x914D;&#x7F6E;&#x4F60;&#x7684; webhook&#xFF1A;</p>
+<ul>
+<li>&#x6269;&#x589E;&#xFF0F;&#x51CF;&#x5C11;&#x4E3B;&#x673A;(&#x5373;&#xFF0C;&#x6DFB;&#x52A0;&#x6216;&#x79FB;&#x9664;&#x4E3B;&#x673A;)</li>
+<li>&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x4E3B;&#x673A;&#x9009;&#x62E9;&#x5668;&#x6807;&#x7B7E;&#x3002;&#x8FD9;&#x4E2A;&#x6807;&#x7B7E;&#x662F;&#x7528;&#x6765;&#x628A;&#x4E3B;&#x673A;&#x5206;&#x7EC4;&#x6210;&#x4E00;&#x4E2A;&#x5F39;&#x6027;&#x4F38;&#x7F29;&#x7EC4;&#x7684;&#x6807;&#x7B7E;&#x3002;</li>
+<li>&#x9009;&#x62E9;&#x5355;&#x6B21;&#x8981;&#x4F38;&#x7F29;&#x7684;&#x4E3B;&#x673A;&#x6570;&#x91CF;&#x3002;</li>
+<li>&#x9009;&#x62E9;&#x4E3B;&#x673A;&#x6570;&#x91CF;&#x4F38;&#x7F29;&#x7684;&#x4E0A;&#x4E0B;&#x9650;&#x3002;&#x6DFB;&#x52A0;&#x4E3B;&#x673A;&#x65F6;&#xFF0C;&#x4E3B;&#x673A;&#x6570;&#x91CF;&#x4E0D;&#x80FD;&#x8D85;&#x8FC7;&#x4E0A;&#x7EBF;&#xFF0C; &#x51CF;&#x5C11;&#x65F6;&#x4E0D;&#x80FD;&#x4F4E;&#x4E8E;&#x4E0B;&#x9650;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4F60;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A; webhook &#x6765;&#x7F29;&#x5C0F;&#x4E3B;&#x673A;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x9009;&#x8005;&#x79FB;&#x9664;&#x4E3B;&#x673A;&#x7684;&#x4F18;&#x5148;&#x987A;&#x5E8F;&#x3002;</li>
+</ul>
+<h5 id="&#x4E3B;&#x673A;&#x5F39;&#x6027;&#x4F38;&#x7F29;&#x6CE8;&#x610F;&#x4E8B;&#x4EF6;">&#x4E3B;&#x673A;&#x5F39;&#x6027;&#x4F38;&#x7F29;&#x6CE8;&#x610F;&#x4E8B;&#x4EF6;</h5>
+<ul>
+<li>&#x4E3B;&#x673A;&#x6807;&#x7B7E;: &#x6807;&#x7B7E;&#x88AB;&#x7528;&#x628A;&#x4E3B;&#x673A;&#x5212;&#x5206;&#x4E3A;&#x4E0D;&#x540C;&#x7684;&#x5F39;&#x6027;&#x4F38;&#x7F29;&#x7EC4;&#x3002;&#x56E0;&#x4E3A;&#x8FD9;&#x4E9B;&#x6807;&#x7B7E;&#x662F;&#x7531;&#x7528;&#x6237;&#x6DFB;&#x52A0;&#x7684;&#xFF0C;&#x5728;&#x9009;&#x62E9;&#xFF0C;&#x6DFB;&#x52A0;&#xFF0C;&#x7F16;&#x8F91;&#xFF0C;&#x6807;&#x7B7E;&#x65F6;&#x5FC5;&#x987B;&#x8981;&#x975E;&#x5E38;&#x5C0F;&#x5FC3;&#x3002;&#x4EFB;&#x4F55;&#x6DFB;&#x52A0;&#x5728;&#x4E3B;&#x673A;&#x4E0A;&#x7684;&#x6807;&#x7B7E;&#x90FD;&#x4F1A;&#x81EA;&#x52A8;&#x5730;&#x628A;&#x8FD9;&#x53F0;&#x4E3B;&#x673A;&#x5230;&#x6DFB;&#x52A0;&#x5230;&#x4E00;&#x4E2A;&#x5F39;&#x6027;&#x4F38;&#x7F29;&#x7EC4;&#x3002;&#x5982;&#x679C;&#x8FD9;&#x53F0;&#x4E3B;&#x673A;&#x662F;&#x53EF;&#x514B;&#x9686;&#x7684;&#xFF0C;&#x5B83;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x7528;&#x4E8E;&#x514B;&#x9686;&#x51FA;&#x66F4;&#x591A;&#x4E3B;&#x673A;&#x3002;&#x4EFB;&#x4F55;&#x4E3B;&#x673A;&#x6807;&#x7B7E;&#x7684;&#x79FB;&#x9664;&#x90FD;&#x4F1A;&#x81EA;&#x52A8;&#x5730;&#x628A;&#x76F8;&#x5E94;&#x7684;&#x4E3B;&#x673A;&#x4ECE;&#x5F39;&#x6027;&#x4F38;&#x7F29;&#x7EC4;&#x79FB;&#x9664;&#xFF0C;&#x8FD9;&#x53F0;&#x4E3B;&#x673A;&#x4E5F;&#x5C06;&#x4E0D;&#x518D;&#x80FD;&#x591F;&#x88AB; webhook &#x670D;&#x52A1;&#x514B;&#x9686;&#x6216;&#x79FB;&#x9664;&#x3002;</li>
+<li>&#x81EA;&#x5B9A;&#x4E49;&#x4E3B;&#x673A;: &#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x4E3B;&#x673A;&#x90FD;&#x53EF;&#x4EE5;&#x88AB;&#x6DFB;&#x52A0;&#x5230;&#x5F39;&#x6027;&#x4F38;&#x7F29;&#x7EC4;&#x4E2D;&#xFF0C;&#x4F60;&#x53EA;&#x9700;&#x8981;&#x5728;&#x4E3B;&#x673A;&#x4E0A;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x6807;&#x7B7E;&#x3002;Rancher &#x4E0D;&#x80FD;&#x7528;&#x8FD9;&#x4E9B;&#x4E3B;&#x673A;&#x6765;&#x514B;&#x9686;&#x6216;&#x521B;&#x5EFA;&#x51FA;&#x66F4;&#x591A;&#x4E3B;&#x673A;&#x3002;</li>
+<li>&#x4E3B;&#x673A;&#x514B;&#x9686;: &#x56E0;&#x4E3A;&#x4E3B;&#x673A;&#x6269;&#x589E;&#x65E2;&#x662F;&#x4E3B;&#x673A;&#x514B;&#x9686;&#xFF0C;&#x6240;&#x6709;&#x914D;&#x7F6E;&#xFF0C;&#x5305;&#x62EC;&#x8D44;&#x6E90;&#x5206;&#x914D;&#xFF0C;Docker &#x5F15;&#x64CE;&#x7B49;&#x90FD;&#x4F1A;&#x5728;&#x65B0;&#x4E3B;&#x673A;&#x88AB;&#x590D;&#x5236;&#x3002;Rancher &#x603B;&#x662F;&#x4F1A;&#x7528;&#x514B;&#x9686;&#x6700;&#x65E7;&#x7684;&#x4E3B;&#x673A;&#x3002;</li>
+<li>&#x5904;&#x4E8E;&#x9519;&#x8BEF;&#x72B6;&#x6001;&#x7684;&#x4E3B;&#x673A;: &#x4EFB;&#x4F55;&#x5904;&#x4E8E; Error &#x72B6;&#x6001;&#x7684;&#x4E3B;&#x673A;&#x90FD;&#x4E0D;&#x4F1A;&#x88AB;&#x6DFB;&#x52A0;&#x5230;&#x5F39;&#x6027;&#x4F38;&#x7F29;&#x7EC4;&#x4E2D;.</li>
+<li>&#x79FB;&#x9664;&#x4E3B;&#x673A;&#x7684;&#x987A;&#x5E8F;: &#x4ECE; Rancher &#x4E2D;&#x5220;&#x9664;&#x4E3B;&#x673A;&#x65F6;&#xFF0C;Rancher&#x4F1A;&#x6839;&#x636E;&#x4E3B;&#x673A;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x6309;&#x4EE5;&#x4E0B;&#x7684;&#x987A;&#x5E8F;&#x5220;&#x9664;&#x5F39;&#x6027;&#x4F38;&#x7F29;&#x7EC4;&#x4E2D;&#x7684;&#x4E3B;&#x673A;(Inactive&#xFF0C; Deactivating&#xFF0C;Reconnecting &#x6216; Disconnected)&#xFF0C;&#x6700;&#x540E;&#x624D;&#x4F1A;&#x5220;&#x9664;&#x5904;&#x4E8E; active &#x72B6;&#x6001;&#x7684;&#x4E3B;&#x673A;</li>
+</ul>
+<h3 id="&#x57FA;&#x4E8E;-docker-hub-webhooks-&#x5347;&#x7EA7;&#x670D;&#x52A1;">&#x57FA;&#x4E8E; DOCKER HUB WEBHOOKS &#x5347;&#x7EA7;&#x670D;&#x52A1;</h3>
+<p>&#x5229;&#x7528; Docker Hub &#x7684; webhooks, &#x4F60;&#x53EF;&#x4EE5;&#x52A0;&#x5165; Rancher &#x7684;&#x63A5;&#x6536;&#x5668;&#x94A9;&#x5B50;&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x6BCF;&#x5F53;push&#x4E00;&#x4E2A;&#x955C;&#x50CF;&#xFF0C;&#x4E00;&#x4E2A; POST &#x8BF7;&#x6C42;&#x5C31;&#x4F1A;&#x88AB;&#x53D1;&#x9001;&#x5230; Rancher &#x6765;&#x89E6;&#x53D1;&#x8FD9;&#x4E2A;&#x89E6;&#x53D1;&#x5668;&#x94A9;&#x5B50;&#x3002;&#x4F7F;&#x7528;&#x8FD9;&#x79CD; webhooks &#x7EC4;&#x5408;, &#x4F60;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x81EA;&#x6CBB;&#x3002; &#x8FD9;&#x6837;&#xFF0C;&#x6BCF;&#x5F53;&#x5728; Docker Hub push&#x4E00;&#x4E2A; image:tag&#xFF0C; &#x6240;&#x6709;&#x4F7F;&#x7528;&#x4E86;&#x5339;&#x914D;&#x8FD9;&#x4E2A;&#x955C;&#x50CF;&#x7248;&#x672C;&#x7684;&#x670D;&#x52A1;&#x90FD;&#x4F1A;&#x81EA;&#x52A8;&#x88AB;&#x5347;&#x7EA7;&#x3002;&#x4F60;&#x9700;&#x8981;&#x7528;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#x6807;&#x7B7E;&#x6765;&#x9009;&#x62E9;&#x5339;&#x914D;&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x5347;&#x7EA7;&#x9009;&#x4E2D;&#x7684;&#x670D;&#x52A1;&#x3002;&#x6807;&#x7B7E;&#x5E94;&#x8BE5;&#x5728;&#x670D;&#x52A1;&#x521B;&#x5EFA;&#x65F6;&#x6DFB;&#x52A0;&#x3002;&#x5982;&#x679C;&#x670D;&#x52A1;&#x6CA1;&#x6709;&#x6807;&#x7B7E;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5728;Rancher&#x4E2D;&#x5347;&#x7EA7;&#x670D;&#xFF0C;&#x7136;&#x540E;&#x6DFB;&#x52A0;&#x4F9B; webhook &#x4F7F;&#x7528;&#x7684;&#x6807;&#x7B7E;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x5347;&#x7EA7;&#x670D;&#x52A1;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x914D;&#x7F6E;&#x81EA;&#x5DF1;&#x7684; webhook&#xFF1A;</p>
+<ul>
+<li>&#x9009;&#x62E9;&#x8981;&#x5347;&#x7EA7;&#x7684;&#x6807;&#x7B7E;</li>
+<li>&#x9009;&#x62E9;&#x6807;&#x7B7E;&#x6765;&#x627E;&#x5230;&#x8981;&#x5347;&#x7EA7;&#x7684;&#x670D;&#x52A1;</li>
+<li>&#x786E;&#x5B9A;&#x5355;&#x6B21;&#x8981;&#x5347;&#x7EA7;&#x7684;&#x5BB9;&#x5668;&#x6570;&#x91CF;(&#x5373;&#xFF0C;&#x6279;&#x91CF;&#x5927;&#x5C0F;)</li>
+<li>&#x786E;&#x5B9A;&#x5728;&#x5347;&#x7EA7;&#x671F;&#x95F4;&#x542F;&#x52A8;&#x4E0B;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x7684;&#x79D2;&#x6570;(&#x5373;&#xFF0C;&#x6279;&#x91CF;&#x95F4;&#x6B47;)</li>
+<li>&#x9009;&#x62E9;&#x662F;&#x5426;&#x65B0;&#x5BB9;&#x5668;&#x5E94;&#x8BE5;&#x5728;&#x65E7;&#x5BB9;&#x5668;&#x505C;&#x6B62;&#x524D;&#x542F;&#x52A8;&#x3002;</li>
+</ul>
+<p>&#x521B;&#x5EFA;&#x63A5;&#x53D7;&#x5668;&#x94A9;&#x5B50;&#x540E;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5728;&#x4F60;&#x7684; Docker Hub webhook &#x4E2D;&#x4F7F;&#x7528;
+&#x89E6;&#x53D1; URL&#x3002;&#x5F53;Docker Hub &#x89E6;&#x53D1;&#x81EA;&#x5DF1;&#x7684; webhook, &#x88AB; Rancher &#x89E6;&#x53D1;&#x5668;&#x94A9;&#x5B50;&#x9009;&#x4E2D;&#x7684;&#x670D;&#x52A1;&#x4F1A;&#x88AB;&#x5347;&#x7EA7;&#x3002;Rancher &#x89E6;&#x53D1;&#x5668;&#x94A9;&#x5B50;&#x9ED8;&#x8BA4;&#x9700;&#x8981; Docker Hub webhook &#x63D0;&#x4F9B;&#x7684;&#x7279;&#x5B9A;&#x4FE1;&#x606F;&#x3002;&#x540C;&#x65F6;&#x4F7F;&#x7528; Rancher&#x2019;s &#x63A5;&#x53D7;&#x5668;&#x94A9;&#x5B50;&#x548C;&#x5176;&#x5B83;webhook&#xFF0C;POST &#x8BF7;&#x6C42;&#x4E2D;&#x9700;&#x8981;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5B57;&#x6BB5;:</p>
+<pre><code>{
+    &quot;push_data&quot;: {
+        &quot;tag&quot;: &lt;pushedTag&gt;
+    },
+    &quot;repository&quot;: {
+        &quot;repo_name&quot;: &lt;image&gt;
+    }
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="section13.html" class="navigation navigation-prev " aria-label="Previous page: 11-13 密文 - 实验性的">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section15.html" class="navigation navigation-next " aria-label="Next page: 11-15 标签">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"11-14 Webhooks","level":"1.12.14","depth":2,"next":{"title":"11-15 标签","level":"1.12.15","depth":2,"path":"chapter11/section15.md","ref":"chapter11/section15.md","articles":[]},"previous":{"title":"11-13 密文 - 实验性的","level":"1.12.13","depth":2,"path":"chapter11/section13.md","ref":"chapter11/section13.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter11/section14.md","mtime":"2018-10-30T08:37:09.649Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-10-30T09:20:31.791Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

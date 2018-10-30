@@ -1,0 +1,1496 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第3章 安装Rancher · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../chapter4/section1.html" />
+    
+    
+    <link rel="prev" href="../chapter2/section1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Rancher 1.6 Docs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/section1.html">
+            
+                <a href="../chapter1/section1.html">
+            
+                    
+                    第1章 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter2/section1.html">
+            
+                <a href="../chapter2/section1.html">
+            
+                    
+                    第2章 快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="section1.html">
+            
+                <a href="section1.html">
+            
+                    
+                    第3章 安装Rancher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter4/section1.html">
+            
+                <a href="../chapter4/section1.html">
+            
+                    
+                    第4章 升级Rancher Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    第5章 系统设置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter5/section1.html">
+            
+                <a href="../chapter5/section1.html">
+            
+                    
+                    5-1 访问控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter5/section2.html">
+            
+                <a href="../chapter5/section2.html">
+            
+                    
+                    5-2 账户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter5/section3.html">
+            
+                <a href="../chapter5/section3.html">
+            
+                    
+                    5-3 注册主机和应用商店
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter5/section4.html">
+            
+                <a href="../chapter5/section4.html">
+            
+                    
+                    5-4 主机驱动
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter6/section1.html">
+            
+                <a href="../chapter6/section1.html">
+            
+                    
+                    第6章 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter7/section1.html">
+            
+                <a href="../chapter7/section1.html">
+            
+                    
+                    第7章 主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter8/section1.html">
+            
+                <a href="../chapter8/section1.html">
+            
+                    
+                    第8章 镜像仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapter9/section1.html">
+            
+                <a href="../chapter9/section1.html">
+            
+                    
+                    第9章 证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../chapter10/">
+            
+                <a href="../chapter10/">
+            
+                    
+                    第10章 系统服务
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../chapter10/section1.html">
+            
+                <a href="../chapter10/section1.html">
+            
+                    
+                    10-1 基础设施服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../chapter10/section2.html">
+            
+                <a href="../chapter10/section2.html">
+            
+                    
+                    10-2 网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../chapter10/section3.html">
+            
+                <a href="../chapter10/section3.html">
+            
+                    
+                    10-3 网络策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../chapter10/section4.html">
+            
+                <a href="../chapter10/section4.html">
+            
+                    
+                    10-4 负载均衡器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../chapter10/section5.html">
+            
+                <a href="../chapter10/section5.html">
+            
+                    
+                    10-5 DNS服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../chapter10/section6.html">
+            
+                <a href="../chapter10/section6.html">
+            
+                    
+                    10-6 Metadata服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../chapter10/section7.html">
+            
+                <a href="../chapter10/section7.html">
+            
+                    
+                    10-7 存储服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../chapter10/section8.html">
+            
+                <a href="../chapter10/section8.html">
+            
+                    
+                    10-8 调度任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../chapter10/section9.html">
+            
+                <a href="../chapter10/section9.html">
+            
+                    
+                    10-9 审计日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="../chapter10/section10.html">
+            
+                <a href="../chapter10/section10.html">
+            
+                    
+                    10-10 服务账号
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../chapter11/">
+            
+                <a href="../chapter11/">
+            
+                    
+                    第11章 Cattle
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../chapter11/section1.html">
+            
+                <a href="../chapter11/section1.html">
+            
+                    
+                    11-1 应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../chapter11/section2.html">
+            
+                <a href="../chapter11/section2.html">
+            
+                    
+                    11-2 服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../chapter11/section3.html">
+            
+                <a href="../chapter11/section3.html">
+            
+                    
+                    11-3 卷
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../chapter11/section4.html">
+            
+                <a href="../chapter11/section4.html">
+            
+                    
+                    11-4 负载均衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../chapter11/section5.html">
+            
+                <a href="../chapter11/section5.html">
+            
+                    
+                    11-5 外部服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../chapter11/section6.html">
+            
+                <a href="../chapter11/section6.html">
+            
+                    
+                    11-6 服务别名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../chapter11/section7.html">
+            
+                <a href="../chapter11/section7.html">
+            
+                    
+                    11-7 健康检查
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../chapter11/section8.html">
+            
+                <a href="../chapter11/section8.html">
+            
+                    
+                    11-8 调度服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../chapter11/section9.html">
+            
+                <a href="../chapter11/section9.html">
+            
+                    
+                    11-9 升级服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../chapter11/section10.html">
+            
+                <a href="../chapter11/section10.html">
+            
+                    
+                    11-10 Cattle环境中的内部DNS服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="../chapter11/section11.html">
+            
+                <a href="../chapter11/section11.html">
+            
+                    
+                    11-11 外部DNS服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.12" data-path="../chapter11/section12.html">
+            
+                <a href="../chapter11/section12.html">
+            
+                    
+                    11-12 Rancher-Compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.13" data-path="../chapter11/section13.html">
+            
+                <a href="../chapter11/section13.html">
+            
+                    
+                    11-13 密文 - 实验性的
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.14" data-path="../chapter11/section14.html">
+            
+                <a href="../chapter11/section14.html">
+            
+                    
+                    11-14 Webhooks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.15" data-path="../chapter11/section15.html">
+            
+                <a href="../chapter11/section15.html">
+            
+                    
+                    11-15 标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../chapter12/">
+            
+                <a href="../chapter12/">
+            
+                    
+                    第12章 Kubernetes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../chapter12/section1.html">
+            
+                <a href="../chapter12/section1.html">
+            
+                    
+                    12-1 启动Kubernetes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../chapter12/section2.html">
+            
+                <a href="../chapter12/section2.html">
+            
+                    
+                    12-2 弹性平面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../chapter12/section3.html">
+            
+                <a href="../chapter12/section3.html">
+            
+                    
+                    12-3 Cloud Providers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../chapter12/section4.html">
+            
+                <a href="../chapter12/section4.html">
+            
+                    
+                    12-4 私有镜像仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../chapter12/section5.html">
+            
+                <a href="../chapter12/section5.html">
+            
+                    
+                    12-5 RBAC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6" data-path="../chapter12/section6.html">
+            
+                <a href="../chapter12/section6.html">
+            
+                    
+                    12-6 灾难恢复
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.7" data-path="../chapter12/section7.html">
+            
+                <a href="../chapter12/section7.html">
+            
+                    
+                    12-7 备份
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.8" data-path="../chapter12/section8.html">
+            
+                <a href="../chapter12/section8.html">
+            
+                    
+                    12-8 持久化存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.9" data-path="../chapter12/section9.html">
+            
+                <a href="../chapter12/section9.html">
+            
+                    
+                    12-9 插件支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.10" data-path="../chapter12/section10.html">
+            
+                <a href="../chapter12/section10.html">
+            
+                    
+                    12-10 Ingress支持与配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.11" data-path="../chapter12/section11.html">
+            
+                <a href="../chapter12/section11.html">
+            
+                    
+                    12-11 升级Kubernets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.12" data-path="../chapter12/section12.html">
+            
+                <a href="../chapter12/section12.html">
+            
+                    
+                    12-12 删除Kubernets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../chapter13/section1.html">
+            
+                <a href="../chapter13/section1.html">
+            
+                    
+                    第13章 Mesos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../chapter14/section1.html">
+            
+                <a href="../chapter14/section1.html">
+            
+                    
+                    第14章 Swarm - 实验性的
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../chapter15/section1.html">
+            
+                <a href="../chapter15/section1.html">
+            
+                    
+                    第15章 Windows - 实验性的
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../chapter16/section1.html">
+            
+                <a href="../chapter16/section1.html">
+            
+                    
+                    第16章 以原生Docker命令行的形式使用Rancher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../chapter17/">
+            
+                <a href="../chapter17/">
+            
+                    
+                    第17章 应用商店
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../chapter17/section1.html">
+            
+                <a href="../chapter17/section1.html">
+            
+                    
+                    17-1 应用商店
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../chapter17/section2.html">
+            
+                <a href="../chapter17/section2.html">
+            
+                    
+                    17-2 创建私有应用商店
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../chapter18/">
+            
+                <a href="../chapter18/">
+            
+                    
+                    第18章 Rancher命令行
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../chapter18/section1.html">
+            
+                <a href="../chapter18/section1.html">
+            
+                    
+                    18-1 Rancher命令行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../chapter18/section2.html">
+            
+                <a href="../chapter18/section2.html">
+            
+                    
+                    18-2 命令和选项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../chapter18/section3.html">
+            
+                <a href="../chapter18/section3.html">
+            
+                    
+                    18-3 变量替换
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../chapter19/section1.html">
+            
+                <a href="../chapter19/section1.html">
+            
+                    
+                    第19章 API文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../chapter20/section1.html">
+            
+                <a href="../chapter20/section1.html">
+            
+                    
+                    第20章 Rancher社区贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../chapter21/">
+            
+                <a href="../chapter21/">
+            
+                    
+                    第21章 常见问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../chapter21/section1.html">
+            
+                <a href="../chapter21/section1.html">
+            
+                    
+                    21-1 Rancher Server的常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../chapter21/section2.html">
+            
+                <a href="../chapter21/section2.html">
+            
+                    
+                    21-2 Rancher Agent的常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.3" data-path="../chapter21/section3.html">
+            
+                <a href="../chapter21/section3.html">
+            
+                    
+                    21-3 常见的故障排查与修复方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../chapter22/section1.html">
+            
+                <a href="../chapter22/section1.html">
+            
+                    
+                    第22章 历史文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第3章 安装Rancher</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5B89;&#x88C5;-rancher-server">&#x5B89;&#x88C5; Rancher Server</h2>
+<p>Rancher&#x662F;&#x4F7F;&#x7528;&#x4E00;&#x7CFB;&#x5217;&#x7684;Docker&#x5BB9;&#x5668;&#x8FDB;&#x884C;&#x90E8;&#x7F72;&#x7684;&#x3002;&#x8FD0;&#x884C;Rancher&#x8DDF;&#x542F;&#x52A8;&#x4E24;&#x4E2A;&#x5BB9;&#x5668;&#x4E00;&#x6837;&#x7B80;&#x5355;&#x3002;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x4F5C;&#x4E3A;&#x7BA1;&#x7406;&#x670D;&#x52A1;&#x5668;&#x90E8;&#x7F72;&#xFF0C;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x4F5C;&#x4E3A;&#x96C6;&#x7FA4;&#x8282;&#x70B9;&#x7684;Agent&#x90E8;&#x7F72;</p>
+<ul>
+<li><a href="https://rancher.com/docs/rancher/v1.6/zh/installing-rancher/installing-server/#single-container" target="_blank">Rancher Server - &#x5355;&#x5BB9;&#x5668;&#x90E8;&#x7F72; (non-HA)</a></li>
+<li><a href="https://rancher.com/docs/rancher/v1.6/zh/installing-rancher/installing-server/#single-container-external-database" target="_blank">Rancher Server - &#x5355;&#x5BB9;&#x5668;&#x90E8;&#x7F72; (non-HA) - &#x4F7F;&#x7528;&#x5916;&#x7F6E;&#x6570;&#x636E;&#x5E93;</a></li>
+<li><a href="https://rancher.com/docs/rancher/v1.6/zh/installing-rancher/installing-server/#single-container-bind-mount" target="_blank">Rancher Server - &#x5355;&#x5BB9;&#x5668;&#x90E8;&#x7F72; (non-HA)- &#x6302;&#x8F7D;MySQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x6570;&#x636E;&#x76EE;&#x5F55;</a></li>
+<li><a href="https://rancher.com/docs/rancher/v1.6/zh/installing-rancher/installing-server/#multi-nodes" target="_blank">Rancher Server - &#x591A;&#x8282;&#x70B9;&#x7684;HA&#x90E8;&#x7F72;</a></li>
+<li><a href="https://rancher.com/docs/rancher/v1.6/zh/installing-rancher/installing-server/#elb" target="_blank">Rancher Server - &#x4F7F;&#x7528;AWS&#x7684;Elastic/Classic Load Balancer&#x4F5C;&#x4E3A;Rancher Server HA&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;</a></li>
+<li><a href="https://rancher.com/docs/rancher/v1.6/zh/installing-rancher/installing-server/#ldap" target="_blank">Rancher Server - &#x4F7F;&#x7528;TLS&#x8BA4;&#x8BC1;&#x7684;AD/OPENLDAP</a></li>
+<li><a href="https://rancher.com/docs/rancher/v1.6/zh/installing-rancher/installing-server/#http-proxy" target="_blank">Rancher Server - &#x5728;HTTP&#x4EE3;&#x7406;&#x540E;&#x65B9;&#x542F;&#x52A8; Rancher Server</a></li>
+<li><a href="https://rancher.com/docs/rancher/v1.6/zh/installing-rancher/installing-server/#mysql-ssl" target="_blank">Rancher Server - &#x901A;&#x8FC7;SSL&#x8FDE;&#x63A5;MySQL</a></li>
+</ul>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;
+&#x4F60;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;Rancher Server&#x7684;&#x5BB9;&#x5668;&#x7684;&#x547D;&#x4EE4; docker run rancher/server --help &#x6765;&#x83B7;&#x5F97;&#x6240;&#x6709;&#x9009;&#x9879;&#x4EE5;&#x53CA;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;&#x3002;</p>
+</blockquote>
+<h3 id="&#x5B89;&#x88C5;&#x9700;&#x6C42;">&#x5B89;&#x88C5;&#x9700;&#x6C42;</h3>
+<ul>
+<li>&#x6240;&#x6709;&#x5B89;&#x88C5;&#x6709;&#x652F;&#x6301;&#x7684;Docker&#x7248;&#x672C;&#x7684;&#x73B0;&#x4EE3;Linux&#x53D1;&#x884C;&#x7248;&#x3002; RancherOS, Ubuntu, RHEL/CentOS 7 &#x90FD;&#x662F;&#x7ECF;&#x8FC7;&#x4E25;&#x683C;&#x7684;&#x6D4B;&#x8BD5;&#x3002;<ul>
+<li>&#x5BF9;&#x4E8E; RHEL/CentOS, &#x9ED8;&#x8BA4;&#x7684; storage driver, &#x4F8B;&#x5982; devicemapper using loopback, &#x5E76;&#x4E0D;&#x88AB;Docker&#x63A8;&#x8350;&#x3002; &#x8BF7;&#x53C2;&#x8003;Docker&#x7684;&#x6587;&#x6863;&#x53BB;&#x4FEE;&#x6539;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x7684;storage driver&#x3002;</li>
+<li>&#x5BF9;&#x4E8E; RHEL/CentOS, &#x5982;&#x679C;&#x4F60;&#x60F3;&#x4F7F;&#x7528; SELinux, &#x4F60;&#x9700;&#x8981;&#x5B89;&#x88C5;&#x989D;&#x5916;&#x7684; SELinux &#x7EC4;&#x4EF6;.</li>
+</ul>
+</li>
+<li>1GB&#x5185;&#x5B58;</li>
+<li>&#x7CBE;&#x786E;&#x7684;&#x65F6;&#x949F;&#x540C;&#x6B65;&#x670D;&#x52A1; (&#x4F8B;&#x5982; ntpd)</li>
+<li>MySQL&#x670D;&#x52A1;&#x5668;&#x9700;&#x8981; max_connections &#x7684;&#x8BBE;&#x7F6E; &gt; 150<ul>
+<li>MYSQL&#x914D;&#x7F6E;&#x9700;&#x6C42;<ul>
+<li>&#x9009;&#x9879;1: &#x7528;&#x9ED8;&#x8BA4;COMPACT&#x9009;&#x9879;&#x8FD0;&#x884C;Antelope</li>
+<li>&#x9009;&#x9879;2: &#x8FD0;&#x884C;MySQL 5.7&#xFF0C;&#x4F7F;&#x7528;Barracuda&#x3002;&#x9ED8;&#x8BA4;&#x9009;&#x9879;ROW_FORMAT&#x9700;&#x8BBE;&#x7F6E;&#x6210;Dynamic</li>
+</ul>
+</li>
+<li>&#x63A8;&#x8350;&#x8BBE;&#x5B9A;<ul>
+<li>max_packet_size &gt;= 32M</li>
+<li>innodb_log_file_size &gt;= 256M (&#x5982;&#x679C;&#x4F60;&#x5DF2;&#x6709;&#x73B0;&#x5B58;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x8BF7;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x66F4;&#x6539;&#x6B64;&#x8BBE;&#x5B9A;)</li>
+<li>innodb_file_per_table=1</li>
+<li>innodb_buffer_pool_size &gt;= 1GB (&#x5BF9;&#x4E8E;&#x66F4;&#x9AD8;&#x9700;&#x6C42;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x8BF7;&#x5728;&#x4E13;&#x5C5E;MySQL&#x670D;&#x52A1;&#x5668;&#x673A;&#x5668;&#x4E0A;&#x4F7F;&#x7528;4-8G&#x7684;&#x503C;)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;
+&#x76EE;&#x524D;Rancher&#x4E2D;&#x5E76;&#x4E0D;&#x652F;&#x6301;Docker for Mac</p>
+</blockquote>
+<h3 id="rancher-server-&#x6807;&#x7B7E;">RANCHER SERVER &#x6807;&#x7B7E;</h3>
+<p>Rancher Server&#x5F53;&#x524D;&#x7248;&#x672C;&#x4E2D;&#x6709;2&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x6807;&#x7B7E;&#x3002;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E00;&#x4E2A;&#x4E3B;&#x8981;&#x7684;release&#x6807;&#x7B7E;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x4F1A;&#x63D0;&#x4F9B;&#x5BF9;&#x5E94;&#x7248;&#x672C;&#x7684;&#x6587;&#x6863;&#x3002;</p>
+<ul>
+<li>rancher/server:latest &#x6B64;&#x6807;&#x7B7E;&#x662F;&#x6211;&#x4EEC;&#x7684;&#x6700;&#x65B0;&#x4E00;&#x6B21;&#x5F00;&#x53D1;&#x7684;&#x6784;&#x5EFA;&#x7248;&#x672C;&#x3002;&#x8FD9;&#x4E9B;&#x6784;&#x5EFA;&#x5DF2;&#x7ECF;&#x88AB;&#x6211;&#x4EEC;&#x7684;CI&#x6846;&#x67B6;&#x81EA;&#x52A8;&#x9A8C;&#x8BC1;&#x6D4B;&#x8BD5;&#x3002;&#x4F46;&#x8FD9;&#x4E9B;release&#x5E76;&#x4E0D;&#x4EE3;&#x8868;&#x53EF;&#x4EE5;&#x5728;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x90E8;&#x7F72;&#x3002;</li>
+<li>rancher/server:stable &#x6B64;&#x6807;&#x7B7E;&#x662F;&#x6211;&#x4EEC;&#x6700;&#x65B0;&#x4E00;&#x4E2A;&#x7A33;&#x5B9A;&#x7684;release&#x6784;&#x5EFA;&#x3002;&#x8FD9;&#x4E2A;&#x6807;&#x7B7E;&#x4EE3;&#x8868;&#x6211;&#x4EEC;&#x63A8;&#x8350;&#x5728;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x7248;&#x672C;&#x3002;</li>
+</ul>
+<p>&#x8BF7;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x5E26;&#x6709; rc{n} &#x524D;&#x7F00;&#x7684;release&#x3002;&#x8FD9;&#x4E9B;&#x6784;&#x5EFA;&#x90FD;&#x662F;Rancher&#x56E2;&#x961F;&#x7684;&#x6D4B;&#x8BD5;&#x6784;&#x5EFA;&#x3002;</p>
+<h3 id="&#x542F;&#x52A8;-rancher-server---&#x5355;&#x5BB9;&#x5668;&#x90E8;&#x7F72;-non-ha">&#x542F;&#x52A8; RANCHER SERVER - &#x5355;&#x5BB9;&#x5668;&#x90E8;&#x7F72; (NON-HA)</h3>
+<p>&#x5728;&#x5B89;&#x88C5;&#x4E86;Docker&#x7684;Linux&#x670D;&#x52A1;&#x5668;&#x4E0A;&#xFF0C;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x547D;&#x4EE4;&#x5C31;&#x53EF;&#x4EE5;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x5355;&#x5B9E;&#x4F8B;&#x7684;Rancher&#x3002;</p>
+<pre><code>$ sudo docker run -d --restart=unless-stopped -p 8080:8080 rancher/server
+</code></pre><h3 id="rancher-ui">RANCHER UI</h3>
+<p>UI&#x4EE5;&#x53CA;API&#x4F1A;&#x4F7F;&#x7528; 8080 &#x7AEF;&#x53E3;&#x5BF9;&#x5916;&#x670D;&#x52A1;&#x3002;&#x4E0B;&#x8F7D;Docker&#x955C;&#x50CF;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x9700;&#x8981;1&#x5230;2&#x5206;&#x949F;&#x7684;&#x65F6;&#x95F4;Rancher&#x624D;&#x80FD;&#x5B8C;&#x5168;&#x542F;&#x52A8;&#x5E76;&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#x3002;</p>
+<p>&#x8BBF;&#x95EE;&#x5982;&#x4E0B;&#x7684;URL: http://<server_ip>:8080&#x3002;<server_ip> &#x662F;&#x8FD0;&#x884C;Rancher Server&#x7684;&#x4E3B;&#x673A;&#x7684;&#x516C;&#x5171;IP&#x5730;&#x5740;&#x3002;</server_ip></server_ip></p>
+<p>&#x5F53;UI&#x5DF2;&#x7ECF;&#x542F;&#x52A8;&#x5E76;&#x8FD0;&#x884C;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5148;&#x6DFB;&#x52A0;&#x4E3B;&#x673A; &#x6216;&#x8005;&#x5728;&#x5E94;&#x7528;&#x5546;&#x5E97;&#x4E2D;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x7F16;&#x6392;&#x5F15;&#x64CE;&#x3002;&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x9009;&#x62E9;&#x4E0D;&#x540C;&#x7684;&#x5BB9;&#x5668;&#x7F16;&#x6392;&#x5F15;&#x64CE;&#xFF0C;&#x5F53;&#x524D;&#x73AF;&#x5883;&#x4F1A;&#x4F7F;&#x7528;Cattle&#x5F15;&#x64CE;&#x3002;&#x5728;&#x4E3B;&#x673A;&#x88AB;&#x6DFB;&#x52A0;&#x90FD;Rancher&#x4E2D;&#x540E;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5F00;&#x59CB;&#x6DFB;&#x52A0;&#x670D;&#x52A1;&#x6216;&#x8005;&#x4ECE;&#x5E94;&#x7528;&#x5546;&#x5E97;&#x901A;&#x8FC7;&#x5E94;&#x7528;&#x6A21;&#x7248;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x3002;</p>
+<h3 id="&#x542F;&#x52A8;-rancher-server---&#x5355;&#x5BB9;&#x5668;&#x90E8;&#x7F72;---&#x4F7F;&#x7528;&#x5916;&#x90E8;&#x6570;&#x636E;&#x5E93;">&#x542F;&#x52A8; RANCHER SERVER - &#x5355;&#x5BB9;&#x5668;&#x90E8;&#x7F72; - &#x4F7F;&#x7528;&#x5916;&#x90E8;&#x6570;&#x636E;&#x5E93;</h3>
+<p>&#x9664;&#x4E86;&#x4F7F;&#x7528;&#x5185;&#x90E8;&#x7684;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x542F;&#x52A8;&#x4E00;&#x4E2A;Rancher Server&#x5E76;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x7684;&#x6570;&#x636E;&#x5E93;&#x3002;&#x542F;&#x52A8;&#x547D;&#x4EE4;&#x4E0E;&#x4E4B;&#x524D;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x6DFB;&#x52A0;&#x4E86;&#x4E00;&#x4E9B;&#x989D;&#x5916;&#x7684;&#x53C2;&#x6570;&#x53BB;&#x8BF4;&#x660E;&#x5982;&#x4F55;&#x8FDE;&#x63A5;&#x4F60;&#x7684;&#x5916;&#x90E8;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;
+&#x5728;&#x4F60;&#x7684;&#x5916;&#x90E8;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x63D0;&#x524D;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x540D;&#x548C;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x3002;Rancher&#x4F1A;&#x81EA;&#x52A8;&#x521B;&#x5EFA;Rancher&#x6240;&#x9700;&#x8981;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8868;&#x3002;</p>
+</blockquote>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x548C;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x7684;SQL&#x547D;&#x4EE4;&#x4F8B;&#x5B50;</p>
+<pre><code>&gt; CREATE DATABASE IF NOT EXISTS cattle COLLATE = &apos;utf8_general_ci&apos; CHARACTER SET = &apos;utf8&apos;;
+&gt; GRANT ALL ON cattle.* TO &apos;cattle&apos;@&apos;%&apos; IDENTIFIED BY &apos;cattle&apos;;
+&gt; GRANT ALL ON cattle.* TO &apos;cattle&apos;@&apos;localhost&apos; IDENTIFIED BY &apos;cattle&apos;;
+</code></pre><p>&#x542F;&#x52A8;&#x4E00;&#x4E2A;Rancher&#x8FDE;&#x63A5;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5728;&#x542F;&#x52A8;&#x5BB9;&#x5668;&#x7684;&#x547D;&#x4EE4;&#x4E2D;&#x6DFB;&#x52A0;&#x989D;&#x5916;&#x53C2;&#x6570;&#x3002;</p>
+<pre><code>$ sudo docker run -d --restart=unless-stopped -p 8080:8080 rancher/server \
+    --db-host myhost.example.com --db-port 3306 --db-user username --db-pass password --db-name cattle
+</code></pre><p>&#x5927;&#x90E8;&#x5206;&#x7684;&#x8F93;&#x5165;&#x53C2;&#x6570;&#x90FD;&#x6709;&#x9ED8;&#x8BA4;&#x503C;&#x5E76;&#x4E14;&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x53EA;&#x6709;MySQL server&#x7684;&#x5730;&#x5740;&#x662F;&#x5FC5;&#x987B;&#x8F93;&#x5165;&#x7684;&#x3002;</p>
+<pre><code>--db-host               IP or hostname of MySQL server
+--db-port               port of MySQL server (default: 3306)
+--db-user               username for MySQL login (default: cattle)
+--db-pass               password for MySQL login (default: cattle)
+--db-name               MySQL database name to use (default: cattle)
+</code></pre><blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;
+&#x5728;&#x4E4B;&#x524D;&#x7248;&#x672C;&#x7684;Rancher Server&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x53BB;&#x8FDE;&#x63A5;&#x5916;&#x90E8;&#x6570;&#x636E;&#x5E93;&#x3002;&#x5728;&#x65B0;&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E9B;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x4F1A;&#x7EE7;&#x7EED;&#x751F;&#x6548;&#xFF0C;&#x4F46;Rancher&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x53C2;&#x6570;&#x4EE3;&#x66FF;&#x3002;</p>
+</blockquote>
+<h3 id="&#x542F;&#x52A8;-rancher-server---&#x5355;&#x5BB9;&#x5668;&#x90E8;&#x7F72;---&#x6302;&#x8F7D;mysql&#x6570;&#x636E;&#x5E93;&#x7684;&#x6570;&#x636E;&#x76EE;&#x5F55;">&#x542F;&#x52A8; RANCHER SERVER - &#x5355;&#x5BB9;&#x5668;&#x90E8;&#x7F72; - &#x6302;&#x8F7D;MYSQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x6570;&#x636E;&#x76EE;&#x5F55;</h3>
+<p>&#x5728;Rancher Server&#x5BB9;&#x5668;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x4E3B;&#x673A;&#x4E0A;&#x7684;&#x5377;&#x6765;&#x6301;&#x4E45;&#x5316;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x5728;&#x542F;&#x52A8;Rancher&#x65F6;&#x6302;&#x8F7D;MySQL&#x7684;&#x6570;&#x636E;&#x5377;&#x3002;</p>
+<pre><code>$ sudo docker run -d -v &lt;host_vol&gt;:/var/lib/mysql --restart=unless-stopped -p 8080:8080 rancher/server
+</code></pre><p>&#x4F7F;&#x7528;&#x8FD9;&#x6761;&#x547D;&#x4EE4;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x5C31;&#x4F1A;&#x6301;&#x4E45;&#x5316;&#x5728;&#x4E3B;&#x673A;&#x4E0A;&#x3002;&#x5982;&#x679C;&#x4F60;&#x6709;&#x4E00;&#x4E2A;&#x73B0;&#x6709;&#x7684;Rancher Server&#x5BB9;&#x5668;&#x5E76;&#x4E14;&#x60F3;&#x6302;&#x5728;MySQL&#x7684;&#x6570;&#x636E;&#x5377;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x4EE5;&#x4E0B;&#x7684;Rancher&#x5347;&#x7EA7;&#x4ECB;&#x7ECD;&#x3002;</p>
+<h3 id="&#x542F;&#x52A8;-rancher-server---&#x591A;&#x8282;&#x70B9;&#x7684;ha&#x90E8;&#x7F72;">&#x542F;&#x52A8; RANCHER SERVER - &#x591A;&#x8282;&#x70B9;&#x7684;HA&#x90E8;&#x7F72;</h3>
+<p>&#x5728;&#x9AD8;&#x53EF;&#x7528;(HA)&#x7684;&#x6A21;&#x5F0F;&#x4E0B;&#x8FD0;&#x884C;Rancher Server&#x4E0E;&#x4F7F;&#x7528;&#x5916;&#x90E8;&#x6570;&#x636E;&#x5E93;&#x8FD0;&#x884C;Rancher Server&#x4E00;&#x6837;&#x7B80;&#x5355;&#xFF0C;&#x9700;&#x8981;&#x66B4;&#x9732;&#x4E00;&#x4E2A;&#x989D;&#x5916;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x6DFB;&#x52A0;&#x989D;&#x5916;&#x7684;&#x53C2;&#x6570;&#x5230;&#x542F;&#x52A8;&#x547D;&#x4EE4;&#x4E2D;&#xFF0C;&#x5E76;&#x4E14;&#x8FD0;&#x884C;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+<h4 id="ha&#x90E8;&#x7F72;&#x9700;&#x6C42;">HA&#x90E8;&#x7F72;&#x9700;&#x6C42;</h4>
+<ul>
+<li>HA &#x8282;&#x70B9;:<ul>
+<li>&#x6240;&#x6709;&#x5B89;&#x88C5;&#x6709;&#x652F;&#x6301;&#x7684;Docker&#x7248;&#x672C;&#x7684;&#x73B0;&#x4EE3;Linux&#x53D1;&#x884C;&#x7248; RancherOS, Ubuntu, RHEL/CentOS 7 &#x90FD;&#x662F;&#x7ECF;&#x8FC7;&#x4E25;&#x683C;&#x7684;&#x6D4B;&#x8BD5;&#x3002;<ul>
+<li>&#x5BF9;&#x4E8E; RHEL/CentOS, &#x9ED8;&#x8BA4;&#x7684; storage driver, &#x4F8B;&#x5982; devicemapper using loopback, &#x5E76;&#x4E0D;&#x88AB;Docker&#x63A8;&#x8350;&#x3002; &#x8BF7;&#x53C2;&#x8003;Docker&#x7684;&#x6587;&#x6863;&#x53BB;&#x4FEE;&#x6539;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x7684;storage driver&#x3002;</li>
+<li>&#x5BF9;&#x4E8E; RHEL/CentOS, &#x5982;&#x679C;&#x4F60;&#x60F3;&#x4F7F;&#x7528; SELinux, &#x4F60;&#x9700;&#x8981; &#x5B89;&#x88C5;&#x989D;&#x5916;&#x7684; SELinux &#x7EC4;&#x4EF6;.</li>
+</ul>
+</li>
+<li>9345, 8080 &#x7AEF;&#x53E3;&#x9700;&#x8981;&#x5728;&#x5404;&#x4E2A;&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x80FD;&#x591F;&#x4E92;&#x76F8;&#x8BBF;&#x95EE;</li>
+<li>1GB&#x5185;&#x5B58;</li>
+</ul>
+</li>
+<li>MySQL&#x6570;&#x636E;&#x5E93;<ul>
+<li>&#x81F3;&#x5C11; 1 GB&#x5185;&#x5B58;</li>
+<li>&#x6BCF;&#x4E2A;Rancher Server&#x8282;&#x70B9;&#x9700;&#x8981;50&#x4E2A;&#x8FDE;&#x63A5; (&#x4F8B;&#x5982;&#xFF1A;3&#x4E2A;&#x8282;&#x70B9;&#x7684;Rancher&#x5219;&#x9700;&#x8981;&#x81F3;&#x5C11;150&#x4E2A;&#x8FDE;&#x63A5;)</li>
+<li>MYSQL&#x914D;&#x7F6E;&#x8981;&#x6C42;<ul>
+<li>&#x9009;&#x9879;1: &#x7528;&#x9ED8;&#x8BA4;COMPACT&#x9009;&#x9879;&#x8FD0;&#x884C;Antelope</li>
+<li>&#x9009;&#x9879;2: &#x8FD0;&#x884C;MySQL 5.7&#xFF0C;&#x4F7F;&#x7528;Barracuda&#x3002;&#x9ED8;&#x8BA4;&#x9009;&#x9879;ROW_FORMAT&#x9700;&#x8BBE;&#x7F6E;&#x6210;Dynamic</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>&#x5916;&#x90E8;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x670D;&#x52A1;&#x5668;<ul>
+<li>&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x670D;&#x52A1;&#x5668;&#x9700;&#x8981;&#x80FD;&#x8BBF;&#x95EE;Rancher Server&#x8282;&#x70B9;&#x7684; 8080 &#x7AEF;&#x53E3;</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;
+&#x76EE;&#x524D;Rancher&#x4E2D;&#x5E76;&#x4E0D;&#x652F;&#x6301;Docker for Mac</p>
+</blockquote>
+<h3 id="&#x5927;&#x89C4;&#x6A21;&#x90E8;&#x7F72;&#x5EFA;&#x8BAE;">&#x5927;&#x89C4;&#x6A21;&#x90E8;&#x7F72;&#x5EFA;&#x8BAE;</h3>
+<ul>
+<li>&#x6BCF;&#x4E00;&#x4E2A;Rancher Server&#x8282;&#x70B9;&#x9700;&#x8981;&#x6709;4 GB &#x6216;&#x8005;8 GB&#x7684;&#x5806;&#x7A7A;&#x95F4;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x9700;&#x8981;8 GB&#x6216;&#x8005;16 GB&#x5185;&#x5B58;</li>
+<li>MySQL&#x6570;&#x636E;&#x5E93;&#x9700;&#x8981;&#x6709;&#x9AD8;&#x6027;&#x80FD;&#x78C1;&#x76D8;</li>
+<li>&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;HA&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x6709;&#x526F;&#x672C;&#x7684;Mysql&#x6570;&#x636E;&#x5E93;&#x3002;&#x53E6;&#x4E00;&#x79CD;&#x9009;&#x62E9;&#x5219;&#x662F;&#x4F7F;&#x7528;Galera&#x96C6;&#x7FA4;&#x5E76;&#x5F3A;&#x5236;&#x5199;&#x5165;&#x4E00;&#x4E2A;MySQL&#x8282;&#x70B9;&#x3002;</li>
+</ul>
+<p>&#x5728;&#x6BCF;&#x4E2A;&#x9700;&#x8981;&#x52A0;&#x5165;Rancher Server HA&#x96C6;&#x7FA4;&#x7684;&#x8282;&#x70B9;&#x4E0A;&#xFF0C;&#x8FD0;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code># Launch on each node in your HA cluster
+$ docker run -d --restart=unless-stopped -p 8080:8080 -p 9345:9345 rancher/server \
+     --db-host myhost.example.com --db-port 3306 --db-user username --db-pass password --db-name cattle \
+     --advertise-address &lt;IP_of_the_Node&gt;
+</code></pre><p>&#x5728;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x4E0A;&#xFF0C;<ip_of_the_node> &#x9700;&#x8981;&#x5728;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x4E0A;&#x552F;&#x4E00;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;IP&#x4F1A;&#x88AB;&#x6DFB;&#x52A0;&#x5230;HA&#x7684;&#x8BBE;&#x7F6E;&#x4E2D;&#x3002;</ip_of_the_node></p>
+<p>&#x5982;&#x679C;&#x4F60;&#x4FEE;&#x6539;&#x4E86; -p 8080:8080 &#x5E76;&#x5728;host&#x4E0A;&#x66B4;&#x9732;&#x4E86;&#x4E00;&#x4E2A;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x6DFB;&#x52A0; --advertise-http-port <host_port> &#x53C2;&#x6570;&#x5230;&#x547D;&#x4EE4;&#x4E2D;&#x3002;</host_port></p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;
+&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; docker run rancher/server --help &#x83B7;&#x5F97;&#x547D;&#x4EE4;&#x7684;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;</p>
+</blockquote>
+<p>&#x914D;&#x7F6E;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;&#xFF0C;&#x8FD9;&#x4E2A;&#x8D1F;&#x8D23;&#x5747;&#x8861;&#x8D1F;&#x8D23;&#x5C06;&#x4F8B;&#x5982;80&#x6216;443&#x7AEF;&#x53E3;&#x7684;&#x6D41;&#x91CF;&#xFF0C;&#x8F6C;&#x53D1;&#x5230;&#x8FD0;&#x884C;Rancher Server&#x7684;&#x8282;&#x70B9;&#x7684;8080&#x7AEF;&#x53E3;&#x4E2D;&#x3002;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;&#x5FC5;&#x987B;&#x652F;&#x6301;websockets &#x4EE5;&#x53CA; forwarded-for &#x7684;Http&#x8BF7;&#x6C42;&#x5934;&#x4EE5;&#x652F;&#x6301;Rancher&#x7684;&#x529F;&#x80FD;&#x3002;&#x53C2;&#x8003; &#x4F7F;&#x7528;SSL &#x8FD9;&#x4E2A;&#x914D;&#x7F6E;&#x7684;&#x4F8B;&#x5B50;&#x3002;</p>
+<h3 id="advertise-address&#x9009;&#x9879;">ADVERTISE-ADDRESS&#x9009;&#x9879;</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x9009;&#x9879;</th>
+<th style="text-align:left">&#x4F8B;&#x5B50;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">IP address</td>
+<td style="text-align:left">--advertise-address 192.168.100.100</td>
+<td style="text-align:left">&#x4F7F;&#x7528;&#x6307;&#x5B9A;IP</td>
+</tr>
+<tr>
+<td style="text-align:left">Interface</td>
+<td style="text-align:left">--advertise-address eth0</td>
+<td style="text-align:left">&#x4ECE;&#x6307;&#x5B9A;&#x7F51;&#x7EDC;&#x63A5;&#x53E3;&#x83B7;&#x53D6;</td>
+</tr>
+<tr>
+<td style="text-align:left">awslocal</td>
+<td style="text-align:left">--advertise-address awslocal</td>
+<td style="text-align:left">&#x4ECE;&#x8FD9;&#x91CC;&#x83B7;&#x53D6;<a href="http://169.254.169.254/latest/meta-data/local-ipv4" target="_blank">http://169.254.169.254/latest/meta-data/local-ipv4</a></td>
+</tr>
+<tr>
+<td style="text-align:left">ipify</td>
+<td style="text-align:left">--advertise-address ipify</td>
+<td style="text-align:left">&#x4ECE;&#x8FD9;&#x91CC;&#x83B7;&#x53D6;<a href="https://api.ipify.org" target="_blank">https://api.ipify.org</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ha&#x6A21;&#x5F0F;&#x4E0B;&#x7684;rancher-server&#x8282;&#x70B9;">HA&#x6A21;&#x5F0F;&#x4E0B;&#x7684;RANCHER SERVER&#x8282;&#x70B9;</h3>
+<p>&#x5982;&#x679C;&#x4F60;&#x7684;Rancher Server&#x8282;&#x70B9;&#x4E0A;&#x7684;IP&#x4FEE;&#x6539;&#x4E86;&#xFF0C;&#x4F60;&#x7684;&#x8282;&#x70B9;&#x5C06;&#x4E0D;&#x518D;&#x5B58;&#x5728;&#x4E8E;Rancher HA&#x96C6;&#x7FA4;&#x4E2D;&#x3002;&#x4F60;&#x5FC5;&#x987B;&#x505C;&#x6B62;&#x5728;--advertise-address&#x914D;&#x7F6E;&#x4E86;&#x4E0D;&#x6B63;&#x786E;IP&#x7684;Rancher Server&#x5BB9;&#x5668;&#x5E76;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;&#x6B63;&#x786E;IP&#x5730;&#x5740;&#x7684;Rancher Server&#x7684;&#x5BB9;&#x5668;&#x3002;</p>
+<h3 id="&#x4F7F;&#x7528;aws&#x7684;elasticclassic-load-balancer&#x4F5C;&#x4E3A;rancher-server-ha&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;">&#x4F7F;&#x7528;AWS&#x7684;ELASTIC/CLASSIC LOAD BALANCER&#x4F5C;&#x4E3A;RANCHER SERVER HA&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;</h3>
+<p>&#x6211;&#x4EEC;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;AWS&#x7684;ELB&#x4F5C;&#x4E3A;&#x4F60;Rancher Server&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;&#x3002;&#x4E3A;&#x4E86;&#x8BA9;ELB&#x4E0E;Rancher&#x7684;websockets&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5F00;&#x542F;proxy protocol&#x6A21;&#x5F0F;&#x5E76;&#x4E14;&#x4FDD;&#x8BC1;HTTP support&#x88AB;&#x505C;&#x7528;&#x3002; &#x9ED8;&#x8BA4;&#x7684;&#xFF0C;ELB&#x662F;&#x5728;HTTP/HTTPS&#x6A21;&#x5F0F;&#x542F;&#x7528;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x6A21;&#x5F0F;&#x4E0B;&#x4E0D;&#x652F;&#x6301;websockets&#x3002;&#x9700;&#x8981;&#x7279;&#x522B;&#x6CE8;&#x610F;listener&#x7684;&#x914D;&#x7F6E;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x5728;&#x914D;&#x7F6E;ELB&#x4E2D;&#x9047;&#x5230;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x5EFA;&#x8BAE;&#x4F60;&#x53C2;&#x8003;terraform version&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;
+&#x5982;&#x679C;&#x4F60;&#x6B63;&#x5728;&#x4F7F;&#x7528;&#x81EA;&#x7B7E;&#x540D;&#x7684;&#x8BC1;&#x4E66;, &#x8BF7;&#x53C2;&#x8003;&#x6211;&#x4EEC;SSL&#x90E8;&#x5206;&#x91CC;&#x7684;&#x5982;&#x4F55;&#x5728;AWS&#x91CC;&#x914D;&#x7F6E;ELB.</p>
+</blockquote>
+<h3 id="listener-&#x914D;&#x7F6E;---plaintext">LISTENER &#x914D;&#x7F6E; - PLAINTEXT</h3>
+<p>&#x7B80;&#x5355;&#x7684;&#x6765;&#x8BF4;&#xFF0C;&#x4F7F;&#x7528;&#x975E;&#x52A0;&#x5BC6;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#xFF0C;&#x9700;&#x8981;&#x4EE5;&#x4E0B;&#x7684;listener&#x914D;&#x7F6E;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Configuration Type</th>
+<th style="text-align:left">Load Balancer Protocol</th>
+<th style="text-align:left">Load Balancer Port</th>
+<th style="text-align:left">Instance Protocol</th>
+<th style="text-align:left">Instance Port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Plaintext</td>
+<td style="text-align:left">TCP</td>
+<td style="text-align:left">80</td>
+<td style="text-align:left">TCP</td>
+<td style="text-align:left">8080 (&#x6216;&#x8005;&#x4F7F;&#x7528;&#x542F;&#x52A8;Rancher Server&#x65F6; --advertise-http-port &#x6307;&#x5B9A;&#x7684;&#x7AEF;&#x53E3;)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x542F;&#x7528;-proxy-protocol">&#x542F;&#x7528; PROXY PROTOCOL</h3>
+<p>&#x4E3A;&#x4E86;&#x4F7F;websockets&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#xFF0C;ELB&#x7684;proxy protocol policy&#x5FC5;&#x987B;&#x88AB;&#x542F;&#x7528;&#x3002;</p>
+<ul>
+<li>&#x542F;&#x7528; proxy protocol &#x6A21;&#x5F0F;<pre><code>$ aws elb create-load-balancer-policy --load-balancer-name &lt;LB_NAME&gt; --policy-name &lt;POLICY_NAME&gt; --policy-type-name ProxyProtocolPolicyType --policy-attributes AttributeName=ProxyProtocol,AttributeValue=true
+$ aws elb set-load-balancer-policies-for-backend-server --load-balancer-name &lt;LB_NAME&gt; --instance-port 443 --policy-names &lt;POLICY_NAME&gt;
+$ aws elb set-load-balancer-policies-for-backend-server --load-balancer-name &lt;LB_NAME&gt; --instance-port 8080 --policy-names &lt;POLICY_NAME&gt;
+</code></pre></li>
+<li>Health check&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x4F7F;&#x7528;HTTP:8080&#x4E0B;&#x7684; /ping &#x8DEF;&#x5F84;&#x8FDB;&#x884C;&#x5065;&#x5EB7;&#x68C0;&#x67E5;</li>
+</ul>
+<h3 id="&#x4F7F;&#x7528;terraform&#x8FDB;&#x884C;&#x914D;&#x7F6E;">&#x4F7F;&#x7528;TERRAFORM&#x8FDB;&#x884C;&#x914D;&#x7F6E;</h3>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x4F7F;&#x7528;Terraform&#x914D;&#x7F6E;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>resource &quot;aws_elb&quot; &quot;lb&quot; {
+  name               = &quot;&lt;LB_NAME&gt;&quot;
+  availability_zones = [&quot;us-west-2a&quot;,&quot;us-west-2b&quot;,&quot;us-west-2c&quot;]
+  security_groups = [&quot;&lt;SG_ID&gt;&quot;]
+
+  listener {
+    instance_port     = 8080
+    instance_protocol = &quot;tcp&quot;
+    lb_port           = 443
+    lb_protocol       = &quot;ssl&quot;
+    ssl_certificate_id = &quot;&lt;IAM_PATH_TO_CERT&gt;&quot;
+  }
+
+}
+
+resource &quot;aws_proxy_protocol_policy&quot; &quot;websockets&quot; {
+  load_balancer  = &quot;${aws_elb.lb.name}&quot;
+  instance_ports = [&quot;8080&quot;]
+}
+</code></pre><h3 id="&#x4F7F;&#x7528;aws&#x7684;application-load-balanceralb-&#x4F5C;&#x4E3A;rancher-server-ha&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;">&#x4F7F;&#x7528;AWS&#x7684;APPLICATION LOAD BALANCER(ALB) &#x4F5C;&#x4E3A;RANCHER SERVER HA&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;</h3>
+<p>&#x6211;&#x4EEC;&#x4E0D;&#x518D;&#x63A8;&#x8350;&#x4F7F;&#x7528;AWS&#x7684;Application Load Balancer (ALB)&#x66FF;&#x4EE3;Elastic/Classic Load Balancer (ELB)&#x3002;&#x5982;&#x679C;&#x4F60;&#x4F9D;&#x7136;&#x9009;&#x62E9;&#x4F7F;&#x7528;ALB&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x76F4;&#x63A5;&#x6307;&#x5B9A;&#x6D41;&#x91CF;&#x5230;Rancher Server&#x8282;&#x70B9;&#x4E0A;&#x7684;HTTP&#x7AEF;&#x53E3;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;8080&#x3002;</p>
+<h3 id="&#x4F7F;&#x7528;tls&#x8BA4;&#x8BC1;&#x7684;adopenldap">&#x4F7F;&#x7528;TLS&#x8BA4;&#x8BC1;&#x7684;AD/OPENLDAP</h3>
+<p>&#x4E3A;&#x4E86;&#x5728;Rancher Server&#x4E0A;&#x542F;&#x7528;Active Directory&#x6216;OpenLDAP&#x5E76;&#x4F7F;&#x7528;TLS&#xFF0C;Rancher Server&#x5BB9;&#x5668;&#x5728;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x914D;&#x7F6E;LDAP&#x8BC1;&#x4E66;&#xFF0C;&#x8BC1;&#x4E66;&#x662F;LDAP&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x65B9;&#x63D0;&#x4F9B;&#x3002;&#x8BC1;&#x4E66;&#x4FDD;&#x5B58;&#x5728;&#x9700;&#x8981;&#x8FD0;&#x884C;Rancher Server&#x7684;Linux&#x673A;&#x5668;&#x4E0A;&#x3002;</p>
+<p>&#x542F;&#x52A8;Rancher&#x5E76;&#x6302;&#x8F7D;&#x8BC1;&#x4E66;&#x3002;&#x8BC1;&#x4E66;&#x5728;&#x5BB9;&#x5668;&#x5185;&#x90E8; &#x5FC5;&#x987B; &#x547D;&#x540D;&#x4E3A;ca.crt&#x3002;</p>
+<pre><code>$ sudo docker run -d --restart=unless-stopped -p 8080:8080 \
+  -v /some/dir/cert.crt:/var/lib/rancher/etc/ssl/ca.crt rancher/server
+</code></pre><p>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Rancher Server&#x7684;&#x65E5;&#x5FD7;&#x68C0;&#x67E5;&#x4F20;&#x5165;&#x7684; ca.crt &#x8BC1;&#x4E66;&#x662F;&#x5426;&#x751F;&#x6548;</p>
+<pre><code>$ docker logs &lt;SERVER_CONTAINER_ID&gt;
+</code></pre><p>&#x5728;&#x65E5;&#x5FD7;&#x7684;&#x5F00;&#x5934;&#xFF0C;&#x4F1A;&#x663E;&#x793A;&#x8BC1;&#x4E66;&#x5DF2;&#x7ECF;&#x88AB;&#x6B63;&#x786E;&#x52A0;&#x8F7D;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code>Adding ca.crt to Certs.
+Updating certificates in /etc/ssl/certs... 1 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d....done.
+Certificate was added to keystore
+</code></pre><h3 id="&#x5728;http&#x4EE3;&#x7406;&#x540E;&#x65B9;&#x542F;&#x52A8;-rancher-server">&#x5728;HTTP&#x4EE3;&#x7406;&#x540E;&#x65B9;&#x542F;&#x52A8; RANCHER SERVER</h3>
+<p>&#x4E3A;&#x4E86;&#x8BBE;&#x7F6E;HTTP Proxy&#xFF0C;Docker&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x5E76;&#x6307;&#x5411;&#x8FD9;&#x4E2A;&#x4EE3;&#x7406;&#x3002;&#x5728;&#x542F;&#x52A8;Rancher Server&#x524D;&#xFF0C;&#x9700;&#x8981;&#x7F16;&#x8F91;&#x914D;&#x7F6E;&#x6587;&#x4EF6; /etc/default/docker &#x6DFB;&#x52A0;&#x4F60;&#x7684;&#x4EE3;&#x7406;&#x4FE1;&#x606F;&#x5E76;&#x91CD;&#x542F;Docker&#x670D;&#x52A1;&#x3002;</p>
+<pre><code>$ sudo vi /etc/default/docker
+</code></pre><p>&#x5728;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x7F16;&#x8F91; #export http_proxy=&quot;<a href="http://127.0.0.1:3128/" target="_blank">http://127.0.0.1:3128/</a>&quot; &#x5E76;&#x4FEE;&#x6539;&#x5B83;&#x6307;&#x5411;&#x4F60;&#x7684;&#x4EE3;&#x7406;&#x3002;&#x4FDD;&#x5B58;&#x4FEE;&#x6539;&#x5E76;&#x91CD;&#x542F;Docker&#x3002;&#x91CD;&#x542F;Docker&#x7684;&#x65B9;&#x5F0F;&#x5728;&#x6BCF;&#x4E2A;OS&#x4E0A;&#x90FD;&#x4E0D;&#x4E00;&#x6837;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;
+&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;systemd&#x8FD0;&#x884C;Docker, &#x8BF7;&#x53C2;&#x8003;Docker&#x5B98;&#x65B9;&#x7684;&#x6587;&#x6863; &#x53BB;&#x914D;&#x7F6E;http proxy&#x8BBE;&#x7F6E;&#x3002;</p>
+</blockquote>
+<p>&#x4E3A;&#x4E86;&#x4F7F;&#x5F97;&#x5E94;&#x7528;&#x5546;&#x5E97;&#x52A0;&#x8F7D;&#x6B63;&#x5E38;&#xFF0C;HTTP&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;&#x5FC5;&#x987B;&#x5728;Rancher Server&#x8FD0;&#x884C;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x4E2D;&#x3002;</p>
+<pre><code>$ sudo docker run -d \
+    -e http_proxy=&lt;proxyURL&gt; \
+    -e https_proxy=&lt;proxyURL&gt; \
+    -e no_proxy=&quot;localhost,127.0.0.1&quot; \
+    -e NO_PROXY=&quot;localhost,127.0.0.1&quot; \
+    --restart=unless-stopped -p 8080:8080 rancher/server
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x4F7F;&#x7528;&#x5E94;&#x7528;&#x5546;&#x5E97;&#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x4F60;&#x5E73;&#x5E38;&#x7684;Rancher Server&#x547D;&#x4EE4;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x5F53;&#x5411;Rancher&#x6DFB;&#x52A0;&#x4E3B;&#x673A;&#x65F6;&#xFF0C;&#x5728;HTTP&#x4EE3;&#x7406;&#x4E2D;&#x4E0D;&#x9700;&#x8981;&#x989D;&#x5916;&#x7684;&#x8BBE;&#x7F6E;&#x548C;&#x8981;&#x6C42;&#x3002;</p>
+<h3 id="&#x901A;&#x8FC7;ssl&#x8FDE;&#x63A5;mysql&#x7684;rancher-server">&#x901A;&#x8FC7;SSL&#x8FDE;&#x63A5;MYSQL&#x7684;RANCHER SERVER</h3>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;
+&#x76EE;&#x524D;&#x5728;Rancher 1.6.3&#x4EE5;&#x4E0A;&#x7248;&#x672C;&#x624D;&#x652F;&#x6301;</p>
+</blockquote>
+<h3 id="&#x91CD;&#x8981;&#x63D0;&#x793A;">&#x91CD;&#x8981;&#x63D0;&#x793A;</h3>
+<p>&#x5982;&#x679C;&#x4F60;&#x6B63;&#x5728;&#x4F7F;&#x7528;LDAP&#x6216;&#x8005;AD&#x8BA4;&#x8BC1;&#x65B9;&#x5F0F;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E9B;&#x8BA4;&#x8BC1;&#x65B9;&#x5F0F;&#x7684;&#x8BC1;&#x4E66;&#x53D1;&#x653E;&#x65B9;CA&#x5E76;&#x4E0D;&#x662F;MySQL&#x670D;&#x52A1;&#x5668;SSL&#x7684;&#x8BC1;&#x4E66;&#x53D1;&#x653E;&#x65B9;CA&#xFF0C;&#x8FD9;&#x7BC7;&#x6307;&#x5357;&#x65E0;&#x6CD5;&#x9002;&#x7528;&#x4E8E;&#x4F60;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+<h3 id="&#x524D;&#x63D0;&#x6761;&#x4EF6;">&#x524D;&#x63D0;&#x6761;&#x4EF6;</h3>
+<ul>
+<li>MySQL&#x670D;&#x52A1;&#x5668;&#x7684;&#x8BC1;&#x4E66;&#x6216;CA&#x8BC1;&#x4E66;</li>
+</ul>
+<h3 id="&#x6B65;&#x9AA4;">&#x6B65;&#x9AA4;</h3>
+<ol>
+<li>&#x62F7;&#x8D1D;MySQL&#x670D;&#x52A1;&#x5668;&#x7684;&#x8BC1;&#x4E66;&#x6216;CA&#x8BC1;&#x4E66;&#x5230;Rancher Server&#x7684;&#x4E3B;&#x673A;&#x4E0A;&#x3002;&#x5F53;&#x542F;&#x52A8;rancher/server&#x5BB9;&#x5668;&#x7684;&#x65F6;&#x5019;&#x4F60;&#x5FC5;&#x987B;&#x5C06;&#x8BC1;&#x4E66;&#x6302;&#x8F7D;&#x5230;/var/lib/rancher/etc/ssl/ca.crt&#x3002;</li>
+<li>&#x66F4;&#x6539;&#x4EE5;&#x4E0B;&#x7684;&#x6A21;&#x677F;&#x7684;&#x5BF9;&#x5E94;&#x53C2;&#x6570;&#xFF0C;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;JDBC URL:
+jdbc:mysql://<db_host>:<db_port>/<db_name>?useUnicode=true&amp;characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;prepStmtCacheSize=517&amp;cachePrepStmts=true&amp;prepStmtCacheSqlLimit=4096&amp;socketTimeout=60000&amp;connectTimeout=60000&amp;sslServerCert=/var/lib/rancher/etc/ssl/ca.crt&amp;useSSL=true</db_name></db_port></db_host></li>
+<li>&#x4F7F;&#x7528;&#x73AF;&#x5883;&#x53D8;&#x91CF;CATTLE_DB_CATTLE_MYSQL_URL&#x548C;CATTLE_DB_LIQUIBASE_MYSQL_URL&#x6765;&#x5BFC;&#x5165;&#x4E0A;&#x9762;&#x7684;JDBC URL&#x5230;&#x5BB9;&#x5668;&#x91CC;&#x9762;&#x3002;</li>
+<li>&#x52A0;&#x5165;&#x73AF;&#x5883;&#x53D8;&#x91CF;CATTLE_DB_CATTLE_GO_PARAMS=&quot;tls=true&quot;&#x5230;&#x5BB9;&#x5668;&#x91CC;&#x9762;&#x3002;&#x4F46;&#x662F;&#x5982;&#x679C;&#x670D;&#x52A1;&#x5668;&#x8BC1;&#x4E66;&#x7684;&#x6807;&#x9898;&#x540D;&#x5B57;&#x4E0D;&#x7B26;&#x5408;&#x670D;&#x52A1;&#x5668;&#x7684;&#x4E3B;&#x673A;&#x540D;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x662F;CATTLE_DB_CATTLE_GO_PARAMS=&quot;tls=skip-verify&quot;.</li>
+</ol>
+<p>&#x4F8B;&#x5B50;</p>
+<pre><code>$ export JDBC_URL=&quot;jdbc:mysql://&lt;DB_HOST&gt;:&lt;DB_PORT&gt;/&lt;DB_NAME&gt;?useUnicode=true&amp;characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;prepStmtCacheSize=517&amp;cachePrepStmts=true&amp;prepStmtCacheSqlLimit=4096&amp;socketTimeout=60000&amp;connectTimeout=60000&amp;sslServerCert=/var/lib/rancher/etc/ssl/ca.crt&amp;useSSL=true&quot;
+
+$ cat &lt;&lt;EOF &gt; docker-compose.yml
+version: &apos;2&apos;
+  services:
+    rancher-server:
+      image: rancher/server:stable
+      restart: unless-stopped
+      command: --db-host &lt;DB_HOST&gt; --db-port &lt;DB_PORT&gt; --db-name &lt;DB_NAME&gt; --db-user &lt;DB_USER&gt; --db-pass &lt;DB_PASS&gt;
+      environment:
+        CATTLE_DB_LIQUIBASE_MYSQL_URL: $JDBC_URL
+        CATTLE_DB_CATTLE_MYSQL_URL: $JDBC_URL
+        CATTLE_DB_CATTLE_GO_PARAMS: &quot;tls=true&quot;
+      volumes:
+        - /path/to/mysql/ca.crt:/var/lib/rancher/etc/ssl/ca.crt
+      ports:
+        - &quot;8080:8080&quot;
+EOF
+
+$ docker-compose up -d
+</code></pre><p>&#x91CD;&#x8981;: &#x4F60;&#x5FC5;&#x987B;&#x5728;&#x4E24;&#x4E2A;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x91CC;&#x90FD;&#x5199;&#x5165;&#x6784;&#x5EFA;&#x597D;&#x7684;JDBC_URL&#xFF0C;&#x8FD8;&#x5FC5;&#x987B;&#x52A0;&#x5165;--db-xxx&#x53C2;&#x6570;!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../chapter2/section1.html" class="navigation navigation-prev " aria-label="Previous page: 第2章 快速开始">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../chapter4/section1.html" class="navigation navigation-next " aria-label="Next page: 第4章 升级Rancher Server">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第3章 安装Rancher","level":"1.4","depth":1,"next":{"title":"第4章 升级Rancher Server","level":"1.5","depth":1,"path":"chapter4/section1.md","ref":"chapter4/section1.md","articles":[]},"previous":{"title":"第2章 快速开始","level":"1.3","depth":1,"path":"chapter2/section1.md","ref":"chapter2/section1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter3/section1.md","mtime":"2018-10-30T08:37:09.711Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-10-30T09:20:31.791Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

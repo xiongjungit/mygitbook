@@ -1,0 +1,1432 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>11-9 升级服务 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section10.html" />
+    
+    
+    <link rel="prev" href="section8.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Rancher 1.6 Docs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/section1.html">
+            
+                <a href="../chapter1/section1.html">
+            
+                    
+                    第1章 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter2/section1.html">
+            
+                <a href="../chapter2/section1.html">
+            
+                    
+                    第2章 快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter3/section1.html">
+            
+                <a href="../chapter3/section1.html">
+            
+                    
+                    第3章 安装Rancher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter4/section1.html">
+            
+                <a href="../chapter4/section1.html">
+            
+                    
+                    第4章 升级Rancher Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    第5章 系统设置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter5/section1.html">
+            
+                <a href="../chapter5/section1.html">
+            
+                    
+                    5-1 访问控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter5/section2.html">
+            
+                <a href="../chapter5/section2.html">
+            
+                    
+                    5-2 账户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter5/section3.html">
+            
+                <a href="../chapter5/section3.html">
+            
+                    
+                    5-3 注册主机和应用商店
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter5/section4.html">
+            
+                <a href="../chapter5/section4.html">
+            
+                    
+                    5-4 主机驱动
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter6/section1.html">
+            
+                <a href="../chapter6/section1.html">
+            
+                    
+                    第6章 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter7/section1.html">
+            
+                <a href="../chapter7/section1.html">
+            
+                    
+                    第7章 主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter8/section1.html">
+            
+                <a href="../chapter8/section1.html">
+            
+                    
+                    第8章 镜像仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapter9/section1.html">
+            
+                <a href="../chapter9/section1.html">
+            
+                    
+                    第9章 证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../chapter10/">
+            
+                <a href="../chapter10/">
+            
+                    
+                    第10章 系统服务
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../chapter10/section1.html">
+            
+                <a href="../chapter10/section1.html">
+            
+                    
+                    10-1 基础设施服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../chapter10/section2.html">
+            
+                <a href="../chapter10/section2.html">
+            
+                    
+                    10-2 网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../chapter10/section3.html">
+            
+                <a href="../chapter10/section3.html">
+            
+                    
+                    10-3 网络策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../chapter10/section4.html">
+            
+                <a href="../chapter10/section4.html">
+            
+                    
+                    10-4 负载均衡器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../chapter10/section5.html">
+            
+                <a href="../chapter10/section5.html">
+            
+                    
+                    10-5 DNS服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../chapter10/section6.html">
+            
+                <a href="../chapter10/section6.html">
+            
+                    
+                    10-6 Metadata服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../chapter10/section7.html">
+            
+                <a href="../chapter10/section7.html">
+            
+                    
+                    10-7 存储服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../chapter10/section8.html">
+            
+                <a href="../chapter10/section8.html">
+            
+                    
+                    10-8 调度任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../chapter10/section9.html">
+            
+                <a href="../chapter10/section9.html">
+            
+                    
+                    10-9 审计日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="../chapter10/section10.html">
+            
+                <a href="../chapter10/section10.html">
+            
+                    
+                    10-10 服务账号
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第11章 Cattle
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="section1.html">
+            
+                <a href="section1.html">
+            
+                    
+                    11-1 应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="section2.html">
+            
+                <a href="section2.html">
+            
+                    
+                    11-2 服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="section3.html">
+            
+                <a href="section3.html">
+            
+                    
+                    11-3 卷
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="section4.html">
+            
+                <a href="section4.html">
+            
+                    
+                    11-4 负载均衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="section5.html">
+            
+                <a href="section5.html">
+            
+                    
+                    11-5 外部服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="section6.html">
+            
+                <a href="section6.html">
+            
+                    
+                    11-6 服务别名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="section7.html">
+            
+                <a href="section7.html">
+            
+                    
+                    11-7 健康检查
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="section8.html">
+            
+                <a href="section8.html">
+            
+                    
+                    11-8 调度服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12.9" data-path="section9.html">
+            
+                <a href="section9.html">
+            
+                    
+                    11-9 升级服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="section10.html">
+            
+                <a href="section10.html">
+            
+                    
+                    11-10 Cattle环境中的内部DNS服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="section11.html">
+            
+                <a href="section11.html">
+            
+                    
+                    11-11 外部DNS服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.12" data-path="section12.html">
+            
+                <a href="section12.html">
+            
+                    
+                    11-12 Rancher-Compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.13" data-path="section13.html">
+            
+                <a href="section13.html">
+            
+                    
+                    11-13 密文 - 实验性的
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.14" data-path="section14.html">
+            
+                <a href="section14.html">
+            
+                    
+                    11-14 Webhooks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.15" data-path="section15.html">
+            
+                <a href="section15.html">
+            
+                    
+                    11-15 标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../chapter12/">
+            
+                <a href="../chapter12/">
+            
+                    
+                    第12章 Kubernetes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../chapter12/section1.html">
+            
+                <a href="../chapter12/section1.html">
+            
+                    
+                    12-1 启动Kubernetes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../chapter12/section2.html">
+            
+                <a href="../chapter12/section2.html">
+            
+                    
+                    12-2 弹性平面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../chapter12/section3.html">
+            
+                <a href="../chapter12/section3.html">
+            
+                    
+                    12-3 Cloud Providers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../chapter12/section4.html">
+            
+                <a href="../chapter12/section4.html">
+            
+                    
+                    12-4 私有镜像仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../chapter12/section5.html">
+            
+                <a href="../chapter12/section5.html">
+            
+                    
+                    12-5 RBAC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6" data-path="../chapter12/section6.html">
+            
+                <a href="../chapter12/section6.html">
+            
+                    
+                    12-6 灾难恢复
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.7" data-path="../chapter12/section7.html">
+            
+                <a href="../chapter12/section7.html">
+            
+                    
+                    12-7 备份
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.8" data-path="../chapter12/section8.html">
+            
+                <a href="../chapter12/section8.html">
+            
+                    
+                    12-8 持久化存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.9" data-path="../chapter12/section9.html">
+            
+                <a href="../chapter12/section9.html">
+            
+                    
+                    12-9 插件支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.10" data-path="../chapter12/section10.html">
+            
+                <a href="../chapter12/section10.html">
+            
+                    
+                    12-10 Ingress支持与配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.11" data-path="../chapter12/section11.html">
+            
+                <a href="../chapter12/section11.html">
+            
+                    
+                    12-11 升级Kubernets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.12" data-path="../chapter12/section12.html">
+            
+                <a href="../chapter12/section12.html">
+            
+                    
+                    12-12 删除Kubernets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../chapter13/section1.html">
+            
+                <a href="../chapter13/section1.html">
+            
+                    
+                    第13章 Mesos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../chapter14/section1.html">
+            
+                <a href="../chapter14/section1.html">
+            
+                    
+                    第14章 Swarm - 实验性的
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../chapter15/section1.html">
+            
+                <a href="../chapter15/section1.html">
+            
+                    
+                    第15章 Windows - 实验性的
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../chapter16/section1.html">
+            
+                <a href="../chapter16/section1.html">
+            
+                    
+                    第16章 以原生Docker命令行的形式使用Rancher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../chapter17/">
+            
+                <a href="../chapter17/">
+            
+                    
+                    第17章 应用商店
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../chapter17/section1.html">
+            
+                <a href="../chapter17/section1.html">
+            
+                    
+                    17-1 应用商店
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../chapter17/section2.html">
+            
+                <a href="../chapter17/section2.html">
+            
+                    
+                    17-2 创建私有应用商店
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../chapter18/">
+            
+                <a href="../chapter18/">
+            
+                    
+                    第18章 Rancher命令行
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../chapter18/section1.html">
+            
+                <a href="../chapter18/section1.html">
+            
+                    
+                    18-1 Rancher命令行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../chapter18/section2.html">
+            
+                <a href="../chapter18/section2.html">
+            
+                    
+                    18-2 命令和选项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../chapter18/section3.html">
+            
+                <a href="../chapter18/section3.html">
+            
+                    
+                    18-3 变量替换
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../chapter19/section1.html">
+            
+                <a href="../chapter19/section1.html">
+            
+                    
+                    第19章 API文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../chapter20/section1.html">
+            
+                <a href="../chapter20/section1.html">
+            
+                    
+                    第20章 Rancher社区贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../chapter21/">
+            
+                <a href="../chapter21/">
+            
+                    
+                    第21章 常见问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../chapter21/section1.html">
+            
+                <a href="../chapter21/section1.html">
+            
+                    
+                    21-1 Rancher Server的常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../chapter21/section2.html">
+            
+                <a href="../chapter21/section2.html">
+            
+                    
+                    21-2 Rancher Agent的常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.3" data-path="../chapter21/section3.html">
+            
+                <a href="../chapter21/section3.html">
+            
+                    
+                    21-3 常见的故障排查与修复方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../chapter22/section1.html">
+            
+                <a href="../chapter22/section1.html">
+            
+                    
+                    第22章 历史文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >11-9 升级服务</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5347;&#x7EA7;&#x670D;&#x52A1;">&#x5347;&#x7EA7;&#x670D;&#x52A1;</h1>
+<p>&#x5728;&#x90E8;&#x7F72;&#x670D;&#x52A1;&#x4E4B;&#x540E;, &#x4F60;&#x53EF;&#x80FD;&#x60F3;&#x8981;&#x901A;&#x8FC7;&#x4FEE;&#x6539;&#x670D;&#x52A1;&#x6765;&#x5347;&#x7EA7;&#x5E94;&#x7528;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x955C;&#x50CF;&#x5DF2;&#x7ECF;&#x88AB;&#x66F4;&#x65B0;&#x4E86;&#xFF0C;&#x4F60;&#x60F3;&#x8981;&#x90E8;&#x7F72;&#x670D;&#x52A1;&#x7684;&#x65B0;&#x7248;&#x672C;&#x3002;&#x7531;&#x4E8E;Docker&#x5BB9;&#x5668;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#xFF0C;&#x4E3A;&#x4E86;&#x4FEE;&#x6539;&#x670D;&#x52A1;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x9500;&#x6BC1;&#x65E7;&#x7684;&#x5BB9;&#x5668;&#x5E76;&#x90E8;&#x7F72;&#x65B0;&#x7684;&#x5BB9;&#x5668;&#x3002;Rancher&#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x79CD;&#x5347;&#x7EA7;&#x670D;&#x52A1;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x63A8;&#x8350;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x670D;&#x52A1;&#x5185;&#x5347;&#x7EA7;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x4F1A;&#x505C;&#x6389;&#x65E7;&#x7684;&#x5BB9;&#x5668;&#x5E76;&#x4E14;&#x5728;&#x8FD9;&#x4E2A;&#x670D;&#x52A1;&#x5185;&#x542F;&#x52A8;&#x65B0;&#x7684;&#x5BB9;&#x5668;&#x3002; RancherUI&#x4EC5;&#x652F;&#x6301;&#x670D;&#x52A1;&#x5185;&#x5347;&#x7EA7;&#x3002;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Rancher Compose&#x547D;&#x4EE4;&#x884C;&#x8FDB;&#x884C;&#x670D;&#x52A1;&#x5185;&#x5347;&#x7EA7;&#x3002; &#x53E6;&#x4E00;&#x79CD;&#x5347;&#x7EA7;&#x65B9;&#x5F0F;&#x4E3A;&#x66FF;&#x6362;&#x5F0F;&#x5347;&#x7EA7;&#x3002;&#x8FD9;&#x79CD;&#x5347;&#x7EA7;&#x65B9;&#x5F0F;&#x4F1A;&#x5220;&#x9664;&#x65E7;&#x7684;&#x670D;&#x52A1;&#x5E76;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x53EA;&#x6709;&#x901A;&#x8FC7;Rancher Compose&#x547D;&#x4EE4;&#x884C;&#x624D;&#x80FD;&#x8FDB;&#x884C;&#x66FF;&#x6362;&#x5F0F;&#x5347;&#x7EA7;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;
+&#x5982;&#x679C;&#x4F60;&#x662F;&#x60F3;&#x5BF9;&#x4F60;&#x7684;&#x670D;&#x52A1;&#x8FDB;&#x884C;&#x6269;&#x5BB9;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x670D;&#x52A1;&#x9875;&#x9762;&#x7684;&#x6570;&#x91CF;&#x53C2;&#x6570;&#xFF0C;&#x6216;&#x8005;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x8FC7;Rancher Compose&#x547D;&#x4EE4;&#x884C;&#x6765;&#x8FDB;&#x884C;&#x670D;&#x52A1;&#x6269;&#x5BB9;&#x3002; rancher-compose scale &lt;&#x670D;&#x52A1;&#x540D;&gt;=&lt;&#x65B0;&#x7684;&#x5BB9;&#x5668;&#x6570;&#x91CF;&gt;.</p>
+</blockquote>
+<h3 id="&#x670D;&#x52A1;&#x5185;&#x5347;&#x7EA7;">&#x670D;&#x52A1;&#x5185;&#x5347;&#x7EA7;</h3>
+<h4 id="&#x901A;&#x8FC7;ui&#x8FDB;&#x884C;&#x5347;&#x7EA7;">&#x901A;&#x8FC7;UI&#x8FDB;&#x884C;&#x5347;&#x7EA7;</h4>
+<p>&#x4EFB;&#x4F55;&#x670D;&#x52A1;&#x90FD;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;UI&#x6765;&#x8FDB;&#x884C;&#x5347;&#x7EA7;&#x3002;&#x548C;&#x90E8;&#x7F72;&#x670D;&#x52A1;&#x7C7B;&#x4F3C;&#xFF0C;&#x4F60;&#x4E4B;&#x524D;&#x9009;&#x62E9;&#x7684;&#x5168;&#x90E8;Docker&#x53C2;&#x6570;&#x90FD;&#x4F1A;&#x88AB;&#x4FDD;&#x7559;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x7684;&#x503C;&#x3002;&#x989D;&#x5916;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x5347;&#x7EA7;&#x4E13;&#x7528;&#x7684;&#x9009;&#x9879;&#xFF1A;</p>
+<ul>
+<li>&#x6279;&#x91CF;&#x5927;&#x5C0F;&#xFF1A;&#x670D;&#x52A1;&#x4E2D;&#x7684;&#x5BB9;&#x5668;&#x5347;&#x7EA7;&#x4F1A;&#x88AB;&#x5206;&#x6210;&#x51E0;&#x6279;&#xFF0C;&#x6279;&#x91CF;&#x5927;&#x5C0F;&#x4EE3;&#x8868;&#x6BCF;&#x6B21;&#x4F60;&#x60F3;&#x8981;&#x505C;&#x6389;&#x7684;&#x65E7;&#x5BB9;&#x5668;&#x6570;&#x91CF;&#x548C;&#x542F;&#x52A8;&#x7684;&#x65B0;&#x5BB9;&#x5668;&#x6570;&#x91CF;&#x3002;&#x4F8B;&#x5982;&#x4E00;&#x5171;&#x6709;10&#x4E2A;&#x5BB9;&#x5668;&#x8981;&#x5347;&#x7EA7;&#xFF0C;&#x5F53;&#x6279;&#x91CF;&#x5927;&#x5C0F;&#x4E3A;2&#x65F6;&#xFF0C;&#x6BCF;&#x6B21;&#x4F1A;&#x5347;&#x7EA7;2&#x4E2A;&#x5BB9;&#x5668;&#xFF0C;&#x505C;&#x6389;2&#x4E2A;&#x65E7;&#x7684;&#xFF0C;&#x542F;&#x52A8;2&#x4E2A;&#x65B0;&#x7684;&#xFF0C;&#x5206;5&#x6279;&#x5B8C;&#x6210;&#x5347;&#x7EA7;&#x3002;</li>
+<li>&#x6279;&#x91CF;&#x95F4;&#x9694;&#xFF1A;&#x6BCF;&#x6B21;&#x6279;&#x91CF;&#x5347;&#x7EA7;&#x95F4;&#x9694;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x4F8B;&#x5982;10&#x4E2A;&#x5BB9;&#x5668;&#xFF0C;&#x6BCF;&#x6B21;&#x5347;&#x7EA7;5&#x4E2A;&#xFF0C;&#x6279;&#x91CF;&#x65F6;&#x95F4;&#x4E3A;5&#x79D2;&#x3002;&#x5728;&#x5B8C;&#x6210;5&#x4E2A;&#x5BB9;&#x5668;&#x5347;&#x7EA7;&#x540E;&#xFF0C;&#x5728;&#x7B49;&#x5F85;5&#x79D2;&#x540E;&#xFF0C;&#x4F1A;&#x5347;&#x7EA7;&#x5269;&#x4E0B;&#x7684;5&#x4E2A;&#x5BB9;&#x5668;&#x3002;</li>
+<li>&#x542F;&#x52A8;&#x884C;&#x4E3A;&#xFF1A;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x65E7;&#x7684;&#x5BB9;&#x5668;&#x4F1A;&#x5148;&#x505C;&#x6B62;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x542F;&#x52A8;&#x65B0;&#x7684;&#x5BB9;&#x5668;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5148;&#x542F;&#x52A8;&#x65B0;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x518D;&#x505C;&#x6B62;&#x65E7;&#x7684;&#x5BB9;&#x5668;&#x3002;</li>
+</ul>
+<p>&#x5728;&#x914D;&#x7F6E;&#x597D;&#x4E86;&#x65B0;&#x7684;&#x670D;&#x52A1;&#x53C2;&#x6570;&#x548C;&#x5347;&#x7EA7;&#x4E13;&#x7528;&#x53C2;&#x6570;&#x4EE5;&#x540E;&#xFF0C;&#x70B9;&#x51FB;&#x5347;&#x7EA7;&#x3002;</p>
+<p>&#x5F53;&#x5168;&#x90E8;&#x65E7;&#x7684;&#x5BB9;&#x5668;&#x88AB;&#x505C;&#x6389;&#xFF0C;&#x65B0;&#x7684;&#x5BB9;&#x5668;&#x542F;&#x52A8;&#x6210;&#x529F;&#x4E4B;&#x540E;&#xFF0C;&#x670D;&#x52A1;&#x5C06;&#x4F1A;&#x53D8;&#x6210; Upgraded &#x72B6;&#x6001;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x9636;&#x6BB5;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x53BB;&#x6D4B;&#x8BD5;&#x4F60;&#x7684;&#x65B0;&#x670D;&#x52A1;&#x6765;&#x786E;&#x4FDD;&#x670D;&#x52A1;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x70B9;&#x51FB;&#x5347;&#x7EA7;&#x5B8C;&#x6210;&#x6765;&#x5B8C;&#x6210;&#x5347;&#x7EA7;&#x3002;&#x5982;&#x679C;&#x4F60;&#x7684;&#x670D;&#x52A1;&#x51FA;&#x73B0;&#x4E86;&#x5F02;&#x5E38;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x70B9;&#x51FB;&#x56DE;&#x6EDA;&#x6765;&#x56DE;&#x9000;&#x5230;&#x4E4B;&#x524D;&#x7684;&#x670D;&#x52A1;&#x3002;</p>
+<h4 id="&#x901A;&#x8FC7;rancher-compose&#x547D;&#x4EE4;&#x884C;&#x8FDB;&#x884C;&#x670D;&#x52A1;&#x5347;&#x7EA7;">&#x901A;&#x8FC7;RANCHER COMPOSE&#x547D;&#x4EE4;&#x884C;&#x8FDB;&#x884C;&#x670D;&#x52A1;&#x5347;&#x7EA7;</h4>
+<p>&#x901A;&#x8FC7;Rancher Compose&#x547D;&#x4EE4;&#x884C;&#x8FDB;&#x884C;&#x670D;&#x52A1;&#x5185;&#x5347;&#x7EA7;&#x65F6;&#xFF0C;&#x73B0;&#x6709;&#x670D;&#x52A1;&#x4F1A;&#x6309;&#x7167;docker-compose.yml&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x5347;&#x7EA7;&#xFF0C;&#x670D;&#x52A1;&#x4E2D;&#x65E7;&#x7684;&#x5BB9;&#x5668;&#x4F1A;&#x88AB;&#x5220;&#x9664;&#x3002;&#x5347;&#x7EA7;&#x76F8;&#x5173;&#x7684;&#x53C2;&#x6570;&#x9700;&#x8981;&#x4F20;&#x9012;&#x7ED9;rancher-compose up&#x547D;&#x4EE4;&#x3002;&#x5982;&#x679C;&#x547D;&#x4EE4;&#x52A0;&#x4E0A;--upgrade&#x53C2;&#x6570;&#xFF0C;docker-compose.yml&#x5185;&#x5B9A;&#x4E49;&#x7684;&#x670D;&#x52A1;&#x5982;&#x679C;&#x53D1;&#x751F;&#x4E86;&#x6539;&#x53D8;&#xFF0C;&#x8FD9;&#x4E2A;&#x670D;&#x52A1;&#x4F1A;&#x88AB;&#x6309;&#x7167;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x8FDB;&#x884C;&#x5347;&#x7EA7;&#x3002;&#x548C;&#x5728;UI&#x4E0A;&#x8FDB;&#x884C;&#x5347;&#x7EA7;&#x64CD;&#x4F5C;&#x4E00;&#x6837;&#xFF0C;&#x670D;&#x52A1;&#x5185;&#x5347;&#x7EA7;&#x5206;&#x4E3A;&#x4E24;&#x4E2A;&#x6B65;&#x9AA4;&#xFF0C;&#x9700;&#x8981;&#x7528;&#x6237;&#x786E;&#x8BA4;&#x6765;&#x5B8C;&#x6210;&#x5347;&#x7EA7;&#x6216;&#x8005;&#x6267;&#x884C;&#x56DE;&#x6EDA;&#x3002;</p>
+<h5 id="&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;-&#x8FDB;&#x884C;&#x5347;&#x7EA7;">&#x7B2C;&#x4E00;&#x6B65;&#xFF1A; &#x8FDB;&#x884C;&#x5347;&#x7EA7;</h5>
+<p>&#x5347;&#x7EA7;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;docker-compose.yml&#x6587;&#x4EF6;&#x5347;&#x7EA7;&#x6574;&#x4E2A;&#x5E94;&#x7528;&#x6808;&#x6216;&#x8005;&#x5347;&#x7EA7;&#x5E94;&#x7528;&#x5185;&#x6307;&#x5B9A;&#x7684;&#x670D;&#x52A1;&#x3002;</p>
+<pre><code># &#x5347;&#x7EA7;&#x5E94;&#x7528;&#x6808;&#x5185;&#x7684;&#x5168;&#x90E8;&#x6709;&#x53D8;&#x5316;&#x7684;&#x670D;&#x52A1;
+$ rancher-compose up --upgrade
+# &#x5347;&#x7EA7;&#x5E94;&#x7528;&#x6808;&#x5185;&#x6307;&#x5B9A;&#x7684;&#x670D;&#x52A1; (&#x4F8B;&#x5982;&#x4EC5;&#x5347;&#x7EA7;service1&#x548C;service2)
+$ rancher-compose up --upgrade service1 service2
+# &#x5F3A;&#x5236;&#x89E6;&#x53D1;&#x670D;&#x52A1;&#x5347;&#x7EA7;&#xFF0C;&#x5373;&#x4F7F;&#x5728;docker-comopse.yml&#x6587;&#x4EF6;&#x4E2D;&#x672A;&#x88AB;&#x6539;&#x53D8;&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x4E5F;&#x5C06;&#x88AB;&#x5347;&#x7EA7;&#x3002;
+$ rancher-compose up --force-upgrade
+</code></pre><h6 id="&#x5347;&#x7EA7;&#x9009;&#x9879;">&#x5347;&#x7EA7;&#x9009;&#x9879;</h6>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x9009;&#x9879;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">--pull, -p</td>
+<td style="text-align:left">&#x5347;&#x7EA7;&#x524D;&#xFF0C;&#x5728;&#x6BCF;&#x53F0;&#x8FD0;&#x884C;&#x8BE5;&#x5BB9;&#x5668;&#x7684;&#x4E3B;&#x673A;&#x4E0A;&#x6267;&#x884C;docker pull&#x64CD;&#x4F5C;&#xFF0C;&#x5C1D;&#x8BD5;&#x83B7;&#x53D6;&#x65B0;&#x955C;&#x50CF;</td>
+</tr>
+<tr>
+<td style="text-align:left">-d</td>
+<td style="text-align:left">&#x5728;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#x5347;&#x7EA7;</td>
+</tr>
+<tr>
+<td style="text-align:left">--upgrade, -u, --recreate</td>
+<td style="text-align:left">&#x4EC5;&#x5347;&#x7EA7;&#x5728;docker-compose.yml&#x4E2D;&#x914D;&#x7F6E;&#x6709;&#x53D8;&#x5316;&#x7684;&#x670D;&#x52A1;</td>
+</tr>
+<tr>
+<td style="text-align:left">--force-upgrade, --force-recreate</td>
+<td style="text-align:left">&#x4E0D;&#x8BBA;&#x670D;&#x52A1;&#x7684;&#x914D;&#x7F6E;&#x662F;&#x5426;&#x6709;&#x53D8;&#x5316;&#xFF0C;&#x5168;&#x90E8;&#x8FDB;&#x884C;&#x5347;&#x7EA7;</td>
+</tr>
+<tr>
+<td style="text-align:left">--confirm-upgrade, -c</td>
+<td style="text-align:left">&#x5347;&#x7EA7;&#x5B8C;&#x6210;&#x540E;&#x81EA;&#x52A8;&#x786E;&#x8BA4;&#x5347;&#x7EA7;&#x6210;&#x529F;&#xFF0C;&#x5220;&#x9664;&#x65E7;&#x7684;&#x5BB9;&#x5668;</td>
+</tr>
+<tr>
+<td style="text-align:left">--rollback, -r</td>
+<td style="text-align:left">&#x56DE;&#x6EDA;&#x5230;&#x4E4B;&#x524D;&#x7684;&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td style="text-align:left">--batch-size &#x201C;2&#x201D;</td>
+<td style="text-align:left">&#x6BCF;&#x6279;&#x5347;&#x7EA7;&#x7684;&#x5BB9;&#x5668;&#x4E2A;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:left">--interval &#x201C;1000&#x201D;</td>
+<td style="text-align:left">&#x6BCF;&#x6279;&#x5347;&#x7EA7;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;</td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x62C9;&#x53D6;&#x955C;&#x50CF;">&#x62C9;&#x53D6;&#x955C;&#x50CF;</h6>
+<p>&#x5728;&#x5347;&#x7EA7;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x5728;&#x90E8;&#x7F72;&#x5BB9;&#x5668;&#x4E4B;&#x524D;&#x6267;&#x884C;docker pull&#xFF0C;&#x56E0;&#x4E3A;&#x4E3B;&#x673A;&#x4E0A;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x6709;&#x4E86;&#x8BE5;&#x955C;&#x50CF;&#x7684;&#x7F13;&#x5B58;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;--pull&#x53C2;&#x6570;&#xFF0C;&#x5728;&#x90E8;&#x7F72;&#x5BB9;&#x5668;&#x4E4B;&#x524D;&#x62C9;&#x53D6;&#x6700;&#x65B0;&#x7684;&#x955C;&#x50CF;&#x3002;</p>
+<pre><code># &#x5728;&#x5347;&#x7EA7;&#x65F6;&#xFF0C;&#x5F3A;&#x5236;&#x6BCF;&#x53F0;&#x4E3B;&#x673A;&#x5728;&#x90E8;&#x7F72;&#x5BB9;&#x5668;&#x4E4B;&#x524D;&#xFF0C;&#x6267;&#x884C;docker pull&#x66F4;&#x65B0;&#x955C;&#x50CF;
+$ rancher-compose up --upgrade --pull
+</code></pre><h6 id="&#x6279;&#x91CF;&#x5927;&#x5C0F;">&#x6279;&#x91CF;&#x5927;&#x5C0F;</h6>
+<p>&#x5728;&#x9ED8;&#x8BA4;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6BCF;&#x6279;&#x5347;&#x7EA7;&#x670D;&#x52A1;&#x7684;2&#x4E2A;&#x5BB9;&#x5668;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;--batch-size&#x53C2;&#x6570;&#x6765;&#x8BBE;&#x7F6E;&#x6BCF;&#x6279;&#x6240;&#x66F4;&#x65B0;&#x7684;&#x955C;&#x50CF;&#x6570;&#x91CF;&#x3002;</p>
+<pre><code># &#x5347;&#x7EA7;&#x670D;&#x52A1;&#x65F6;&#x6BCF;&#x6B21;&#x4F1A;&#x542F;&#x52A8;3&#x4E2A;&#x65B0;&#x7684;&#x5BB9;&#x5668;
+# &#x76F4;&#x5230;&#x65B0;&#x7684;&#x5BB9;&#x5668;&#x8FBE;&#x5230;&#x8BBE;&#x7F6E;&#x7684;&#x6570;&#x91CF;
+$ rancher-compose up --upgrade --batch-size 3
+</code></pre><h6 id="&#x6279;&#x91CF;&#x95F4;&#x9694;">&#x6279;&#x91CF;&#x95F4;&#x9694;</h6>
+<p>&#x5728;&#x9ED8;&#x8BA4;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6BCF;&#x6B21;&#x65B0;&#x7684;&#x5BB9;&#x5668;&#x542F;&#x52A8;&#x548C;&#x65E7;&#x7684;&#x5BB9;&#x5668;&#x505C;&#x6B62;&#x4E4B;&#x95F4;&#x6709;2&#x79D2;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;--interval&#x6765;&#x8986;&#x76D6;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#xFF0C;&#x53C2;&#x6570;&#x540E;&#x9762;&#x8DDF;&#x7740;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x662F;&#x4EE5;&#x6BEB;&#x79D2;&#x4E3A;&#x5355;&#x4F4D;&#x7684;&#x3002;</p>
+<pre><code># &#x5C06;&#x670D;&#x52A1;&#x7684;&#x5347;&#x7EA7;&#x95F4;&#x9694;&#x8BBE;&#x7F6E;&#x4E3A;30&#x79D2;&#x3002;
+# service1&#x548C;service2&#x7684;&#x65B0;&#x5BB9;&#x5668;&#x542F;&#x52A8;&#x548C;&#x4ED6;&#x4EEC;&#x7684;&#x65E7;&#x5BB9;&#x5668;&#x505C;&#x6B62;&#x4E4B;&#x95F4;&#x4E3A;30s
+$ rancher-compose up --upgrade service1 service2 --interval &quot;30000&quot;
+</code></pre><h6 id="&#x5728;&#x505C;&#x6B62;&#x65E7;&#x7684;&#x5BB9;&#x5668;&#x524D;&#x542F;&#x52A8;&#x65B0;&#x7684;&#x5BB9;&#x5668;">&#x5728;&#x505C;&#x6B62;&#x65E7;&#x7684;&#x5BB9;&#x5668;&#x524D;&#x542F;&#x52A8;&#x65B0;&#x7684;&#x5BB9;&#x5668;</h6>
+<p>&#x5728;&#x9ED8;&#x8BA4;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x670D;&#x52A1;&#x5185;&#x5347;&#x7EA7;&#x4F1A;&#x5148;&#x505C;&#x6389;&#x65E7;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x518D;&#x542F;&#x52A8;&#x65B0;&#x7684;&#x5BB9;&#x5668;&#x3002;&#x5982;&#x679C;&#x60F3;&#x8981;&#x5148;&#x542F;&#x52A8;&#x65B0;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x518D;&#x505C;&#x6B62;&#x65E7;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5728;rancher-compose.yml&#x6587;&#x4EF6;&#x4E2D;&#x5199;&#x5165;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#x3002;</p>
+<pre><code>version: &apos;2&apos;
+services:
+  myservice:
+    upgrade_strategy:
+      start_first: true
+</code></pre><pre><code># &#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;rancher-compose.yml&#x914D;&#x7F6E;&#xFF0C;&#x4F1A;&#x5148;&#x542F;&#x52A8;myservice&#x670D;&#x52A1;&#x4E2D;&#x7684;&#x65B0;&#x5BB9;&#x5668;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x505C;&#x6389;&#x65E7;&#x5BB9;&#x5668;&#x3002;
+$ rancher-compose up --upgrade myservice
+</code></pre><h5 id="&#x7B2C;&#x4E8C;&#x6B65;&#xFF1A;&#x786E;&#x8BA4;&#x5347;&#x7EA7;">&#x7B2C;&#x4E8C;&#x6B65;&#xFF1A;&#x786E;&#x8BA4;&#x5347;&#x7EA7;</h5>
+<p>&#x5728;&#x4F60;&#x9A8C;&#x8BC1;&#x8BE5;&#x670D;&#x52A1;&#x5347;&#x7EA7;&#x6210;&#x4E86;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x4E86;&#x4E4B;&#x540E;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5728;Rancher&#x91CC;&#x786E;&#x8BA4;&#x5347;&#x7EA7;&#x6210;&#x529F;&#x3002;&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#x662F;&#x56E0;&#x4E3A;&#x6709;&#x65F6;&#x5019;&#x4F60;&#x53EF;&#x80FD;&#x60F3;&#x8981;&#x56DE;&#x6EDA;&#x4F60;&#x7684;&#x670D;&#x52A1;&#x3002;&#x5F53;&#x4F60;&#x70B9;&#x51FB;&#x5B8C;&#x6210;&#x5347;&#x7EA7;&#x540E;&#xFF0C;&#x5C31;&#x4E0D;&#x80FD;&#x518D;&#x8FDB;&#x884C;&#x56DE;&#x6EDA;&#x64CD;&#x4F5C;&#x4E86;</p>
+<pre><code># &#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x786E;&#x8BA4;&#x5347;&#x7EA7;&#x6210;&#x529F;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x5728;UI&#x4E0A;&#x70B9;&#x51FB;&#x5B8C;&#x6210;&#x5347;&#x7EA7;&#x3002;
+$ rancher-compose up --upgrade --confirm-upgrade
+</code></pre><h6 id="&#x56DE;&#x6EDA;">&#x56DE;&#x6EDA;</h6>
+<p>&#x5728;&#x5347;&#x7EA7;&#x8FC7;&#x7A0B;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x4F60;&#x7684;&#x670D;&#x52A1;&#x53EF;&#x80FD;&#x53D1;&#x751F;&#x4E86;&#x95EE;&#x9898;&#x4E0D;&#x80FD;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x3002;Rancher&#x652F;&#x6301;&#x56DE;&#x6EDA;&#x529F;&#x80FD;&#xFF0C;&#x53EF;&#x4EE5;&#x628A;&#x670D;&#x52A1;&#x56DE;&#x6EDA;&#x5230;&#x5347;&#x7EA7;&#x4E4B;&#x524D;&#x7684;&#x72B6;&#x6001;&#x3002;&#x56DE;&#x6EDA;&#x64CD;&#x4F5C;&#x53EA;&#x80FD;&#x5728;&#x70B9;&#x51FB;&#x5B8C;&#x6210;&#x5347;&#x7EA7;&#x4E4B;&#x524D;&#x8FDB;&#x884C;&#x3002;</p>
+<pre><code># &#x56DE;&#x6EDA;&#x5230;&#x4E4B;&#x524D;&#x7684;&#x7248;&#x672C;
+$ rancher-compose up --upgrade --rollback
+</code></pre><h3 id="&#x66FF;&#x6362;&#x5F0F;&#x5347;&#x7EA7;">&#x66FF;&#x6362;&#x5F0F;&#x5347;&#x7EA7;</h3>
+<p>&#x66FF;&#x6362;&#x5F0F;&#x5347;&#x7EA7;&#x4F1A;&#x901A;&#x8FC7;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x670D;&#x52A1;&#x6765;&#x66FF;&#x6362;&#x65E7;&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5185;&#x505C;&#x6B62;&#x65E7;&#x7684;&#x5BB9;&#x5668;&#x5E76;&#x542F;&#x52A8;&#x65B0;&#x7684;&#x5BB9;&#x5668;&#x3002;&#x53EA;&#x6709;Rancher Compose&#x547D;&#x4EE4;&#x884C;&#x624D;&#x652F;&#x6301;&#x8FD9;&#x79CD;&#x5347;&#x7EA7;&#x65B9;&#x5F0F;&#xFF0C;UI&#x4E0A;&#x4E0D;&#x53EF;&#x4EE5;&#x3002;&#x66FF;&#x6362;&#x5F0F;&#x5347;&#x7EA7;&#x64CD;&#x4F5C;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF1A;</p>
+<pre><code>$ rancher-compose upgrade service1 service2
+</code></pre><p>service2&#x662F;&#x4F60;&#x60F3;&#x8981;&#x5728;Rancher&#x91CC;&#x542F;&#x52A8;&#x7684;&#x65B0;&#x670D;&#x52A1;&#x7684;&#x540D;&#x5B57;&#x3002;service1&#x662F;&#x4F60;&#x60F3;&#x8981;&#x5728;Rancher&#x91CC;&#x505C;&#x6B62;&#x5E76;&#x66FF;&#x6362;&#x7684;&#x670D;&#x52A1;&#x3002;&#x5F53;service2&#x88AB;&#x90E8;&#x7F72;&#x4E4B;&#x540E;&#xFF0C;service1&#x91CC;&#x9762;&#x7684;&#x5BB9;&#x5668;&#x4F1A;&#x88AB;&#x5220;&#x9664;&#xFF0C;&#x4F46;&#x662F;&#x670D;&#x52A1;&#x672C;&#x8EAB;&#x5E76;&#x4E0D;&#x4F1A;&#x4ECE;Rancher&#x91CC;&#x5220;&#x9664;&#xFF0C;&#x53EA;&#x662F;&#x5BB9;&#x5668;&#x7684;&#x6570;&#x91CF;&#x4F1A;&#x53D8;&#x4E3A;0&#x3002;</p>
+<p>&#x8FD9;&#x4E24;&#x4E2A;&#x670D;&#x52A1;&#x540D;&#x90FD;&#x9700;&#x8981;&#x88AB;&#x5B9A;&#x4E49;&#x5728;docker-compose.yml&#x91CC;&#x9762;&#x3002;service1&#x53EA;&#x9700;&#x8981;&#x628A;&#x670D;&#x52A1;&#x540D;&#x5728;yml&#x6587;&#x4EF6;&#x4E2D;&#x5B9A;&#x4E49;&#x5373;&#x53EF;&#xFF0C;Rancher Compose&#x4F1A;&#x7528;&#x8FD9;&#x4E2A;&#x540D;&#x5B57;&#x6765;&#x627E;&#x5230;&#x76F8;&#x5E94;&#x7684;&#x670D;&#x52A1;&#x3002;service2&#x5219;&#x9700;&#x8981;&#x5728;yml&#x6587;&#x4EF6;&#x4E2D;&#x5B9A;&#x4E49;&#x5168;&#x90E8;&#x9700;&#x8981;&#x7684;&#x914D;&#x7F6E;&#xFF0C;Rancher Compose&#x547D;&#x4EE4;&#x884C;&#x4F1A;&#x6839;&#x636E;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x6765;&#x90E8;&#x7F72;service2&#x3002;</p>
+<h4 id="&#x793A;&#x4F8B;-docker-composeyml">&#x793A;&#x4F8B; DOCKER-COMPOSE.YML</h4>
+<pre><code>version: &apos;2&apos;
+services:
+  service1:
+  # &#x8FD9;&#x91CC;&#x4E0D;&#x9700;&#x8981;&#x989D;&#x5916;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x56E0;&#x4E3A;service1&#x5DF2;&#x7ECF;&#x5728;&#x8FD0;&#x884C;&#x4E2D;&#x4E86;&#x3002;
+  service2:
+    image: wordpress
+    links:
+    - db:mysql
+</code></pre><p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5168;&#x90E8;&#x7684;&#x6307;&#x5411;service1&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x6216;&#x8005;&#x662F;&#x670D;&#x52A1;&#x8FDE;&#x63A5;&#x90FD;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x66F4;&#x65B0;&#x5E76;&#x6307;&#x5411;service2&#x3002;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x60F3;&#x521B;&#x5EFA;&#x8FD9;&#x4E9B;&#x8FDE;&#x63A5;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x6765;&#x7981;&#x6B62;&#x8FDE;&#x63A5;&#x521B;&#x5EFA;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;
+&#x5347;&#x7EA7;&#x670D;&#x52A1;&#x65F6;&#x5E76;&#x4E0D;&#x9700;&#x8981;rancher-compose.yml&#x6587;&#x4EF6;&#x3002; &#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x65B0;&#x670D;&#x52A1;&#x4E2D;&#x7684;&#x5BB9;&#x5668;&#x6570;&#x91CF;&#x548C;&#x65E7;&#x670D;&#x52A1;&#x4E2D;&#x7684;&#x5BB9;&#x5668;&#x6570;&#x91CF;&#x76F8;&#x540C;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F20;&#x9012;--scale&#x53C2;&#x6570;&#x6765;&#x8BBE;&#x7F6E;&#x5BB9;&#x5668;&#x7684;&#x6570;&#x91CF;&#x3002;</p>
+</blockquote>
+<h4 id="&#x5347;&#x7EA7;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x5BB9;&#x5668;&#x6570;&#x91CF;">&#x5347;&#x7EA7;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x5BB9;&#x5668;&#x6570;&#x91CF;</h4>
+<p>&#x76F4;&#x5230;&#x65B0;&#x7684;&#x670D;&#x52A1;&#x4E2D;&#x7684;&#x5BB9;&#x5668;&#x6570;&#x91CF;&#x548C;&#x65E7;&#x7684;&#x670D;&#x52A1;&#x4E2D;&#x7684;&#x5BB9;&#x5668;&#x6570;&#x91CF;&#x8FBE;&#x5230;&#x4F60;&#x8BBE;&#x5B9A;&#x7684;&#x6570;&#x91CF;&#x65F6;&#xFF0C;&#x65E7;&#x670D;&#x52A1;&#x4E2D;&#x7684;&#x5BB9;&#x5668;&#x624D;&#x4F1A;&#x88AB;&#x5220;&#x9664;&#x3002;</p>
+<p>&#x793A;&#x4F8B;:</p>
+<pre><code>$ rancher-compose upgrade service1 service2 --scale 5
+</code></pre><p>service1&#x4E2D;&#x6709;&#x4E24;&#x4E2A;&#x5BB9;&#x5668;&#xFF0C;&#x4F60;&#x60F3;&#x8981;&#x628A;&#x5B83;&#x5347;&#x7EA7;&#x4E3A;service2&#xFF0C;service2&#x4E2D;&#x60F3;&#x8981;&#x542F;&#x52A8;5&#x4E2A;&#x5BB9;&#x5668;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">service1</th>
+<th style="text-align:left">service2</th>
+<th style="text-align:left">&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">service1&#x5728;&#x8FD0;&#x884C;&#x4E2D;&#xFF0C;&#x5E76;&#x4E14;&#x6709;&#x4E24;&#x4E2A;&#x5BB9;&#x5668;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">service2&#x6BCF;&#x6279;&#x542F;&#x52A8;&#x4E24;&#x4E2A;&#x5BB9;&#x5668;(&#x9ED8;&#x8BA4;&#x6279;&#x91CF;&#x6570;&#x91CF;)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">service2&#x7B2C;&#x4E8C;&#x6279;&#x65F6;&#xFF0C;&#x518D;&#x542F;&#x52A8;&#x4E24;&#x4E2A;&#x5BB9;&#x5668;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">&#x5728;&#x4E0A;&#x4E00;&#x6B65;&#xFF0C;&#x65B0;&#x65E7;&#x5BB9;&#x5668;&#x7684;&#x6570;&#x91CF;&#x603B;&#x548C;&#x4E3A;6&#x4E2A;&#xFF0C;&#x5DF2;&#x7ECF;&#x8D85;&#x8FC7;&#x76EE;&#x6807;&#x6570;&#x91CF;&#x7684;5&#x4E2A;&#x3002;&#x8FD9;&#x65F6;&#x4F1A;&#x505C;&#x6389;service1&#x91CC;&#x7684;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#xFF0C;&#x4F7F;&#x65B0;&#x65E7;&#x5BB9;&#x5668;&#x6570;&#x91CF;&#x4E3A;5&#x4E2A;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">5</td>
+<td style="text-align:left">service2&#x518D;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#xFF0C;&#x8FBE;&#x5230;&#x76EE;&#x6807;&#x7684;5&#x4E2A;&#x5BB9;&#x5668;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">0</td>
+<td style="text-align:left">5</td>
+<td style="text-align:left">service1&#x5220;&#x9664;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="upgrade&#x547D;&#x4EE4;&#x7684;&#x53C2;&#x6570;">UPGRADE&#x547D;&#x4EE4;&#x7684;&#x53C2;&#x6570;</h4>
+<p>upgrade&#x547D;&#x4EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x51E0;&#x4E2A;&#x53C2;&#x6570;&#x6765;&#x81EA;&#x5B9A;&#x4E49;&#x5347;&#x7EA7;&#x884C;&#x4E3A;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">--batch-size &#x201C;2&#x201D;</td>
+<td style="text-align:left">&#x6BCF;&#x6279;&#x5347;&#x7EA7;&#x7684;&#x5BB9;&#x5668;&#x4E2A;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:left">--scale &#x201C;-1&#x201D;</td>
+<td style="text-align:left">&#x6700;&#x7EC8;&#x8981;&#x8FD0;&#x884C;&#x7684;&#x5BB9;&#x5668;&#x6570;&#x91CF;</td>
+</tr>
+<tr>
+<td style="text-align:left">--interval &#x201C;2000&#x201D;</td>
+<td style="text-align:left">&#x6BCF;&#x6279;&#x5347;&#x7EA7;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;</td>
+</tr>
+<tr>
+<td style="text-align:left">--update-links</td>
+<td style="text-align:left">&#x66F4;&#x65B0;&#x6307;&#x5B9A;&#x670D;&#x52A1;&#x7684;&#x8FDE;&#x63A5;</td>
+</tr>
+<tr>
+<td style="text-align:left">--wait, -w</td>
+<td style="text-align:left">&#x7B49;&#x5F85;&#x5347;&#x7EA7;&#x5B8C;&#x6210;</td>
+</tr>
+<tr>
+<td style="text-align:left">--pull, -p</td>
+<td style="text-align:left">&#x5347;&#x7EA7;&#x524D;&#xFF0C;&#x5728;&#x6BCF;&#x53F0;&#x8FD0;&#x884C;&#x8BE5;&#x5BB9;&#x5668;&#x7684;&#x4E3B;&#x673A;&#x4E0A;&#x6267;&#x884C;docker pull&#x64CD;&#x4F5C;&#xFF0C;&#x5C1D;&#x8BD5;&#x83B7;&#x53D6;&#x65B0;&#x955C;&#x50CF;</td>
+</tr>
+<tr>
+<td style="text-align:left">--cleanup, -c</td>
+<td style="text-align:left">&#x5728;&#x5347;&#x7EA7;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x5220;&#x9664;&#x65E7;&#x7684;&#x670D;&#x52A1;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x6279;&#x91CF;&#x5927;&#x5C0F;">&#x6279;&#x91CF;&#x5927;&#x5C0F;</h5>
+<p>&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5347;&#x7EA7;&#x7684;&#x65F6;&#x5019;&#x6BCF;&#x6B21;&#x542F;&#x52A8;2&#x4E2A;&#x65B0;&#x670D;&#x52A1;&#x7684;&#x5BB9;&#x5668;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;--batch-size&#x53C2;&#x6570;&#x6765;&#x8BBE;&#x7F6E;&#x6BCF;&#x6279;&#x542F;&#x52A8;&#x7684;&#x5BB9;&#x5668;&#x4E2A;&#x6570;&#x3002;</p>
+<pre><code># &#x5347;&#x7EA7;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6BCF;&#x6279;&#x5C06;&#x4F1A;&#x542F;&#x52A8;3&#x4E2A;service2&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x76F4;&#x5230;service2&#x7684;&#x5BB9;&#x5668;&#x6570;&#x91CF;&#x8FBE;&#x5230;&#x8BBE;&#x5B9A;&#x7684;&#x503C;&#x3002;
+$ rancher-compose upgrade service1 service2 --batch-size 3
+</code></pre><h5 id="&#x6700;&#x7EC8;&#x6570;&#x91CF;">&#x6700;&#x7EC8;&#x6570;&#x91CF;</h5>
+<p>&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x65B0;&#x670D;&#x52A1;&#x7684;&#x5BB9;&#x5668;&#x6570;&#x91CF;&#x548C;&#x65E7;&#x670D;&#x52A1;&#x4E4B;&#x524D;&#x8FD0;&#x884C;&#x7684;&#x5BB9;&#x5668;&#x6570;&#x91CF;&#x76F8;&#x540C;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F20;&#x9012;--scale&#x53C2;&#x6570;&#xFF0C;&#x6765;&#x8BBE;&#x7F6E;&#x65B0;&#x670D;&#x52A1;&#x6240;&#x8FD0;&#x884C;&#x5BB9;&#x5668;&#x7684;&#x6570;&#x91CF;&#x3002;</p>
+<pre><code>#&#x8BBE;&#x7F6E;service2&#x5347;&#x7EA7;&#x540E;&#x7684;&#x5BB9;&#x5668;&#x6570;&#x91CF;&#x4E3A;8&#x4E2A;
+$ rancher-compose upgrade service1 service2 --scale 8
+</code></pre><blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;
+&#x65E7;&#x670D;&#x52A1;&#x4E2D;&#x7684;&#x5BB9;&#x5668;&#x5E76;&#x4E0D;&#x6839;&#x636E;&#x6279;&#x91CF;&#x5927;&#x5C0F;&#x7684;&#x6570;&#x91CF;&#x6765;&#x5220;&#x9664;&#x3002;&#x5F53;&#x65B0;&#x65E7;&#x670D;&#x52A1;&#x4E2D;&#x7684;&#x5BB9;&#x5668;&#x6570;&#x91CF;&#x548C;&#xFF0C;&#x8FBE;&#x5230;&#x8BBE;&#x7F6E;&#x7684;&#x6700;&#x7EC8;&#x6570;&#x91CF;&#x65F6;&#xFF0C;&#x65E7;&#x670D;&#x52A1;&#x4E2D;&#x7684;&#x5BB9;&#x5668;&#x5C06;&#x4F1A;&#x88AB;&#x505C;&#x6B62;&#x5E76;&#x5220;&#x9664;&#x3002;</p>
+</blockquote>
+<h5 id="&#x6279;&#x91CF;&#x95F4;&#x9694;">&#x6279;&#x91CF;&#x95F4;&#x9694;</h5>
+<p>&#x5728;&#x9ED8;&#x8BA4;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6BCF;&#x6B21;&#x65B0;&#x7684;&#x5BB9;&#x5668;&#x542F;&#x52A8;&#x548C;&#x65E7;&#x7684;&#x5BB9;&#x5668;&#x505C;&#x6B62;&#x4E4B;&#x95F4;&#x6709;2&#x79D2;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;--interval&#x6765;&#x8986;&#x76D6;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#xFF0C;&#x53C2;&#x6570;&#x540E;&#x9762;&#x8DDF;&#x7740;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x662F;&#x4EE5;&#x6BEB;&#x79D2;&#x4E3A;&#x5355;&#x4F4D;&#x7684;&#x3002;</p>
+<pre><code># &#x5C06;&#x670D;&#x52A1;&#x7684;&#x5347;&#x7EA7;&#x95F4;&#x9694;&#x8BBE;&#x7F6E;&#x4E3A;30&#x79D2;&#x3002;
+# service1&#x548C;service2&#x7684;&#x65B0;&#x5BB9;&#x5668;&#x542F;&#x52A8;&#x548C;&#x4ED6;&#x4EEC;&#x7684;&#x65E7;&#x5BB9;&#x5668;&#x505C;&#x6B62;&#x4E4B;&#x95F4;&#x4E3A;30s
+$ rancher-compose upgrade service1 service2 --interval &quot;30000&quot;
+</code></pre><h4 id="&#x66F4;&#x65B0;&#x8FDE;&#x63A5;">&#x66F4;&#x65B0;&#x8FDE;&#x63A5;</h4>
+<p>&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5168;&#x90E8;&#x6307;&#x5411;&#x65E7;&#x670D;&#x52A1;&#x7684;&#x8FDE;&#x63A5;&#x4F1A;&#x88AB;&#x8BBE;&#x7F6E;&#x5230;&#x65B0;&#x670D;&#x52A1;&#x4E0A;&#x3002;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x60F3;&#x8BA9;&#x90A3;&#x4E9B;&#x670D;&#x52A1;&#x8FDE;&#x63A5;&#x5230;&#x65B0;&#x7684;&#x670D;&#x52A1;&#x7684;&#x8BDD;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;--update-links=&quot;false&quot;&#x53C2;&#x6570;&#x6765;&#x7981;&#x6B62;&#x8FD9;&#x4E9B;&#x8FDE;&#x63A5;&#x7684;&#x521B;&#x5EFA;&#x3002;</p>
+<pre><code># &#x4E0D;&#x628A;&#x6307;&#x5411;service1&#x4E2D;&#x7684;&#x8FDE;&#x63A5;&#x8BBE;&#x7F6E;&#x5230;service2&#x4E0A;
+$ rancher-compose upgrade service1 service2 --update-links=&quot;false&quot;
+</code></pre><h5 id="&#x7B49;&#x5F85;&#x5347;&#x7EA7;&#x5B8C;&#x6BD5;">&#x7B49;&#x5F85;&#x5347;&#x7EA7;&#x5B8C;&#x6BD5;</h5>
+<p>&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;Rancher Compose&#x547D;&#x4EE4;&#x884C;&#x5728;&#x5411;Rancher&#x53D1;&#x51FA;&#x5347;&#x7EA7;&#x547D;&#x4EE4;&#x540E;&#x5C31;&#x4F1A;&#x7ACB;&#x523B;&#x9000;&#x51FA;&#x3002;&#x9000;&#x51FA;&#x7684;&#x65F6;&#x5019;&#x5347;&#x7EA7;&#x53EF;&#x80FD;&#x8FD8;&#x6CA1;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x3002;&#x901A;&#x8FC7;&#x4F20;&#x9012;--wait&#x6216;&#x8005;-w&#x5230;upgrade&#x547D;&#x4EE4;&#xFF0C;Rancher Compose&#x547D;&#x4EE4;&#x884C;&#x5C06;&#x5728;&#x65E7;&#x7684;&#x5BB9;&#x5668;&#x88AB;&#x505C;&#x6B62;&#x4E14;&#x65B0;&#x5BB9;&#x5668;&#x542F;&#x52A8;&#x540E;&#x624D;&#x9000;&#x51FA;&#x3002;</p>
+<pre><code>#&#x7B49;&#x5F85;&#x5347;&#x7EA7;&#x5B8C;&#x6210;
+$ rancher-compose upgrade service1 service2 --wait
+</code></pre><h5 id="&#x62C9;&#x53D6;&#x65B0;&#x955C;&#x50CF;">&#x62C9;&#x53D6;&#x65B0;&#x955C;&#x50CF;</h5>
+<p>&#x5728;&#x5347;&#x7EA7;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x60F3;&#x5728;&#x90E8;&#x7F72;&#x5BB9;&#x5668;&#x4E4B;&#x524D;&#x6267;&#x884C;docker pull&#xFF0C;&#x56E0;&#x4E3A;&#x4E3B;&#x673A;&#x4E0A;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x6709;&#x4E86;&#x8BE5;&#x955C;&#x50CF;&#x7684;&#x7F13;&#x5B58;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;--pull&#x6216;&#x8005;-p&#x53C2;&#x6570;&#xFF0C;&#x5728;&#x90E8;&#x7F72;&#x5BB9;&#x5668;&#x4E4B;&#x524D;&#x62C9;&#x53D6;&#x6700;&#x65B0;&#x7684;&#x955C;&#x50CF;&#x3002;</p>
+<pre><code># &#x5728;&#x542F;&#x52A8;&#x5BB9;&#x5668;&#x65F6;&#xFF0C;&#x5148;&#x6267;&#x884C;docker pull&#x83B7;&#x53D6;&#x6700;&#x65B0;&#x955C;&#x50CF;
+$ rancher-compose upgrade service1 service2 --pull
+</code></pre><p>&#x6E05;&#x9664;&#x65E7;&#x7684;&#x670D;&#x52A1;
+&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5347;&#x7EA7;&#x5B8C;&#x6210;&#x540E;&#x65E7;&#x7684;&#x670D;&#x52A1;&#x4E0D;&#x4F1A;&#x88AB;&#x5220;&#x9664;&#xFF0C;&#x53EA;&#x662F;&#x65E7;&#x670D;&#x52A1;&#x4E2D;&#x5BB9;&#x5668;&#x7684;&#x6570;&#x91CF;&#x4E3A;0&#x3002;&#x5982;&#x679C;&#x4F60;&#x89C9;&#x5F97;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x56DE;&#x6EDA;&#xFF0C;&#x4E5F;&#x4E0D;&#x9700;&#x8981;&#x4FDD;&#x7559;&#x65E7;&#x7684;&#x670D;&#x52A1;&#x914D;&#x7F6E;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F20;&#x9012;--cleanup&#x6216;&#x8005;-c&#x53C2;&#x6570;&#x5230;upgrade&#x547D;&#x4EE4;&#x3002;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x4F1A;&#x540C;&#x65F6;&#x5E94;&#x7528;--wait&#x53C2;&#x6570;&#xFF0C;&#x56E0;&#x4E3A;Rancher Compose&#x547D;&#x4EE4;&#x884C;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x5347;&#x7EA7;&#x5B8C;&#x6210;&#xFF0C;&#x7136;&#x540E;&#x624D;&#x80FD;&#x5220;&#x6389;&#x65E7;&#x7684;&#x670D;&#x52A1;&#x3002;</p>
+<pre><code># &#x5347;&#x7EA7;&#x5B8C;&#x6210;&#x540E;&#x5220;&#x9664;service1
+$ rancher-compose upgrade service1 service2 --cleanup
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="section8.html" class="navigation navigation-prev " aria-label="Previous page: 11-8 调度服务">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section10.html" class="navigation navigation-next " aria-label="Next page: 11-10 Cattle环境中的内部DNS服务">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"11-9 升级服务","level":"1.12.9","depth":2,"next":{"title":"11-10 Cattle环境中的内部DNS服务","level":"1.12.10","depth":2,"path":"chapter11/section10.md","ref":"chapter11/section10.md","articles":[]},"previous":{"title":"11-8 调度服务","level":"1.12.8","depth":2,"path":"chapter11/section8.md","ref":"chapter11/section8.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter11/section9.md","mtime":"2018-10-30T08:37:09.651Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-10-30T09:20:31.791Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
