@@ -1,0 +1,1862 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>13-3 ThreadLocal · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section4.html" />
+    
+    
+    <link rel="prev" href="section2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Python2.7教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    第1章 Python简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    第2章 安装Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter2/section1.html">
+            
+                <a href="../chapter2/section1.html">
+            
+                    
+                    2-1 Python解释器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter3/">
+            
+                <a href="../chapter3/">
+            
+                    
+                    第3章 第一个Python程序
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter3/section1.html">
+            
+                <a href="../chapter3/section1.html">
+            
+                    
+                    3-1 使用文本编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter3/section2.html">
+            
+                <a href="../chapter3/section2.html">
+            
+                    
+                    3-2 输入和输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter4/">
+            
+                <a href="../chapter4/">
+            
+                    
+                    第4章 Python基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter4/section1.html">
+            
+                <a href="../chapter4/section1.html">
+            
+                    
+                    4-1 数据类型和变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter4/section2.html">
+            
+                <a href="../chapter4/section2.html">
+            
+                    
+                    4-2 字符串和编码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter4/section3.html">
+            
+                <a href="../chapter4/section3.html">
+            
+                    
+                    4-3 使用list和tuple
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter4/section4.html">
+            
+                <a href="../chapter4/section4.html">
+            
+                    
+                    4-4 条件判断和循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../chapter4/section5.html">
+            
+                <a href="../chapter4/section5.html">
+            
+                    
+                    4-5 使用dict和set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    第5章 函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter5/section1.html">
+            
+                <a href="../chapter5/section1.html">
+            
+                    
+                    5-1 调用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter5/section2.html">
+            
+                <a href="../chapter5/section2.html">
+            
+                    
+                    5-2 定义函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter5/section3.html">
+            
+                <a href="../chapter5/section3.html">
+            
+                    
+                    5-3 函数的参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter5/section4.html">
+            
+                <a href="../chapter5/section4.html">
+            
+                    
+                    5-4 递归函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter6/">
+            
+                <a href="../chapter6/">
+            
+                    
+                    第6章 高级特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter6/section1.html">
+            
+                <a href="../chapter6/section1.html">
+            
+                    
+                    6-1 切片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter6/section2.html">
+            
+                <a href="../chapter6/section2.html">
+            
+                    
+                    6-2 迭代
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../chapter6/section3.html">
+            
+                <a href="../chapter6/section3.html">
+            
+                    
+                    6-3 列表生成式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../chapter6/section4.html">
+            
+                <a href="../chapter6/section4.html">
+            
+                    
+                    6-4 生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter7/">
+            
+                <a href="../chapter7/">
+            
+                    
+                    第7章 函数式编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chapter7/section1.html">
+            
+                <a href="../chapter7/section1.html">
+            
+                    
+                    7-1 高阶函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.1" data-path="../chapter7/section1-1.html">
+            
+                <a href="../chapter7/section1-1.html">
+            
+                    
+                    7-1-1 map/reduce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2" data-path="../chapter7/section1-2.html">
+            
+                <a href="../chapter7/section1-2.html">
+            
+                    
+                    7-1-2 filter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.3" data-path="../chapter7/section1-3.html">
+            
+                <a href="../chapter7/section1-3.html">
+            
+                    
+                    7-1-3 sorted
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../chapter7/section2.html">
+            
+                <a href="../chapter7/section2.html">
+            
+                    
+                    7-2 返回函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../chapter7/section3.html">
+            
+                <a href="../chapter7/section3.html">
+            
+                    
+                    7-3 匿名函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../chapter7/section4.html">
+            
+                <a href="../chapter7/section4.html">
+            
+                    
+                    7-4 装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../chapter7/section5.html">
+            
+                <a href="../chapter7/section5.html">
+            
+                    
+                    7-5 偏函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter8/">
+            
+                <a href="../chapter8/">
+            
+                    
+                    第8章 模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chapter8/section1.html">
+            
+                <a href="../chapter8/section1.html">
+            
+                    
+                    8-1 使用模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chapter8/section2.html">
+            
+                <a href="../chapter8/section2.html">
+            
+                    
+                    8-2 安装第三方模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../chapter8/section3.html">
+            
+                <a href="../chapter8/section3.html">
+            
+                    
+                    8-3 使用__future__
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapter9/">
+            
+                <a href="../chapter9/">
+            
+                    
+                    第9章 面向对象编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../chapter9/section1.html">
+            
+                <a href="../chapter9/section1.html">
+            
+                    
+                    9-1 类和实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../chapter9/section2.html">
+            
+                <a href="../chapter9/section2.html">
+            
+                    
+                    9-2 访问限制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../chapter9/section3.html">
+            
+                <a href="../chapter9/section3.html">
+            
+                    
+                    9-3 继承和多态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../chapter9/section4.html">
+            
+                <a href="../chapter9/section4.html">
+            
+                    
+                    9-4 获取对象信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../chapter10/">
+            
+                <a href="../chapter10/">
+            
+                    
+                    第10章 面向对象高级编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../chapter10/section1.html">
+            
+                <a href="../chapter10/section1.html">
+            
+                    
+                    10-1 使用__slots__
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../chapter10/section2.html">
+            
+                <a href="../chapter10/section2.html">
+            
+                    
+                    10-2 使用@property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../chapter10/section3.html">
+            
+                <a href="../chapter10/section3.html">
+            
+                    
+                    10-3 多重继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../chapter10/section4.html">
+            
+                <a href="../chapter10/section4.html">
+            
+                    
+                    10-4 定制类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../chapter10/section5.html">
+            
+                <a href="../chapter10/section5.html">
+            
+                    
+                    10-5 使用元类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../chapter11/">
+            
+                <a href="../chapter11/">
+            
+                    
+                    第11章 错误、调试和测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../chapter11/section1.html">
+            
+                <a href="../chapter11/section1.html">
+            
+                    
+                    11-1 错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../chapter11/section2.html">
+            
+                <a href="../chapter11/section2.html">
+            
+                    
+                    11-2 调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../chapter11/section3.html">
+            
+                <a href="../chapter11/section3.html">
+            
+                    
+                    11-3 单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../chapter11/section4.html">
+            
+                <a href="../chapter11/section4.html">
+            
+                    
+                    11-4 文档测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../chapter12/">
+            
+                <a href="../chapter12/">
+            
+                    
+                    第12章 IO编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../chapter12/section1.html">
+            
+                <a href="../chapter12/section1.html">
+            
+                    
+                    12-1 文件读写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../chapter12/section2.html">
+            
+                <a href="../chapter12/section2.html">
+            
+                    
+                    12-2 操作文件和目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../chapter12/section3.html">
+            
+                <a href="../chapter12/section3.html">
+            
+                    
+                    12-3 序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第13章 进程和线程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="section1.html">
+            
+                <a href="section1.html">
+            
+                    
+                    13-1 多进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="section2.html">
+            
+                <a href="section2.html">
+            
+                    
+                    13-2 多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14.3" data-path="section3.html">
+            
+                <a href="section3.html">
+            
+                    
+                    13-3 ThreadLocal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="section4.html">
+            
+                <a href="section4.html">
+            
+                    
+                    13-4 进程 vs. 线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.5" data-path="section5.html">
+            
+                <a href="section5.html">
+            
+                    
+                    13-5 分布式进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../chapter14/">
+            
+                <a href="../chapter14/">
+            
+                    
+                    第14章 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../chapter15/">
+            
+                <a href="../chapter15/">
+            
+                    
+                    第15章 常用内建模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../chapter15/section1.html">
+            
+                <a href="../chapter15/section1.html">
+            
+                    
+                    15-1 collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../chapter15/section2.html">
+            
+                <a href="../chapter15/section2.html">
+            
+                    
+                    15-2 base64
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../chapter15/section3.html">
+            
+                <a href="../chapter15/section3.html">
+            
+                    
+                    15-3 struct
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="../chapter15/section4.html">
+            
+                <a href="../chapter15/section4.html">
+            
+                    
+                    15-4 hashlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.5" data-path="../chapter15/section5.html">
+            
+                <a href="../chapter15/section5.html">
+            
+                    
+                    15-5 itertools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.6" data-path="../chapter15/section6.html">
+            
+                <a href="../chapter15/section6.html">
+            
+                    
+                    15-6 XML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.7" data-path="../chapter15/section7.html">
+            
+                <a href="../chapter15/section7.html">
+            
+                    
+                    15-7 HTMLParser
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../chapter16/">
+            
+                <a href="../chapter16/">
+            
+                    
+                    第16章 常用第三方模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../chapter16/section1.html">
+            
+                <a href="../chapter16/section1.html">
+            
+                    
+                    16-1 PIL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../chapter17/">
+            
+                <a href="../chapter17/">
+            
+                    
+                    第17章 图形界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../chapter18/">
+            
+                <a href="../chapter18/">
+            
+                    
+                    第18章 网络编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../chapter18/section1.html">
+            
+                <a href="../chapter18/section1.html">
+            
+                    
+                    18-1 TCP/IP简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../chapter18/section2.html">
+            
+                <a href="../chapter18/section2.html">
+            
+                    
+                    18-2 TCP编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../chapter18/section3.html">
+            
+                <a href="../chapter18/section3.html">
+            
+                    
+                    18-3 UDP编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../chapter19/">
+            
+                <a href="../chapter19/">
+            
+                    
+                    第19章 电子邮件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../chapter19/section1.html">
+            
+                <a href="../chapter19/section1.html">
+            
+                    
+                    19-1 SMTP发送邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../chapter19/section2.html">
+            
+                <a href="../chapter19/section2.html">
+            
+                    
+                    19-2 POP3收取邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../chapter20/">
+            
+                <a href="../chapter20/">
+            
+                    
+                    第20章 访问数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="../chapter20/section1.html">
+            
+                <a href="../chapter20/section1.html">
+            
+                    
+                    20-1 使用SQLite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="../chapter20/section2.html">
+            
+                <a href="../chapter20/section2.html">
+            
+                    
+                    20-2 使用MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.3" data-path="../chapter20/section3.html">
+            
+                <a href="../chapter20/section3.html">
+            
+                    
+                    20-3 使用SQLAlchemy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../chapter21/">
+            
+                <a href="../chapter21/">
+            
+                    
+                    第21章 Web开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../chapter21/section1.html">
+            
+                <a href="../chapter21/section1.html">
+            
+                    
+                    21-1 HTTP协议简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../chapter21/section2.html">
+            
+                <a href="../chapter21/section2.html">
+            
+                    
+                    21-2 HTML简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.3" data-path="../chapter21/section3.html">
+            
+                <a href="../chapter21/section3.html">
+            
+                    
+                    21-3 WSGI接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.4" data-path="../chapter21/section4.html">
+            
+                <a href="../chapter21/section4.html">
+            
+                    
+                    21-4 使用Web框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.5" data-path="../chapter21/section5.html">
+            
+                <a href="../chapter21/section5.html">
+            
+                    
+                    21-5 使用模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../chapter22/">
+            
+                <a href="../chapter22/">
+            
+                    
+                    22章 协程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../chapter22/section1.html">
+            
+                <a href="../chapter22/section1.html">
+            
+                    
+                    22-1 gevent
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../chapter23/">
+            
+                <a href="../chapter23/">
+            
+                    
+                    第23章 实战
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../chapter23/section1.html">
+            
+                <a href="../chapter23/section1.html">
+            
+                    
+                    23-1 Day 1 - 搭建开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2" data-path="../chapter23/section2.html">
+            
+                <a href="../chapter23/section2.html">
+            
+                    
+                    23-2 Day 2 - 编写数据模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.3" data-path="../chapter23/section3.html">
+            
+                <a href="../chapter23/section3.html">
+            
+                    
+                    23-3 Day 3 - 编写ORM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.4" data-path="../chapter23/section4.html">
+            
+                <a href="../chapter23/section4.html">
+            
+                    
+                    23-4 Day 4 - 编写Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.5" data-path="../chapter23/section5.html">
+            
+                <a href="../chapter23/section5.html">
+            
+                    
+                    23-5 Day 5 - 编写WEB框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.6" data-path="../chapter23/section6.html">
+            
+                <a href="../chapter23/section6.html">
+            
+                    
+                    23-6 Day 6 - 添加配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.7" data-path="../chapter23/section7.html">
+            
+                <a href="../chapter23/section7.html">
+            
+                    
+                    23-7 Day 7 - 编写MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.8" data-path="../chapter23/section8.html">
+            
+                <a href="../chapter23/section8.html">
+            
+                    
+                    23-8 Day 8 - 构建前端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.9" data-path="../chapter23/section9.html">
+            
+                <a href="../chapter23/section9.html">
+            
+                    
+                    23-9 Day 9 - 编写API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.10" data-path="../chapter23/section10.html">
+            
+                <a href="../chapter23/section10.html">
+            
+                    
+                    23-10 Day 10 - 用户注册和登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.11" data-path="../chapter23/section11.html">
+            
+                <a href="../chapter23/section11.html">
+            
+                    
+                    23-11 Day 11 - 编写日志创建页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.12" data-path="../chapter23/section12.html">
+            
+                <a href="../chapter23/section12.html">
+            
+                    
+                    23-12 Day 12 - 编写日志列表页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.13" data-path="../chapter23/section13.html">
+            
+                <a href="../chapter23/section13.html">
+            
+                    
+                    23-13 Day 13 - 提升开发效率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.14" data-path="../chapter23/section14.html">
+            
+                <a href="../chapter23/section14.html">
+            
+                    
+                    23-14 Day 14 - 完成Web App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.15" data-path="../chapter23/section15.html">
+            
+                <a href="../chapter23/section15.html">
+            
+                    
+                    23-15 Day 15 - 部署Web App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.16" data-path="../chapter23/section16.html">
+            
+                <a href="../chapter23/section16.html">
+            
+                    
+                    23-16 Day 16 - 编写移动APP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../chapter24/">
+            
+                <a href="../chapter24/">
+            
+                    
+                    第24章 期末总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="../end/">
+            
+                <a href="../end/">
+            
+                    
+                    结束
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >13-3 ThreadLocal</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="13-3-threadlocal">13-3 ThreadLocal</h1>
+<p>&#x5728;&#x591A;&#x7EBF;&#x7A0B;&#x73AF;&#x5883;&#x4E0B;&#xFF0C;&#x6BCF;&#x4E2A;&#x7EBF;&#x7A0B;&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x6570;&#x636E;&#x3002;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x4F7F;&#x7528;&#x81EA;&#x5DF1;&#x7684;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x6BD4;&#x4F7F;&#x7528;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x597D;&#xFF0C;&#x56E0;&#x4E3A;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x53EA;&#x6709;&#x7EBF;&#x7A0B;&#x81EA;&#x5DF1;&#x80FD;&#x770B;&#x89C1;&#xFF0C;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#xFF0C;&#x800C;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7684;&#x4FEE;&#x6539;&#x5FC5;&#x987B;&#x52A0;&#x9501;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x4E5F;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x5C31;&#x662F;&#x5728;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F20;&#x9012;&#x8D77;&#x6765;&#x5F88;&#x9EBB;&#x70E6;&#xFF1A;</p>
+<pre><code>def process_student(name):
+    std = Student(name)
+    # std&#x662F;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x4F46;&#x662F;&#x6BCF;&#x4E2A;&#x51FD;&#x6570;&#x90FD;&#x8981;&#x7528;&#x5B83;&#xFF0C;&#x56E0;&#x6B64;&#x5FC5;&#x987B;&#x4F20;&#x8FDB;&#x53BB;&#xFF1A;
+    do_task_1(std)
+    do_task_2(std)
+
+def do_task_1(std):
+    do_subtask_1(std)
+    do_subtask_2(std)
+
+def do_task_2(std):
+    do_subtask_2(std)
+    do_subtask_2(std)
+</code></pre><p>&#x6BCF;&#x4E2A;&#x51FD;&#x6570;&#x4E00;&#x5C42;&#x4E00;&#x5C42;&#x8C03;&#x7528;&#x90FD;&#x8FD9;&#x4E48;&#x4F20;&#x53C2;&#x6570;&#x90A3;&#x8FD8;&#x5F97;&#x4E86;&#xFF1F;&#x7528;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF1F;&#x4E5F;&#x4E0D;&#x884C;&#xFF0C;&#x56E0;&#x4E3A;&#x6BCF;&#x4E2A;&#x7EBF;&#x7A0B;&#x5904;&#x7406;&#x4E0D;&#x540C;&#x7684;Student&#x5BF9;&#x8C61;&#xFF0C;&#x4E0D;&#x80FD;&#x5171;&#x4EAB;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x7528;&#x4E00;&#x4E2A;&#x5168;&#x5C40;dict&#x5B58;&#x653E;&#x6240;&#x6709;&#x7684;Student&#x5BF9;&#x8C61;&#xFF0C;&#x7136;&#x540E;&#x4EE5;thread&#x81EA;&#x8EAB;&#x4F5C;&#x4E3A;key&#x83B7;&#x5F97;&#x7EBF;&#x7A0B;&#x5BF9;&#x5E94;&#x7684;Student&#x5BF9;&#x8C61;&#x5982;&#x4F55;&#xFF1F;</p>
+<pre><code>global_dict = {}
+
+def std_thread(name):
+    std = Student(name)
+    # &#x628A;std&#x653E;&#x5230;&#x5168;&#x5C40;&#x53D8;&#x91CF;global_dict&#x4E2D;&#xFF1A;
+    global_dict[threading.current_thread()] = std
+    do_task_1()
+    do_task_2()
+
+def do_task_1():
+    # &#x4E0D;&#x4F20;&#x5165;std&#xFF0C;&#x800C;&#x662F;&#x6839;&#x636E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x67E5;&#x627E;&#xFF1A;
+    std = global_dict[threading.current_thread()]
+    ...
+
+def do_task_2():
+    # &#x4EFB;&#x4F55;&#x51FD;&#x6570;&#x90FD;&#x53EF;&#x4EE5;&#x67E5;&#x627E;&#x51FA;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x7684;std&#x53D8;&#x91CF;&#xFF1A;
+    std = global_dict[threading.current_thread()]
+    ...
+</code></pre><p>&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x7406;&#x8BBA;&#x4E0A;&#x662F;&#x53EF;&#x884C;&#x7684;&#xFF0C;&#x5B83;&#x6700;&#x5927;&#x7684;&#x4F18;&#x70B9;&#x662F;&#x6D88;&#x9664;&#x4E86;std&#x5BF9;&#x8C61;&#x5728;&#x6BCF;&#x5C42;&#x51FD;&#x6570;&#x4E2D;&#x7684;&#x4F20;&#x9012;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x6BCF;&#x4E2A;&#x51FD;&#x6570;&#x83B7;&#x53D6;std&#x7684;&#x4EE3;&#x7801;&#x6709;&#x70B9;&#x4E11;&#x3002;</p>
+<p>&#x6709;&#x6CA1;&#x6709;&#x66F4;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x5F0F;&#xFF1F;</p>
+<p>ThreadLocal&#x5E94;&#x8FD0;&#x800C;&#x751F;&#xFF0C;&#x4E0D;&#x7528;&#x67E5;&#x627E;dict&#xFF0C;ThreadLocal&#x5E2E;&#x4F60;&#x81EA;&#x52A8;&#x505A;&#x8FD9;&#x4EF6;&#x4E8B;&#xFF1A;</p>
+<pre><code>import threading
+
+# &#x521B;&#x5EFA;&#x5168;&#x5C40;ThreadLocal&#x5BF9;&#x8C61;:
+local_school = threading.local()
+
+def process_student():
+    print &apos;Hello, %s (in %s)&apos; % (local_school.student, threading.current_thread().name)
+
+def process_thread(name):
+    # &#x7ED1;&#x5B9A;ThreadLocal&#x7684;student:
+    local_school.student = name
+    process_student()
+
+t1 = threading.Thread(target= process_thread, args=(&apos;Alice&apos;,), name=&apos;Thread-A&apos;)
+t2 = threading.Thread(target= process_thread, args=(&apos;Bob&apos;,), name=&apos;Thread-B&apos;)
+t1.start()
+t2.start()
+t1.join()
+t2.join()
+</code></pre><p>&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code>Hello, Alice (in Thread-A)
+Hello, Bob (in Thread-B)
+</code></pre><p>&#x5168;&#x5C40;&#x53D8;&#x91CF;local_school&#x5C31;&#x662F;&#x4E00;&#x4E2A;ThreadLocal&#x5BF9;&#x8C61;&#xFF0C;&#x6BCF;&#x4E2A;Thread&#x5BF9;&#x5B83;&#x90FD;&#x53EF;&#x4EE5;&#x8BFB;&#x5199;student&#x5C5E;&#x6027;&#xFF0C;&#x4F46;&#x4E92;&#x4E0D;&#x5F71;&#x54CD;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x628A;local_school&#x770B;&#x6210;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x4F46;&#x6BCF;&#x4E2A;&#x5C5E;&#x6027;&#x5982;local_school.student&#x90FD;&#x662F;&#x7EBF;&#x7A0B;&#x7684;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x53EF;&#x4EE5;&#x4EFB;&#x610F;&#x8BFB;&#x5199;&#x800C;&#x4E92;&#x4E0D;&#x5E72;&#x6270;&#xFF0C;&#x4E5F;&#x4E0D;&#x7528;&#x7BA1;&#x7406;&#x9501;&#x7684;&#x95EE;&#x9898;&#xFF0C;ThreadLocal&#x5185;&#x90E8;&#x4F1A;&#x5904;&#x7406;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x5168;&#x5C40;&#x53D8;&#x91CF;local_school&#x662F;&#x4E00;&#x4E2A;dict&#xFF0C;&#x4E0D;&#x4F46;&#x53EF;&#x4EE5;&#x7528;local_school.student&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x7ED1;&#x5B9A;&#x5176;&#x4ED6;&#x53D8;&#x91CF;&#xFF0C;&#x5982;local_school.teacher&#x7B49;&#x7B49;&#x3002;</p>
+<p>ThreadLocal&#x6700;&#x5E38;&#x7528;&#x7684;&#x5730;&#x65B9;&#x5C31;&#x662F;&#x4E3A;&#x6BCF;&#x4E2A;&#x7EBF;&#x7A0B;&#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#xFF0C;HTTP&#x8BF7;&#x6C42;&#xFF0C;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x4FE1;&#x606F;&#x7B49;&#xFF0C;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x7684;&#x6240;&#x6709;&#x8C03;&#x7528;&#x5230;&#x7684;&#x5904;&#x7406;&#x51FD;&#x6570;&#x90FD;&#x53EF;&#x4EE5;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#x5730;&#x8BBF;&#x95EE;&#x8FD9;&#x4E9B;&#x8D44;&#x6E90;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="section2.html" class="navigation navigation-prev " aria-label="Previous page: 13-2 多线程">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section4.html" class="navigation navigation-next " aria-label="Next page: 13-4 进程 vs. 线程">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"13-3 ThreadLocal","level":"1.14.3","depth":2,"next":{"title":"13-4 进程 vs. 线程","level":"1.14.4","depth":2,"path":"chapter13/section4.md","ref":"chapter13/section4.md","articles":[]},"previous":{"title":"13-2 多线程","level":"1.14.2","depth":2,"path":"chapter13/section2.md","ref":"chapter13/section2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter13/section3.md","mtime":"2017-08-07T07:08:34.060Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-10-30T08:42:21.759Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
