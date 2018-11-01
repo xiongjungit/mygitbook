@@ -14,10 +14,11 @@ gitbook电子书项目
 9. [廖雪峰-Python2.7教程](liaoxuefeng/Python2.7-Tutorial)
 10. [廖雪峰-Python3教程](liaoxuefeng/Python3-Tutorial)
 11. [dvwa安全测试](dvwa)
-12. [静觅Python爬虫学习系列教程](pycrawler)
-13. [markdown完全手册](markdown)
-14. [Runcher1.6文档](Runcher/1.6)
-15. [Runcher2.0文档](Runcher/2.0)
+12. [安全部署指南](aliyunSDG)
+13. [静觅Python爬虫学习系列教程](pycrawler)
+14. [markdown完全手册](markdown)
+15. [Runcher1.6文档](Runcher/1.6)
+16. [Runcher2.0文档](Runcher/2.0)
 
 ## 慕课网-Python入门
 
@@ -258,6 +259,19 @@ Python是一种计算机程序设计语言。你可能已经听说过很多种�
 - 第11章 dvwacn之十文件上传
 - 第12章 dvwacn之十一WebService命令执行
 
+## 安全部署指南
+
+> 简介: 阿里云安全部署指南
+
+- 阿里云安全部署指南
+- 第1章 云环境安全最佳实践
+- 第2章 操作系统安全加固
+- 第3章 应用软件安全加固
+- 第4章 数据库服务安全加固
+- 第5章 语言运行环境安全加固
+- 第6章 WEB应用安全加固
+- 第7章 Web应用安全漏洞
+
 ## 静觅Python爬虫学习系列教程
 
 - 一、爬虫入门
@@ -268,6 +282,22 @@ Python是一种计算机程序设计语言。你可能已经听说过很多种�
 ## markdown语法手册
 
 > 简介: markdown语法完全手册
+
+- 简介
+- 第1章 斜体和粗体
+- 第2章 分级标题
+- 第3章 超链接
+- 第4章 锚点
+- 第5章 列表
+- 第6章 引用
+- 第7章 插入图像
+- 第8章 内容目录
+- 第9章 注脚
+- 第10章 LaTex公式
+- 第11章 流程图
+- 第12章 表格
+- 第13章 分割线
+- 第14章 代码
 
 ## Rancher 1.6 文档
 

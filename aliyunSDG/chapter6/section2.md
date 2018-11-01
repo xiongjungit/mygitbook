@@ -33,18 +33,18 @@ prefix="localhost_access_log." suffix=".txt" pattern="common" resolveHosts="fals
 ##5. 重定向错误页面
 修改访问 Tomcat 错误页面的返回信息，在 webapps\manger 目录中创建相应的401.html、404.htm、500.htm 文件，然后在 conf/web.xml 文件的最后一行之前添加下列代码：
 ```
-  <error-page>      
-                             <error-code>401</error-code>              
-                             <location>/401.htm</location>          
-                     </error-page>          
-                     <error-page>    
-                             <error-code>404</error-code>        
-                             <location>/404.htm</location>          
-                     </error-page>  
-                     <error-page>    
-                             <error-code>500</error-code>  
-                             <location>/500.htm</location>      
-                      </error-page>
+<error-page>
+	<error-code>401</error-code>
+	<location>/401.htm</location>
+</error-page>
+<error-page>
+	<error-code>404</error-code>
+	<location>/404.htm</location>
+</error-page>
+<error-page>
+	<error-code>500</error-code>
+	<location>/500.htm</location>
+</error-page>
 ```
 
 ##6. 禁止列出目录
