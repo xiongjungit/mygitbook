@@ -9,7 +9,7 @@ ii. 选择您的ECS实例，在更多下拉菜单中单击停止（如果您的�
 iii. 实例停止后，在更多下拉菜单中单击重新初始化磁盘。
 iv. 重新初始化磁盘完成后，操作系统将恢复回新购时的状态。
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/37538/cn_zh/1493100497354/TB1r2NKLXXXXXcLXpXXXXXXXXXX-1336-537.png)
+![](../image/chapter1/1-2-1.png)
 
 2.主机登录安全设置。
 

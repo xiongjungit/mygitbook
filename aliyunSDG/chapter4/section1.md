@@ -14,7 +14,7 @@
 
 您可以登录到阿里云云盾控制台，使用云盾安骑士MongoDB检测是否存在此安全问题。
 
-![mongodb未授权检测](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/37451/cn_zh/1483935747786/Picture1.png)
+![mongodb未授权检测](../image/chapter4/4-1-1.png)
 
 如果您是MongoDB管理员，也可以使用以下方式检查是否有进一步的入侵行为：
 
@@ -36,11 +36,11 @@
 ###2. 不要把MongoDB服务器直接部署在互联网或者DMZ上。<br>
 使用安全组防火墙或本地操作系统防火墙对访问源IP进行控制，如果仅对内网服务器提供服务，建议禁止将MongoDB服务发布到互联网。
 安全组相当于防火墙功能，默认公网入安全组策略为允许在互联网上访问所有端口。<br>
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/37451/cn_zh/1483959466888/Snip20170109_9.png)<br>
+![](../image/chapter4/4-1-2.png)<br>
 将默认安全组删除，添加拒绝所有规则，即可屏蔽服务。<br>
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/37451/cn_zh/1483960009235/Snip20170109_16.png)<br>
+![](../image/chapter4/4-1-3.png)<br>
 根据您的业务情况添加服务的允许规则。<br>
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/37451/cn_zh/1483959831168/Snip20170109_14.png)
+![](../image/chapter4/4-1-4.png)
 
 ###3. 使用—bind_ip选项。<br>
 该选项可以限制监听接口IP。当在启动MongoDB的时候，使用--bind_ip 192.168.0.1表示启动IP地址绑定，数据库实例将只监听192.168.0.1的请求。
@@ -162,7 +162,7 @@ MongoDB所在服务器地址
 恢复的时候，先删除当前数据，然后恢复备份的数据。就是说，恢复后，备份后添加修改的数据都会被删除，慎用！
 ```
 Mongodump命令可选参数列表如下所示。
-![mongodbdump](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/37451/cn_zh/1484211664535/Snip20170112_97.png)
+![mongodbdump](../image/chapter4/4-1-5.png)
 备份策略
 - 全量备份：可以最快的时间快速恢复所有数据，缺点是备份成本大，时间长。
 - 全量备份+增量备份：可以较快的恢复所有数据，缺点是恢复时间长，如果增量数据有问题，无法恢复所有数据。

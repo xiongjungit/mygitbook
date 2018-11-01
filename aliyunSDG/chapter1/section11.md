@@ -30,7 +30,7 @@ service ntpd restart
 
 1. 通过防火墙配置，只允许信任的IP访问本机UDP、TCP的19、17端口。
 2. 我们建议您直接关闭Simple TCP/IP服务，并禁止自启动。
-![](https://img.alicdn.com/tps/TB1B_g9LVXXXXczXVXXXXXXXXXX-857-529.png)
+![](../image/chapter1/1-11-1.png)
 
 2.Web应用的加固
 

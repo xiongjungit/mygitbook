@@ -9,13 +9,13 @@
 ##恶意 minerd、tplink 进程
 在服务器上运行 top 命令，结果如下：
 
-![top](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/41206/cn_zh/1511512265249/Image%201.png)
+![top](../image/chapter1/1-3-1.png)
 
 可以看到，有一个 minerd （或 tplink）的异常进程，占用了大量 CPU 资源。该进程是服务器被入侵后，被恶意安装的比特币挖矿程序，一般存在于 /tmp/ 目录下。
 
 如果使用 top 命令查看不到所述进程，可以用 ps 命令检查相关进程。例如，
 
-![ps](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/41206/cn_zh/1511512525962/Image%202.png)
+![ps](../image/chapter1/1-3-2.png)
 
 可以看到，服务器中存在这个进程。如果它不是您主动开启的，则很可能是被入侵所致。服务器被恶意利用来挖比特币。
 
@@ -45,6 +45,6 @@ file /lib/udev/usb_control/iptable_mac.ko
 
 结果如下图所示，表明存在隐藏的 iptable_mac.ko 模块。
 
-![ko](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/41206/cn_zh/1489484776410/%E7%B2%98%E8%B4%B4%E5%9B%BE%E7%89%87.png)
+![ko](../image/chapter1/1-3-3.png)
 
   

@@ -21,7 +21,7 @@ phpMyadmin 是一款流行的数据库管理系统，如果口令设置过于简
 if (substr($_SERVER['REMOTE_ADDR'], 0, strlen($ip_prefix)) != $ip_prefix ) die('Access denied');
 ```
 <br>
-![phpMyadmin](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/37453/cn_zh/1487640611444/TB16k8kLVXXXXX6XXXXXXXXXXXX.jpg)
+![phpMyadmin](../image/chapter3/3-8-1.jpg)
 
 ##2.账号与口令安全策略
 

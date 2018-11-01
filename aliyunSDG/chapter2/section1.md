@@ -37,7 +37,7 @@
 
 打开 控制面板 > 管理工具 > 本地安全策略，在 本地策略 > 安全选项 中，双击 交互式登录:不显示最后的用户名，选择 已启用 并单击 确定。
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49781/cn_zh/1484113115090/Picture1.png)
+![](../image/chapter2/2-1-1.png)
 
 1.2 口令
 
@@ -63,7 +63,7 @@
 
 操作步骤打开 控制面板 > 管理工具 > 本地安全策略，在 帐户策略 > 密码策略 中，配置 密码最长使用期限 不大于90天。
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49781/cn_zh/1484112470567/Snip20170111_67.png)
+![](../image/chapter2/2-1.2.png)
 
 帐户锁定策略
 
@@ -75,7 +75,7 @@
 
 配置样例：
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49781/cn_zh/1484112542184/Snip20170111_68.png)
+![](../image/chapter2/2-1-3.png)
 
 1.3 授权
 
@@ -119,7 +119,7 @@
 
 打开 控制面板 > 管理工具 > 本地安全策略，在 本地策略 > 用户权限分配 中，配置 从网络访问此计算机 权限给指定授权用户。
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49781/cn_zh/1484112705427/Snip20170111_70.png)
+![](../image/chapter2/2-1-4.png)
 
 #2. 日志配置操作
 
@@ -189,7 +189,7 @@
 
 打开 控制面板 > 管理工具 > 本地安全策略，在 本地策略 > 审核策略 中，设置 审核进程追踪。
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49781/cn_zh/1484112646414/Snip20170111_69.png)
+![](../image/chapter2/2-1-5.png)
 
 日志文件大小
 
@@ -199,7 +199,7 @@
 
 打开 控制面板 > 管理工具 > 事件查看器，配置 应用日志、系统日志、安全日志 属性中的日志大小，以及设置当达到最大的日志尺寸时的相应策略。
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49781/cn_zh/1484112819759/Snip20170111_72.png)
+![](../image/chapter2/2-1-6.png)
 
 #3. IP协议安全配置
 
@@ -275,13 +275,13 @@ HKLM\System\CurrentControlSet\Services\LanmanServer\Parameters\AutoShareServer
 在 计算机管理 > 服务和应用程序 > 服务 中禁用 TCP/IP NetBIOS Helper 服务。
 在网络连接属性中，双击 Internet协议版本4（TCP/IPv4），单击 高级。在 WINS 页签中，进行如下设置：
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49781/cn_zh/1484113312907/Picture1.png)
+![](../image/chapter2/2-1-7.png)
 
 禁用不必要的服务
 
 禁用不必要的服务，请参考：
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49781/cn_zh/1484114317702/Picture1.png)
+![](../image/chapter2/2-1-8.png)
 
 #6.安全选项
 
@@ -291,7 +291,7 @@ HKLM\System\CurrentControlSet\Services\LanmanServer\Parameters\AutoShareServer
 
 打开 控制面板 > 管理工具 > 本地安全策略，在 本地策略 > 安全选项 中，进行如下设置：
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49781/cn_zh/1484113827954/Picture1.png)
+![](../image/chapter2/2-1-9.png)
 
 6.2 禁用未登录前关机
 
@@ -301,7 +301,7 @@ HKLM\System\CurrentControlSet\Services\LanmanServer\Parameters\AutoShareServer
 
 打开 控制面板 > 管理工具 > 本地安全策略，在 本地策略 > 安全选项 中，禁用 关机: 允许系统在未登录前关机 策略。
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49781/cn_zh/1493025565818/Snip20170424_162.png)
+![](../image/chapter2/2-1-10.png)
 
 #7. 其他安全配置
 
@@ -339,4 +339,4 @@ Windows系统需要安装防病毒软件。
 
 注意：对于实际业务环境服务器，建议使用通知并自动下载更新，但由管理员选择是否安装更新，而不是使用自动安装更新，防止自动更新补丁对实际业务环境产生影响。
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/49781/cn_zh/1484112953937/Snip20170111_73.png)
+![](../image/chapter2/2-1-11.png)

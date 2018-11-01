@@ -20,7 +20,7 @@ FTP 弱口令或匿名登录漏洞，一般指使用 FTP 的用户启用了匿�
 
 打开 IIS 信息服务管理器，查看所有 FTP 服务相关的安全加固功能。
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/37452/cn_zh/1484019530901/Snip20170110_27.png)
+![](../image/chapter3/3-1-1.png)
 
 ###1. 禁用匿名登录
 
@@ -31,16 +31,16 @@ FTP 弱口令或匿名登录漏洞，一般指使用 FTP 的用户启用了匿�
 2>. 禁用匿名登录。
 
 - Windows 2008 系统 FTP 禁用匿名登录服务
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/37452/cn_zh/1483674725281/Snip20170106_32.png)
+![](../image/chapter3/3-1-2.png)
 
 - Windows 2012系统 FTP 禁用匿名登录服务
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/37452/cn_zh/1484016146633/Snip20170110_18.png)
+![](../image/chapter3/3-1-3.png)
 
 ###2. 启用强密码安全策略
 
 在 Windows 系统中，强密码策略是通过组策略控制的。您可以打开本地组策略编辑器（gpedit.msc），计算机配置 > Windows 设置 > 安全设置 > 账户策略 > 密码策略，启用密码复杂策略。
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/37452/cn_zh/1484018919804/Snip20170110_21.png)
+![](../image/chapter3/3-1-4.png)
 
 启用 密码必须符合复杂性要求 策略后，在更改或创建用户密码时会执行复杂性策略检测，密码必须符合以下最低要求:
 
@@ -55,39 +55,39 @@ FTP 弱口令或匿名登录漏洞，一般指使用 FTP 的用户启用了匿�
 
 该机制对登录失败的账户实施强处理，可有效防止暴力破解攻击事件。
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/37452/cn_zh/1484019071117/Snip20170110_22.png)
+![](../image/chapter3/3-1-5.png)
 
 ###4. 启用 FTP 目录隔离机制
 
 FTP 目录隔离功能可以防止用户查看其它用户目录的文件，防止数据泄露。
 
-![dc](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/37452/cn_zh/1484019203212/Snip20170110_23.png)
+![dc](../image/chapter3/3-1-6.png)
 
 ###5. 指定访问源 IP
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/37452/cn_zh/1484019422048/Snip20170110_26.png)
+![](../image/chapter3/3-1-7.png)
 
 ###6. 启用授权机制
 
 您可以根据业务需求配置授权规则，限制用户访问的权限。
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/37452/cn_zh/1484019319000/Snip20170110_25.png)
+![](../image/chapter3/3-1-8.png)
 
 ###7. 启用 SSL 加密传输功能
 
 启用 SSL 加密传输功能，需要先创建服务器证书：
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/37452/cn_zh/1484020024276/Snip20170110_36.png)
+![](../image/chapter3/3-1-9.png)
 
 在 FTP SSL 设置中，选定已创建的服务器证书即可。
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/37452/cn_zh/1484020073314/Snip20170110_37.png)
+![](../image/chapter3/3-1-10.png)
 
 ###8. 启用日志功能
 
 IIS 中的 FTP 日志是默认启用的，您可以根据磁盘空间情况配置日志空间大小和其他策略。
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/37452/cn_zh/1484019616048/Snip20170110_28.png)
+![](../image/chapter3/3-1-11.png)
 
 ##FileZilla FTP Server 安全加固
 

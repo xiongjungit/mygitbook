@@ -2,7 +2,7 @@ Tomcat服务默认启用了管理后台功能，使用该后台可直接上传 w
 
 通常 Tomcat 后台管理的 URL 地址为 http://iP:8080/manager/html/, 如下图所示：
 
-![tomcat](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/37421/cn_zh/1488348424367/121019167628438.jpg)
+![tomcat](../image/chapter6/6-2-1.jpg)
 
 黑客通过猜解到的口令登录 Tomcat 管理后台后，可以上传 Webshell 脚本导致服务器被入侵。
 

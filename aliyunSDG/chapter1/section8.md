@@ -36,10 +36,10 @@
 病毒特征：黑客会在所有被加密文件上留下其联系方式。
 
 - XTBL 病毒感染样例：
-![xtbl](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/50358/cn_zh/1511939246111/xtbl.png)
+![xtbl](../image/chapter1/1-8-1.png)
 
 - WALLET 病毒感染样例：
-![wallet](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/50358/cn_zh/1511939268083/wallet.png)
+![wallet](../image/chapter1/1-8-2.png)
 
 破解工具：[XTBL 解密工具](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/attach/50358/cn_zh/1486603044707/rannohdecryptor.zip?spm=5176.7750358.2.6.EqcOGT&file=rannohdecryptor.zip)
 

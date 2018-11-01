@@ -71,7 +71,7 @@ HQL 语言可以通过 transform 命令自定义 Hive 使用的 Map/Reduce 脚�
 
 Hadoop 所有端口信息
 
-![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/50128/cn_zh/1484796013767/Picture1.png)
+![](../image/chapter3/3-5-1.png)
 
 [Hadoop safari : Hunting for vulnerabilities](http://archive.hack.lu/2016/Wavestone%20-%20Hack.lu%202016%20-%20Hadoop%20safari%20-%20Hunting%20for%20vulnerabilities%20-%20v1.0.pdf?spm=5176.7750128.2.12.MSTicp&file=Wavestone%20-%20Hack.lu%202016%20-%20Hadoop%20safari%20-%20Hunting%20for%20vulnerabilities%20-%20v1.0.pdf)
 [Hadoop Default Ports Quick Reference](http://blog.cloudera.com/blog/2009/08/hadoop-default-ports-quick-reference/?spm=5176.7750128.2.13.MSTicp)

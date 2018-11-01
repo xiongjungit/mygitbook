@@ -156,7 +156,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters 注
 2. 在 计算机配置 下的控制台树中，展开 首选项 文件夹，然后展开 Windows 设置 文件夹。
 
 3. 右键单击 注册表 节点，指向 新建，然后选择 注册表项。
-![sg1](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/57499/cn_zh/1501635501812/sg1.png)
+![sg1](../image/chapter2/2-5-1.png)
 
 4. 在 新建注册表属性 对话框中，选择以下内容：
 
@@ -166,7 +166,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters 注
 - 值名称： SMB1
 - 值类型： REG_DWORD
 - 值数据： 0
-![sg2](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/57499/cn_zh/1501635561647/sg2.png)
+![sg2](../image/chapter2/2-5-2.png)
 
 5. 将此组策略应用到域中所有必需的工作站、服务器和域控制器，以禁用 SMBv1 服务器组件。也可以将 WMI 筛选器设置为不包含不受支持的操作系统或选中的排除项（如 Windows XP）。
 
@@ -190,7 +190,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation 注册表
 
 3.右键单击 注册表 节点，指向 新建，然后选择 注册表项。
 
-![sg3](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/57499/cn_zh/1501635682025/sg3.png)
+![sg3](../image/chapter2/2-5-3.png)
 
 4.在新建注册表属性 对话框中，选择以下内容：
 
@@ -201,7 +201,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation 注册表
 - 值类型： REG_DWORD
 - 值数据： 4
 - 
-![sg4](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/57499/cn_zh/1501635716316/sg4.png)
+![sg4](../image/chapter2/2-5-4.png)
 
 然后删除刚刚禁用的 MRxSMB10 的依赖项
 
@@ -219,7 +219,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation 注册表
 
 注意： 这 3 个字符串不带项目符号（具体如下）
 
-![sg5](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/57499/cn_zh/1501635768536/sg5.png)
+![sg5](../image/chapter2/2-5-5.png)
 
 在 Windows 的多个版本中，默认值包括 MRxSMB10，通过将其替换为此多值字符串，实际上就删除了作为 LanmanServer 依赖项的 MRxSMB10，结果是从四个默认值减少为上述这三个值。
 
@@ -231,7 +231,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation 注册表
 ##摘要
 如果所有设置均在同一组策略对象 (GPO) 中，组策略管理将显示以下设置。
 
-![sg6](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/57499/cn_zh/1501635812619/sg6.png)
+![sg6](../image/chapter2/2-5-6.png)
 
 ##测试和验证
 配置完成后即允许策略进行复制和更新。作为测试的必要步骤，请从 CMD.EXE 提示符处运行 gpupdate/force，然后查看目标计算机，以确保注册表设置得以正确应用。确保 SMBv2 和 SMBv3 在环境中的所有其他系统中正常运行。
@@ -242,19 +242,19 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation 注册表
 
 ##Windows Server：使用 “服务器管理器”
 
-![sg7](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/57499/cn_zh/1501635924032/sg7.png)
+![sg7](../image/chapter2/2-5-7.png)
 
 ##Windows Server：使用 PowerShell (Remove-WindowsFeature FS-SMB1)
 
-![sg8](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/57499/cn_zh/1501635953127/sg8.png)
+![sg8](../image/chapter2/2-5-8.png)
 
 ##Windows 客户端：使用 “添加或删除程序”
 
-![sg9](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/57499/cn_zh/1501636102143/sg9.png)
+![sg9](../image/chapter2/2-5-9.png)
 
 ##Windows 客户端：使用 PowerShell (Disable-WindowsOptionalFeature -Online -FeatureName smb1protocol)
 
-![sg10](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/57499/cn_zh/1501636132993/sg10.png)
+![sg10](../image/chapter2/2-5-10.png)
 
 #参考与适用性
 本文来源自微软官方技术文档：[如何在 Windows 和 Windows Server 中启用和禁用 SMBv1、SMBv2 和 SMBv3](https://support.microsoft.com/zh-cn/help/2696547/how-to-enable-and-disable-smbv1-smbv2-and-smbv3-in-windows-and-windows?spm=5176.7757499.2.4.ZTMygG)。

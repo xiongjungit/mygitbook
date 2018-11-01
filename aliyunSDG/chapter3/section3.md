@@ -18,7 +18,7 @@ Jenkins访问控制分为：**安全域（即认证）与授权策略。**
 ###启用安全性设置
 自2.0版本起，Jenkins默认勾选Enable security复选框。Jenkins管理员可以在Web UI的启用安全性部分启用，配置或禁用适用于整个Jenkins环境的关键安全功能。
 
-![enable security](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/66175/cn_zh/1520991484557/enable%20security.png)
+![enable security](../image/chapter3/3-3-1.png)
 
 默认情况下，匿名用户没有权限，而登录的用户具有完全的控制权。用户可以使用用户名和密码登录，以执行匿名用户不可用的操作。哪些操作要求用户登录取决于所选择的授权策略及其配置。对于任何非本地（测试）Jenkins环境，应始终启用此复选框。
 
@@ -56,7 +56,7 @@ Jenkins使用TCP端口与通过JNLP协议启动的代理（如基于Windows的�
 
 基于项目的矩阵授权策略。此授权方案是基于Matrix的安全性的扩展，允许在项目配置屏幕中单独为每个项目定义附加的访问控制列表（ACL）。这允许授予特定用户或组访问指定的项目，而不是Jenkins环境中的所有项目。使用基于项目的矩阵授权定义的ACL是加法的，使得在“配置全局安全性”屏幕中定义的访问权限将与项目特定的ACL组合。
 
-![authorization](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/66175/cn_zh/1520992271426/authorization.png)
+![authorization](../image/chapter3/3-3-2.png)
 
 上图表中的每一行表示用户或组（也称为“角色”）。这包括名为“匿名”和“认证”的特殊条目。“匿名”条目表示授予访问Jenkins环境的所有未认证用户的权限。而“已认证”用于向访问环境的所有经过身份验证的用户授予权限。
 
@@ -78,7 +78,7 @@ Jenkins提供一系列与认证和用户管理相关的插件，用户可以根�
 
 为了防范此类漏洞，自2.0以来所有Jenkins版本，在默认情况下都已启用CSRF保护。
 
-![csrf](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/66175/cn_zh/1520992937706/csrf.png)
+![csrf](../image/chapter3/3-3-3.png)
 
 启用该选项后，Jenkins将会在可能更改Jenkins环境中的数据的任何请求上检查CSRF令牌或“crumb”。这包括任何表单提交和对远程API的调用，包括使用“基本”身份验证的表单。
 

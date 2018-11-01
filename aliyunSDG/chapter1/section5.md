@@ -12,7 +12,7 @@ dism /online /Enable-Feature /FeatureName:TelnetClient
 1. 打开 控制面板 > 程序 > 启用或关闭 Windows 功能。
 
 2. 勾选 Telnet 客户端 选项。
-![telnet](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/52648/cn_zh/1492394913945/201691810534618643.png)
+![telnet](../image/chapter1/1-5-1.png)
 
 3. 单击 确定，等待安装完毕。
-![telnet2](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/52648/cn_zh/1492394932829/7-telnet%20enabled.png)
+![telnet2](../image/chapter1/1-5-2.png)

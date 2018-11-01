@@ -12,7 +12,7 @@ webshell中由于需要完成一些特殊的功能就不可避免的用到一些
 
 以下是asp webshell的样例，从界面看，它的功能还是比较全的，可以对服务器的文件目录进行读写操作，如果你是网站管理员的话肯定是不希望普通用户获得下面的权限的。
 
-![webshell](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/60859/cn_zh/1508832382077/webshell.jpg)
+![webshell](../image/chapter6/6-3-1.jpg)
 
 #三.WebShell是如何入侵系统的？
 

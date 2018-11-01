@@ -288,5 +288,5 @@ Kubernetes对创建安全部署提供多种选择，没有适合所有情况的�
 
 参考信息：
 
-Kubernetes官方最佳实践:http://blog.kubernetes.io/2016/08/security-best-practices-kubernetes-deployment.html
-Kubernetes API文档:http://docs.kubernetes.org.cn/31.html
+Kubernetes官方最佳实践: http://blog.kubernetes.io/2016/08/security-best-practices-kubernetes-deployment.html
+Kubernetes API文档: http://docs.kubernetes.org.cn/31.html
