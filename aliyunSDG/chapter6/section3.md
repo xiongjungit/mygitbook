@@ -46,6 +46,6 @@ WebShell能够被注入很大程度是由于服务器或中间件的安全漏洞
 
 - 加强权限管理，对敏感目录进行权限设置，限制上传目录的脚本执行权限，不允许配置执行权限。
 
-安装[webshell检测工具](https://www.aliyun.com/product/aegis?spm=5176.7760859.2.4.sWPZcI)，发现检测结果后，立即隔离查杀，并排查漏洞。
+- 安装[webshell检测工具](https://www.aliyun.com/product/aegis?spm=5176.7760859.2.4.sWPZcI)，发现检测结果后，立即隔离查杀，并排查漏洞。
 
 - 排查程序存在的漏洞，并及时修补漏洞，如果没有安全能力，可以通过[应急响应服务](https://promotion.aliyun.com/ntms/act/xianzhiresponse.html?spm=5176.7760859.2.5.sWPZcI)人工界入协助排查漏洞及入侵原因，同时可以选用[阿里云商业web应用防火墙](https://www.aliyun.com/product/waf?spm=5176.7760859.2.6.sWPZcI)防御，降低入侵机率。
