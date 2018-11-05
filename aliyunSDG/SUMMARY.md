@@ -52,7 +52,7 @@
  - [7-7 系统弱口令](chapter7/section7.md)
  - [7-8 后门文件漏洞](chapter7/section8.md)
  - [7-9 文件包含漏洞](chapter7/section9.md)
- - [7-10 SQL注入漏洞](capter7/section10.md)
+ - [7-10 SQL注入漏洞](chapter7/section10.md)
  - [7-11 网络钓鱼攻击和防御](chapter7/section11.md)
  - [7-12 越权漏洞](chapter7/section12.md)
  - [7-13 Crossdomain.xml配置不当](chapter7/section13.md)
