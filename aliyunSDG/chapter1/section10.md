@@ -1,33 +1,47 @@
-#WannaCry 勒索病毒
-WannaCry（又名 Wanna Decryptor），是一种“蠕虫式”勒索病毒软件。WannaCry 勒索病毒在全球范围内爆发，至少150个国家、30万名用户收到影响，已造成损失达80亿美元。
+#问题现象
+由于某些服务配置不当，导致服务器被黑客利用进行DDoS攻击。具体表现为机器对外带宽占满；使用抓包工具检测，可看到大量同一源端口的包对外发出。
 
-WannaCry 利用 Windows 操作系统445端口存在的漏洞进行传播，并具有自我复制、主动传播的特性。被该勒索病毒入侵后，用户主机系统内的照片、图片、文档、音频、视频等几乎所有类型的文件都将被加密，加密文件的后缀名被统一修改为“．WNCRY”，并在桌面弹出勒索对话框，要求受害者支付比特币。
+#解决方案
+##Linux系统
+1.加固NTP服务
 
-#WannaCry 解密修复工具
-阿里云安全团队经过分析研究，找到 WannaCry 加密勒索病毒的解密方式，发布针对 WannaCry 勒索病毒的一键解密和修复工具。
-经反复测试验证，该工具可以恢复已被 WannaCry 勒索病毒加密的文件。
+1. 通过Iptables配置只允许信任的IP访问本机UDP的123端口。
+```
+修改配置文件，然后执行以下命令：
+echo "disable monitor" >> /etc/ntp.conf
+执行以下命令重启NTP服务：
+service ntpd restart
+```
 
-##前提条件
-感染 WannaCry 勒索病毒后，未重启操作系统。
+2. 我们建议您直接关闭掉NTP服务，并禁止其开机自启动。
+```
+执行service ntpd stop命令。
+执行chkconfig ntpd off命令。
+```
 
-##适用范围
-该工具适用于 Windows 云服务器和本地服务器，支持的操作系统版本包括：Windows Server 2003、Windows Server 2008。
+2.加固Chargen服务
+1. 通过Iptables配置只允许信任的IP访问本机UDP的19端口。
+2. 我们建议您直接关闭掉chargen服务。编辑配置文件”/etc/inetd.conf”，用#号注释掉chargen服务，然后重启inetd服务。
 
-##修复步骤
+##Windows系统
+1.加固Simple TCP/IP服务
 
-1. 单击 WannaCry修复工具，将修复工具下载到被感染的 Windows 服务器或 PC 机上。
-2. 双击 Wanna-CryDecryt-Tool.exe 文件，运行修复工具。
-![WannaCry修复工具](../image/chapter1/1-10-1.png)
-3. 单击恢复文件，执行文件恢复功能。
-执行时间较长，请耐心等待。
-![WannaCry修复工具恢复文件](../image/chapter1/1-10-2.png)
-4. 单击清除病毒。
-执行时间较长，请耐心等待。
-![WannaCry修复工具清除病毒](../image/chapter1/1-10-3.png)
+注意： Windows系统默认不安装Simple TCP/IP服务，如果您无需使用此服务，可跳过此步骤。
 
-注意事项
-- 大多数情况下，被加密的文件可以被成功恢复。但可能因内存数据被二次写入，覆盖原有加密状态时的数据，导致数据恢复不成功。解密和修复文件失败，不会对操作系统造成任何影响。
+1. 通过防火墙配置，只允许信任的IP访问本机UDP、TCP的19、17端口。
+2. 我们建议您直接关闭Simple TCP/IP服务，并禁止自启动。
+![](../image/chapter1/1-11-1.png)
 
-- 阿里云安全团队强烈建议，在感染 WannaCry 勒索病毒后，不要关闭或重启操作系统，也不要手工查杀病毒，建议优先使用该修复工具尝试恢复数据。
+2.Web应用的加固
 
-- 该修复工具针对 WannaCry 勒索病毒加密方式研发，Windows 系统均可使用。
+Wordpress的Pingback
+
+1. 您可以通过增加Wordpress插件来防止Pinback被利用，加入如下过滤器：
+```
+add_filter( ‘xmlrpc_methods’, function( $methods ) {
+   unset( $methods[‘pingback.ping’] );
+   return $methods;
+} );
+```
+
+2. 建议您直接删除xmlrpc.php文件。
