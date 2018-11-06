@@ -1,5 +1,5 @@
 * [安全部署指南](README.md)
-* [第1章 云环境安全最佳实践](chapter1/README.md)
+* [第1章 安全最佳实践](chapter1/README.md)
  - [1-1 安全部署方法](chapter1/section1.md) 
  - [1-2 Linux 系统 CPU 异常占用：minerd 、tplink 等挖矿进程](chapter1/section2.md) 
  - [1-3 自定义镜像安全建议](chapter1/section3.md) 

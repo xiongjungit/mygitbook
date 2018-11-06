@@ -1,5 +1,3 @@
-- 最佳安全实践
-
 - 安全部署方法
 
 - Linux 系统 CPU 异常占用：minerd 、tplink 等挖矿进程
