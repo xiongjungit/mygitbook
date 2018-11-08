@@ -6,7 +6,7 @@ FileZilla 是一款免费的跨平台 FTP 应用程序，由 FileZilla Client �
 
 服务器的管理密码默认为空，建议您设置一个较复杂的密码。例如，应至少包含大小写字母、数字、特殊符号中的任意两种。
 
-![](../image/chapter3/3-1-1.png)
+![](../image/chapter3/3-6-1.png)
 
 #修改 Banner 信息
 
@@ -15,7 +15,7 @@ FileZilla 是一款免费的跨平台 FTP 应用程序，由 FileZilla Client �
 1. 前往 General settings > Welcome message。
 
 2. 从右侧的 Custom welcome message 输入框中删除 %v 变量，或者直接将全部文本替换为自定义的文字。
-![](../image/chapter3/3-1-2.png)
+![](../image/chapter3/3-6-2.png)
 
 3. 建议勾选下面的 Hide welcome message in log，以减少日志中的垃圾信息。
 
@@ -26,7 +26,7 @@ FileZilla 是一款免费的跨平台 FTP 应用程序，由 FileZilla Client �
 1. 前往 General settings > IP Bindings。
 
 2. 在右侧窗口中将默认的 * 号修改为指定的地址。
-![](../image/chapter3/3-1-3.png)
+![](../image/chapter3/3-6-3.png)
 
 #使用访问控制
 
@@ -36,7 +36,7 @@ FileZilla 是一款免费的跨平台 FTP 应用程序，由 FileZilla Client �
 
 2. 在右侧上部窗口中填入要阻止访问的 IP 范围，在右侧下部窗口中填写允许访问的 IP 范围。<br>
 注意：通常采用阻止所有 IP（填写 *），然后仅允许部分 IP 的方式来进行有效的限制。例如，下图中仅允许 192.168.1.0/24 网段访问 FTP 服务。
-![](../image/chapter3/3-1-4.png)
+![](../image/chapter3/3-6-4.png)
 
 另外，FileZilla 服务器也支持用户级和用户组级的 IP 过滤器。前往 Edit > Users/Groups 打开对应设置页，在设置页中找到 IP Filters，然后选择需要设置的用户，设置允许和拒绝的 IP 即可。设置方法与全局 IP 过滤器相同。
 
@@ -49,7 +49,7 @@ FTP Bounce 攻击是一种利用 FXP 功能的攻击形式，默认情况下服�
 1. 前往 General settings > Security settings。
 
 2. 如下图所示，默认选项已经启用了需要精确匹配连接地址，建议不要修改。
-![](../image/chapter3/3-1-5.png)
+![](../image/chapter3/3-6-5.png)
 
 #配置用户认证策略
 
@@ -58,7 +58,7 @@ FTP Bounce 攻击是一种利用 FXP 功能的攻击形式，默认情况下服�
 1. 前往 General settings > Autoban。
 
 2. 下图中的设置会对一小时内连续 10 次登录失败的 IP 进行阻止，阻止时长为 1 个小时。
-![](../image/chapter3/3-1-6.png)
+![](../image/chapter3/3-6-6.png)
 
 #提高用户密码复杂度
 
@@ -70,24 +70,24 @@ FileZilla 支持目录级别的访问权限设置，可对某个目录设置文�
 
 注意：该操作需要提前添加账号和组后才能配置。
 
-![](../image/chapter3/3-1-7.png)
+![](../image/chapter3/3-6-7.png)
 
 #启用 TLS 加密认证
 
 FileZilla 服务器支持 TLS 加密功能，用户如果没有证书可以使用自带功能来创建。
 
-![](../image/chapter3/3-1-8.png)
+![](../image/chapter3/3-6-8.png)
 
 也支持针对单个用户强制启用 TLS 加密访问。
 
-![](../image/chapter3/3-1-9.png)
+![](../image/chapter3/3-6-9.png)
 
 #启动日志记录
 
 FileZilla 服务器默认未开启日志记录，为了方便对各种事件的追查，建议开启日志记录功能，并将日志设置为每天一个日志文件，避免单文件过大。
 
-![](../image/chapter3/3-1-10.png)
+![](../image/chapter3/3-6-10.png)
 
 默认情况下，日志已经设置不记录用户密码；但在加固的时候应检查此选项，确保其已启用，避免密码泄露。
 
-![](../image/chapter3/3-1-11.png)
+![](../image/chapter3/3-6-11.png)
