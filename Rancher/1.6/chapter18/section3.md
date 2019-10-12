@@ -76,13 +76,13 @@ version: '2'
 services:
   web:
     image: nginx
-    {{- if eq .Values.PUBLIC "true" }}
+    \{\{- if eq .Values.PUBLIC "true" \}\}
     ports:
     - 8000
-    {{- else }}
+    \{\{- else \}\}
     expose:
     - 8000
-    {{- end }}
+    \{\{- end \}\}
 ```
 
 rancher-compose.yml
@@ -120,7 +120,7 @@ services:
   web:
     image:  nginx
     labels:
-      stack-name: {{ .Stack.Name }}
+      stack-name: \{\{ .Stack.Name \}\}
 ```
 
 如果你通过Rancher命令行来创建应用，例如rancher up -s myawesomestack -f docker-compose.yml，那么这个应用将会创建一个带有标签stack-name=myawesomestack的服务。
@@ -139,5 +139,5 @@ services:
   web:
     image: nginx
     labels:
-      key: "{{`{{ value }}`}}"
+      key: "\{\{`\{\{ value \}\}`\}\}"
 ```

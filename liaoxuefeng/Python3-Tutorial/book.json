@@ -1,0 +1,8 @@
+{
+    "title": "Python3教程",
+    "description": "中文，免费，零起点，完整示例，基于最新的Python 3版本。",
+    "plugins": ["yahei"],
+    "isbn": "9787115428028",
+    "language": "zh-cn",
+    "direction": "ltr"
+}

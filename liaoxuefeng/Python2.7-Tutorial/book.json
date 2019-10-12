@@ -1,0 +1,8 @@
+{
+    "title": "Python2.7教程",
+    "description": "中文，免费，零起点，完整示例。",
+    "plugins": ["yahei"],
+    "isbn": "9787115428028",
+    "language": "zh-cn",
+    "direction": "ltr"
+}
