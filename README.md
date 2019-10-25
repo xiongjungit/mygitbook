@@ -19,6 +19,7 @@ gitbook电子书项目
 14. [markdown完全手册](markdown)
 15. [Runcher1.6文档](Runcher/1.6)
 16. [Runcher2.0文档](Runcher/2.0)
+17. [hexo中文文档](hexo)
 
 ## 慕课网-Python入门
 
@@ -148,7 +149,7 @@ Python由Guido van Rossum于1989年底发明，第一个公开发行版发行于
  - 第9章 自定义Git
  - 第10章 期末总结
 
- 
+
 ## 廖雪峰-JavaScript全栈教程 
 
 > 简介:这是小白的零基础JavaScript全栈教程。
@@ -171,7 +172,7 @@ JavaScript是世界上最流行的脚本语言，因为你在电脑、手机、�
  - 第11章 期末总结
 
 
- 
+
 
 ## 廖雪峰-PYthon2.7教程
 > 简介:这是小白的Python新手教程。
@@ -342,3 +343,13 @@ Python是一种计算机程序设计语言。你可能已经听说过很多种�
 - 第10章 版本记录
 - 第11章 关于
 - 第12章 v1.6迁移v2.x
+
+# hexo中文文档
+
+> 简介：Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown](http://daringfireball.net/projects/markdown/)（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
+
+-  开始使用
+- 基本操作
+- 部署
+- 自定义
+- 其他
