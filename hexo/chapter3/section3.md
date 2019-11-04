@@ -1,3 +1,4 @@
+{% raw %}
 # 部署
 
 Hexo 提供了快速方便的一键部署功能，让您只需一条命令就能将网站部署到服务器上。
@@ -51,7 +52,7 @@ deploy:
 | :-------- | :--------------------------------|
 | `repo`    | 库（Repository）地址|
 | `branch`  | 分支名称。如果不指定，则默认值为 master|
-| `message` | 自定提交信息|
+| `message` | 自定义提交信息 (默认为 `Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}`) |
 
 
 
@@ -93,7 +94,7 @@ deploy:
 | 参数      | 描述                                                         |
 | :-------- | :----------------------------------------------------------- |
 | `repo`    | Heroku 库（Repository）地址                                  |
-| `message` | 自定提交信息|
+| `message` | 自定提交信息 (默认为 `Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}`) |
 
 ## Netlify
 
@@ -241,3 +242,4 @@ deploy:
 ## 其他方法
 
 Hexo 生成的所有文件都放在 `public` 文件夹中，您可以将它们复制到您喜欢的地方。
+{% endraw %}
