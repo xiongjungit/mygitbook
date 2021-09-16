@@ -353,3 +353,15 @@ Python是一种计算机程序设计语言。你可能已经听说过很多种�
 - 部署
 - 自定义
 - 其他
+
+# MINIO
+
+> MinIO 是在 GNU Affero 通用公共许可证 v3.0 下发布的高性能对象存储。 它是与 Amazon S3 云存储服务兼容的 API。 使用 MinIO 为机器学习、分析和应用程序数据工作负载构建高性能基础架构。
+
+
+
+- MINIO服务器
+- MINIO部署
+- MINIO客户端
+- MINIO SDKS
+- 实战秘籍
