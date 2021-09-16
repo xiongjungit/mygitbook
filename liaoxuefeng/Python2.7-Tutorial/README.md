@@ -1,4 +1,4 @@
-#Python 2.7教程
+# Python 2.7教程
 
 
 这是小白的Python新手教程。
@@ -39,5 +39,5 @@ Python当然也有不能干的事情，比如写操作系统，这个只能用C�
 
 [廖雪峰](http://weibo.com/liaoxuefeng)，十年软件开发经验，业余产品经理，精通Java/Python/Ruby/Visual Basic/Objective C等，对开源框架有深入研究，著有《Spring 2.0核心技术与最佳实践》一书，多个业余开源项目托管在[GitHub](https://github.com/michaelliao)，欢迎微博交流：
 
-[![](http://service.t.sina.com.cn/widget/qmd/1658384301/078cedea/2.png)](http://weibo.com/u/1658384301?s=6uyXnP)
+[![](./image/wb.png)](http://weibo.com/u/1658384301?s=6uyXnP)
 
