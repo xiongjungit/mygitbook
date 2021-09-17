@@ -1,6 +1,4 @@
-# 压缩指南 
-
-[![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
+# 压缩指南
 
 MinIO服务器允许流式压缩以确保有效的磁盘空间使用。压缩是在飞行中发生的，即对象在写入磁盘之前已被压缩。MinIO [`klauspost/compress/s2`](https://github.com/klauspost/compress/tree/master/s2)由于其稳定性和性能而使用流式压缩。
 

@@ -1,7 +1,5 @@
 # 如何使用Cyberduck结合MinIO
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 在本文档中，你将学习如何使用Cyberduck对MinIO进行基本操作。Cyberduck是适用于MacOS和Windows的FTP和SFTP，WebDAV，OpenStack Swift和Amazon S3的开源客户端。它是在GPL许可证v2.0下发布的。  
 
 ## 1. 前提条件
@@ -17,11 +15,7 @@
 
 点击open connection, 选择`HTTP`
 
-![I_IMAGE](https://github.com/minio/cookbook/blob/master/docs/screenshots/cyberduck/defaultdashboard.jpg?raw=true)
-
 ### 修改已有AWS S3信息为你本地的MinIO凭证
-
-![MINIO_DASH](https://github.com/minio/cookbook/blob/master/docs/screenshots/cyberduck/connecttominio.jpg?raw=true)
 
 ### 点击connect页签建立连接
 
@@ -29,21 +23,14 @@
 
 #### 列举存储桶
 
-![B_LISTING](https://github.com/minio/cookbook/blob/master/docs/screenshots/cyberduck/allbuckets.jpg?raw=true)
-
 #### 下载存储桶
-
-![D_BUCKET](https://github.com/minio/cookbook/blob/master/docs/screenshots/cyberduck/downloadbucket.jpg?raw=true)
 
 #### 存储桶镜像
 
-![M_BUCKET](https://github.com/minio/cookbook/blob/master/docs/screenshots/cyberduck/mirror.jpg?raw=true)
-
 #### 删除存储桶
-
-![D_BUCKET](https://github.com/minio/cookbook/blob/master/docs/screenshots/cyberduck/deletebucket.jpg?raw=true)
 
 ## 3. 了解更多
 
 - [MinIO Client完全指南](http://docs.minio.org.cn/docs/master/minio-client-complete-guide)
 - [Cyberduck project主页](https://cyberduck.io)
+

@@ -1,7 +1,5 @@
 # 磁盘缓存快速入门
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 这里的磁盘缓存功能是指使用缓存磁盘来存储租户常用的一些数据。例如，假设你通过`gateway azure`设置访问一个对象并下载下来进行缓存，那接下来的请求都会直接访问缓存磁盘上的对象，直至其过期失效。此功能允许Minio用户：
 
 - 对象的读取速度性能最佳。

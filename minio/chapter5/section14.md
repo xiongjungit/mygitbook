@@ -1,7 +1,5 @@
 # 如何在FreeNAS中运行MinIO
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 在本文中，我们将学习如何使用FreeNAS运行MinIO。 
 
 ## 1. 前提条件

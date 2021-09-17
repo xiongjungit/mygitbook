@@ -1,7 +1,5 @@
 # MinIO HDFS网关
 
- [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io)
-
 MinIO HDFS网关将Amazon S3 API支持添加到Hadoop HDFS文件系统中。应用程序可以同时使用S3和文件API，而无需任何数据迁移。由于网关是无状态且无共享的，因此您可以弹性地分配所需数量的MinIO实例以分配负载。
 
 ## 运行MinIO Gateway进行HDFS存储
@@ -39,8 +37,6 @@ docker run -p 9000:9000 \
 ## 使用MinIO浏览器进行测试
 
 *MinIO网关* 带有基于Web的嵌入式对象浏览器。将您的Web浏览器指向http://127.0.0.1:9000 ，以确保服务器已成功启动。
-
-![屏幕截图](https://raw.githubusercontent.com/minio/minio/master/docs/screenshots/minio-browser-gateway.png)
 
 ## 使用MinIO Client进行测试 `mc`
 

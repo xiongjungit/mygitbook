@@ -1,7 +1,5 @@
 # 为MinIO Server设置Apache HTTP proxy
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 Apache HTTP是一个开源Web服务器和一个反向代理服务器。  
 
 在本文中，我们将学习如何使用mod_proxy模块来设置Apache HTTP以连接到MinIO Server。我们将为example.com建立一个新的VirtualHost

@@ -1,6 +1,4 @@
-# 如何使用AWS SDK for Ruby操作MinIO Server 
-
-[![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
+# 如何使用AWS SDK for Ruby操作MinIO Server
 
 `aws-sdk` for Ruby是Ruby语言版本的官方AWS SDK。本文我们将学习如何使用`aws-sdk` for Ruby来操作MinIO Server。
 

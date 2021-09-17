@@ -1,6 +1,4 @@
-# MinIO Azure 网关 
-
-[![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
+# MinIO Azure 网关
 
 MinIO网关将亚马逊S3兼容性添加到微软Azure Blob存储。
 
@@ -26,8 +24,6 @@ minio gateway azure
 ## 使用MinIO浏览器验证
 
 MinIO Gateway配有嵌入式网络对象浏览器。 将您的Web浏览器指向http://127.0.0.1:9000确保您的服务器已成功启动。
-
-![截图](https://github.com/minio/minio/blob/master/docs/screenshots/minio-browser-gateway.png?raw=true)
 
 ## 使用MinIO客户端 `mc`验证
 

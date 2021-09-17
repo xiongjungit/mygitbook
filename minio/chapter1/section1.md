@@ -1,8 +1,6 @@
 # MinIO Quickstart Guide
 
-[![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions) [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/)
-
-[![MinIO](https://raw.githubusercontent.com/minio/minio/master/.github/logo.svg?sanitize=true)](https://min.io)
+[![MinIO](../image/chapter1/logo.svg)](https://min.io)
 
 MinIO 是在 GNU Affero 通用公共许可证 v3.0 下发布的高性能对象存储。 它是与 Amazon S3 云存储服务兼容的 API。 使用 MinIO 为机器学习、分析和应用程序数据工作负载构建高性能基础架构。
 
@@ -212,9 +210,9 @@ MinIO 将浏览器访问请求重定向到配置的服务器端口（即`127.0.0
 
 例如，考虑在代理 `https://minio.example.net`、`https://console.minio.example.net` 后面的 MinIO 部署，其规则将端口 :9000 和 :9001 上的流量转发到 MinIO 和分别在内部网络上的 MinIO Console。将 `MINIO_BROWSER_REDIRECT_URL` 设置为 `https://console.minio.example.net` 以确保浏览器接收到有效的可访问 URL。
 
-| Dashboard                                                    | Creating a bucket                                            |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![Dashboard](https://raw.githubusercontent.com/minio/minio/master/docs/screenshots/pic1.png) | ![Dashboard](https://raw.githubusercontent.com/minio/minio/master/docs/screenshots/pic1.png) |
+| Dashboard                                | Creating a bucket                        |
+| ---------------------------------------- | ---------------------------------------- |
+| ![Dashboard](../image/chapter1/pic1.png) | ![Dashboard](../image/chapter1/pic1.png) |
 
 ## 使用 MinIO Client `mc` 进行测试
 

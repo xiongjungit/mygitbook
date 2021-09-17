@@ -1,6 +1,4 @@
-# 使用AWS CLI结合MinIO Server 
-
-[![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
+# 使用AWS CLI结合MinIO Server
 
 AWS CLI是管理AWS服务的统一工具。它通常是用于将数据传入和传出AWS S3的工具。它适用于任何S3兼容的云存储服务。
 

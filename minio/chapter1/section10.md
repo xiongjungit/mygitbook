@@ -1,7 +1,5 @@
 # MinIO多租户（Multi-tenant）部署指南
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)  [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/)
-
 ## 单机部署
 
 要在单台机器上托管多个租户，为每个租户运行一个MinIO server,使用不同的HTTPS端口、配置和数据目录。
@@ -16,7 +14,7 @@ minio --config-dir ~/tenant2 server --address :9002 /data/tenant2
 minio --config-dir ~/tenant3 server --address :9003 /data/tenant3
 ```
 
-![示例1](https://github.com/minio/minio/blob/master/docs/screenshots/Example-1.jpg?raw=true)
+![示例1](../image/chapter1/Example-1.jpg)
 
 #### 示例2：单主机，多块磁盘 (erasure code)
 
@@ -28,7 +26,7 @@ minio --config-dir ~/tenant2 server --address :9002 /disk1/data/tenant2 /disk2/d
 minio --config-dir ~/tenant3 server --address :9003 /disk1/data/tenant3 /disk2/data/tenant3 /disk3/data/tenant3 /disk4/data/tenant3
 ```
 
-![示例2](https://github.com/minio/minio/blob/master/docs/screenshots/Example-2.jpg?raw=true)
+![示例2](../image/chapter1/Example-2.jpg)
 
 ## 分布式部署
 
@@ -52,7 +50,7 @@ export MINIO_SECRET_KEY=<TENANT3_SECRET_KEY>
 minio --config-dir ~/tenant3 server --address :9003 http://192.168.10.11/data/tenant3 http://192.168.10.12/data/tenant3 http://192.168.10.13/data/tenant3 http://192.168.10.14/data/tenant3
 ```
 
-![示例3](https://github.com/minio/minio/blob/master/docs/screenshots/Example-3.jpg?raw=true)
+![示例3](../image/chapter1/Example-3.jpg)
 
 ## 云端可伸缩部署
 

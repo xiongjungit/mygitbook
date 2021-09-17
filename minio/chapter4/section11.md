@@ -1,7 +1,5 @@
 # 用于Haskell的MinIO Client SDK
 
-[![Build Status](https://travis-ci.org/minio/minio-hs.svg?branch=master)](https://travis-ci.org/minio/minio-hs)[![Hackage](https://img.shields.io/hackage/v/minio-hs.svg)](https://hackage.haskell.org/package/minio-hs)[![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 MinIO Haskell客户端SDK提供了简单的API，可以访问[MinIO]（https://min.io）和与Amazon S3兼容的对象存储服务器。
 
 ## 最低需求

@@ -1,6 +1,4 @@
-# MinIO STS快速入门指南 
-
-[![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
+# MinIO STS快速入门指南
 
 MinIO安全令牌服务（STS）是一种终结点服务，使客户端可以请求MinIO资源的临时凭据。临时凭据的工作原理几乎与默认管理员凭据相同，但有一些区别：
 

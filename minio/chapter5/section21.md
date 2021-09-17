@@ -1,7 +1,5 @@
 # 如何使用Træfɪk代理多个MinIO服务
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 [Træfɪk](https://traefik.io/)是一个用Go语言写的先进（和流行技术结合的比较好）的反向代理。它支持多种配置方式，本文将介绍如何通过Docker设置多个MinIO实例，并用Træfɪk可实现通过不同的子域名进行访问。 
 
 ## 1. 前提条件

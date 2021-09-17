@@ -1,6 +1,4 @@
-# 如何使用aws-cli调用MinIO服务端加密 
-
-[![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
+# 如何使用aws-cli调用MinIO服务端加密
 
 MinIO支持采用客户端提供的秘钥（SSE-C）进行S3服务端加密。 客户端**必须**为SSE-C请求指定三个HTTP请求头：
 

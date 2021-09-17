@@ -1,7 +1,5 @@
 # 使用Kubernetes部署MinIO
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)  [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/)
-
 Kubernetes的部署和状态集提供了在独立，分布式或共享模式下部署MinIO服务器的完美平台。 在Kubernetes上部署MinIO有多种选择，您可以选择最适合您的。
 
 - MinIO [Helm](https://helm.sh) Chart通过一个简单的命令即可提供自定义而且简单的MinIO部署。更多关于MinIO Helm部署的资料，请访问[这里](http://docs.minio.org.cn/docs/master/deploy-minio-on-kubernetes#prerequisites).

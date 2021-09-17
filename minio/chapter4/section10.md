@@ -1,7 +1,5 @@
 # .NET Client API参考文档
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 ## 初始化MinIO Client object。
 
 ## MinIO

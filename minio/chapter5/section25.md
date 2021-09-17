@@ -1,7 +1,5 @@
 # 如何使用AWS SDK for .NET操作MinIO Server
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 `aws-sdk-dotnet`是.NET Framework的官方AWS开发工具包。在本文中，我们将学习如何使用`aws-sdk-dotnet`来操作MinIO Server。
 
 ## 1. 前提条件

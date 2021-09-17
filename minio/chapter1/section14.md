@@ -1,7 +1,5 @@
 # MinIO S3网关
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 MinIO S3 Gateway向AWS S3或任何其他与AWS S3兼容的服务中添加了MinIO功能，如MinIO浏览器和磁盘缓存。
 
 ## 运行适用于AWS S3的MinIO Gateway
@@ -121,8 +119,6 @@ MinIO边缘缓存允许将内容存储在离应用程序更近的地方。经常
 ## MinIO浏览器
 
 MinIO Gateway带有基于嵌入式Web的对象浏览器。将您的Web浏览器指向http://127.0.0.1:9000 ，以确保服务器已成功启动。
-
-![屏幕截图](https://github.com/minio/minio/blob/master/docs/screenshots/minio-browser-gateway.png?raw=true)
 
 借助MinIO S3网关，您可以使用MinIO浏览器浏览基于AWS S3的对象。
 

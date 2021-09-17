@@ -1,7 +1,5 @@
 # 选择API快速入门指南
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 传统的对象检索始终是整个实体，即5 GiB对象的GetObject将始终返回5 GiB数据。S3 Select API允许我们使用简单的SQL表达式来检索数据的子集。通过使用Select API仅检索应用程序所需的数据，可以实现大幅的性能改进。
 
 您可以使用Select API查询具有以下功能的对象：

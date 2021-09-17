@@ -1,6 +1,4 @@
-# 为MinIO Server设置Caddy proxy 
-
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
+# 为MinIO Server设置Caddy proxy
 
 Caddy是一个类似于Apache，nginx或者lighttpd的web服务器。Caddy的目的是简化Web开发，部署和托管工作流程，以便任何人都可以托管自己的网站而不需要特殊的技术知识。
 

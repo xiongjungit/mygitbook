@@ -1,7 +1,5 @@
 # 使用S3cmd操作MinIO Server
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 `S3cmd`是用于管理AWS S3，Google云存储或任何使用s3协议的云存储服务提供商的数据的CLI客户端。`S3cmd`是开源的，在GPLv2许可下分发。
 
 在本文中，我们将学习如何配置和使用S3cmd来管理MinIO Server的数据。

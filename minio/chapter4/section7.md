@@ -1,7 +1,5 @@
 # 适用于与Amazon S3兼容云存储的MinIO Go SDK
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions) [![Sourcegraph](https://sourcegraph.com/github.com/minio/minio-go/-/badge.svg)](https://sourcegraph.com/github.com/minio/minio-go?badge)
-
 MinIO Go Client SDK提供了简单的API来访问任何与Amazon S3兼容的对象存储服务。
 
 **支持的云存储:** 
@@ -262,5 +260,3 @@ mc ls play/mymusic/
 ## 贡献
 
 [贡献指南](https://github.com/minio/minio-go/blob/master/docs/zh_CN/CONTRIBUTING.md)
-
-[![Build Status](https://travis-ci.org/minio/minio-go.svg)](https://travis-ci.org/minio/minio-go) [![Build status](https://ci.appveyor.com/api/projects/status/1d05e6nvxcelmrak?svg=true)](https://ci.appveyor.com/project/harshavardhana/minio-go)

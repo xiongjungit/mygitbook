@@ -1,7 +1,5 @@
 # MinIO部署快速入门
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)  [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/)
-
 MinIO是一个[云原生](https://baike.baidu.com/item/Cloud Native/19865304?fr=aladdin)的应用程序，旨在在多租户环境中以可持续的方式进行扩展。编排（orchestration）平台为MinIO的扩展提供了非常好的支撑。以下是各种编排平台的MinIO部署文档:
 
 | Orchestration平台                                            |

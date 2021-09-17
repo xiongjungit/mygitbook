@@ -1,7 +1,5 @@
 # MinIO GCS 网关
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 MinIO GCS网关将亚马逊S3兼容性添加到Google云存储。
 
 ## 运行支持GCS的MinIO 网关
@@ -41,8 +39,6 @@ minio gateway gcs yourprojectid
 ## 使用MinIO Browser验证
 
 MinIO Gateway配有嵌入式网络对象浏览器。 将您的Web浏览器指向http://127.0.0.1:9000确保您的服务器已成功启动。
-
-![Screenshot](https://github.com/minio/minio/blob/master/docs/screenshots/minio-browser-gateway.png?raw=true)
 
 ## 使用MinIO客户端 `mc`验证
 

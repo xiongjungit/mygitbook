@@ -1,7 +1,5 @@
 # 使用Docker Compose部署MinIO
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)[![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/)
-
 Docker Compose允许定义和运行单主机，多容器Docker应用程序。
 
 使用Compose，您可以使用Compose文件来配置MinIO服务。  然后，使用单个命令，您可以通过你的配置创建并启动所有分布式MinIO实例。 分布式MinIO实例将部署在同一主机上的多个容器中。  这是建立基于分布式MinIO的开发，测试和分期环境的好方法。

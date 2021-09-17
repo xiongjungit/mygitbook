@@ -1,7 +1,5 @@
 # 使用pre-signed URLs通过浏览器上传
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 使用presigned URLs,你可以让浏览器直接上传一个文件到S3服务，而不需要暴露S3服务的认证信息给这个用户。下面就是使用[minio-js](https://github.com/minio/minio-js)实现的一个示例程序。
 
 ### 服务端代码

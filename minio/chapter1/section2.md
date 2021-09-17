@@ -1,7 +1,5 @@
 # MinIO Docker 快速入门
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)  [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/)
-
 ## 前提条件
 
 您的机器已经安装docker. 从 [这里](https://www.docker.com/community-edition#/download)下载相关软件。

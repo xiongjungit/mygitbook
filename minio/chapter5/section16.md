@@ -1,7 +1,5 @@
 # 如何使用AWS SDK for PHP操作MinIO Server
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 `aws-sdk-php`是PHP语言版本的官方AWS SDK。本文我们将学习如何使用`aws-sdk-php`来操作MinIO Server。
 
 ## 1. 前提条件

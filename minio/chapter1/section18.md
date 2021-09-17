@@ -1,4 +1,4 @@
-# 如何使用Prometheus监控MinIO服务器 [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
+# 如何使用Prometheus监控MinIO服务器
 
 [Prometheus](https://prometheus.io)  Prometheus是最初在SoundCloud上构建的云原生监视平台。Prometheus提供了多维数据模型，其中包含通过度量标准名称和键/值对标识的时间序列数据。数据收集通过HTTP / HTTPS上的拉模型进行。通过服务发现或静态配置发现要提取数据的目标。
 
@@ -11,7 +11,8 @@ MinIO默认情况下将Prometheus兼容数据作为授权端点导出/minio/prom
 - 先决条件
   - [1. 下载Prometheus](http://docs.minio.org.cn/docs/master/how-to-monitor-minio-using-prometheus#1-download-prometheus)
   - [2. 为Prometheus指标配置身份验证类型](http://docs.minio.org.cn/docs/master/how-to-monitor-minio-using-prometheus#2-configure-authentication-type-for-prometheus-metrics)
-  - \3. 配置Prometheus
+  - [3. 配置Prometheus](http://docs.minio.org.cn/docs/master/how-to-monitor-minio-using-prometheus#3-configuring-prometheus)
+    
     - [3.1 经过身份验证的Prometheus配置](http://docs.minio.org.cn/docs/master/how-to-monitor-minio-using-prometheus#31-authenticated-prometheus-config)
     - [3.2 Public Prometheus配置](http://docs.minio.org.cn/docs/master/how-to-monitor-minio-using-prometheus#32-public-prometheus-config)
   - [4. `scrape_configs` prometheus.yml中的更新部分](http://docs.minio.org.cn/docs/master/how-to-monitor-minio-using-prometheus#4-update-scrapeconfigs-section-in-prometheusyml)

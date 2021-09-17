@@ -1,6 +1,4 @@
-# 如何使用Mountain Duck结合MinIO 
-
-[![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
+# 如何使用Mountain Duck结合MinIO
 
 在本文中，你将学习如何使用Mountain Duck（中文名是山鸭，不是山鸡）在MinIO上进行基本操作。Mountain  Duck可让你将服务器和云存储装载为Mac上的Finder.app和Windows上的文件资源管理器中的本地磁盘。它是在GPL许可证v2.0下发布的。
 
@@ -17,13 +15,9 @@
 
 点击Mountain Duck图标，通过导航菜单打开应用程序。点击打开连接，选择`S3(HTTP)`
 
-![I_IMAGE](https://github.com/minio/cookbook/blob/master/docs/screenshots/mountainduck/defaultdashboard.jpg?raw=true)
 
 ### 修改已有AWS S3信息为你本地的MinIO凭证
 
-![MINIO_DASH](https://github.com/minio/cookbook/blob/master/docs/screenshots/mountainduck/connecttominio.jpg?raw=true)
-
-![MINIO_DASH2](https://github.com/minio/cookbook/blob/master/docs/screenshots/mountainduck/connecttominio1.jpg?raw=true)
 
 ### 点击connect页签建立连接
 
@@ -31,15 +25,12 @@
 
 #### 列举存储桶
 
-![B_LISTING](https://github.com/minio/cookbook/blob/master/docs/screenshots/mountainduck/listbuckets.jpg?raw=true)
 
 #### 复制存储桶到本地文件系统
 
-![D_BUCKET](https://github.com/minio/cookbook/blob/master/docs/screenshots/mountainduck/copybucket.jpg?raw=true)
 
 #### 删除存储桶
 
-![D_BUCKET](https://github.com/minio/cookbook/blob/master/docs/screenshots/mountainduck/deletebucket.jpg?raw=true)
 
 ## 3. 了解更多
 

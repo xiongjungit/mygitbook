@@ -1,7 +1,5 @@
 # 分布式MinIO快速入门
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)  [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/)
-
 分布式Minio可以让你将多块硬盘（甚至在不同的机器上）组成一个对象存储服务。由于硬盘分布在不同的节点上，分布式Minio避免了单点故障。   
 
 ## 分布式Minio有什么好处?
@@ -70,7 +68,7 @@ minio.exe server http://192.168.1.11/C:/data http://192.168.1.12/C:/data ^
                   http://192.168.1.17/C:/data http://192.168.1.18/C:/data
 ```
 
-![分布式Minio,8节点，每个节点一块盘](https://github.com/minio/minio/blob/master/docs/screenshots/Architecture-diagram_distributed_8.jpg?raw=true)
+![分布式Minio,8节点，每个节点一块盘](../image/chapter1/Architecture-diagram_distributed_8.jpg)
 
 示例2: 启动分布式Minio实例，4节点，每节点4块盘，需要在4个节点上都运行下面的命令。
 
@@ -104,7 +102,7 @@ minio.exe server http://192.168.1.11/C:/data1 http://192.168.1.11/C:/data2 ^
                   http://192.168.1.14/C:/data3 http://192.168.1.14/C:/data4
 ```
 
-![分布式Minio,4节点，每节点4块盘](https://github.com/minio/minio/blob/master/docs/screenshots/Architecture-diagram_distributed_16.jpg?raw=true)
+![分布式Minio,4节点，每节点4块盘](../image/chapter1/Architecture-diagram_distributed_16.jpg)
 
 #### 扩展现有的分布式集群
 

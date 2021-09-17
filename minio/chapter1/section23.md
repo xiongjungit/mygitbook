@@ -1,6 +1,4 @@
-# MinIO多用户快速入门指南 
-
-[![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
+# MinIO多用户快速入门指南
 
 除了在服务器启动期间创建的默认用户外，MinIO还支持多个长期用户。服务器启动后，可以添加新用户，并且可以将服务器配置为拒绝或允许这些用户访问存储桶和资源。本文档说明了如何添加/删除用户以及修改其访问权限。
 

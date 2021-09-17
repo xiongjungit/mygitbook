@@ -1,7 +1,5 @@
 # MinIO Go Client API文档
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 ## 初使化MinIO Client对象。
 
 ## MinIO

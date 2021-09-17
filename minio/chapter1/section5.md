@@ -2,7 +2,7 @@
 
 ## **1.云原生架构**
 
-![云原生](https://github.com/minio/minio/blob/master/docs/bigdata/images/image1.png?raw=true)
+![云原生](../image/chapter1/image1.png)
 
 Kubernetes在计算节点上弹性地管理无状态的Spark和Hive容器。Spark具有与Kubernetes的本机调度程序集成。由于传统原因，Hive在Kubernetes上使用YARN调度程序。
 
@@ -30,17 +30,17 @@ MinIO还支持类似于AWS区域和层的多集群，多站点联合。使用Min
 
 A成功安装后，导航到Ambari UI http://:8080/并使用默认凭据登录： [***用户名: admin, 密码: admin\***]
 
-![ambari-登录](https://github.com/minio/minio/blob/master/docs/bigdata/images/image3.png?raw=true)
+![ambari-登录](../image/chapter1/image3.png)
 
 ### **3.1 配置Hadoop**
 
 导航到 **服务** -> **HDFS** -> **CONFIGS** -> **高级** 如下所示
 
-![hdfs-配置](https://github.com/minio/minio/blob/master/docs/bigdata/images/image2.png?raw=true)
+![hdfs-配置](../image/chapter1/image2.png)
 
 导航到 **自定义核心网站** 为`_s3a_`连接器配置MinIO参数
 
-![s3a-配置](https://github.com/minio/minio/blob/master/docs/bigdata/images/image5.png?raw=true)
+![s3a-配置](../image/chapter1/image5.png)
 
 ```
 sudo pip install yq
@@ -107,17 +107,17 @@ fs.s3a.threads.max=2048 # Maximum number of threads for S3A
 
 应用配置更改后，继续重新启动 **Hadoop** 服务。
 
-![hdfs-服务](https://github.com/minio/minio/blob/master/docs/bigdata/images/image7.png?raw=true)
+![hdfs-服务](../image/chapter1/image7.png)
 
 ### **3.2 配置Spark2**
 
 导航到**服务** -> **Spark2** -> **CONFIGS**， 如下所示
 
-![spark-配置](https://github.com/minio/minio/blob/master/docs/bigdata/images/image6.png?raw=true)
+![spark-配置](../image/chapter1/image6.png)
 
 导航到“**Custom spark-defaults**”以配置_s3a_连接器的MinIO参数
 
-![spark-配置](https://github.com/minio/minio/blob/master/docs/bigdata/images/image9.png?raw=true)
+![spark-配置](../image/chapter1/image9.png)
 
 为spark-defaults.conf添加以下最佳条目，以使用 **MinIO** 配置Spark 。
 
@@ -153,17 +153,17 @@ spark.hadoop.fs.s3a.threads.max 2048 # maximum number of threads for S3A
 
 应用配置更改后，继续重新启动 **Spark** 服务。
 
-![spark-配置](https://github.com/minio/minio/blob/master/docs/bigdata/images/image12.png?raw=true)
+![spark-配置](../image/chapter1/image12.png)
 
 ### **3.3 配置Hive**
 
 导航到 **服务** -> **Hive** -> **CONFIGS**-> **ADVANCED** ，如下所示
 
-![hive-配置](https://github.com/minio/minio/blob/master/docs/bigdata/images/image10.png?raw=true)
+![hive-配置](../image/chapter1/image10.png)
 
 导航到“**自定义配置单元站点**” 以配置_s3a_连接器的MinIO参数
 
-![hive-配置](https://github.com/minio/minio/blob/master/docs/bigdata/images/image11.png?raw=true)
+![hive-配置](../image/chapter1/image11.png)
 
 添加以下最佳条目hive-site.xml以使用 **MinIO** 配置Hive 。.
 
@@ -178,11 +178,11 @@ mapreduce.input.fileinputformat.list-status.num-threads=50
 
 有关这些选项的更多信息，请访问 https://www.cloudera.com/documentation/enterprise/5-11-x/topics/admin_hive_on_s3_tuning.html
 
-![hive-配置](https://github.com/minio/minio/blob/master/docs/bigdata/images/image13.png?raw=true)
+![hive-配置](../image/chapter1/image13.png)
 
 应用配置更改后，继续重新启动所有Hive服务。
 
-![hive-配置](https://github.com/minio/minio/blob/master/docs/bigdata/images/image14.png?raw=true)
+![hive-配置](../image/chapter1/image14.png)
 
 ## **4. 运行示例应用程序**
 

@@ -1,7 +1,5 @@
 # 适用于与Amazon S3兼容的云存储的MinIO Java SDK
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 MinIO Java Client SDK提供简单的API来访问任何与Amazon S3兼容的对象存储服务。
 
 本快速入门指南将向你展示如何安装客户端SDK并执行示例java程序。有关API和示例的完整列表，请查看[Java Client API Reference](http://docs.minio.org.cn/docs/master/java-client-api-reference)文档。
@@ -180,4 +178,3 @@ mc ls play/asiatrip/
 
 [贡献者指南](https://github.com/minio/minio-java/blob/master/docs/zh_CN/CONTRIBUTING.md)
 
-[![Build Status](https://travis-ci.org/minio/minio-java.svg)](https://travis-ci.org/minio/minio-java) [![Build status](https://ci.appveyor.com/api/projects/status/1d05e6nvxcelmrak?svg=true)](https://ci.appveyor.com/project/harshavardhana/minio-java)

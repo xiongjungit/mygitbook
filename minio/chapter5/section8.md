@@ -1,7 +1,5 @@
 # 为MinIO Server设置Nginx代理
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 Nginx是一个开源的Web服务器和反向代理服务器。  
 
 在本文中，我们将学习如何给MinIO Server设置Nginx代理。

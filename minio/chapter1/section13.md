@@ -1,7 +1,5 @@
 # MinIO NAS网关
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 MinIO网关使用NAS存储支持Amazon S3。你可以在同一个共享NAS卷上运行多个minio实例，作为一个分布式的对象网关。
 
 ## 为NAS存储运行MinIO网关
@@ -26,8 +24,6 @@ minio gateway nas /shared/nasvol
 ## 使用浏览器进行验证
 
 使用你的浏览器访问`http://127.0.0.1:9000`,如果能访问，恭喜你，启动成功了。
-
-![Screenshot](https://raw.githubusercontent.com/minio/minio/master/docs/screenshots/minio-browser-gateway.png)
 
 ## 使用`mc`进行验证
 

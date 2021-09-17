@@ -1,6 +1,4 @@
-# KMS指南 
-
-[![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
+# KMS指南
 
 MinIO使用密钥管理系统（KMS）支持SSE-S3。如果客户端请求SSE-S3，或 启用了自动加密，则MinIO服务器会使用唯一的对象密钥对每个对象进行加密，该对象密钥受 KMS管理的主密钥保护。
 

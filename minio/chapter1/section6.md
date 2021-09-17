@@ -1,7 +1,5 @@
 # 使用TLS安全的访问Minio服务
 
-[![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 本文，我们讲介绍如何在Linux和Windows上配置Minio服务使用TLS。
 
 ## 1. 前提条件

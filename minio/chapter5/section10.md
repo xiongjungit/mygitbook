@@ -1,6 +1,4 @@
-# Rclone结合MinIO Server 
-
-[![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
+# Rclone结合MinIO Server
 
 `Rclone`是一个开源的命令行程序，用来同步文件和目录进或者出云存储系统。它旨在成为"云存储的rsync"。
 

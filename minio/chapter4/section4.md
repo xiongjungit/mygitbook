@@ -1,6 +1,4 @@
-# Java Client API参考文档 
-
-[![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
+# Java Client API参考文档
 
 ## 初始化Minio Client object。
 

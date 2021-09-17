@@ -1,7 +1,5 @@
 # 如何使用Paperclip操作MinIO Server
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 [Paperclip](https://github.com/thoughtbot/paperclip)旨在作为一个简单的ActiveRecord文件附件库。在本文中，你将学习如何将MinIO配置为Paperclip的对象存储后端。
 
 ## 1. 前提条件

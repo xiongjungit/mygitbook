@@ -1,7 +1,5 @@
 # Federation 快速入门指南
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 本文档说明了如何使用 `Bucket lookup from DNS` 样式联合来配置MinIO 。
 
 ## 开始使用
@@ -19,7 +17,7 @@
 
 ## 建筑
 
-![桶查询](https://github.com/minio/minio/blob/master/docs/federation/lookup/bucket-lookup.png?raw=true)
+![桶查询](../image/chapter1/bucket-lookup.png)
 
 ### 环境变量
 

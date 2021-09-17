@@ -1,4 +1,4 @@
-# MinIO存储桶通知指南 [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
+# MinIO存储桶通知指南
 
 存储桶（Bucket）如果发生改变,比如上传对象和删除对象，可以使用存储桶事件通知机制进行监控，并通过以下方式发布出去:
 

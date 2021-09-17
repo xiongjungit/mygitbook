@@ -1,7 +1,5 @@
 # JavaScript Client API参考文档
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 ## 初使化Minio Client object.
 
 ## MinIO

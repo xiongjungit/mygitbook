@@ -1,7 +1,5 @@
 # 使用fluentd插件聚合Apache日志
 
-[![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 在本文中，我们将学习如何使用`fluent-plugin-s3`插件结合MinIO做为日志聚合器。
 
 ## 1. 前提提件

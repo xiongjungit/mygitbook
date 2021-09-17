@@ -1,6 +1,4 @@
-# 将MongoDB备份存储到MinIO Server 
-
-[![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
+# 将MongoDB备份存储到MinIO Server
 
 在本文中，我们将学习如何将MongoDB备份存储到MinIO Server。
 

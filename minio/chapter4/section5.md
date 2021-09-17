@@ -1,7 +1,5 @@
 # 适用于与Amazon S3兼容的云存储的MinIO Python Library
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)
-
 MinIO Python Client SDK提供简单的API来访问任何与Amazon S3兼容的对象存储服务。
 
 本文我们将学习如何安装MinIO client SDK，并运行一个python的示例程序。对于完整的API以及示例，请参考[Python Client API Reference](http://docs.minio.org.cn/docs/master/python-client-api-reference)。
@@ -196,4 +194,3 @@ mc ls play/maylogs/
 
 [贡献指南](https://github.com/minio/minio-py/blob/master/docs/zh_CN/CONTRIBUTING.md)
 
-[![PYPI](https://img.shields.io/pypi/v/minio.svg)](https://pypi.python.org/pypi/minio) [![Build Status](https://travis-ci.org/minio/minio-py.svg)](https://travis-ci.org/minio/minio-py) [![Build status](https://ci.appveyor.com/api/projects/status/1d05e6nvxcelmrak?svg=true)](https://ci.appveyor.com/project/harshavardhana/minio-py)

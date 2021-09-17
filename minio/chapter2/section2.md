@@ -1,7 +1,5 @@
 # 使用Docker Swarm部署MinIO
 
- [![Slack](https://slack.min.io/slack?type=svg)](http://slack.minio.org.cn/questions)  [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/)
-
 Docker Engine在Swarm模式下提供集群管理和编排功能。 MinIO服务器可以在Swarm的分布式模式下轻松部署，创建一个多租户，高可用性和可扩展的对象存储。
 
 从[Docker Engine v1.13.0](https://blog.docker.com/2017/01/whats-new-in-docker-1-13/) (Docker Compose v3.0)开始, Docker Swarm和Compose 二者[cross-compatible](https://docs.docker.com/compose/compose-file/#version-3)。这允许将Compose file用作在Swarm上部署服务的模板。 我们使用Docker Compose file创建分布式MinIO设置。
