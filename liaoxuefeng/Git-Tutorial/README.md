@@ -22,4 +22,4 @@
 
 [廖雪峰](http://weibo.com/liaoxuefeng)，十年软件开发经验，业余产品经理，精通Java/Python/Ruby/Visual Basic/Objective C等，对开源框架有深入研究，著有《Spring 2.0核心技术与最佳实践》一书，多个业余开源项目托管在GitHub，欢迎微博交流：
 
-[![](http://service.t.sina.com.cn/widget/qmd/1658384301/078cedea/2.png)](http://weibo.com/u/1658384301?s=6uyXnP)
+http://weibo.com/u/1658384301?s=6uyXnP
