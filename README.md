@@ -344,7 +344,7 @@ Python是一种计算机程序设计语言。你可能已经听说过很多种�
 - 第11章 关于
 - 第12章 v1.6迁移v2.x
 
-# hexo中文文档
+## hexo中文文档
 
 > 简介：Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown](http://daringfireball.net/projects/markdown/)（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
 
@@ -354,7 +354,7 @@ Python是一种计算机程序设计语言。你可能已经听说过很多种�
 - 自定义
 - 其他
 
-# MINIO
+## minio
 
 > MinIO 是在 GNU Affero 通用公共许可证 v3.0 下发布的高性能对象存储。 它是与 Amazon S3 云存储服务兼容的 API。 使用 MinIO 为机器学习、分析和应用程序数据工作负载构建高性能基础架构。
 
